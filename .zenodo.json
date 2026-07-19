@@ -1,0 +1,25 @@
+{
+  "title": "pose-catalog-pipeline: named erotic positions with structured attributes and COCO-17 keypoint templates",
+  "description": "Reproducibility code for the Erotic Pose Catalog dataset: a public, machine-readable catalog of 104 named erotic positions (solo and multi-person) unifying a controlled-vocabulary attribute layer, an idealised COCO-17 keypoint template per participant, and a cross-cultural provenance layer that maps modern positions to the historical sex manuals and erotic-art traditions that first recorded them. The pipeline is deterministic and needs no database and no API keys. Includes the canonical vocabularies, the keypoint compositor, the HuggingFace dataset export, and a methodology paper. Data is released under CC BY 4.0; Wikidata anchors are CC0.",
+  "upload_type": "software",
+  "access_right": "open",
+  "creators": [
+    { "name": "Ethnic Erotic" }
+  ],
+  "keywords": [
+    "pose estimation",
+    "COCO keypoints",
+    "human pose",
+    "controllable generation",
+    "text-to-image",
+    "controlled vocabulary",
+    "taxonomy",
+    "sex positions",
+    "dataset",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    { "relation": "references", "identifier": "https://huggingface.co/datasets/EthnicErotic/pose-catalog", "scheme": "url" },
+    { "relation": "references", "identifier": "https://ethnicerotic.com/poses", "scheme": "url" }
+  ]
+}
