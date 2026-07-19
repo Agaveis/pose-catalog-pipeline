@@ -5,7 +5,7 @@
 Reproducibility code for the **Erotic Pose Catalog** — a public, machine-readable dataset of **104 named erotic positions** (solo and multi-person) with structured attributes, historical/cultural provenance, an index of museum-attested erotic artworks, and an **idealised COCO-17 keypoint template per participant**.
 
 - **Dataset (CC BY 4.0):** https://huggingface.co/datasets/EthnicErotic/pose-catalog
-- **Methodology paper:** [`paper/methodology-v1.md`](paper/methodology-v1.md)
+- **Methodology paper:** [`paper/methodology-v1.pdf`](paper/methodology-v1.pdf) · [Markdown source](paper/methodology-v1.md)
 - **Archived release (DOI):** https://doi.org/10.5281/zenodo.21439174
 - **Live source catalog:** https://ethnicerotic.com/poses
 - **How the catalog was built:** https://ethnicerotic.com/poses/methodology
