@@ -1,5 +1,4 @@
-<!-- DOI badge is added here once the Zenodo archive is minted from the first GitHub release:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21439174.svg)](https://doi.org/10.5281/zenodo.21439174)
 
 # pose-catalog-pipeline
 
@@ -7,6 +6,7 @@ Reproducibility code for the **Erotic Pose Catalog** — a public, machine-reada
 
 - **Dataset (CC BY 4.0):** https://huggingface.co/datasets/EthnicErotic/pose-catalog
 - **Methodology paper:** [`paper/methodology-v1.md`](paper/methodology-v1.md)
+- **Archived release (DOI):** https://doi.org/10.5281/zenodo.21439174
 - **Live source catalog:** https://ethnicerotic.com/poses
 - **How the catalog was built:** https://ethnicerotic.com/poses/methodology
 - **Historical timeline:** https://ethnicerotic.com/poses/history
@@ -164,8 +164,9 @@ If you use this code or the resulting dataset, please cite:
   year          = {2026},
   publisher     = {Zenodo},
   version       = {v1.0.0},
-  howpublished  = {\url{https://github.com/Agaveis/pose-catalog-pipeline}},
-  note          = {DOI pending Zenodo archive; Dataset: \url{https://huggingface.co/datasets/EthnicErotic/pose-catalog}}
+  doi           = {10.5281/zenodo.21439174},
+  url           = {https://doi.org/10.5281/zenodo.21439174},
+  note          = {Dataset: \url{https://huggingface.co/datasets/EthnicErotic/pose-catalog}}
 }
 
 @misc{ethnicerotic_pose_catalog_2026,

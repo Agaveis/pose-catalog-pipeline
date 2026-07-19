@@ -4,6 +4,7 @@
 https://ethnicerotic.com
 admin@ethnicerotic.com
 
+**DOI:** [10.5281/zenodo.21439174](https://doi.org/10.5281/zenodo.21439174)
 **Dataset:** https://huggingface.co/datasets/EthnicErotic/pose-catalog
 **Code:** https://github.com/Agaveis/pose-catalog-pipeline
 **License:** CC BY 4.0 (data) · Apache 2.0 (code)
