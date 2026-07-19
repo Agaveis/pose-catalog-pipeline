@@ -1,0 +1,22 @@
+{
+  "name": "pose-catalog-pipeline",
+  "version": "1.0.0",
+  "description": "Reproducibility code for the Erotic Pose Catalog dataset — named erotic positions with structured attributes, historical provenance, and idealised COCO-17 keypoint templates.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "AgaveIS",
+  "homepage": "https://huggingface.co/datasets/EthnicErotic/pose-catalog",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Agaveis/pose-catalog-pipeline.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "fetch-wikidata": "node scripts/fetch-wikidata-positions.mjs",
+    "verify-keypoints": "node scripts/build-keypoints.mjs",
+    "build": "node scripts/build-pose-dataset.mjs",
+    "contact-sheet": "node scripts/render-pose-contact-sheet.mjs"
+  }
+}

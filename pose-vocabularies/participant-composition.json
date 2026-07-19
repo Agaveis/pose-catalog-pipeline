@@ -1,0 +1,87 @@
+{
+  "atlas_category": "participant-composition",
+  "display_name": "Participant composition",
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "description": "The number and apparent-gender make-up of the participants in a pose, and their roles. Adult media conventionally encodes multi-person composition with letter codes (M = apparent male, F = apparent female), e.g. MMF or FFM; that convention is reproduced here for interoperability with existing adult-industry and booru-style tagging. Codes describe apparent on-camera presentation only and imply nothing about identity. This axis is orthogonal to pose structure: the same structural position can occur across several compositions. Adults only.",
+
+  "dimensions": [
+    {
+      "id": "participant_count",
+      "display_name": "Participant count",
+      "type": "ordinal",
+      "scale": "participant_count_integer",
+      "scale_citation": "Direct count of participants depicted.",
+      "description": "Number of participants in the depiction.",
+      "values": [
+        {"id": "one", "display_name": "One", "definition": "Solo."},
+        {"id": "two", "display_name": "Two", "definition": "A pair."},
+        {"id": "three", "display_name": "Three", "definition": "Threesome."},
+        {"id": "four_plus", "display_name": "Four or more", "definition": "Four or more participants."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "composition_code",
+      "display_name": "Composition code",
+      "type": "categorical",
+      "scale": "composition_letter_code",
+      "scale_citation": "Adult-industry / booru letter-code convention (M = apparent male, F = apparent female); describes apparent presentation only.",
+      "description": "Apparent-gender make-up of the participants, in the conventional letter-code form.",
+      "values": [
+        {"id": "solo_f", "display_name": "Solo (F)", "definition": "One apparent-female participant."},
+        {"id": "solo_m", "display_name": "Solo (M)", "definition": "One apparent-male participant."},
+        {"id": "MF", "display_name": "M/F", "definition": "One apparent-male and one apparent-female participant."},
+        {"id": "FF", "display_name": "F/F", "definition": "Two apparent-female participants."},
+        {"id": "MM", "display_name": "M/M", "definition": "Two apparent-male participants."},
+        {"id": "MMF", "display_name": "MMF", "definition": "Two apparent-male, one apparent-female."},
+        {"id": "FFM", "display_name": "FFM", "definition": "Two apparent-female, one apparent-male."},
+        {"id": "MFM", "display_name": "MFM", "definition": "Male-female-male arrangement (positional variant of MMF)."},
+        {"id": "FFF", "display_name": "FFF", "definition": "Three apparent-female participants."},
+        {"id": "MMM", "display_name": "MMM", "definition": "Three apparent-male participants."},
+        {"id": "group_mixed", "display_name": "Group (mixed)", "definition": "Four or more, mixed or unspecified make-up."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "receiving_partners",
+      "display_name": "Receiving partners",
+      "type": "ordinal",
+      "scale": "receiving_partner_count",
+      "scale_citation": "Count of partners in the receiving role in the depicted act.",
+      "description": "How many participants are in the receiving role.",
+      "values": [
+        {"id": "r0", "display_name": "0"},
+        {"id": "r1", "display_name": "1"},
+        {"id": "r2", "display_name": "2"},
+        {"id": "r3_plus", "display_name": "3+"}
+      ],
+      "observability": {"from_photograph": "medium", "requires_unclothed": true, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "penetrating_partners",
+      "display_name": "Penetrating partners",
+      "type": "ordinal",
+      "scale": "penetrating_partner_count",
+      "scale_citation": "Count of partners in the penetrating role in the depicted act.",
+      "description": "How many participants are in the penetrating role.",
+      "values": [
+        {"id": "p0", "display_name": "0"},
+        {"id": "p1", "display_name": "1"},
+        {"id": "p2", "display_name": "2"},
+        {"id": "p3_plus", "display_name": "3+"}
+      ],
+      "observability": {"from_photograph": "medium", "requires_unclothed": true, "minimum_visible_extent": "full_body"}
+    }
+  ],
+
+  "aggregation_notes": {
+    "categorical_dimensions_roll_up_as": "frequency distribution",
+    "note": "Composition codes describe apparent on-camera presentation, not participant identity or orientation."
+  },
+
+  "references": [
+    "Danbooru tag group: sex_acts — participant-composition letter codes (MMF/FFM/…) and solo/duo/group tags.",
+    "e621 tagging system — solo / duo / group participant tags."
+  ]
+}

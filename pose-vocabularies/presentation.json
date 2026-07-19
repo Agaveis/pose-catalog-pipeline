@@ -1,0 +1,98 @@
+{
+  "atlas_category": "presentation",
+  "display_name": "Presentation & medium",
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "description": "How a pose is presented to the viewer: the source medium (adult video vs. print/magazine), the camera framing commonly associated with it, its physical difficulty, its prevalence, and an intensity tier used for compliance gating. The intensity tier mirrors the three-level model already used in the platform's generation pose library (illustrative / suggestive / explicit) so that downstream consumers can filter by the same contract. Adults only.",
+
+  "dimensions": [
+    {
+      "id": "source_medium",
+      "display_name": "Source medium",
+      "type": "categorical",
+      "scale": "source_medium_qualitative",
+      "scale_citation": "Distinguishes moving-image (video) from still-image (print/magazine) depiction conventions.",
+      "description": "The medium in which the pose characteristically appears.",
+      "values": [
+        {"id": "video", "display_name": "Video", "definition": "Primarily a moving-image position (motion is intrinsic)."},
+        {"id": "magazine", "display_name": "Magazine / print", "definition": "Primarily a still-image display pose."},
+        {"id": "both", "display_name": "Both", "definition": "Common in both video and print."},
+        {"id": "illustrative", "display_name": "Illustrative", "definition": "Chiefly a reference or diagrammatic depiction."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "camera_framing",
+      "display_name": "Common camera framing",
+      "type": "categorical",
+      "scale": "camera_framing_qualitative",
+      "scale_citation": "Cinematographic framing descriptors as applied in adult media production.",
+      "description": "The camera framing most characteristic of the pose. A pose may support several; this records the typical primary framings.",
+      "values": [
+        {"id": "pov_penetrating", "display_name": "POV (penetrating)", "definition": "Point-of-view from the penetrating partner."},
+        {"id": "pov_receiving", "display_name": "POV (receiving)", "definition": "Point-of-view from the receiving partner."},
+        {"id": "side_profile", "display_name": "Side profile", "definition": "Lateral full-body framing."},
+        {"id": "overhead", "display_name": "Overhead", "definition": "From above."},
+        {"id": "low_angle", "display_name": "Low angle", "definition": "From below."},
+        {"id": "rear", "display_name": "Rear", "definition": "From behind the receiving partner."},
+        {"id": "close_up", "display_name": "Close-up", "definition": "Tight framing on the point of contact."},
+        {"id": "wide_full_body", "display_name": "Wide / full body", "definition": "Both participants fully in frame."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "difficulty",
+      "display_name": "Physical difficulty",
+      "type": "ordinal",
+      "scale": "difficulty_qualitative",
+      "scale_citation": "Qualitative rating of strength, flexibility, and balance demand.",
+      "description": "How physically demanding the pose is (strength, flexibility, balance).",
+      "values": [
+        {"id": "low", "display_name": "Low", "definition": "Comfortable and sustainable for most people."},
+        {"id": "moderate", "display_name": "Moderate", "definition": "Some flexibility or stamina required."},
+        {"id": "high", "display_name": "High", "definition": "Notable flexibility, strength, or balance required."},
+        {"id": "advanced_athletic", "display_name": "Advanced / athletic", "definition": "Demanding; often performed for camera rather than comfort."}
+      ],
+      "observability": {"from_photograph": "medium", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "prevalence",
+      "display_name": "Prevalence in adult media",
+      "type": "ordinal",
+      "scale": "prevalence_qualitative",
+      "scale_citation": "Qualitative estimate of how frequently the position is depicted.",
+      "description": "How commonly the pose appears in adult video and print.",
+      "values": [
+        {"id": "very_common", "display_name": "Very common"},
+        {"id": "common", "display_name": "Common"},
+        {"id": "occasional", "display_name": "Occasional"},
+        {"id": "niche", "display_name": "Niche"}
+      ],
+      "observability": {"from_photograph": "not_assessable", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "intensity_tier",
+      "display_name": "Intensity tier (compliance)",
+      "type": "ordinal",
+      "scale": "intensity_tier_three_level",
+      "scale_citation": "Mirrors the platform generation pose-library tier model (Sfw/Suggestive/Explicit).",
+      "description": "Compliance-gating tier. Consumers may filter to suggestive-and-below where an explicit surface is not authorised.",
+      "values": [
+        {"id": "illustrative", "display_name": "Illustrative", "definition": "Clothed or diagrammatic; safe for general reference."},
+        {"id": "suggestive", "display_name": "Suggestive", "definition": "Implied or partially clothed; no explicit act depicted."},
+        {"id": "explicit", "display_name": "Explicit", "definition": "Adult/explicit act depicted. Gate behind an age-verified surface."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    }
+  ],
+
+  "aggregation_notes": {
+    "categorical_dimensions_roll_up_as": "frequency distribution",
+    "note": "intensity_tier is the gating contract; downstream surfaces filter on it exactly as the generation pose library filters PoseTier."
+  },
+
+  "references": [
+    "Internal: LatinaCastings.Services PoseSceneLibrary PoseTier (Sfw/Suggestive/Explicit) — the tier contract mirrored here.",
+    "Adult-media production framing conventions (POV, side, overhead, rear)."
+  ]
+}

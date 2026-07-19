@@ -1,0 +1,178 @@
+{
+  "schema": "COCO-17",
+  "version": "1.2.0",
+  "license": "CC-BY-4.0",
+  "note": "Idealised schematic skeletons in local normalised [0,1] space, drawn in PROFILE view with consistent ~7.5-head proportions. Each joint is [x, y, visibility]. Upright postures face +x (rightward); use placement.flip_x to face left. Horizontal postures are drawn head-left, face direction encoded by the nose (above the body line = face up, below = face down); flip_x mirrors to head-right. Far-side limbs are offset slightly and marked occluded (v=1) for depth. Ground plane sits at y≈0.88. These are reference templates, not observations. v1.1.0: full profile-view rework (v1.0.0 mixed front-view and profile figures, which did not compose into readable scenes).",
+  "skeletons": {
+    "standing": {
+      "nose": [0.545, 0.10, 2], "left_eye": [0.53, 0.085, 2], "right_eye": [0.525, 0.085, 1],
+      "left_ear": [0.49, 0.095, 2], "right_ear": [0.485, 0.095, 1],
+      "left_shoulder": [0.50, 0.21, 2], "right_shoulder": [0.515, 0.215, 1],
+      "left_elbow": [0.515, 0.34, 2], "right_elbow": [0.53, 0.345, 1],
+      "left_wrist": [0.525, 0.46, 2], "right_wrist": [0.54, 0.465, 1],
+      "left_hip": [0.50, 0.52, 2], "right_hip": [0.515, 0.525, 1],
+      "left_knee": [0.525, 0.71, 2], "right_knee": [0.54, 0.715, 1],
+      "left_ankle": [0.50, 0.90, 2], "right_ankle": [0.515, 0.905, 1]
+    },
+    "kneeling": {
+      "nose": [0.545, 0.245, 2], "left_eye": [0.53, 0.23, 2], "right_eye": [0.525, 0.23, 1],
+      "left_ear": [0.49, 0.24, 2], "right_ear": [0.485, 0.24, 1],
+      "left_shoulder": [0.50, 0.355, 2], "right_shoulder": [0.515, 0.36, 1],
+      "left_elbow": [0.515, 0.475, 2], "right_elbow": [0.53, 0.48, 1],
+      "left_wrist": [0.53, 0.585, 2], "right_wrist": [0.545, 0.59, 1],
+      "left_hip": [0.50, 0.645, 2], "right_hip": [0.515, 0.65, 1],
+      "left_knee": [0.50, 0.865, 2], "right_knee": [0.515, 0.87, 1],
+      "left_ankle": [0.335, 0.885, 2], "right_ankle": [0.35, 0.89, 1]
+    },
+    "kneeling_sit": {
+      "nose": [0.545, 0.40, 2], "left_eye": [0.53, 0.385, 2], "right_eye": [0.525, 0.385, 1],
+      "left_ear": [0.49, 0.395, 2], "right_ear": [0.485, 0.395, 1],
+      "left_shoulder": [0.49, 0.505, 2], "right_shoulder": [0.505, 0.51, 1],
+      "left_elbow": [0.545, 0.60, 2], "right_elbow": [0.56, 0.605, 1],
+      "left_wrist": [0.60, 0.665, 2], "right_wrist": [0.615, 0.67, 1],
+      "left_hip": [0.475, 0.745, 2], "right_hip": [0.49, 0.75, 1],
+      "left_knee": [0.545, 0.865, 2], "right_knee": [0.56, 0.87, 1],
+      "left_ankle": [0.385, 0.885, 2], "right_ankle": [0.40, 0.89, 1]
+    },
+    "seated": {
+      "nose": [0.50, 0.335, 2], "left_eye": [0.485, 0.32, 2], "right_eye": [0.48, 0.32, 1],
+      "left_ear": [0.445, 0.33, 2], "right_ear": [0.44, 0.33, 1],
+      "left_shoulder": [0.455, 0.44, 2], "right_shoulder": [0.47, 0.445, 1],
+      "left_elbow": [0.50, 0.55, 2], "right_elbow": [0.515, 0.555, 1],
+      "left_wrist": [0.555, 0.615, 2], "right_wrist": [0.57, 0.62, 1],
+      "left_hip": [0.435, 0.70, 2], "right_hip": [0.45, 0.705, 1],
+      "left_knee": [0.585, 0.635, 2], "right_knee": [0.60, 0.64, 1],
+      "left_ankle": [0.665, 0.855, 2], "right_ankle": [0.68, 0.86, 1]
+    },
+    "seated_lap": {
+      "nose": [0.505, 0.175, 2], "left_eye": [0.49, 0.16, 2], "right_eye": [0.485, 0.16, 1],
+      "left_ear": [0.45, 0.17, 2], "right_ear": [0.445, 0.17, 1],
+      "left_shoulder": [0.455, 0.29, 2], "right_shoulder": [0.47, 0.295, 1],
+      "left_elbow": [0.53, 0.385, 2], "right_elbow": [0.545, 0.39, 1],
+      "left_wrist": [0.59, 0.44, 2], "right_wrist": [0.605, 0.445, 1],
+      "left_hip": [0.44, 0.545, 2], "right_hip": [0.455, 0.55, 1],
+      "left_knee": [0.615, 0.60, 2], "right_knee": [0.63, 0.605, 1],
+      "left_ankle": [0.72, 0.72, 2], "right_ankle": [0.735, 0.725, 1]
+    },
+    "supine": {
+      "nose": [0.095, 0.755, 2], "left_eye": [0.085, 0.77, 2], "right_eye": [0.08, 0.77, 1],
+      "left_ear": [0.065, 0.785, 2], "right_ear": [0.06, 0.785, 1],
+      "left_shoulder": [0.175, 0.805, 2], "right_shoulder": [0.18, 0.815, 1],
+      "left_elbow": [0.285, 0.795, 2], "right_elbow": [0.29, 0.805, 1],
+      "left_wrist": [0.385, 0.79, 2], "right_wrist": [0.39, 0.80, 1],
+      "left_hip": [0.475, 0.805, 2], "right_hip": [0.48, 0.815, 1],
+      "left_knee": [0.655, 0.775, 2], "right_knee": [0.66, 0.785, 1],
+      "left_ankle": [0.825, 0.82, 2], "right_ankle": [0.83, 0.83, 1]
+    },
+    "supine_legs_up": {
+      "nose": [0.095, 0.755, 2], "left_eye": [0.085, 0.77, 2], "right_eye": [0.08, 0.77, 1],
+      "left_ear": [0.065, 0.785, 2], "right_ear": [0.06, 0.785, 1],
+      "left_shoulder": [0.175, 0.805, 2], "right_shoulder": [0.18, 0.815, 1],
+      "left_elbow": [0.27, 0.795, 2], "right_elbow": [0.275, 0.805, 1],
+      "left_wrist": [0.36, 0.785, 2], "right_wrist": [0.365, 0.795, 1],
+      "left_hip": [0.475, 0.79, 2], "right_hip": [0.48, 0.80, 1],
+      "left_knee": [0.545, 0.565, 2], "right_knee": [0.55, 0.575, 1],
+      "left_ankle": [0.44, 0.41, 2], "right_ankle": [0.445, 0.42, 1]
+    },
+    "prone": {
+      "nose": [0.10, 0.845, 2], "left_eye": [0.088, 0.825, 2], "right_eye": [0.083, 0.825, 1],
+      "left_ear": [0.07, 0.81, 2], "right_ear": [0.065, 0.81, 1],
+      "left_shoulder": [0.18, 0.795, 2], "right_shoulder": [0.185, 0.805, 1],
+      "left_elbow": [0.255, 0.835, 2], "right_elbow": [0.26, 0.845, 1],
+      "left_wrist": [0.335, 0.855, 2], "right_wrist": [0.34, 0.865, 1],
+      "left_hip": [0.475, 0.80, 2], "right_hip": [0.48, 0.81, 1],
+      "left_knee": [0.655, 0.81, 2], "right_knee": [0.66, 0.82, 1],
+      "left_ankle": [0.83, 0.78, 2], "right_ankle": [0.835, 0.79, 1]
+    },
+    "plank_over": {
+      "nose": [0.115, 0.57, 2], "left_eye": [0.105, 0.55, 2], "right_eye": [0.10, 0.55, 1],
+      "left_ear": [0.085, 0.545, 2], "right_ear": [0.08, 0.545, 1],
+      "left_shoulder": [0.205, 0.575, 2], "right_shoulder": [0.21, 0.585, 1],
+      "left_elbow": [0.20, 0.72, 2], "right_elbow": [0.205, 0.73, 1],
+      "left_wrist": [0.195, 0.865, 2], "right_wrist": [0.20, 0.875, 1],
+      "left_hip": [0.485, 0.66, 2], "right_hip": [0.49, 0.67, 1],
+      "left_knee": [0.665, 0.80, 2], "right_knee": [0.67, 0.81, 1],
+      "left_ankle": [0.82, 0.865, 2], "right_ankle": [0.825, 0.875, 1]
+    },
+    "all_fours": {
+      "nose": [0.745, 0.535, 2], "left_eye": [0.73, 0.52, 2], "right_eye": [0.725, 0.52, 1],
+      "left_ear": [0.70, 0.525, 2], "right_ear": [0.695, 0.525, 1],
+      "left_shoulder": [0.635, 0.575, 2], "right_shoulder": [0.64, 0.585, 1],
+      "left_elbow": [0.645, 0.73, 2], "right_elbow": [0.65, 0.74, 1],
+      "left_wrist": [0.65, 0.875, 2], "right_wrist": [0.655, 0.885, 1],
+      "left_hip": [0.335, 0.575, 2], "right_hip": [0.34, 0.585, 1],
+      "left_knee": [0.33, 0.865, 2], "right_knee": [0.335, 0.875, 1],
+      "left_ankle": [0.185, 0.88, 2], "right_ankle": [0.19, 0.89, 1]
+    },
+    "side_lying": {
+      "nose": [0.115, 0.755, 2], "left_eye": [0.10, 0.745, 2], "right_eye": [0.095, 0.745, 1],
+      "left_ear": [0.08, 0.75, 2], "right_ear": [0.075, 0.75, 1],
+      "left_shoulder": [0.195, 0.77, 2], "right_shoulder": [0.20, 0.78, 1],
+      "left_elbow": [0.28, 0.80, 2], "right_elbow": [0.285, 0.81, 1],
+      "left_wrist": [0.36, 0.825, 2], "right_wrist": [0.365, 0.835, 1],
+      "left_hip": [0.455, 0.775, 2], "right_hip": [0.46, 0.785, 1],
+      "left_knee": [0.585, 0.71, 2], "right_knee": [0.59, 0.72, 1],
+      "left_ankle": [0.575, 0.86, 2], "right_ankle": [0.58, 0.87, 1]
+    },
+    "astride": {
+      "nose": [0.545, 0.315, 2], "left_eye": [0.53, 0.30, 2], "right_eye": [0.525, 0.30, 1],
+      "left_ear": [0.49, 0.31, 2], "right_ear": [0.485, 0.31, 1],
+      "left_shoulder": [0.495, 0.42, 2], "right_shoulder": [0.51, 0.425, 1],
+      "left_elbow": [0.52, 0.53, 2], "right_elbow": [0.535, 0.535, 1],
+      "left_wrist": [0.545, 0.625, 2], "right_wrist": [0.56, 0.63, 1],
+      "left_hip": [0.49, 0.685, 2], "right_hip": [0.505, 0.69, 1],
+      "left_knee": [0.585, 0.825, 2], "right_knee": [0.60, 0.83, 1],
+      "left_ankle": [0.43, 0.885, 2], "right_ankle": [0.445, 0.89, 1]
+    },
+    "inverted": {
+      "nose": [0.575, 0.845, 2], "left_eye": [0.565, 0.825, 2], "right_eye": [0.56, 0.825, 1],
+      "left_ear": [0.545, 0.82, 2], "right_ear": [0.54, 0.82, 1],
+      "left_shoulder": [0.475, 0.835, 2], "right_shoulder": [0.48, 0.845, 1],
+      "left_elbow": [0.355, 0.86, 2], "right_elbow": [0.36, 0.87, 1],
+      "left_wrist": [0.24, 0.875, 2], "right_wrist": [0.245, 0.885, 1],
+      "left_hip": [0.445, 0.42, 2], "right_hip": [0.45, 0.43, 1],
+      "left_knee": [0.565, 0.30, 2], "right_knee": [0.57, 0.31, 1],
+      "left_ankle": [0.675, 0.44, 2], "right_ankle": [0.68, 0.45, 1]
+    },
+    "squat_over": {
+      "nose": [0.545, 0.13, 2], "left_eye": [0.53, 0.115, 2], "right_eye": [0.525, 0.115, 1],
+      "left_ear": [0.49, 0.125, 2], "right_ear": [0.485, 0.125, 1],
+      "left_shoulder": [0.49, 0.235, 2], "right_shoulder": [0.505, 0.24, 1],
+      "left_elbow": [0.525, 0.36, 2], "right_elbow": [0.54, 0.365, 1],
+      "left_wrist": [0.55, 0.475, 2], "right_wrist": [0.565, 0.48, 1],
+      "left_hip": [0.465, 0.475, 2], "right_hip": [0.48, 0.48, 1],
+      "left_knee": [0.615, 0.60, 2], "right_knee": [0.63, 0.605, 1],
+      "left_ankle": [0.565, 0.875, 2], "right_ankle": [0.58, 0.88, 1]
+    },
+    "standing_bent": {
+      "nose": [0.77, 0.475, 2], "left_eye": [0.755, 0.46, 2], "right_eye": [0.75, 0.46, 1],
+      "left_ear": [0.725, 0.455, 2], "right_ear": [0.72, 0.455, 1],
+      "left_shoulder": [0.625, 0.48, 2], "right_shoulder": [0.63, 0.49, 1],
+      "left_elbow": [0.635, 0.62, 2], "right_elbow": [0.64, 0.63, 1],
+      "left_wrist": [0.645, 0.75, 2], "right_wrist": [0.65, 0.76, 1],
+      "left_hip": [0.38, 0.52, 2], "right_hip": [0.385, 0.53, 1],
+      "left_knee": [0.40, 0.71, 2], "right_knee": [0.405, 0.72, 1],
+      "left_ankle": [0.39, 0.90, 2], "right_ankle": [0.395, 0.91, 1]
+    },
+    "standing_carry": {
+      "nose": [0.505, 0.22, 2], "left_eye": [0.49, 0.205, 2], "right_eye": [0.485, 0.205, 1],
+      "left_ear": [0.45, 0.215, 2], "right_ear": [0.445, 0.215, 1],
+      "left_shoulder": [0.46, 0.315, 2], "right_shoulder": [0.475, 0.32, 1],
+      "left_elbow": [0.555, 0.375, 2], "right_elbow": [0.57, 0.38, 1],
+      "left_wrist": [0.635, 0.415, 2], "right_wrist": [0.65, 0.42, 1],
+      "left_hip": [0.45, 0.55, 2], "right_hip": [0.465, 0.555, 1],
+      "left_knee": [0.615, 0.605, 2], "right_knee": [0.63, 0.61, 1],
+      "left_ankle": [0.73, 0.685, 2], "right_ankle": [0.745, 0.69, 1]
+    },
+    "arch_supine": {
+      "nose": [0.10, 0.775, 2], "left_eye": [0.09, 0.79, 2], "right_eye": [0.085, 0.79, 1],
+      "left_ear": [0.07, 0.805, 2], "right_ear": [0.065, 0.805, 1],
+      "left_shoulder": [0.185, 0.795, 2], "right_shoulder": [0.19, 0.805, 1],
+      "left_elbow": [0.265, 0.835, 2], "right_elbow": [0.27, 0.845, 1],
+      "left_wrist": [0.345, 0.865, 2], "right_wrist": [0.35, 0.875, 1],
+      "left_hip": [0.475, 0.635, 2], "right_hip": [0.48, 0.645, 1],
+      "left_knee": [0.615, 0.70, 2], "right_knee": [0.62, 0.71, 1],
+      "left_ankle": [0.67, 0.87, 2], "right_ankle": [0.675, 0.88, 1]
+    }
+  }
+}

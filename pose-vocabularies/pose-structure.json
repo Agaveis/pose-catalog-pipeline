@@ -1,0 +1,148 @@
+{
+  "atlas_category": "pose-structure",
+  "display_name": "Pose structure",
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "description": "Structural classification of erotic poses and sex positions as they appear in adult video and print. Covers the position family (solo / one-on-one / group), the primary act, the partner arrangement, penetration type, facing, dynamics, and the surface or support used. The arrangement sub-groups follow the widely-used structural taxonomy of named positions (penetrating-partner-on-top, from-behind, receiving-partner-on-top, seated/kneeling, standing, side-lying, inverted) documented in reference works such as the Wikipedia 'List of sex positions' and Wikidata's 'sex position' (Q8394) class; all bucket definitions here are original wording. Reference-grade descriptors intended for content tagging, search facets, and text-to-image prompt conditioning. Adults only.",
+
+  "dimensions": [
+    {
+      "id": "position_family",
+      "display_name": "Position family",
+      "type": "categorical",
+      "scale": "position_family_qualitative",
+      "scale_citation": "Top-level partition by participant count, aligned with the group-vs-pair distinction used across sexology reference works.",
+      "description": "Highest-level structural grouping by number of participants.",
+      "values": [
+        {"id": "solo", "display_name": "Solo", "definition": "A single participant; self-stimulation or display posing."},
+        {"id": "one_on_one", "display_name": "One-on-one", "definition": "Two participants."},
+        {"id": "group", "display_name": "Group", "definition": "Three or more participants."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "primary_act",
+      "display_name": "Primary act",
+      "type": "categorical",
+      "scale": "primary_act_qualitative",
+      "scale_citation": "Aligned with the exclusively-penetrative / non-exclusively-penetrative / non-penetrative partition used in named-position reference taxonomies.",
+      "description": "The dominant sexual act that defines the position. A position may involve more than one act; this records the defining one.",
+      "values": [
+        {"id": "vaginal_penetration", "display_name": "Vaginal penetration", "definition": "Penile or object vaginal penetration is the defining act."},
+        {"id": "anal_penetration", "display_name": "Anal penetration", "definition": "Penile or object anal penetration is the defining act."},
+        {"id": "oral", "display_name": "Oral", "definition": "Oral-genital or oral-anal contact is the defining act."},
+        {"id": "manual", "display_name": "Manual", "definition": "Manual stimulation (hand/finger) is the defining act."},
+        {"id": "non_penetrative", "display_name": "Non-penetrative", "definition": "Body-to-body contact without penetration (e.g. frottage, intercrural, tribadism)."},
+        {"id": "display_solo", "display_name": "Solo display", "definition": "Solo posing or self-stimulation for the camera; no partner contact."},
+        {"id": "mixed", "display_name": "Mixed", "definition": "Multiple simultaneous acts of comparable prominence (common in group positions)."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": true, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "arrangement",
+      "display_name": "Partner arrangement",
+      "type": "categorical",
+      "scale": "arrangement_structural",
+      "scale_citation": "Structural sub-groups mirror the named-position organisation in the Wikipedia 'List of sex positions' (penetrating-on-top, from-behind, receiving-on-top, sitting/kneeling, standing, less-common/inverted); wording original.",
+      "description": "The spatial arrangement of the participants relative to one another.",
+      "values": [
+        {"id": "penetrating_on_top", "display_name": "Penetrating partner on top", "definition": "Penetrating partner above the receiving partner (e.g. missionary family)."},
+        {"id": "receiving_on_top", "display_name": "Receiving partner on top", "definition": "Receiving partner astride or above (e.g. cowgirl / woman-on-top family)."},
+        {"id": "from_behind", "display_name": "From behind", "definition": "Penetration or contact from the rear (e.g. doggy style, prone bone, spoons)."},
+        {"id": "seated", "display_name": "Seated", "definition": "One or both partners seated (e.g. lotus, lap position)."},
+        {"id": "kneeling", "display_name": "Kneeling", "definition": "One or both partners kneeling."},
+        {"id": "standing", "display_name": "Standing", "definition": "One or both partners standing, possibly with support."},
+        {"id": "side_lying", "display_name": "Side-lying", "definition": "Both partners on their sides (e.g. spoons, lateral)."},
+        {"id": "inverted", "display_name": "Inverted", "definition": "One partner partly or fully inverted (e.g. piledriver, suspended)."},
+        {"id": "head_to_toe", "display_name": "Head-to-toe (mutual)", "definition": "Reciprocal, oriented head-to-toe (e.g. 69)."},
+        {"id": "over_face", "display_name": "Over the face", "definition": "One partner positioned above the other's face (e.g. facesitting)."},
+        {"id": "solo_arrangement", "display_name": "Solo", "definition": "Single participant; no partner arrangement."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "penetration_type",
+      "display_name": "Penetration type",
+      "type": "categorical",
+      "scale": "penetration_type_qualitative",
+      "scale_citation": "Descriptive enumeration of penetration configurations, including the multi-penetration terms catalogued on Wikidata.",
+      "description": "Which orifices are penetrated and by how many partners, where applicable.",
+      "values": [
+        {"id": "none", "display_name": "None", "definition": "No penetration."},
+        {"id": "vaginal", "display_name": "Vaginal", "definition": "Single vaginal penetration."},
+        {"id": "anal", "display_name": "Anal", "definition": "Single anal penetration."},
+        {"id": "oral", "display_name": "Oral", "definition": "Oral penetration."},
+        {"id": "manual_insertion", "display_name": "Manual insertion", "definition": "Hand or finger insertion."},
+        {"id": "double_vaginal", "display_name": "Double vaginal", "definition": "Two simultaneous vaginal penetrations."},
+        {"id": "double_anal", "display_name": "Double anal", "definition": "Two simultaneous anal penetrations."},
+        {"id": "double_penetration", "display_name": "Double penetration (vaginal + anal)", "definition": "Simultaneous vaginal and anal penetration by different partners."},
+        {"id": "multiple", "display_name": "Multiple / other", "definition": "Three or more simultaneous penetrations, or a combination not otherwise listed."}
+      ],
+      "observability": {"from_photograph": "medium", "requires_unclothed": true, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "facing",
+      "display_name": "Facing",
+      "type": "categorical",
+      "scale": "facing_qualitative",
+      "scale_citation": "Relative orientation descriptor used in position taxonomies.",
+      "description": "Orientation of participants relative to each other.",
+      "values": [
+        {"id": "face_to_face", "display_name": "Face to face", "definition": "Partners face each other."},
+        {"id": "front_to_back", "display_name": "Front to back", "definition": "One partner's front to the other's back."},
+        {"id": "head_to_toe", "display_name": "Head to toe", "definition": "Reversed, reciprocal orientation."},
+        {"id": "side_by_side", "display_name": "Side by side", "definition": "Partners aligned laterally."},
+        {"id": "variable", "display_name": "Variable", "definition": "Orientation varies or is not fixed."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "dynamics",
+      "display_name": "Dynamics",
+      "type": "categorical",
+      "scale": "dynamics_qualitative",
+      "scale_citation": "Motion descriptor for distinguishing static hold poses from active positions in moving-image media.",
+      "description": "The characteristic motion of the position, relevant to video vs. still-image depiction.",
+      "values": [
+        {"id": "static_hold", "display_name": "Static hold", "definition": "A held pose with little movement; typical of print stills."},
+        {"id": "thrusting", "display_name": "Thrusting", "definition": "Reciprocating penetrative motion."},
+        {"id": "grinding", "display_name": "Grinding", "definition": "Circular or rocking contact motion."},
+        {"id": "riding", "display_name": "Riding", "definition": "Receiving partner drives vertical motion from above."},
+        {"id": "bobbing", "display_name": "Bobbing", "definition": "Rhythmic oral motion."}
+      ],
+      "observability": {"from_photograph": "low", "requires_unclothed": false, "minimum_visible_extent": "full_body", "notes": "Not assessable from a single still; applies to moving-image sources."}
+    },
+    {
+      "id": "support_surface",
+      "display_name": "Support / surface",
+      "type": "categorical",
+      "scale": "support_surface_qualitative",
+      "scale_citation": "Aligned with the 'furniture and apparatus' distinctions drawn in named-position references.",
+      "description": "The surface or means of support the position relies on.",
+      "values": [
+        {"id": "bed_flat", "display_name": "Flat surface / bed", "definition": "Horizontal surface such as a bed or floor."},
+        {"id": "edge_of_surface", "display_name": "Edge of surface", "definition": "One partner at the edge of a bed or table."},
+        {"id": "against_wall", "display_name": "Against a wall", "definition": "Wall used for bracing, usually standing."},
+        {"id": "standing_unsupported", "display_name": "Standing, unsupported", "definition": "Standing without external bracing."},
+        {"id": "seated_furniture", "display_name": "Seated on furniture", "definition": "Chair, couch, or similar."},
+        {"id": "partner_supported", "display_name": "Partner-supported", "definition": "One partner bears the other's weight (e.g. carried)."},
+        {"id": "suspended", "display_name": "Suspended", "definition": "One partner suspended or largely off any surface."},
+        {"id": "apparatus", "display_name": "Apparatus", "definition": "Purpose-built furniture or apparatus is central to the position."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    }
+  ],
+
+  "aggregation_notes": {
+    "categorical_dimensions_roll_up_as": "frequency distribution",
+    "minimum_sample_size_for_publication": 5,
+    "note": "This vocabulary describes named positions, not observed image samples; roll-ups apply when tagging a corpus against it."
+  },
+
+  "references": [
+    "Wikidata. Sex position (Q8394). https://www.wikidata.org/wiki/Q8394 (structured data CC0).",
+    "Wikipedia contributors. List of sex positions. https://en.wikipedia.org/wiki/List_of_sex_positions (structure referenced; wording original).",
+    "Vatsyayana. Kama Sutra (public domain) — historical named-position source.",
+    "Danbooru tag group: posture and sex_acts — folksonomy structure for position and participant-composition axes."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "atlas_category": "keypoint-schema",
+  "display_name": "Keypoint schema",
+  "version": "1.2.0",
+  "license": "CC-BY-4.0",
+  "description": "Specification for the per-participant pose keypoints shipped with the catalog. Keypoints use the 17-joint COCO Keypoint layout (the de-facto standard for 2D human pose), so the catalog's named positions can be consumed by any pipeline already built around COCO. Coordinates are IDEALISED, SCHEMATIC TEMPLATES — not motion-captured or image-derived. Each catalog participant references a base posture from the base-skeleton library and a placement transform (translate, scale, rotate, flip); the build step composes the final scene-space keypoints from those. This provides the symbolic-to-geometric bridge that named-position vocabularies (Wikidata, Wikipedia) lack and that keypoint datasets (COCO, MPII) provide only as unnamed coordinates.",
+
+  "keypoint_format": {
+    "name": "COCO-17",
+    "citation": "Lin T-Y et al. (2014). Microsoft COCO: Common Objects in Context. ECCV. Keypoint annotation format, CC-BY-4.0 annotations.",
+    "coordinate_space": "Normalised [0,1] x [0,1]; origin top-left; x rightward, y downward.",
+    "visibility_codes": {"0": "not labelled", "1": "labelled, occluded / behind", "2": "labelled, visible"},
+    "joint_order": [
+      "nose", "left_eye", "right_eye", "left_ear", "right_ear",
+      "left_shoulder", "right_shoulder", "left_elbow", "right_elbow",
+      "left_wrist", "right_wrist", "left_hip", "right_hip",
+      "left_knee", "right_knee", "left_ankle", "right_ankle"
+    ],
+    "coco_flat_encoding": "Exported per participant as a flat array of 51 numbers: [x0,y0,v0, x1,y1,v1, ... x16,y16,v16] in joint_order."
+  },
+
+  "placement_spec": {
+    "description": "A participant's scene keypoints = base_skeleton transformed by placement, then any joint_overrides. Applied in order: flip_x, scale, rotate_deg (about the skeleton centroid), translate, joint_overrides. Base skeletons are drawn in PROFILE view (v1.1.0): upright postures face +x and flip_x turns them to face -x; horizontal postures are drawn head-left and flip_x mirrors them head-right — so facing is legible in composed scenes.",
+    "fields": {
+      "base_posture": "id from the base-skeleton library (see keypoint-base-skeletons.json)",
+      "translate": "[dx, dy] in scene-normalised units, added after scaling/rotation",
+      "scale": "[sx, sy] multiplier on the local skeleton (default [1,1])",
+      "rotate_deg": "clockwise rotation in degrees about the skeleton centroid (default 0)",
+      "flip_x": "boolean; mirror left-right (swaps left/right joints). Use for facing direction (default false)",
+      "joint_overrides": "optional { joint_name: [x, y, v] } map of absolute scene-space values applied AFTER the transform — per-pose articulation the rigid transform can't express (wrapped legs, bracing arms)"
+    }
+  },
+
+  "dimensions": [
+    {
+      "id": "base_posture",
+      "display_name": "Base posture",
+      "type": "categorical",
+      "scale": "base_posture_library",
+      "scale_citation": "Canonical schematic skeletons defined in keypoint-base-skeletons.json (v1.0.0).",
+      "description": "The canonical body posture a participant is composed from. Scene arrangement is produced by the placement transform.",
+      "values": [
+        {"id": "standing", "display_name": "Standing", "definition": "Upright, weight on both feet. Profile, facing +x."},
+        {"id": "kneeling", "display_name": "Kneeling (upright)", "definition": "Upright torso, weight on the knees, shins back along the ground. Profile, facing +x."},
+        {"id": "kneeling_sit", "display_name": "Kneeling, sitting on heels", "definition": "Kneeling with the pelvis lowered onto the heels. Profile, facing +x."},
+        {"id": "seated", "display_name": "Seated", "definition": "Sitting on the ground, knees raised. Profile, facing +x."},
+        {"id": "seated_lap", "display_name": "Seated on lap", "definition": "Upright seat on a partner's lap, legs wrapped forward around them. Profile, facing +x."},
+        {"id": "supine", "display_name": "Supine", "definition": "Lying on the back, body horizontal, face up. Profile, head-left."},
+        {"id": "supine_legs_up", "display_name": "Supine, legs raised", "definition": "On the back with hips flexed, knees up and ankles raised. Profile, head-left."},
+        {"id": "prone", "display_name": "Prone", "definition": "Lying face down, body horizontal, forearms under. Profile, head-left."},
+        {"id": "plank_over", "display_name": "Plank over", "definition": "Body inclined over a lying partner: arms extended to the ground, knees down, hips low. Profile, head-left."},
+        {"id": "all_fours", "display_name": "All fours", "definition": "On hands and knees, torso horizontal. Profile, facing +x."},
+        {"id": "side_lying", "display_name": "Side-lying", "definition": "Lying on one side, knees drawn forward in a shallow Z. Profile, head-left."},
+        {"id": "astride", "display_name": "Astride (kneel-straddle)", "definition": "Kneeling straddle over a horizontal partner, torso upright, shins back. Profile, facing +x."},
+        {"id": "inverted", "display_name": "Inverted (shoulder-stand)", "definition": "Shoulders and head on the ground, hips raised vertically, legs folding back. Profile."},
+        {"id": "squat_over", "display_name": "Squat over", "definition": "Standing deep squat above a partner, knees strongly bent. Profile, facing +x."},
+        {"id": "arch_supine", "display_name": "Arched supine", "definition": "On the back with hips lifted and back arched, feet planted (display arch/bridge). Profile, head-left."},
+        {"id": "standing_bent", "display_name": "Standing, bent over", "definition": "Standing with the torso folded forward at the hips, hands toward the floor or a support. Profile, facing +x."},
+        {"id": "standing_carry", "display_name": "Carried (standing)", "definition": "Held off the ground by a standing partner, torso upright, legs wrapped or held forward. Profile, facing +x."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    }
+  ],
+
+  "references": [
+    "Lin T-Y et al. (2014). Microsoft COCO: Common Objects in Context. ECCV.",
+    "COCO Keypoint Detection Task — 17-keypoint person layout."
+  ]
+}
