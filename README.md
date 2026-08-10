@@ -8,7 +8,7 @@ Reproducibility code for the **Erotic Pose Catalog** — a public, machine-reada
 
 - **Dataset (CC BY 4.0):** https://huggingface.co/datasets/EthnicErotic/pose-catalog
 - **Methodology paper:** [`paper/methodology-v1.pdf`](paper/methodology-v1.pdf) · [Markdown source](paper/methodology-v1.md) — documents the **v1** position and keypoint methodology. The v2 layers (action, context, crosswalk, bindings) are specified in the vocabulary files themselves and summarised in the dataset card; they are not yet written up in the paper.
-- **Archived release (DOI):** https://doi.org/10.5281/zenodo.21439174
+- **Archived release (DOI):** https://doi.org/10.5281/zenodo.21439174 (concept DOI, always resolves to the latest version) · v2.0.0: https://doi.org/10.5281/zenodo.21868961
 - **Live source catalog:** https://ethnicerotic.com/poses
 - **How the catalog was built:** https://ethnicerotic.com/poses/methodology
 - **Historical timeline:** https://ethnicerotic.com/poses/history
@@ -179,7 +179,10 @@ Wikidata anchors (`wikidata_qid`, labels, aliases) are CC0.
 
 ## Citation
 
-If you use this code or the resulting dataset, please cite:
+If you use this code or the resulting dataset, please cite the concept DOI below, which always
+resolves to the latest version. To pin a specific version, use the version DOI instead:
+v2.0.0 is [10.5281/zenodo.21868961](https://doi.org/10.5281/zenodo.21868961), v1.0.0 is
+[10.5281/zenodo.21439175](https://doi.org/10.5281/zenodo.21439175).
 
 ```bibtex
 @misc{pose_catalog_pipeline_2026,
@@ -187,7 +190,7 @@ If you use this code or the resulting dataset, please cite:
   author        = {{Ethnic Erotic}},
   year          = {2026},
   publisher     = {Zenodo},
-  version       = {v1.0.0},
+  version       = {v2.0.0},
   doi           = {10.5281/zenodo.21439174},
   url           = {https://doi.org/10.5281/zenodo.21439174},
   note          = {Dataset: \url{https://huggingface.co/datasets/EthnicErotic/pose-catalog}}
