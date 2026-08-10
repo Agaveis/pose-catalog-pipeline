@@ -1,0 +1,2732 @@
+{
+ "atlas_category": "action-beat-join",
+ "display_name": "Position to action-beat compatibility",
+ "layer": "action",
+ "version": "1.0.0",
+ "catalog_version": "2.0.0-draft",
+ "license": "CC-BY-4.0",
+ "description": "Which action beats are physically possible in each named position, the single most characteristic beat, the contact continuity of that beat, and camera moves that suit the geometry. Value ids are from action-dynamics.json. This join is what makes a position and an action addressable as one unit.",
+ "rows": [
+  {
+   "epc_id": "epc:missionary",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "overhead_descend",
+    "pov_handheld"
+   ],
+   "rationale": "Penetrating partner on top with full amplitude available over a flat surface; deep reciprocation is the archetypal beat. No ride_* (receiver is beneath, cannot drive from above); no oral or manual beats with torsos pressed."
+  },
+  {
+   "epc_id": "epc:reverse-cowgirl",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "ride_bounce",
+    "ride_grind",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "pov_handheld",
+    "arc_partial",
+    "push_in",
+    "overhead_descend"
+   ],
+   "rationale": "Receiving partner astride and upright, so vertical travel from above is the defining beat. Bottom partner can only add short-amplitude drive, so thrust_deep is out. Front_to_back facing puts the mouths out of reach, so kiss is excluded."
+  },
+  {
+   "epc_id": "epc:spooning",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "arc_partial",
+    "static_locked",
+    "handheld_drift"
+   ],
+   "rationale": "Side-lying closed geometry: no vertical travel is available, so ride_bounce and ride_grind are impossible, and the top leg caps amplitude so thrust_deep is out. Upper arm is free for manual_stroke; mouth reaches the neck for kiss."
+  },
+  {
+   "epc_id": "epc:prone-bone",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "overhead_descend",
+    "arc_partial",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "Receiver prone with the penetrating partner planked over: full-amplitude rear entry. Mouth reaches the back and neck so kiss holds; torsos are pressed so no hand room for manual_stroke; no on-top drive, so no ride_*."
+  },
+  {
+   "epc_id": "epc:facesitting",
+   "primary_beat": "grind_circular",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "grind_circular",
+    "grind_rocking",
+    "ride_grind",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "pov_handheld",
+    "crane_down"
+   ],
+   "rationale": "Position's own dynamics field is grinding and the upper figure sits over the face, so transverse-plane contact motion is the beat. Lower partner's head is pinned, so oral_bob (axial head travel) is impossible; oral_lateral is. Lifting off would break the act, so ride_bounce is excluded while ride_grind (seated, no vertical travel) fits."
+  },
+  {
+   "epc_id": "epc:fellatio-kneeling",
+   "primary_beat": "oral_bob",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "thrust_shallow",
+    "thrust_hold",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "arc_partial",
+    "crane_down"
+   ],
+   "rationale": "Kneeling giver below a standing partner: axial head motion is the position's stated dynamic. The standing partner can add short-range drive (thrust_shallow), but this is a non-genital-penetrative arrangement so entry is excluded. Free hand supports manual_stroke."
+  },
+  {
+   "epc_id": "epc:solo-display-arch",
+   "primary_beat": "idle_micro",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "caress",
+    "disrobe",
+    "reposition"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "arc_partial",
+    "tilt_reveal",
+    "push_in",
+    "overhead_descend"
+   ],
+   "rationale": "Solo, suggestive tier, penetration none: only solo-capable, non-stimulation beats. display_turn requires weight transfer on the feet or knees and is impossible from a supine arch. No climax_reaction or aftermath because no act is performed."
+  },
+  {
+   "epc_id": "epc:solo-kneeling-display",
+   "primary_beat": "display_turn",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "caress",
+    "disrobe",
+    "display_turn",
+    "reposition"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "orbit_full",
+    "push_in",
+    "arc_partial",
+    "tilt_reveal"
+   ],
+   "rationale": "Kneeling solo can pivot on the knees to present toward the lens, which is exactly display_turn. Suggestive tier with no stimulation, so no manual_stroke, climax_reaction or aftermath."
+  },
+  {
+   "epc_id": "epc:solo-spread-legs",
+   "primary_beat": "idle_micro",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "caress",
+    "disrobe",
+    "manual_stroke",
+    "climax_reaction",
+    "aftermath",
+    "reposition"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "static_locked",
+    "tilt_reveal"
+   ],
+   "rationale": "Explicit-tier solo display with both hands free, so manual_stroke and its resolution beats are reachable without leaving the pose. Supine, so display_turn (weight transfer between feet) is impossible; solo, so no partnered beats."
+  },
+  {
+   "epc_id": "epc:solo-prone-arch",
+   "primary_beat": "idle_micro",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "caress",
+    "disrobe",
+    "display_turn",
+    "reposition"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "crane_down"
+   ],
+   "rationale": "Face-down hips-up rests on the knees, so a presentation turn toward the camera is available. Suggestive tier with no stimulation act, so no manual_stroke or climax_reaction."
+  },
+  {
+   "epc_id": "epc:solo-masturbation-supine",
+   "primary_beat": "manual_stroke",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "caress",
+    "disrobe",
+    "manual_stroke",
+    "grind_circular",
+    "grind_rocking",
+    "climax_reaction",
+    "aftermath",
+    "reposition"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "push_in",
+    "pov_handheld",
+    "static_locked",
+    "overhead_descend"
+   ],
+   "rationale": "Solo with penetration_type manual_insertion and dynamics grinding, so reciprocating hand motion is the characteristic beat and hip grinding against the hand is licensed by the position's own dynamics. Solo, so contact continuity is not applicable and no partnered beat qualifies."
+  },
+  {
+   "epc_id": "epc:legs-on-shoulders",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "arc_partial",
+    "overhead_descend"
+   ],
+   "rationale": "Deep-flexion variant of penetrating-on-top: the geometry exists to maximise amplitude, so thrust_deep is the characteristic beat. Folded hips block transverse circling (no grind_circular); no on-top drive from the receiver, so no ride_*."
+  },
+  {
+   "epc_id": "epc:coital-alignment-technique",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "grind_circular",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "arc_partial",
+    "static_locked"
+   ],
+   "rationale": "The position is defined by high, non-withdrawing contact, which is exactly grind_rocking; thrust_deep would destroy the alignment that names the position, so it is excluded. Contact never separates."
+  },
+  {
+   "epc_id": "epc:viennese-oyster",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "overhead_descend",
+    "push_in",
+    "arc_partial",
+    "static_locked"
+   ],
+   "rationale": "Advanced deep-flexion hold. The receiver's hands hold the ankles and the top partner's arms are load-bearing, so no hand is free for disrobe or manual_stroke. Folded geometry blocks grind_circular."
+  },
+  {
+   "epc_id": "epc:missionary-legs-wrapped",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "grind_circular",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "arc_partial",
+    "overhead_descend",
+    "static_locked"
+   ],
+   "rationale": "The wrapped legs pull the partner in and cap withdrawal, so short-amplitude reciprocation and grinding are what the position supports; thrust_deep is excluded by the leg lock. Faces meet, so kiss holds."
+  },
+  {
+   "epc_id": "epc:leapfrog",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "grind_circular",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "overhead_descend",
+    "static_locked"
+   ],
+   "rationale": "Chest-down, hips-up rear entry from a kneeling partner gives full amplitude. Receiver's head is down and forward, well out of the kneeling partner's reach, so kiss is impossible; the kneeling partner's reach-around keeps manual_stroke available."
+  },
+  {
+   "epc_id": "epc:bent-over-furniture",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "grind_circular",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "orbit_full",
+    "static_locked"
+   ],
+   "rationale": "Standing rear entry braced against a surface: stable base, full amplitude, free hands. The standing partner can fold over the receiver's back to reach the neck, so kiss holds. Neither partner is above the other, so no ride_*."
+  },
+  {
+   "epc_id": "epc:wheelbarrow",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "reposition",
+    "climax_reaction"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "orbit_full",
+    "pull_out"
+   ],
+   "rationale": "Every limb is load-bearing: the receiver's hands are on the floor and the standing partner's hands carry the legs, so caress, disrobe and manual_stroke are all impossible. There is no stable pelvic base for grinding, and aftermath (bodies going slack) cannot occur without leaving the carry."
+  },
+  {
+   "epc_id": "epc:squatting-cowgirl",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "entry",
+    "ride_bounce",
+    "ride_grind",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_circular",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "pov_handheld",
+    "arc_partial",
+    "push_in",
+    "orbit_full"
+   ],
+   "rationale": "Squat over a supine partner is built for vertical travel driven from above. Leaning down to kiss would collapse the squat into a different position, so kiss is excluded; the bottom partner is pinned under the load so only thrust_shallow is available from below."
+  },
+  {
+   "epc_id": "epc:prone-cowgirl",
+   "primary_beat": "ride_grind",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "ride_grind",
+    "grind_rocking",
+    "grind_circular",
+    "thrust_shallow",
+    "thrust_hold",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "overhead_descend",
+    "arc_partial",
+    "static_locked"
+   ],
+   "rationale": "Receiver lies flat along the partner, so there is no clearance for vertical travel: ride_bounce is impossible while ride_grind (no lift) is the defining beat. Torsos pressed full-length, so no hand room for manual_stroke; faces meet for kiss."
+  },
+  {
+   "epc_id": "epc:cowgirl-leaning-forward",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "ride_bounce",
+    "ride_grind",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "overhead_descend",
+    "pov_handheld"
+   ],
+   "rationale": "Astride with hands planted forward: the receiver drives vertical travel, and the forward lean also lets the bottom partner plant the feet and drive with full amplitude, so thrust_deep is genuinely available here unlike in the upright and prone cowgirl variants."
+  },
+  {
+   "epc_id": "epc:face-off",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "ride_bounce",
+    "ride_grind",
+    "grind_circular",
+    "grind_rocking",
+    "thrust_shallow",
+    "thrust_hold",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "orbit_full",
+    "arc_partial",
+    "push_in"
+   ],
+   "rationale": "Seated straddle on furniture: the lap-seated partner drives both vertical and horizontal motion, faces meet for kiss, and the seated partner can add short upward drive. The chair blocks nothing overhead, so a full orbit reads cleanly."
+  },
+  {
+   "epc_id": "epc:t-square",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "overhead_descend",
+    "arc_partial",
+    "push_in"
+   ],
+   "rationale": "Perpendicular side-lying entry: no vertical travel is available to either partner (no ride_*), and the side-lying penetrating partner cannot generate full amplitude, so thrust_deep is out. Heads sit at ninety degrees and far apart, so kiss is impossible; hands are free for manual_stroke."
+  },
+  {
+   "epc_id": "epc:kneeling-rear-embrace",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "grind_circular",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "orbit_full",
+    "push_in"
+   ],
+   "rationale": "Both partners kneel upright and pressed together, which caps amplitude at short range and keeps contact unbroken. The wrapping arms make manual_stroke and caress natural and the mouth reaches the neck and shoulder for kiss."
+  },
+  {
+   "epc_id": "epc:suspended-congress",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "orbit_full",
+    "arc_partial",
+    "crane_up"
+   ],
+   "rationale": "The carrying partner supplies the vertical motion, so this is a thrust and not ride_bounce (which requires the receiving partner to drive). The carrier's hands are load-bearing so disrobe and manual_stroke are out, and aftermath cannot occur without setting the partner down. Free-standing, so a full orbit and a crane are both available."
+  },
+  {
+   "epc_id": "epc:standing-face-to-face",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "grind_circular",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "orbit_full",
+    "arc_partial",
+    "push_in",
+    "tilt_reveal"
+   ],
+   "rationale": "Standing unsupported with one leg raised: balance caps the amplitude so thrust_deep is excluded, while grinding and short reciprocation hold. Faces meet for kiss and hands are free. Nothing occludes a full orbit."
+  },
+  {
+   "epc_id": "epc:ballet-dancer",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "orbit_full",
+    "arc_partial",
+    "pull_out"
+   ],
+   "rationale": "Advanced standing hold with one leg on the shoulder: the standing partner's hands support the raised leg and the receiver is balancing on one foot, so disrobe and manual_stroke are impossible and amplitude is limited to short range."
+  },
+  {
+   "epc_id": "epc:cunnilingus-lying",
+   "primary_beat": "oral_lateral",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "oral_lateral",
+    "oral_bob",
+    "manual_stroke",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "overhead_descend",
+    "static_locked"
+   ],
+   "rationale": "Non-genital-penetrative oral position, so every thrust_*, entry and ride_* beat is out. Sweeping tongue motion is the beat the geometry is built around; the receiver can rock against the mouth without separation, and both sets of hands are free."
+  },
+  {
+   "epc_id": "epc:cunnilingus-legs-up",
+   "primary_beat": "oral_lateral",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "oral_lateral",
+    "oral_bob",
+    "manual_stroke",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "overhead_descend",
+    "push_in",
+    "arc_partial"
+   ],
+   "rationale": "Kneeling giver with the receiver's legs raised: oral beats plus free-hand manual_stroke. No penetrative beat is possible, and neither partner is positioned above the other to drive vertical travel."
+  },
+  {
+   "epc_id": "epc:fellatio-head-back",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "push_in",
+    "arc_partial",
+    "pov_handheld"
+   ],
+   "rationale": "The position's own dynamics field is thrusting: the standing partner drives against a supine head at the edge of the surface. The receiver's head is back and effectively fixed, so oral_bob (axial head travel) is impossible here even though the act is oral. Entry is reserved for genital-penetrative arrangements."
+  },
+  {
+   "epc_id": "epc:fellatio-seated",
+   "primary_beat": "oral_bob",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "thrust_shallow",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "arc_partial"
+   ],
+   "rationale": "Kneeling giver in front of a seated partner, dynamics bobbing: axial head motion is the beat, with contact cycling as the head travels. The seated partner has little leverage, so only thrust_shallow is available from that side."
+  },
+  {
+   "epc_id": "epc:rusty-trombone",
+   "primary_beat": "oral_lateral",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "arc_partial",
+    "static_locked"
+   ],
+   "rationale": "Static-hold oral from behind a standing bent partner. There is no axis for the head to travel along from that approach, so oral_bob is excluded while sweeping lateral motion holds. The reach-around makes manual_stroke intrinsic to the position."
+  },
+  {
+   "epc_id": "epc:handjob-lying",
+   "primary_beat": "manual_stroke",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "Penetration type is none and the act is manual, so every penetrative beat is excluded, and switching to the mouth would make it a different named position, so oral beats are out too. Hand contact persists through the stroke."
+  },
+  {
+   "epc_id": "epc:mutual-masturbation",
+   "primary_beat": "manual_stroke",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "overhead_descend",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "Two supine figures side by side, penetration none: reciprocating hand motion is the whole position. Faces are adjacent so kiss holds. No body is above another and there is no union, so no ride_*, thrust_* or entry."
+  },
+  {
+   "epc_id": "epc:intergluteal",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "grind_rocking",
+    "grind_circular",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "overhead_descend",
+    "arc_partial",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "Primary act is non_penetrative with penetration type none, so entry and every thrust_* beat is impossible by definition even though the position's dynamics field reads thrusting; the rocking-contact grind is the beat that carries that motion without penetration. Mouth reaches the back and neck for kiss."
+  },
+  {
+   "epc_id": "epc:frottage-face-to-face",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "grind_rocking",
+    "grind_circular",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "overhead_descend",
+    "arc_partial"
+   ],
+   "rationale": "Non-penetrative by definition, so no entry, thrust_* or ride_* beat qualifies. Full-length torso contact makes grinding the only sustained beat and leaves no hand room for manual_stroke."
+  },
+  {
+   "epc_id": "epc:double-vaginal",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "ride_grind",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "arc_partial",
+    "static_locked"
+   ],
+   "rationale": "Two simultaneous unions lock the receiver's hips between a supine and a kneeling partner: vertical travel is impossible (no ride_bounce) and amplitude is capped (no thrust_deep). What remains is short reciprocation, holds, and the seated forward-and-back of ride_grind."
+  },
+  {
+   "epc_id": "epc:eiffel-tower",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "orbit_full",
+    "pull_out"
+   ],
+   "rationale": "All-fours receiver with a kneeling partner behind at full amplitude and a standing partner at the head, so the rear thrust and the oral beats coexist in one clip. Nobody is astride, so no ride_*. Free-standing arrangement suits an orbit."
+  },
+  {
+   "epc_id": "epc:triple-penetration",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "ride_grind",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "pull_out",
+    "orbit_full"
+   ],
+   "rationale": "Three simultaneous unions immobilise the receiver's hips: no vertical travel (no ride_bounce) and no full amplitude (no thrust_deep). Every participant is engaged, so disrobe has no free hand. Oral beats hold at the head union."
+  },
+  {
+   "epc_id": "epc:gangbang-center",
+   "primary_beat": "oral_bob",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "thrust_shallow",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "orbit_full",
+    "arc_partial",
+    "crane_down"
+   ],
+   "rationale": "Kneeling centre figure with standing partners around: axial head motion is the position's dynamic and contact cycles with it. Oral only, so no entry or ride_*; the standing partners can add short drive. The ring geometry is what an orbit is for."
+  },
+  {
+   "epc_id": "epc:daisy-chain",
+   "primary_beat": "oral_lateral",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "oral_lateral",
+    "oral_bob",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "overhead_descend",
+    "orbit_full",
+    "pull_out"
+   ],
+   "rationale": "Three side-lying figures in a closed oral ring, static hold. No genital penetration, so no entry or thrust_*; no figure is above another, so no ride_*. The ring only reads as a ring from above or from a travelling camera."
+  },
+  {
+   "epc_id": "epc:splitting-bamboo",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "grind_circular",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "overhead_descend"
+   ],
+   "rationale": "Kneeling penetrating partner holding one of the receiver's legs raised: an open, full-amplitude geometry with a gap between the torsos that leaves hands usable. The kneeling partner stays upright and far from the receiver's face, so kiss is out."
+  },
+  {
+   "epc_id": "epc:full-nelson",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "orbit_full",
+    "pull_out"
+   ],
+   "rationale": "The penetrating partner's arms are threaded under the receiver's knees and the receiver's arms are pinned, so caress, disrobe and manual_stroke have no free hand. Front_to_back facing puts the mouths out of reach. The receiver is held, not driving, so no ride_*."
+  },
+  {
+   "epc_id": "epc:butter-churner",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "reposition",
+    "climax_reaction"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "crane_down",
+    "overhead_descend"
+   ],
+   "rationale": "Inverted receiver with the partner squatting over: the motion axis is vertical and long, which is the churn the position is named for. There is no transverse base, so no grind_*. The receiver cannot hold an inverted position slack, so aftermath is impossible without leaving it; heads are far apart, so no kiss."
+  },
+  {
+   "epc_id": "epc:sixty-eight",
+   "primary_beat": "oral_lateral",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "oral_lateral",
+    "oral_bob",
+    "manual_stroke",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "overhead_descend",
+    "push_in",
+    "arc_partial"
+   ],
+   "rationale": "Head-to-toe one-way oral, static hold. Oral and manual beats only: no genital union, so no entry, thrust_* or ride_*. Both figures are horizontal and interleaved, which is why the overhead read is the clearest."
+  },
+  {
+   "epc_id": "epc:footjob",
+   "primary_beat": "manual_stroke",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "Penetration none and no mouth contact, so only the reciprocating-limb beat applies; manual_stroke is the vocabulary's only reciprocating stimulation beat, though the limb here is the foot rather than the hand. Seated at leg's length, the faces are too far apart for kiss."
+  },
+  {
+   "epc_id": "epc:jockey",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "grind_circular",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "overhead_descend",
+    "push_in"
+   ],
+   "rationale": "Penetrating partner sits astride the prone receiver's closed thighs, which caps withdrawal, so thrust_deep is out. ride_bounce and ride_grind are defined as the receiving partner driving from above and the figure on top here is the penetrating one, so both are excluded. Receiver's head is down and forward, so no kiss."
+  },
+  {
+   "epc_id": "epc:sidesaddle",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "entry",
+    "ride_bounce",
+    "ride_grind",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "orbit_full",
+    "push_in"
+   ],
+   "rationale": "Receiving partner astride sideways drives the motion from above, so both ride beats apply. The sideways seat gives the pinned bottom partner little leverage, so thrust_deep is out, and the turned torso puts the faces out of reach for kiss."
+  },
+  {
+   "epc_id": "epc:reverse-gangbang",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "ride_bounce",
+    "ride_grind",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "orbit_full",
+    "arc_partial",
+    "pull_out"
+   ],
+   "rationale": "One supine partner with multiple receiving partners astride and alongside: the astride figure drives vertical travel while a second works at the head, so ride and oral beats coexist. Widest beat set in the slice because several independent contact points are live at once."
+  },
+  {
+   "epc_id": "epc:double-blowjob",
+   "primary_beat": "oral_bob",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "thrust_shallow",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "arc_partial"
+   ],
+   "rationale": "Two kneeling givers below a standing partner, dynamics bobbing. Oral only, so no entry or thrust_deep; kiss covers both mouth-to-body and giver-to-giver contact, and four free hands make manual_stroke available throughout."
+  },
+  {
+   "epc_id": "epc:doggy-over-69",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "overhead_descend",
+    "push_in"
+   ],
+   "rationale": "Stacked three-figure arrangement: a supine figure underneath working orally, an all-fours figure over her, and a kneeling partner behind at full amplitude. The middle figure is on all fours rather than astride, so nobody is seated above a partner and no ride beat applies."
+  },
+  {
+   "epc_id": "epc:dp-reverse",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "ride_grind",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "crane_down"
+   ],
+   "rationale": "Two unions with the receiver astride and leaning back between a supine and a kneeling partner. The double union blocks vertical travel (no ride_bounce) and caps amplitude (no thrust_deep); the leaning-back posture brings the receiver's face to the kneeling partner, so kiss holds."
+  },
+  {
+   "epc_id": "epc:cowgirl",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "ride_bounce",
+    "ride_grind",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "arc_partial",
+    "crane_up"
+   ],
+   "rationale": "Rider on top drives vertical travel, so ride_bounce is the defining beat and body contact breaks and reforms each cycle. thrust_deep excluded: the supine partner has no amplitude from below, only short upward thrusts."
+  },
+  {
+   "epc_id": "epc:doggy-style",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "pov_handheld",
+    "arc_partial",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "Kneeling penetrator behind a self-supporting all-fours receiver gives full stroke leverage. Kiss is mouth-to-body on the back/shoulder when the torso leans in. No ride_* beats: nobody is above."
+  },
+  {
+   "epc_id": "epc:sixty-nine",
+   "primary_beat": "oral_bob",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "overhead_descend",
+    "arc_partial",
+    "static_locked",
+    "push_in"
+   ],
+   "rationale": "Reciprocal oral in a stacked head-to-toe alignment: head travel along the axis is the sustained beat, and mouth contact cycles. Upper partner can rock the pelvis onto the lower's mouth, so grind_rocking holds; no thrust_* since neither pelvis has stroke leverage."
+  },
+  {
+   "epc_id": "epc:lotus",
+   "primary_beat": "grind_circular",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "grind_circular",
+    "grind_rocking",
+    "ride_grind",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "orbit_full",
+    "arc_partial",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "Cross-legged seated embrace has no stroke length, so all thrust_* and ride_bounce are out; the position is grind-only and contact never breaks. Face-to-face upright closeness supports kiss."
+  },
+  {
+   "epc_id": "epc:piledriver",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "reposition",
+    "climax_reaction"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "overhead_descend",
+    "pov_handheld",
+    "crane_down",
+    "arc_partial"
+   ],
+   "rationale": "Downward entry from a squat over an inverted receiver is a pure vertical stroke. No grinds (no transverse plane against an inverted pelvis), no kiss (heads at opposite ends of the stack), no aftermath (a shoulder-stand cannot go slack without collapsing the position)."
+  },
+  {
+   "epc_id": "epc:spit-roast",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "static_locked",
+    "push_in",
+    "pull_out"
+   ],
+   "rationale": "Front-and-back three-person arrangement carries both the rear penetrative beats and the oral beats simultaneously. Rear contact cycles with the stroke, which is the harder geometry for a model to hold."
+  },
+  {
+   "epc_id": "epc:solo-standing-display",
+   "primary_beat": "display_turn",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "disrobe",
+    "caress",
+    "display_turn",
+    "walk_toward",
+    "reposition"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "tilt_reveal",
+    "orbit_full",
+    "pull_out",
+    "push_in"
+   ],
+   "rationale": "Solo, so only solo-capable beats. Standing and unsupported is the one position in this slice that supports walk_toward as well as display_turn; caress is self-directed."
+  },
+  {
+   "epc_id": "epc:solo-all-fours-lookback",
+   "primary_beat": "display_turn",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "disrobe",
+    "caress",
+    "display_turn",
+    "reposition"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "crane_down",
+    "static_locked"
+   ],
+   "rationale": "The rotation toward the lens is literally what names the pose, so display_turn is primary. No walk_toward from all fours; no partner beats."
+  },
+  {
+   "epc_id": "epc:solo-legs-up",
+   "primary_beat": "idle_micro",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "disrobe",
+    "caress",
+    "reposition"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "tilt_reveal",
+    "overhead_descend",
+    "arc_partial",
+    "push_in"
+   ],
+   "rationale": "A static supine leg-line hold: breathing and settling are the only motion. display_turn is impossible supine (it requires rotating on the feet), and walk_toward is impossible."
+  },
+  {
+   "epc_id": "epc:solo-squat-display",
+   "primary_beat": "pose_settle",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "disrobe",
+    "caress",
+    "display_turn",
+    "reposition"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "crane_down",
+    "push_in",
+    "arc_partial",
+    "orbit_full"
+   ],
+   "rationale": "An unsupported deep squat is balance-critical, so the visible motion is continual weight adjustment into the hold. display_turn survives because the pivot happens on the feet; walk_toward does not."
+  },
+  {
+   "epc_id": "epc:solo-masturbation-seated",
+   "primary_beat": "manual_stroke",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "disrobe",
+    "caress",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "static_locked",
+    "rack_focus"
+   ],
+   "rationale": "Reciprocating hand motion is the whole position. Solo, so continuity is not_applicable even though the beat is explicit; no display_turn from a reclined seat."
+  },
+  {
+   "epc_id": "epc:mating-press",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "overhead_descend",
+    "arc_partial",
+    "push_in",
+    "crane_down"
+   ],
+   "rationale": "Weight over a folded receiver gives the top full stroke authority. Faces stay close through the fold, so kiss holds; no ride_* because the receiving partner is pinned underneath."
+  },
+  {
+   "epc_id": "epc:butterfly",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "static_locked",
+    "push_in",
+    "crane_down"
+   ],
+   "rationale": "The height offset at the edge of the surface gives the standing partner full range, so deep stroking is the characteristic beat. The receiver is staged independently at the edge, which keeps approach physically available as a lead-in."
+  },
+  {
+   "epc_id": "epc:anvil",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "crane_down",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "Hips lifted onto the kneeling partner's thighs with legs hooked over the shoulders: an upright kneeling column with full downward stroke. Kiss excluded, the receiver's head stays grounded at the far end of the ramp."
+  },
+  {
+   "epc_id": "epc:standing-doggy",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "static_locked",
+    "pov_handheld",
+    "tilt_reveal"
+   ],
+   "rationale": "Both partners on their own feet, the receiver hinged forward: standing rear entry keeps full stroke length. Approach is genuinely available since the bent-over stance is self-supporting."
+  },
+  {
+   "epc_id": "epc:bulldog",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "reposition",
+    "climax_reaction"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "crane_down",
+    "static_locked",
+    "overhead_descend"
+   ],
+   "rationale": "A deep squat with feet planted outside the receiver's legs exists to deliver steep downward strokes; grinds are excluded because the squat gives no transverse plane, and aftermath is excluded because going slack drops the squat."
+  },
+  {
+   "epc_id": "epc:turtle",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "static_locked",
+    "arc_partial",
+    "push_in",
+    "crane_down"
+   ],
+   "rationale": "The most compressed of the kneeling rear-entry folds: seat to heels leaves short working amplitude, so shallow stroking with unbroken contact is characteristic. Kiss excluded, the receiver's head is tucked down at their own thighs."
+  },
+  {
+   "epc_id": "epc:pearly-gates",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "overhead_descend",
+    "crane_up",
+    "static_locked",
+    "push_in"
+   ],
+   "rationale": "The supine bottom partner drives while carrying the whole weight of the figure stacked on their chest, so amplitude is short and the two bodies never separate. thrust_deep is out for exactly that reason; kiss survives as neck/shoulder contact from beneath."
+  },
+  {
+   "epc_id": "epc:reverse-squat",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "ride_bounce",
+    "ride_grind",
+    "reposition",
+    "climax_reaction"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "pov_handheld",
+    "crane_up",
+    "arc_partial",
+    "push_in"
+   ],
+   "rationale": "A squat ride on the soles: the legs drive vertical travel, so contact cycles. Facing away rules out kiss, and the sustained squat rules out aftermath (slackening ends the position)."
+  },
+  {
+   "epc_id": "epc:leaning-back-cowgirl",
+   "primary_beat": "ride_grind",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "ride_bounce",
+    "ride_grind",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "pov_handheld",
+    "arc_partial",
+    "crane_up",
+    "push_in"
+   ],
+   "rationale": "The arm brace behind converts the ride into a horizontal grind with contact held throughout. Bounce is still mechanically available through the legs, but the recline puts the faces out of range, so kiss is excluded."
+  },
+  {
+   "epc_id": "epc:seated-rear-entry",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "ride_bounce",
+    "ride_grind",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "push_in",
+    "arc_partial",
+    "static_locked",
+    "tilt_reveal"
+   ],
+   "rationale": "Feet planted on the floor let the lap rider drive real vertical travel. The seated partner can only add short upward thrusts, so thrust_deep is out; kiss survives as neck contact from behind."
+  },
+  {
+   "epc_id": "epc:lateral-coital",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "overhead_descend",
+    "arc_partial",
+    "static_locked",
+    "push_in"
+   ],
+   "rationale": "Side-lying with interleaved legs is a low-effort mutual position: neither partner has hip leverage for full-amplitude stroking, so thrust_deep and both ride_* beats are impossible and the motion stays a shared rocking grind."
+  },
+  {
+   "epc_id": "epc:kneeling-embrace",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "orbit_full",
+    "arc_partial",
+    "push_in",
+    "crane_up"
+   ],
+   "rationale": "Mirrored upright kneel with chest-to-chest pressure: neither partner has leverage to drive the hips, so every thrust_* beat is out and the register is rocking and pelvic tilt. Eye-level closeness makes kiss and caress core rather than incidental."
+  },
+  {
+   "epc_id": "epc:scissoring",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "grind_circular",
+    "grind_rocking",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "overhead_descend",
+    "arc_partial",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "Non-penetrative by definition, so entry and every thrust_* and ride_* beat is impossible. Heads sit at opposite ends of the interlock, which rules out kiss; free hands keep manual_stroke available."
+  },
+  {
+   "epc_id": "epc:ekiben",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "reposition",
+    "climax_reaction"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "pull_out",
+    "crane_down",
+    "static_locked"
+   ],
+   "rationale": "A full carry: the carrier's arms are the receiver's only support, so caress is impossible, and approach is impossible because the arrangement cannot exist before the lift. Going slack would drop the receiver, so aftermath is out; grinds have no plane in an airborne hold."
+  },
+  {
+   "epc_id": "epc:standing-rear-press",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "static_locked",
+    "tilt_reveal"
+   ],
+   "rationale": "Both bodies nearly upright and pressed to the wall plane keeps amplitude short and contact unbroken; a hip hinge opens deeper stroking as a variant. Neck and shoulder are in mouth range from behind, so kiss holds."
+  },
+  {
+   "epc_id": "epc:standing-69",
+   "primary_beat": "oral_lateral",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "kiss",
+    "entry",
+    "oral_bob",
+    "oral_lateral",
+    "climax_reaction",
+    "reposition"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "orbit_full",
+    "pull_out",
+    "arc_partial",
+    "crane_down"
+   ],
+   "rationale": "An inverted strength hold with static dynamics: the standing partner's grip carries the entire load, so caress, approach and aftermath are all impossible and nothing thrusts. Only mouth-level motion remains, and the mutual contact is held rather than cycled."
+  },
+  {
+   "epc_id": "epc:cunnilingus-standing",
+   "primary_beat": "oral_lateral",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "crane_down",
+    "static_locked"
+   ],
+   "rationale": "Oral on the vulva is sweeping tongue work, not axial travel, so oral_bob and entry are both excluded here. The kneeling giver has free hands, keeping caress and manual_stroke available."
+  },
+  {
+   "epc_id": "epc:sideways-69",
+   "primary_beat": "oral_bob",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "overhead_descend",
+    "arc_partial",
+    "static_locked",
+    "push_in"
+   ],
+   "rationale": "Both bodies rest fully on the surface, so this is the sustainable member of the mutual-oral family and both oral beats run indefinitely. No thrust_* or ride_*: side-lying leaves neither pelvis any drive."
+  },
+  {
+   "epc_id": "epc:fellatio-lying-recipient-seated",
+   "primary_beat": "oral_bob",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "overhead_descend",
+    "rack_focus"
+   ],
+   "rationale": "Head travel along the axis is the named dynamic of the position and mouth contact cycles with it. The reclined recipient is passive, so no thrust_* from that side; the giver's hands stay free for manual_stroke."
+  },
+  {
+   "epc_id": "epc:facesitting-reverse",
+   "primary_beat": "ride_grind",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "oral_lateral",
+    "ride_grind",
+    "grind_circular",
+    "grind_rocking",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "crane_down",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "The partner above drives horizontal motion without lifting, which is exactly ride_grind, and contact with the face below is what defines the position so it never breaks. Non-insertive, so entry is out; the reverse orientation puts the faces out of reach, so kiss is out."
+  },
+  {
+   "epc_id": "epc:anilingus-kneeling",
+   "primary_beat": "oral_lateral",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "rack_focus",
+    "static_locked"
+   ],
+   "rationale": "Sweeping tongue contact against a fixed working height set by the raised hips; no axial travel, so oral_bob and entry are excluded. The giver's hands brace or spread, which still permits caress."
+  },
+  {
+   "epc_id": "epc:fingering-lying",
+   "primary_beat": "manual_stroke",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "manual_stroke",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "rack_focus",
+    "pov_handheld",
+    "static_locked"
+   ],
+   "rationale": "Manual insertion means entry and manual_stroke both apply, while every thrust_* and ride_* beat is impossible because no body-driven penetrative motion exists here. The kneeling partner works alongside the hips with the mouth in reach of the torso, so kiss holds."
+  },
+  {
+   "epc_id": "epc:titjob",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "grind_circular",
+    "grind_rocking",
+    "oral_bob",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "pov_handheld",
+    "push_in",
+    "crane_down",
+    "rack_focus"
+   ],
+   "rationale": "Non-penetrative, so entry and all four thrust_* beats are ruled out by definition even though the position's dynamics field reads as thrusting; the mechanically correct beat is a short forward-and-back pelvic arc with contact held. Astride the chest keeps the supine partner's mouth in range, so oral_bob and kiss both survive."
+  },
+  {
+   "epc_id": "epc:intercrural-standing",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "grind_circular",
+    "grind_rocking",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "static_locked",
+    "tilt_reveal"
+   ],
+   "rationale": "No penetration occurs, so entry and every thrust_* beat are impossible; the closed thigh channel means the reciprocating motion is a rocking grind that never separates. Both torsos upright and nested keeps neck-level kiss in range."
+  },
+  {
+   "epc_id": "epc:double-penetration",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "ride_grind",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "crane_down",
+    "rack_focus"
+   ],
+   "rationale": "Two simultaneous insertions constrain amplitude and force the three bodies to stay coupled, so shallow motion with maintained contact is the realistic sustained beat. ride_bounce is excluded because vertical travel would disengage one of the two contacts; the forward lean puts the rider's face at the supine partner's, so kiss holds."
+  },
+  {
+   "epc_id": "epc:double-anal",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_rocking",
+    "ride_grind",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "crane_down",
+    "push_in",
+    "rack_focus",
+    "arc_partial"
+   ],
+   "rationale": "Both penetrating partners share a single entry, so precise pacing is the whole discipline: thrust_deep, grind_circular and ride_bounce are all excluded as they would break the shared contact. Everything concentrates on one point, which keeps continuity maintained."
+  },
+  {
+   "epc_id": "epc:standing-sandwich",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "climax_reaction",
+    "reposition"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "orbit_full",
+    "pull_out",
+    "crane_down"
+   ],
+   "rationale": "Two load-bearing columns holding one airborne body: all hands are committed so caress is out, approach is out because the arrangement cannot precede the lift, and aftermath is out because slackening drops the middle figure. The front partner is face-to-face with the carried receiver, so kiss remains."
+  },
+  {
+   "epc_id": "epc:ffm-ride-and-sit",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "ride_bounce",
+    "ride_grind",
+    "grind_circular",
+    "grind_rocking",
+    "oral_lateral",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "crane_up",
+    "push_in",
+    "orbit_full"
+   ],
+   "rationale": "Double mount on a supine partner: the hip rider drives vertical travel while the face rider grinds, so both ride_* beats and oral_lateral coexist. The two upright riders usually face each other at kissing distance. thrust_deep is impossible from underneath two bodies."
+  },
+  {
+   "epc_id": "epc:train",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "pull_out",
+    "static_locked",
+    "push_in"
+   ],
+   "rationale": "Repeated rear-entry links along one axis, every kneeling partner with full leverage, so deep stroking with cycling contact is the defining beat. Same-direction facing puts each mouth at the back in front of it, keeping kiss available as mouth-to-body."
+  },
+  {
+   "epc_id": "epc:amazon",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "ride_bounce",
+    "ride_grind",
+    "reposition",
+    "climax_reaction"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "crane_up",
+    "push_in",
+    "pov_handheld"
+   ],
+   "rationale": "The bottom partner is folded with knees to the chest and has zero hip leverage, so thrust_shallow and thrust_deep are both impossible here even though they are available in other on-top positions: the top controls everything. The squat cannot go slack, so aftermath is out, and the fold puts the faces out of comfortable reach."
+  },
+  {
+   "epc_id": "epc:yawning",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "crane_down",
+    "arc_partial",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "Upright kneeling between raised, widely spread legs gives full stroke authority. The kneeling torso stays back from the receiver's head, so kiss is out of range without abandoning the V."
+  },
+  {
+   "epc_id": "epc:pretzel",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "crane_down",
+    "push_in",
+    "overhead_descend"
+   ],
+   "rationale": "Unlike the other side_lying entries here, the penetrating partner kneels astride the lower thigh rather than lying down, which restores full stroke leverage. The torso twist keeps face-to-face contact, so kiss is available."
+  },
+  {
+   "epc_id": "epc:spider",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "arc_partial",
+    "overhead_descend",
+    "static_locked",
+    "pull_out"
+   ],
+   "rationale": "Both partners recline on their hands with legs interleaved: rocking drives the motion and neither can thrust, so all thrust_* and ride_* beats are excluded. Faces sit far apart across the X, which rules out kiss."
+  },
+  {
+   "epc_id": "epc:facefuck-kneeling",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "push_in",
+    "pov_handheld",
+    "crane_down"
+   ],
+   "rationale": "The active/passive inversion is the point: the standing partner leads with the hips, so this takes thrust_* rather than only oral_bob, and mouth contact cycles with the stroke. The kneeling partner can still supply oral_bob when the roles swap within the position."
+  },
+  {
+   "epc_id": "epc:lap-dance",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "grind_circular",
+    "grind_rocking",
+    "ride_grind",
+    "reposition"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "orbit_full",
+    "arc_partial",
+    "push_in",
+    "pull_out"
+   ],
+   "rationale": "Non-penetrative and usually clothed, so entry and all thrust_* beats are impossible and disrobe is genuinely in scope here. Suggestive tease framing with no act to resolve, so climax_reaction and aftermath are excluded; approach fits the arrival that opens the routine."
+  },
+  {
+   "epc_id": "epc:bridge",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "static_locked",
+    "crane_down",
+    "push_in"
+   ],
+   "rationale": "The kneeling partner works at a raised pelvis held by the receiver's own arch, so stroking is full-amplitude. The receiver's head is dropped back far from the partner (no kiss) and releasing the arch ends the position (no aftermath)."
+  },
+  {
+   "epc_id": "epc:solo-toy-ride",
+   "primary_beat": "ride_bounce",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "disrobe",
+    "caress",
+    "entry",
+    "ride_bounce",
+    "ride_grind",
+    "grind_circular",
+    "grind_rocking",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "not_applicable",
+   "suggested_camera": [
+    "crane_up",
+    "arc_partial",
+    "push_in",
+    "pull_out"
+   ],
+   "rationale": "Solo, so continuity is not_applicable, but the mechanics of riding a fixed toy are identical to the partner ride and the position exists to map that vocabulary onto solo work. display_turn and walk_toward are impossible while mounted."
+  },
+  {
+   "epc_id": "epc:bukkake-circle",
+   "primary_beat": "manual_stroke",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "orbit_full",
+    "crane_down",
+    "push_in",
+    "arc_partial"
+   ],
+   "rationale": "The format is built around the finish rather than penetration, so entry and every thrust_* and ride_* beat is out. The kneeling centre's mouth and hands move between ring members, so contact breaks and re-forms repeatedly, which is the main geometry risk in this arrangement."
+  },
+  {
+   "epc_id": "epc:side-by-side-doggy",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "pull_out",
+    "push_in",
+    "static_locked"
+   ],
+   "rationale": "A standard kneeling rear entry duplicated along a line, so the penetrative beats match doggy style. The two receivers are shoulder to shoulder, which makes kiss available between them independently of the third figure."
+  },
+  {
+   "epc_id": "epc:spoon-dp",
+   "primary_beat": "thrust_shallow",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "overhead_descend",
+    "arc_partial",
+    "static_locked",
+    "push_in"
+   ],
+   "rationale": "All three bodies are side-lying, so nobody has kneeling or standing leverage: thrust_deep and both ride_* beats are impossible and the rhythm stays slow with the sandwich held together. The front partner faces the receiver, keeping kiss in range."
+  },
+  {
+   "epc_id": "epc:spitroast-lying",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "kiss",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "overhead_descend",
+    "arc_partial",
+    "static_locked",
+    "push_in"
+   ],
+   "rationale": "Unlike spoon DP, both partners here kneel rather than lie, so the rear partner keeps full stroke leverage against a side-lying receiver and contact cycles. Oral at the head end runs concurrently, so the oral beats stay compatible."
+  }
+ ]
+}

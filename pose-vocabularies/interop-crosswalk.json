@@ -1,0 +1,162 @@
+{
+  "atlas_category": "interop-crosswalk",
+  "display_name": "Interoperability crosswalk",
+  "layer": "binding",
+  "version": "1.0.0",
+  "catalog_version": "2.0.0-draft",
+  "license": "CC-BY-4.0",
+  "description": "The join table. Maps each catalogue position or action identifier to the identifiers used by the other vocabularies in circulation: structured knowledge bases, the image-board folksonomies that open adult models were trained on, and the private preset menus of individual products. This file defines the namespace registry and the record schema; the populated crosswalk rows ship as a separate generated artifact. The crosswalk is the interoperability contribution of this catalogue. The structural taxonomy is useful on its own, but the mapping is what lets a caller move between systems without re-tagging.",
+
+  "problem_statement": {
+    "observed": "There is no shared identifier for a named sexual position. Structured knowledge bases cover only the most common positions and carry no keypoints. The image-board folksonomies that open adult checkpoints were trained on organise by act and by body part, not by named position, so a single high-frequency tag collapses many structurally distinct positions into one bucket. Individual products each ship a private dropdown of position labels with no exported identifiers at all.",
+    "measured_example": "On the largest public image-board folksonomy, the tag covering rear-entry positions carried 104,876 posts as a single undifferentiated bucket, against 387,078 for the generic act tag (retrieved 2026-08-09). Doggy style, prone bone, standing doggy, spooning, seated rear entry, bulldog, turtle and jockey are all structurally distinct and all land in that one bucket. The vocabulary the models were trained on cannot express the distinction.",
+    "consequence": "A prompt, a control map, a dataset label, and a product menu item that all refer to the same position cannot be joined. Every consumer re-derives the mapping by hand, inconsistently.",
+    "internal_case": "The same problem occurs inside a single portfolio. Three separate registries in this organisation describe overlapping vocabulary in mutually incompatible shapes: this catalogue (structured axes plus keypoints, 104 positions), a product pose/setting/wardrobe/mood library (flat prompt fragments, per-item tier), and a product motion library (flat prompt fragments for image-to-video). None share identifiers, so nothing composes across them."
+  },
+
+  "namespace_registry": [
+    {
+      "prefix": "epc",
+      "display_name": "This catalogue",
+      "authority": "Erotic Pose Catalog",
+      "id_form": "slug",
+      "example": "epc:prone-bone",
+      "stability": "stable",
+      "notes": "Slugs are permanent once published. A position that is later merged keeps its slug as a redirect rather than being deleted."
+    },
+    {
+      "prefix": "wd",
+      "display_name": "Wikidata",
+      "authority": "Wikimedia Foundation",
+      "id_form": "Q-identifier",
+      "example": "wd:Q219561",
+      "licence": "CC0",
+      "coverage": "Partial. 31 of 104 catalogue positions currently carry a Q-identifier; the remainder have no structured-knowledge-base entry.",
+      "stability": "stable"
+    },
+    {
+      "prefix": "danbooru",
+      "display_name": "Danbooru tag",
+      "authority": "Community folksonomy",
+      "id_form": "underscored tag string",
+      "example": "danbooru:sex_from_behind",
+      "cardinality": "many-to-one",
+      "coverage": "Act-level and body-part-level only; no named-position layer exists. Most catalogue positions map to a tag that also covers several other positions.",
+      "stability": "unstable",
+      "notes": "Load-bearing for prompting: booru-trained checkpoints respond to these strings directly. Record the mapping even where it is lossy, and record the loss."
+    },
+    {
+      "prefix": "e621",
+      "display_name": "e621 tag",
+      "authority": "Community folksonomy",
+      "id_form": "underscored tag string",
+      "cardinality": "many-to-one",
+      "stability": "unstable"
+    },
+    {
+      "prefix": "ks",
+      "display_name": "Historical work reference",
+      "authority": "Attested historical and art-historical sources",
+      "id_form": "source key plus named position",
+      "example": "ks:kamasutra/samputa",
+      "coverage": "Already populated via the existing historical_sources registry.",
+      "stability": "stable",
+      "notes": "Attested mappings only. A historical name is recorded only where a source actually attests it; nothing is inferred by resemblance."
+    },
+    {
+      "prefix": "vendor",
+      "display_name": "Product preset menu label",
+      "authority": "Individual products",
+      "id_form": "product key plus menu label",
+      "example": "vendor:<product>/cowgirl",
+      "cardinality": "many-to-many",
+      "stability": "volatile",
+      "notes": "Records only the observable public menu label and the position it denotes. No product's prompt text, internal identifiers, or proprietary material is reproduced. Entries are observational and carry a retrieval date, because these menus change without notice."
+    }
+  ],
+
+  "record_schema": {
+    "description": "One crosswalk record per (catalogue identifier, foreign namespace) pair.",
+    "fields": {
+      "epc_id": {"type": "string", "required": true, "description": "The catalogue identifier being mapped, e.g. epc:prone-bone or epc-action:thrust_deep."},
+      "namespace": {"type": "string", "required": true, "description": "Prefix from the namespace registry."},
+      "foreign_id": {"type": "string", "required": true, "description": "The identifier in the foreign namespace."},
+      "relation": {
+        "type": "enum",
+        "required": true,
+        "description": "Precision of the mapping, following the skos matching vocabulary so the crosswalk is machine-consumable.",
+        "values": {
+          "exact": "The two identifiers denote the same position or action.",
+          "broader": "The foreign identifier denotes a superset. This is the common case against folksonomy act tags.",
+          "narrower": "The foreign identifier denotes a subset.",
+          "related": "Associated but neither equivalent nor hierarchical.",
+          "close": "Near-equivalent, with a difference worth recording in `loss`."
+        }
+      },
+      "loss": {"type": "string", "required": false, "description": "Free text stating what the mapping discards. Mandatory when relation is `broader` or `close`: an unqualified broad mapping is worse than none."},
+      "sibling_count": {"type": "integer", "required": false, "description": "For a `broader` relation, how many other catalogue positions map to the same foreign identifier. Quantifies the collapse."},
+      "retrieved": {"type": "date", "required": true, "description": "When the mapping was verified against the foreign namespace."},
+      "verified_by": {"type": "enum", "values": ["manual", "automated", "source_attested"], "required": true}
+    }
+  },
+
+  "worked_examples": [
+    {
+      "epc_id": "epc:prone-bone",
+      "namespace": "danbooru",
+      "foreign_id": "sex_from_behind",
+      "relation": "broader",
+      "loss": "Discards the receiving partner's prone posture and the absence of hip elevation, which is the entire distinction from doggy style.",
+      "sibling_count": 7,
+      "retrieved": "2026-08-09",
+      "verified_by": "manual"
+    },
+    {
+      "epc_id": "epc:missionary",
+      "namespace": "wd",
+      "foreign_id": "Q219561",
+      "relation": "exact",
+      "retrieved": "2026-08-09",
+      "verified_by": "automated"
+    },
+    {
+      "epc_id": "epc:missionary",
+      "namespace": "ks",
+      "foreign_id": "kamasutra/samputa",
+      "relation": "close",
+      "loss": "The historical source describes a clasping variant; the catalogue entry is the general form.",
+      "retrieved": "2026-07-16",
+      "verified_by": "source_attested"
+    },
+    {
+      "epc_id": "epc-action:walk_toward",
+      "namespace": "vendor",
+      "foreign_id": "<product>/walk-toward-camera",
+      "relation": "exact",
+      "retrieved": "2026-08-09",
+      "verified_by": "manual"
+    },
+    {
+      "epc_id": "epc-action:display_turn",
+      "namespace": "vendor",
+      "foreign_id": "<product>/look-back-smile",
+      "relation": "narrower",
+      "loss": "The product label bundles three orthogonal values into one preset: the action beat, an over-shoulder gaze target, and a smiling affect. It cannot be recombined: there is no way to select the same beat with a different expression.",
+      "retrieved": "2026-08-09",
+      "verified_by": "manual"
+    }
+  ],
+
+  "adoption_notes": {
+    "position": "A vocabulary becomes a standard by being the join table, not by declaring itself one. The crosswalk is therefore the primary artifact and the taxonomy is its substrate. Publishing accurate mappings to systems that already have users is what creates the reason to reference this catalogue.",
+    "honesty_requirement": "Lossy mappings are recorded as lossy. A crosswalk that overstates precision is worse than no crosswalk, because it silently corrupts anything built on it.",
+    "no_scraping": "Product mappings record public menu labels only, observed manually, with a retrieval date. No product's prompts, assets, or internal identifiers are copied."
+  },
+
+  "references": [
+    "Wikidata. Sex position (Q8394) and instances thereof (structured data CC0).",
+    "Danbooru tag_group:sex_acts and tag_group:posture, folksonomy structure consulted 2026-08-09; tag post counts retrieved from the public tag API on the same date.",
+    "SKOS mapping relations (exactMatch, broadMatch, narrowMatch, closeMatch, relatedMatch), the `relation` value set follows this model.",
+    "Internal: pose-vocabularies/historical-sources.json, the attested-only mapping discipline reused here."
+  ]
+}

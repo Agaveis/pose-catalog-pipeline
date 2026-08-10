@@ -1,0 +1,126 @@
+{
+  "atlas_category": "render-bindings",
+  "display_name": "Render bindings",
+  "layer": "binding",
+  "version": "1.0.0",
+  "catalog_version": "2.0.0-draft",
+  "license": "CC-BY-4.0",
+  "description": "How a catalogue entry becomes an actual generation. Defines the model-family binding schema (what prompt language each family of generative models expects), the control-map contract (which conditioning assets accompany a position), and the multi-figure conditioning contract. A taxonomy that cannot be executed is a reference work; the bindings are what make it a control vocabulary.",
+
+  "design_notes": {
+    "why_per_family": "Model families do not share a prompt language. Booru-trained checkpoints respond to comma-separated underscored tag strings. Natural-language checkpoints respond to descriptive sentences and degrade on tag soup. Image-to-video models respond to clinical mechanical descriptions of motion and degrade on literary or euphemistic phrasing. One prompt string cannot serve all three, so the binding is recorded per family rather than as a single canonical string.",
+    "bindings_are_advisory": "A binding is a starting point that is known to work, not a guarantee. Model weights change; bindings carry the family and a verification date."
+  },
+
+  "model_families": [
+    {
+      "id": "booru_tag_sdxl",
+      "display_name": "Booru-tag SDXL derivatives",
+      "prompt_language": "comma_separated_underscored_tags",
+      "characteristics": "Trained on image-board folksonomy captions. Expects tag strings, often with quality-score prefix tags. Handles adult content as a first-class case. Weak on named positions because the training vocabulary has no named-position layer.",
+      "binding_strategy": "Emit the crosswalk's folksonomy tag plus explicit structural tags that reconstruct what the collapsed tag discards (posture, facing, support surface). The structural tags are how a position that the vocabulary cannot name is nonetheless specified."
+    },
+    {
+      "id": "natural_language_sdxl",
+      "display_name": "Natural-language SDXL derivatives",
+      "prompt_language": "descriptive_sentence",
+      "characteristics": "Photoreal-tuned checkpoints. Expect descriptive prose. Degrade on tag soup.",
+      "binding_strategy": "Emit the position's structural description as a sentence, plus scene and wardrobe values as clauses."
+    },
+    {
+      "id": "flux_natural",
+      "display_name": "Flow-matching natural-language models",
+      "prompt_language": "descriptive_sentence",
+      "characteristics": "Strong prompt adherence and anatomy, but licence terms vary sharply by weight and several are non-commercial.",
+      "binding_strategy": "As natural_language_sdxl. Record the licence constraint on the weight, not on the binding.",
+      "caution": "Confirm the specific weight's licence before any commercial use. Non-commercial weights are out of scope for a commercial deployment regardless of quality."
+    },
+    {
+      "id": "i2v_clinical",
+      "display_name": "Image-to-video models",
+      "prompt_language": "clinical_mechanical_prose",
+      "characteristics": "Condition on a still frame plus a motion description. The position is already fixed by the frame, so the prompt should describe only what moves. Respond to physical description (what moves, which direction, what frequency) and degrade on erotic or literary phrasing.",
+      "binding_strategy": "Emit the action-dynamics `mechanical_gloss` for the beat, the camera_motion `mechanical_gloss`, and the tempo's cadence hint. Never re-describe the subject or the scene: the conditioning frame already carries them, and restating them causes drift."
+    }
+  ],
+
+  "binding_record_schema": {
+    "description": "One record per (catalogue identifier, model family).",
+    "fields": {
+      "epc_id": {"type": "string", "required": true},
+      "family": {"type": "string", "required": true, "description": "Identifier from model_families."},
+      "positive": {"type": "string", "required": true, "description": "The prompt fragment, in the family's prompt language."},
+      "negative_hints": {"type": "array", "required": false, "description": "Terms known to suppress this entry's characteristic failure mode."},
+      "control_stack": {"type": "object", "required": false, "description": "Conditioning assets and their strengths, per the control_map_contract below."},
+      "figure_count": {"type": "integer", "required": true, "description": "Number of figures the binding expects to render. The single most important field: it is the pass criterion for the output."},
+      "verified": {"type": "date", "required": false, "description": "When this binding was last confirmed to produce a correct result. Absent means unverified."},
+      "known_failure": {"type": "string", "required": false, "description": "Documented failure mode where one exists. Recording a known failure is more useful than omitting the binding."}
+    }
+  },
+
+  "control_map_contract": {
+    "description": "Conditioning assets derivable from a position's keypoint template, and the conventions they follow.",
+    "assets": [
+      {"id": "keypoints", "format": "COCO-17 per figure", "source": "The catalogue's keypoint templates. Idealised schematic templates, not observed pose data."},
+      {"id": "skeleton_render", "format": "raster", "source": "Rendered from the keypoints for pose-conditioning adapters."},
+      {"id": "normal_map", "format": "raster", "convention": "Tangent-space style, red is +X right, green is +Y up, blue is +Z out of frame; camera-facing background.", "source": "Analytic render from the capsule geometry."},
+      {"id": "depth_map", "format": "raster", "convention": "Near is white, far is black.", "source": "Analytic render from the capsule geometry."}
+    ],
+    "strength_guidance": {
+      "principle": "Conditioning strength trades pose fidelity against photorealism, and the usable band is narrow. Above the band, the model renders the control geometry literally and produces mannequins rather than people; negative prompting does not overcome this. Below the band, the pose collapses entirely.",
+      "recorded_per_binding": "Because the band depends on the checkpoint, strengths belong in the binding record, not in this contract.",
+      "known_result": "On a base SDXL checkpoint with a multi-condition adapter, the adapter's nominal trained strength of 1.0 sat above the usable band. Working values were found only well below it. Do not assume an adapter's documented training strength is its usable strength for this task."
+    }
+  },
+
+  "multi_figure_contract": {
+    "problem": "Single global conditioning does not make a diffusion model count bodies. Applied to a multi-figure position, it produces photographically convincing output with the wrong number of limbs, fused torsos, and extra heads. This is not a prompt problem and it is not fixed by adjusting global strength: lowering strength trades away pose fidelity without improving figure count. It is the dominant unsolved case, affecting every position in the catalogue with more than one participant.",
+    "measured_scope": "11 of 104 catalogue positions are solo. The remaining 93 are the affected set: 74 two-participant, 16 three-participant, 3 four-participant.",
+    "contract": {
+      "description": "Fields a multi-figure binding must carry so that per-figure conditioning is possible at all. Global conditioning is the degenerate case where there is one region covering the frame.",
+      "fields": {
+        "figure_count": {"type": "integer", "description": "Expected number of rendered figures. The pass criterion."},
+        "figure_regions": {
+          "type": "array",
+          "description": "One entry per participant, in the same order as the position's participants array.",
+          "item_fields": {
+            "role": "The participant's role from the position record.",
+            "bbox": "Normalised [x, y, w, h] of that figure's extent, computed from its keypoints.",
+            "occlusion_rank": "Draw order, nearest first. Derived from the keypoint visibility flags.",
+            "conditioning": "Per-region control assets and strengths."
+          }
+        },
+        "contact_points": {
+          "type": "array",
+          "description": "Normalised coordinates where figures touch, with the participating roles. These are the locations where anatomy fuses, so they are the regions a verification pass should inspect first."
+        }
+      }
+    },
+    "candidate_approaches": [
+      {"id": "regional_conditioning", "description": "Apply pose conditioning per figure region rather than once globally.", "status": "untested"},
+      {"id": "sequential_inpaint", "description": "Render figures one at a time, masking previously rendered figures.", "status": "untested"},
+      {"id": "photoreal_checkpoint", "description": "Test whether a photoreal-tuned checkpoint holds realism at the higher conditioning strengths where figure count survives.", "status": "untested"}
+    ],
+    "note": "All three are unverified. The contract above is deliberately independent of which approach wins: it specifies the data a binding must carry, not the technique."
+  },
+
+  "verification_protocol": {
+    "description": "How a binding earns a `verified` date.",
+    "steps": [
+      "Render at full output size. Thumbnails and contact sheets hide anatomical failure; a montage can make a broken multi-figure result look acceptable.",
+      "Count figures against figure_count. A mismatch is a fail regardless of image quality.",
+      "Inspect each contact_point for fused or duplicated anatomy.",
+      "Count limbs and heads per figure.",
+      "Confirm the wardrobe coverage_state matches what was requested; models commonly add clothing that was not asked for.",
+      "Only then judge aesthetic quality."
+    ],
+    "principle": "Figure and limb count is the pass criterion, and it is judged before quality. An image that is beautiful and has six legs is a failure."
+  },
+
+  "references": [
+    "Internal: pose-vocabularies/keypoint-schema.json and keypoint-base-skeletons.json, the geometry the control maps derive from.",
+    "Internal: pose-vocabularies/action-dynamics.json, the mechanical_gloss fields the i2v_clinical binding emits.",
+    "Normal-map and depth-map conventions as used by common conditioning adapters.",
+    "Multi-figure failure characterisation and the conditioning-strength band are internal pilot results, 2026-07-20, on 104 positions."
+  ]
+}

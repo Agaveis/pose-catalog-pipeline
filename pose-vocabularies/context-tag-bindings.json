@@ -1,0 +1,539 @@
+{
+ "atlas_category": "context-tag-bindings",
+ "display_name": "Context axis tag bindings",
+ "layer": "binding",
+ "version": "1.0.0",
+ "catalog_version": "2.0.0-draft",
+ "license": "CC-BY-4.0",
+ "description": "Maps each wardrobe, scene and expression value to the folksonomy tag that denotes it, so the context axes can be emitted into a prompt for a booru-trained checkpoint rather than only described in prose. Values with no usable tag carry relation none: the folksonomy was built for anime image tagging and does not name everything this vocabulary does. Every tag was re-verified against the live tag API for existence, category, deprecation and a minimum post count at build time.",
+ "statistics": {
+  "generated": "2026-08-09",
+  "values": 88,
+  "values_with_tag": 79,
+  "values_without_tag": 9,
+  "by_relation": {
+   "close": 53,
+   "exact": 21,
+   "none": 9,
+   "broader": 5
+  }
+ },
+ "bindings": {
+  "expression-gaze.facial_affect.distressed": {
+   "tag": "distress",
+   "relation": "close",
+   "post_count": 487,
+   "note": "CONFIRMED as the best of a weak field, still close. distress reads as fear or helplessness, a stronger register than the value's discomfort or unwillingness. I checked the nearer-sounding options and they are worse: uncomfortable 251 is physical discomfort, wiki 'doesn't feel comfortable, due to for example heat or pain', which is the wrong cause; reluctant has 39 posts and fails rule 1; unhappy 955, worried 5968 and scared 21399 each pick one register and miss unwillingness."
+  },
+  "expression-gaze.facial_affect.focused": {
+   "tag": "concentrating",
+   "relation": "exact",
+   "post_count": 864,
+   "note": "CONFIRMED. Matches 'concentrated, absorbed in the act' directly. Only 864 posts, so prompt strength will be weak, but it passes rule 1 and the higher-count neighbours mean something else: serious 39221 carries anger or determination per the expressionless wiki, determined 2747 carries resolve."
+  },
+  "expression-gaze.facial_affect.neutral": {
+   "tag": "expressionless",
+   "relation": "exact",
+   "post_count": 177646,
+   "note": "CONFIRMED. Checked the alternatives: neutral_face and emotionless both have 0 posts; blank_stare 2433 is an eye-vacancy tag rather than an affect-absence tag; serious 39221 is explicitly distinguished by the wiki."
+  },
+  "expression-gaze.facial_affect.playful": {
+   "tag": "teasing",
+   "relation": "close",
+   "post_count": 4440
+  },
+  "expression-gaze.facial_affect.pleasure_overwhelmed": {
+   "tag": "ahegao",
+   "relation": "exact",
+   "post_count": 27948,
+   "note": "Kept exact because the vocabulary defines this value by direct reference ('Corresponds to the folksonomy term rendered as ahegao in anime-domain tagging'). Worth knowing for prompting: the tag is if anything slightly narrower than the value, since it requires the tongue out and the eyes rolled up, while the value admits eyes shut and no tongue."
+  },
+  "expression-gaze.facial_affect.pleasure_restrained": {
+   "tag": null,
+   "relation": "none",
+   "note": "CONFIRMED none, after re-running the search. There is no `pleasure` tag at all — every *pleasure* row is 0 posts, a character, or a meme; *stifl* yields only stifled_laugh (529); *suppress* yields nothing about expression. Candidates rejected: `torogao` (12,283) is the strongest miss and looks promising on the word \"quiet\", but its wiki describes half-open moist eyes, half-open mouth, saliva and loose limbs — that is loss of composure, i.e. the sibling value pleasure_overwhelmed, alongside ahegao (27,948). `holding_back` (175) is physically restraining another person. `ecstasy` (159) is uncontained joy \"so intense that it gives a trace like dissociation\". `aroused` (7,337) denotes arousal with no restraint component, its wiki citing blushing, sweating and nosebleeds. `moaning` (17,768) is the uncontained pole. The composure-held quality survives only as unrelated component tags (furrowed_brow 68,349, clenched_teeth 104,011, closed_mouth), which would describe features without denoting the affect."
+  },
+  "expression-gaze.facial_affect.smiling": {
+   "tag": "smile",
+   "relation": "exact",
+   "post_count": 4093869,
+   "note": "CONFIRMED. Count re-verified 4,093,862, category 0, not deprecated. Danbooru routes a wide-open mouth with visible teeth to `grin` (350,416) instead, and `light_smile` (107,226) exists if a subtler register is wanted — neither displaces smile as the binding for the general value."
+  },
+  "expression-gaze.facial_affect.sultry": {
+   "tag": "seductive_smile",
+   "extra_tags": [
+    "half-closed_eyes"
+   ],
+   "relation": "close",
+   "post_count": 15306,
+   "note": "The wiki glosses the tag with the word 'sultry', but it requires a smile and an inviting, assertive read where the value requires only half-lidded composure. extra_tag half-closed_eyes (141503, cat 0, not deprecated: 'Eyes that are partially closed. Used to display a variety of expressions, from drowsiness to seductive looks') pins the half-lidded component and is itself too broad alone. Confirmed there is no bare tag: *sultry* returns zero category-0 tags, and *bedroom* returns only bedroom (20392) and chaldea_bedroom, so bedroom_eyes exists only as prose inside this wiki."
+  },
+  "expression-gaze.facial_affect.surprised": {
+   "tag": "surprised",
+   "relation": "close",
+   "post_count": 73013
+  },
+  "expression-gaze.gaze_target.at_partner": {
+   "tag": "looking_at_another",
+   "relation": "exact",
+   "post_count": 426398,
+   "note": "CONFIRMED. Count 426,397, category 0, not deprecated. Denotes exactly \"looking at another participant\". The preference over `eye_contact` (67,835) is correct: the same wiki reserves that tag for mutual gaze, which is a stronger claim than this value makes and would over-constrain the partner's gaze_target."
+  },
+  "expression-gaze.gaze_target.at_viewer": {
+   "tag": "looking_at_viewer",
+   "relation": "exact",
+   "post_count": 4815971,
+   "note": "CONFIRMED. The wiki even rules out the two confusable tags: eye_contact 67835 is between characters, facing_viewer is for closed or covered eyes. 'Looking at the camera' is the value's lens-contact sense exactly."
+  },
+  "expression-gaze.gaze_target.away": {
+   "tag": "looking_afar",
+   "relation": "close",
+   "post_count": 25287,
+   "note": "looking_away (34943) is confirmed deprecated; its wiki calls the concept 'Ambiguous' and splits it into averting_eyes plus the directional tags (looking_back, looking_down, looking_to_the_side, looking_up, looking_afar, looking_ahead). I checked the alternative the first pass named only in passing: averting_eyes (20280, cat 0, not deprecated) requires a deliberate turn of gaze 'often done out of shyness, embarrassment, or nervousness', which loads the value with emotion it does not carry. looking_afar is the only target-less survivor, but it asserts distance where the value asserts only off-frame."
+  },
+  "expression-gaze.gaze_target.downward": {
+   "tag": "downturned_eyes",
+   "relation": "exact",
+   "post_count": 1374,
+   "note": "CHANGED from the input binding (looking_down / close) to downturned_eyes / exact. The value is \"Eyes lowered\", and the sibling values in this same dimension prove the vocabulary distinguishes eye-only from head-involving states: upward is \"Eyes raised\" while over_shoulder is explicitly \"Head turned back\". looking_down (136,925, category 0, not deprecated) requires the head to be bent down per its wiki (\"Looking down, with the head bent down. See downturned eyes for when the eyes are looking down but the head is not bent down\"), so it asserts a head posture the value withholds — a popular near-miss, exactly what rule 3 says to pass over. downturned_eyes is 1,374 posts, category 0, not deprecated, clearing the 50 floor. Trade-off to be aware of at emission time: at 1,374 posts this is a weak-signal tag for a booru-trained checkpoint, so if the render ignores it, looking_down is the higher-signal fallback at the cost of adding head bend. The two are mutually exclusive on head posture and must never be emitted together. `tareme` is a distinct eye-SHAPE tag the downturned_eyes wiki warns against confusing with it."
+  },
+  "expression-gaze.gaze_target.eyes_closed": {
+   "tag": "closed_eyes",
+   "relation": "exact",
+   "post_count": 1039129
+  },
+  "expression-gaze.gaze_target.obscured": {
+   "tag": "obscured",
+   "relation": "close",
+   "post_count": 89
+  },
+  "expression-gaze.gaze_target.over_shoulder": {
+   "tag": "over_shoulder",
+   "relation": "close",
+   "post_count": 16800
+  },
+  "expression-gaze.gaze_target.upward": {
+   "tag": "upturned_eyes",
+   "relation": "exact",
+   "post_count": 6512,
+   "note": "CONFIRMED, and the rejection of the popular alternative holds on re-read: looking_up 98955 is defined as 'a character looking up, with their head bent back... See upturned eyes for when the eyes are looking up but the head is not bent back'. The value is eyes raised, with no head claim, so upturned_eyes is the denoting tag and looking_up would import a head pose the value does not specify."
+  },
+  "expression-gaze.mouth_state.biting_lip": {
+   "tag": "biting_own_lip",
+   "relation": "exact",
+   "post_count": 7197,
+   "note": "CONFIRMED. Count 7,197, category 0, not deprecated. `lip_biting` is category 0 but deprecated with 0 posts; its wiki reads \"See biting own lip or biting another's lip.\" The self-directed successor is the one the mouth_state value means, since this dimension describes the participant's own mouth."
+  },
+  "expression-gaze.mouth_state.closed": {
+   "tag": "closed_mouth",
+   "relation": "exact",
+   "post_count": 1919795,
+   "note": "CONFIRMED. Count re-verified 1,919,786, category 0, not deprecated. Denotes the value exactly and is the explicit complement of open_mouth (3,444,634), which the sibling mouth_state values will need."
+  },
+  "expression-gaze.mouth_state.occupied": {
+   "tag": "oral",
+   "relation": "close",
+   "post_count": 117763,
+   "note": "oral names the act across the whole image, so it is present for the receiving partner too and does not say whose mouth is engaged; it also restricts engagement to genitals. Confirmed there is no per-participant mouth-state tag for this: the entire *_in_mouth family is objects (cum_in_mouth 40251, food_in_mouth 31036, condom_in_mouth 7146, clothes_in_mouth 6250), and the oral wiki's own children (fellatio, cunnilingus, irrumatio, anilingus) are narrower act tags rather than a mouth state."
+  },
+  "expression-gaze.mouth_state.open": {
+   "tag": "open_mouth",
+   "relation": "exact",
+   "post_count": 3444642,
+   "note": "CONFIRMED. The wiki draws the boundary against parted_lips 730318, which is a separate vocabulary value, so the two do not collide."
+  },
+  "expression-gaze.mouth_state.parted": {
+   "tag": "parted_lips",
+   "relation": "exact",
+   "post_count": 730321
+  },
+  "expression-gaze.mouth_state.tongue_out": {
+   "tag": "tongue_out",
+   "relation": "close",
+   "post_count": 412163
+  },
+  "scene-setting.lighting_setup.candle_firelight": {
+   "tag": "candle",
+   "relation": "close",
+   "post_count": 27178
+  },
+  "scene-setting.lighting_setup.hard_key": {
+   "tag": "chiaroscuro",
+   "relation": "close",
+   "post_count": 432,
+   "note": "CONFIRMED close. Count 432, category 0, not deprecated. Chiaroscuro names the tonal result a hard key produces, not the source size or the crispness of the shadow edge. Danbooru's Tag group:Lighting carries no light-quality axis at all — only direction (backlighting 45,044; sidelighting 12,811; underlighting 1,264; overlighting 482) and intensity (dim_lighting 1,238); a wildcard sweep of *lighting* returns nothing else general. `harsh_lighting`, `hard_shadow` and `soft_lighting` do not exist. Additional candidates checked and rejected this pass: `tenebrism` (82) is a single-source-plus-black-field technique that its own wiki distinguishes from chiaroscuro and that maps to the sibling value low_key_rim, not hard_key; `spotlight` (9,262) is a hard source but its wiki ties it to a stage performance beam, which would import stage context; `high_contrast` (4,769) is scoped by its wiki to flat/manga-like colouring and greyscale ink work, not photographic lighting."
+  },
+  "scene-setting.lighting_setup.low_key_rim": {
+   "tag": "backlighting",
+   "extra_tags": [
+    "dark_background"
+   ],
+   "relation": "close",
+   "post_count": 45044,
+   "note": "DOWNGRADED from exact. backlighting encodes only that the source sits behind the subject; danbooru applies it equally to bright-field backlight (sunset, window, bloom, vignetting are its see-also neighbours), which is the opposite of low key. It supplies the edge-defining rim but not the dark field. dark_background 16551 ('A background that is dark but not solid black unless the subject is dimly lit') supplies the dark field, and the two together do denote the value; the head tag alone does not."
+  },
+  "scene-setting.lighting_setup.neon_colour": {
+   "tag": "neon_lights",
+   "relation": "close",
+   "post_count": 3516,
+   "note": "Denotes the fixtures being visible in the scene, not a saturated coloured-light setup casting on the subject. The nearest thing to a lighting tag is colored_lights (103), which I left unbound because it has an empty wiki and its related tags are concert / stage / stage_lights / idol, i.e. it is used for stage lighting specifically; stage_lights (6743) has the same problem and belongs to the club_stage location. neon_palette (1082) is an art palette ('A palette predominated by bright, saturated... colors'), not a light source."
+  },
+  "scene-setting.lighting_setup.on_camera_flash": {
+   "tag": "camera_flash",
+   "relation": "close",
+   "post_count": 1099,
+   "note": "CONFIRMED. The tag denotes the depicted burst of light (a flash going off, or a white blast toward the viewer), not the photographic result the value describes: flat frontal subject with a hard shadow thrown on the wall behind. The one tag for the result, camera_flash_overexposure, has 22 posts and fails rule 1; flashing_light 63 is unrelated (a light that flashes)."
+  },
+  "scene-setting.lighting_setup.overcast_flat": {
+   "tag": "overcast",
+   "relation": "close",
+   "post_count": 4286
+  },
+  "scene-setting.lighting_setup.practical_ambient": {
+   "tag": "lamp",
+   "relation": "close",
+   "post_count": 22875,
+   "note": "CONFIRMED close. Count 22,875, category 0, not deprecated. The value is \"Lit by lamps visible in the scene\", so the fit is tight, but `lamp` tags the fixture's presence, not that it is the key source — an image can show a lamp that is off or incidental. Danbooru's Tag group:Lighting does list lamp under \"Light sources\", which is the closest the folksonomy comes to a practical-light concept. Sibling sources deliberately not added, because each belongs to a different lighting_setup value in this same dimension: candlelight 1,321 (candle_firelight), neon_lights 3,516 (neon_colour), stage_lights 6,743 (club/stage). ceiling_light 6,346 is the one free sibling if an overhead practical is wanted. Note the lamp wiki is explicitly indoor-scoped."
+  },
+  "scene-setting.lighting_setup.soft_key": {
+   "tag": null,
+   "relation": "none",
+   "note": "CONFIRMED none, and independently re-swept. The complete live *lighting* vocabulary is backlighting 45044, sidelighting 12811, underlighting 1264, dim_lighting 1238, overlighting 482, complex_lighting 39, rembrandt_lighting 2. Every one of those encodes source direction or overall level, never source size or shadow-edge quality. The equipment tags fail the threshold anyway: softbox 18, studio_lights 109 with no wiki. soft_focus 281 is lens softness, not light. Nothing denotes a large diffuse key with gentle shadow edges."
+  },
+  "scene-setting.lighting_setup.window_natural": {
+   "tag": "sunlight",
+   "extra_tags": [
+    "window"
+   ],
+   "relation": "close",
+   "post_count": 101323,
+   "note": "Danbooru splits the source from the aperture: sunlight names the light, extra_tag window (177799, cat 0, not deprecated: 'An opening in a wall or door, usually filled with glass, used to allow light or air into a building') names where it enters, and the pair still does not guarantee the light comes through that window or that the falloff is soft. I checked the two tags that look like a single-tag answer and rejected both: window_light (578) means the reverse view, 'Light coming out of a window when viewed from outside', and window_shadow (4123) is the cast pattern of the frame or blinds, which implies hard rather than soft light."
+  },
+  "scene-setting.location_class.bathroom": {
+   "tag": "bathroom",
+   "relation": "close",
+   "post_count": 15966
+  },
+  "scene-setting.location_class.bedroom": {
+   "tag": "bedroom",
+   "relation": "close",
+   "post_count": 20392
+  },
+  "scene-setting.location_class.casting_room": {
+   "tag": "casting_couch",
+   "relation": "close",
+   "post_count": 151,
+   "note": "CONFIRMED, and the searches back the absence: no tag matches *audition* at all; *casting* returns only casting_spell, mold_(casting) and a meme; the tag studio has 287 posts but an EMPTY wiki, so it cannot be shown to denote a location. casting_couch names the signature prop of the set convention, not the room, and carries none of the sparse-room-plus-visible-camera-rig staging (couch 75573, on_couch 34125, video_camera 3554 and tripod 1251 exist separately if the rig needs to be prompted). Clears the threshold at 151 but only just."
+  },
+  "scene-setting.location_class.club_stage": {
+   "tag": "stage",
+   "relation": "close",
+   "post_count": 9277
+  },
+  "scene-setting.location_class.fantasy_set": {
+   "tag": "fantasy",
+   "relation": "close",
+   "post_count": 19884
+  },
+  "scene-setting.location_class.gym": {
+   "tag": "locker_room",
+   "relation": "close",
+   "post_count": 5227
+  },
+  "scene-setting.location_class.hotel": {
+   "tag": "hotel_room",
+   "relation": "close",
+   "post_count": 803
+  },
+  "scene-setting.location_class.industrial": {
+   "tag": "industrial",
+   "relation": "close",
+   "post_count": 645
+  },
+  "scene-setting.location_class.living_space": {
+   "tag": "kitchen",
+   "relation": "close",
+   "post_count": 9601
+  },
+  "scene-setting.location_class.office": {
+   "tag": "office",
+   "relation": "close",
+   "post_count": 4187
+  },
+  "scene-setting.location_class.outdoor_natural": {
+   "tag": "nature",
+   "extra_tags": [
+    "outdoors"
+   ],
+   "relation": "close",
+   "post_count": 65936,
+   "note": "CONFIRMED close. nature 65,935 and outdoors 794,825, both category 0, neither deprecated. Neither alone fits: outdoors admits urban settings by its own wiki (and the vocabulary has a separate outdoor_urban value it would collide with), while nature requires visible wild plants, so the plantless natural terrain named in the value definition (beach) sits outside it — beach has its own tag (129,210), forest 48,448, and the value definition is \"Beach, forest, field\". `scenery` (73,670) was checked and rejected: it denotes a detailed background/landscape emphasis, not an outdoor-natural location."
+  },
+  "scene-setting.location_class.outdoor_urban": {
+   "tag": "urban",
+   "extra_tags": [
+    "outdoors"
+   ],
+   "relation": "close",
+   "post_count": 1785,
+   "note": "The street-level city reading matches the class well, but `urban` does not itself assert an outdoor setting, so extra_tag outdoors (794825, cat 0, not deprecated: 'A scene set in an outdoor location, rather than indoors. The setting may be urban or rural') is needed to express the value. The three examples in the value definition exist as their own member tags (street 11419, alley 4383, rooftop 6262) but each names one place rather than the class; city (34538) and cityscape (23692) are wider-view scenery tags."
+  },
+  "scene-setting.location_class.pool": {
+   "tag": "pool",
+   "relation": "close",
+   "post_count": 25882
+  },
+  "scene-setting.location_class.studio_seamless": {
+   "tag": "simple_background",
+   "relation": "close",
+   "post_count": 2796098,
+   "note": "Matches 'plain backdrop, no environmental detail' in effect, but denotes an illustration placed in a void rather than a physical photographic seamless, and the wiki expressly contrasts it with having any setting at all. Danbooru has no photo-studio location tag: `studio` (287) is a recording or dance studio room, `backdrop` (164) is a painted theatrical curtain, and `studio_lights` (109) is the equipment."
+  },
+  "scene-setting.location_class.vehicle": {
+   "tag": "vehicle_interior",
+   "relation": "close",
+   "post_count": 1202
+  },
+  "scene-setting.production_mode.amateur_handheld": {
+   "tag": null,
+   "relation": "none",
+   "note": "Confirmed. Danbooru tags what is depicted, not the camera provenance of the image itself. Wildcard searches for *amateur*, *candid* and *snapshot* each return zero category-0 tags. The nearest candidates all denote a photograph appearing inside the picture: cellphone_photo (5274, quoted above), selfie (31329), photo_(object). Nothing denotes 'consumer camera, available light, imperfect framing'."
+  },
+  "scene-setting.production_mode.editorial_glamour": {
+   "tag": null,
+   "relation": "none",
+   "note": "Confirmed. *glamour* returns zero category-0 tags. photo_shoot (207) is quoted above and denotes a shoot occurring within the picture, not the picture's own production values. magazine_cover (6038) and fake_magazine_cover (3195) denote the image being laid out as a cover, not magazine-grade lighting and retouching. No tag expresses this."
+  },
+  "scene-setting.production_mode.film_vintage": {
+   "tag": "film_grain",
+   "relation": "close",
+   "post_count": 26251,
+   "note": "CONFIRMED close. Count 26,251, category 0, not deprecated. Carries only the grain component of the value (\"Analogue grain, period colour, softer resolution\"), not the period colour or softer resolution, and its own wiki notes it also covers digital sensor noise, so it does not by itself imply analogue. `retro_artstyle` (24,360) correctly rejected: its wiki scopes it to art DRAWN in the style of a prior decade, not photographic film stock. Also checked and rejected this pass: `sepia` (10,387) would force a monochrome brown cast the value does not claim; `polaroid_photo` (1,755) is a photo object depicted in frame; `heavy_film_grain` (442) is an intensity variant available if a stronger effect is wanted. `vintage` and `faded` are non-existent or 0-post rows."
+  },
+  "scene-setting.production_mode.mirror_selfie": {
+   "tag": "mirror_selfie",
+   "relation": "close",
+   "post_count": 4470
+  },
+  "scene-setting.production_mode.phone_selfie": {
+   "tag": "selfie",
+   "extra_tags": [
+    "smartphone"
+   ],
+   "relation": "broader",
+   "post_count": 31329,
+   "note": "CHANGED: extra tag cellphone replaced by smartphone (115539). cellphone is the parent class and its wiki examples are bar, slide and flip phones, which have no front-facing camera; smartphone ('a cellphone with more advanced features... flat 6in slab') is the device the value names, and I verified the implication smartphone -> cellphone is active, so the parent is still carried. selfie remains broader: it covers dedicated cameras and mirror_selfie 4470, and says nothing about arm's-length wide-lens distortion, which has no tag."
+  },
+  "scene-setting.production_mode.studio_professional": {
+   "tag": null,
+   "relation": "none",
+   "note": "CONFIRMED none. No tag denotes a production mode. Re-checked every candidate: `photo_(medium)` (26,138) is category 5 (meta), failing the category-0 rule, and only asserts the image is a photograph. `studio` (287) has a completely EMPTY wiki, and its neighbours (dance_studio 334, recording_studio 295, studio_microphone 632) show the word is used for rooms. `studio_lights` (109) tags visible lighting equipment. `photo_shoot` (207, category 0, not deprecated) is the strongest miss and is newly rejected here: per the wiki quoted it depicts a shoot happening in frame, photographer included, so emitting it would add a photographer to the render rather than confer production values. Nothing expresses crewed/controlled-shoot character."
+  },
+  "scene-setting.production_mode.surveillance_look": {
+   "tag": null,
+   "relation": "none",
+   "note": "CONFIRMED none. security_camera 373 passes the count bar but its wiki is entirely about the physical device (mounting, motorized pivots, dome housings), i.e. a camera visible in frame, not the image it would produce. surveillance 21 and surveillance_camera 0 fail rule 1; cctv_screen has 1 post; night_vision is deprecated at 0. viewfinder 10457 is 'a camera frame, a set of lines in the corners of an image', camcorder framing marks rather than a fixed high wide feed. monochrome 839719 and greyscale 679771 exist but denote the whole image being colourless for any reason, which would misfire badly as a surveillance cue. Nothing denotes the look."
+  },
+  "scene-setting.production_mode.webcam_stream": {
+   "tag": "stream",
+   "relation": "close",
+   "post_count": 2203
+  },
+  "scene-setting.time_of_day.dusk": {
+   "tag": "dusk",
+   "relation": "close",
+   "post_count": 6009
+  },
+  "scene-setting.time_of_day.golden_hour": {
+   "tag": "golden_hour",
+   "relation": "close",
+   "post_count": 378
+  },
+  "scene-setting.time_of_day.midday": {
+   "tag": "day",
+   "relation": "broader",
+   "post_count": 450032,
+   "note": "`day` covers every daylight hour. Danbooru subdivides only the edges of the day, and the `day` wiki's own see-also list confirms it: twilight, dawn, sunrise, morning, sunset, dusk, evening, night. A wildcard search for *noon* returns no general-category tag at all, and there is no midday tag."
+  },
+  "scene-setting.time_of_day.morning": {
+   "tag": "morning",
+   "relation": "close",
+   "post_count": 4380
+  },
+  "scene-setting.time_of_day.night": {
+   "tag": "night",
+   "relation": "close",
+   "post_count": 167866
+  },
+  "scene-setting.time_of_day.unspecified": {
+   "tag": null,
+   "relation": "none",
+   "note": "CONFIRMED none. This value is the deliberate absence of a time-of-day assertion. Every danbooru time tag asserts a specific time (day 450,032; night 167,863; sunset 38,703; twilight 8,867), and a folksonomy has no tag for \"not stated\" — the unmarked case is expressed by tagging nothing. wiki_checked false is honest: there is no tag to read a wiki for, and the four time tags above were confirmed only as tag records to establish that no neutral member exists in the set."
+  },
+  "wardrobe-state.coverage_state.accessories_only": {
+   "tag": "nude",
+   "relation": "broader",
+   "post_count": 681296,
+   "note": "CONFIRMED. The wiki's guidelines section explicitly permits jewelry, thighhighs and hats under nude, which is exactly the accessories-only sense; but nude also subsumes completely_nude (285874, 'when a character isn't wearing any clothing at all'), so it covers strictly more than the value. No tag names the difference. naked_* tags (naked_shirt, naked_apron, naked_ribbon 8217) are garment-specific and the wiki rules 'naked' outfits out of nude entirely, so none of them expresses jewellery-or-hosiery-only."
+  },
+  "wardrobe-state.coverage_state.bottomless": {
+   "tag": "bottomless",
+   "relation": "close",
+   "post_count": 121278
+  },
+  "wardrobe-state.coverage_state.clothed": {
+   "tag": null,
+   "relation": "none",
+   "note": "CONFIRMED none. Re-fetched: `clothed` post_count 0, is_deprecated true; the wiki explicitly refuses the concept as the unmarked default. `fully_clothed` and `dressed` are real rows, category 0, not deprecated, but both 0 posts. `casual` (64,692) denotes clothing style and is already the garment_class.casual value, not a coverage state. A folksonomy does not tag its own default."
+  },
+  "wardrobe-state.coverage_state.lingerie": {
+   "tag": "lingerie",
+   "relation": "close",
+   "post_count": 66900
+  },
+  "wardrobe-state.coverage_state.nude": {
+   "tag": "nude",
+   "relation": "close",
+   "post_count": 681296
+  },
+  "wardrobe-state.coverage_state.partially_clothed": {
+   "tag": "partially_undressed",
+   "relation": "exact",
+   "post_count": 9457,
+   "note": "CONFIRMED. The wiki's worked example (shirt off, bra showing) is the value verbatim: outer garment removed, underwear remaining. The wiki also extends it to implied removal (bottoms or top simply not depicted), which stays inside the value."
+  },
+  "wardrobe-state.coverage_state.sheer": {
+   "tag": "see-through_clothes",
+   "relation": "broader",
+   "post_count": 215261,
+   "note": "Downgraded from exact. The tag is garment-scoped: it fires whenever any transparent fabric is present (a sheer sleeve or panel on an otherwise opaque outfit, or ordinary clothing made transparent by being wet), whereas the value is a whole-body coverage_state asserting that the covering itself is sheer. Nothing narrower exists: `translucent` (1029) is a material/rendering tag, and the only *sheer* tags are garment-specific (sheer_gloves 133, sheer_pantyhose 102)."
+  },
+  "wardrobe-state.coverage_state.topless": {
+   "tag": "topless_female",
+   "extra_tags": [
+    "topless_male"
+   ],
+   "relation": "exact",
+   "post_count": 87886,
+   "note": "CONFIRMED. Bare `topless` is category 0 but deprecated with 0 posts; its wiki reads \"See topless female, topless male or topless other\". Re-fetched: topless_female 87,886 / topless_male 57,137, both category 0, neither deprecated. Matches the value definition \"Chest uncovered, hips covered\" precisely (the wiki guidelines even exclude the nude and bra cases). EMISSION CAVEAT: these two are alternatives selected by participant sex, not a pair to emit together — emitting both for one participant asserts two subjects. topless_female wiki also forbids co-tagging with nude/completely_nude."
+  },
+  "wardrobe-state.disarray_mode.disordered": {
+   "tag": "disheveled",
+   "relation": "close",
+   "post_count": 330,
+   "note": "Danbooru's disheveled is character-level untidiness (grooming, hair, general mess), not specifically rumpled garments; its own see-also list is unkempt and slovenly, both of which I confirmed are hair tags ('Hair that isn't so bad to call messy'). I checked the one plausible garment candidate the first pass missed: wrinkled_fabric (527, cat 0, not deprecated) has an empty wiki, and its related tags are shirt / long_sleeves / simple_background / white_background, i.e. it marks drawn creasing on ordinary clothing rather than disarray. Rejected. No *askew* or *rumpled* clothing tag exists."
+  },
+  "wardrobe-state.disarray_mode.half_removed": {
+   "tag": "partially_undressed",
+   "relation": "close",
+   "post_count": 9457,
+   "note": "CONFIRMED close. Count 9,457, category 0, not deprecated. The residual difference is real and the wiki proves it: partially_undressed also covers \"the implied removal of clothing, such as when the bottoms or top that a character would normally wear are not depicted\" — i.e. an absent garment, whereas the value requires the garment to remain attached at a limb. Danbooru expresses the attached case only per-garment (panties_around_one_leg, skirt_around_one_leg, pants_around_one_leg) with no garment-neutral umbrella. `undressing` (68,154) correctly rejected: its wiki scopes it to the act in progress (\"in the middle of taking off their clothes\"), not a resting state. `clothes_pull` (107,194) also rejected here despite fitting \"partly off, still worn\" — its wiki scopes it to clothing pulled DOWN, which is the sibling value disarray_mode.pulled_down; binding it here would collide."
+  },
+  "wardrobe-state.disarray_mode.intact": {
+   "tag": null,
+   "relation": "none",
+   "note": "Confirmed. `clothed` re-fetched: category 0, post_count 0, is_deprecated true, and its wiki states the position above outright. Danbooru refuses to tag the undisturbed worn state because it is the unmarked default. Wildcard *clothed* returns only compounds (clothed_female_nude_male 58758, clothed_sex 53084, clothed_after_sex 667); *dressed* returns only partially_undressed 9457, which is the opposite value. No fully_clothed or dressed tag exists."
+  },
+  "wardrobe-state.disarray_mode.pulled_aside": {
+   "tag": "clothing_aside",
+   "relation": "close",
+   "post_count": 64719,
+   "note": "CONFIRMED. Danbooru scopes the generic aside tag to garments over the genitals; its whole see-also list (panties_aside, leotard_aside, swimsuit_aside, shorts_aside, dress_aside, buruma_aside, bikini_bottom_aside) is crotch-covering wear. A sideways-displaced top or bra is sideways displacement without removal and so falls under the value, but is not clothing_aside. The value is therefore slightly wider than the tag."
+  },
+  "wardrobe-state.disarray_mode.pulled_down": {
+   "tag": "clothes_pull",
+   "extra_tags": [
+    "clothes_down"
+   ],
+   "relation": "close",
+   "post_count": 107194,
+   "note": "Both halves re-verified. clothes_pull requires the lowering to expose breasts or crotch, which the value does not; extra_tag clothes_down (4382, cat 0, not deprecated) covers the rest of the range: 'When the top part of clothing is pulled far down or almost entirely removed. Typically... pulled all the way down to the elbows'. The two wikis explicitly partition each other ('If the top is pulled down beneath the breasts, use clothes pull'). Nothing denotes a plain lowered garment with no reveal: the *_down family is otherwise body parts and headwear (hood_down, hair_down, shirt_down 288), and clothes_tug is the opposite intent (tugged down to cover oneself)."
+  },
+  "wardrobe-state.disarray_mode.pushed_up": {
+   "tag": "clothes_lift",
+   "relation": "exact",
+   "post_count": 283355,
+   "note": "CONFIRMED. Count re-verified 283,355, category 0, not deprecated. Denotes exactly \"a garment is raised above its normal position\". Umbrella over shirt_lift (107,983), skirt_lift (93,706), bra_lift (12,813), dress_lift. Danbooru's own contrast tags confirm the axis is clean: clothes_pull is the downward sibling and belongs to the disarray_mode.pulled_down value, not here."
+  },
+  "wardrobe-state.disarray_mode.torn": {
+   "tag": "torn_clothes",
+   "relation": "exact",
+   "post_count": 208611,
+   "note": "CONFIRMED. Parent of a large torn_* family (torn_shirt, torn_dress, torn_pantyhose etc.), so it is the generic damaged-fabric tag the value wants."
+  },
+  "wardrobe-state.disarray_mode.unfastened": {
+   "tag": "open_clothes",
+   "relation": "exact",
+   "post_count": 740873,
+   "note": "CONFIRMED. Challenged for over-breadth and it survives: the wiki names unbuttoned and unzipped first (closures released) and explicitly excludes the main false positive, clothing that is open because of clothing_cutouts. Denotation matches 'closures released, garment hangs open'."
+  },
+  "wardrobe-state.garment_class.casual": {
+   "tag": "casual",
+   "relation": "close",
+   "post_count": 64692
+  },
+  "wardrobe-state.garment_class.costume": {
+   "tag": "cosplay",
+   "relation": "close",
+   "post_count": 185179,
+   "note": "cosplay covers the 'character' half precisely but requires an identifiable fictional character. Re-verified that no umbrella exists for a generic costume: `costume` is category 0 with 0 posts and is_deprecated true, its wiki reading 'Use something more specific, such as animal costume or santa costume'. The successors are a scatter of specific tags (santa_costume 45145, animal_costume 22126, superhero_costume 19531). halloween_costume (24593) is context-bound to Halloween, and alternate_costume (634350) means a character out of their canonical outfit, not dress-up."
+  },
+  "wardrobe-state.garment_class.fetish_gear": {
+   "tag": "bondage_outfit",
+   "relation": "close",
+   "post_count": 3642,
+   "note": "CONFIRMED close. Count 3,642, category 0, not deprecated. Danbooru has no general fetish-wear garment class: `fetish` is a category-0 row with 0 posts. bondage_outfit is scoped by intent (BDSM play), so plain latex or leather fetish wear falls outside it and is tagged instead by material or item (latex 18,687; harness 24,920; gimp_suit 283) — those were not added as extra_tags because each denotes a narrower thing than the value, not a component of it. `bdsm` (86,108) correctly rejected as an activity/theme tag rather than a garment."
+  },
+  "wardrobe-state.garment_class.footwear_only": {
+   "tag": "naked_shoes",
+   "relation": "exact",
+   "post_count": 3565,
+   "note": "CONFIRMED. Denotes the coverage state itself, not just the garment. Sibling naked_boots exists for the boot case."
+  },
+  "wardrobe-state.garment_class.formal": {
+   "tag": "formal_clothes",
+   "relation": "close",
+   "post_count": 78758,
+   "note": "Downgraded from exact. Two real differences: the wiki scopes the tag to the scene rather than to one participant's garments, and it explicitly carves out ordinary business suits unless the image reads as formal, whereas the garment class 'formal wear' would include them. It is still the right tag: the bare `formal` tag has 0 posts, and formal_clothes is danbooru's fashion-style entry for this family."
+  },
+  "wardrobe-state.garment_class.hosiery": {
+   "tag": "thighhighs",
+   "relation": "close",
+   "post_count": 1512185,
+   "note": "CHANGED from the first pass: pantyhose removed from extra_tags. extra_tags is a conjunction (both tags emitted together), and thighhighs AND pantyhose is a self-contradictory prompt, since the wiki defines them as mutually exclusive lengths. Bind thighhighs alone and treat the rest of the class as siblings, not companions: pantyhose 726501, socks 569039, leggings 23910. Verified the generic route is dead: legwear is deprecated at 0 posts, wiki 'Ambiguous tag. Please use more specific alternatives like leggings, pants, pantyhose, socks, thighhighs'; the exact tag stockings does not exist (0 posts). thighhighs is narrower than the value (it is the stockings sense only), hence close, not exact."
+  },
+  "wardrobe-state.garment_class.jewellery_only": {
+   "tag": "jewelry",
+   "extra_tags": [
+    "completely_nude"
+   ],
+   "relation": "close",
+   "post_count": 1569085,
+   "note": "CONFIRMED close, and the floor call is right. `naked_jewelry` is the precise single tag, category 0, not deprecated, but re-fetched at 37 posts — below the 50 floor, so not emitted. The emitted pair reconstructs it: jewelry 1,569,073 + completely_nude 285,874, both category 0, neither deprecated, and the completely_nude wiki explicitly lists jewelry among the items that \"don't count against this tag\", so the two are compatible rather than contradictory. Residual difference: the pair also admits other non-clothing accessories (glasses, hats, hair ornaments) that completely_nude tolerates."
+  },
+  "wardrobe-state.garment_class.lingerie_set": {
+   "tag": "lingerie",
+   "relation": "broader",
+   "post_count": 66900,
+   "note": "The tag covers any single alluring women's underwear garment (its own examples are babydoll and bustier alone) and is defined as women's only, so it is wider than a matched set on both counts. The 'set' aspect is not expressible: bra_and_panties has 0 posts, no matching_underwear tag exists (*matching_* returns matching_outfits 5669, which means two characters dressed alike), and underwear_only (79566) is a coverage state rather than a garment class."
+  },
+  "wardrobe-state.garment_class.none": {
+   "tag": "completely_nude",
+   "relation": "exact",
+   "post_count": 285875,
+   "note": "CONFIRMED. Count re-verified 285,874, category 0, not deprecated. The preference over `nude` (681,294) is right and the nude wiki proves it: \"Clothing on other body parts, such as hats, thighhighs, elbow gloves, or jewelry, may still be worn\" — thighhighs are the hosiery garment_class, so `nude` would be broader than a garment_class of none."
+  },
+  "wardrobe-state.garment_class.swimwear": {
+   "tag": "swimsuit",
+   "relation": "exact",
+   "post_count": 899417,
+   "note": "CONFIRMED. Count 899,409, category 0, not deprecated. The deprecated `swimwear` row (0 posts) has the one-line wiki \"See swimsuit.\" — swimsuit is the named live successor, and its wiki covers both female and male swimwear, so no second tag is needed."
+  },
+  "wardrobe-state.garment_class.uniform": {
+   "tag": "employee_uniform",
+   "relation": "close",
+   "post_count": 6090,
+   "note": "CONFIRMED, including the deprecation claim: tag uniform exists with 26630 posts but is_deprecated true, wiki 'This tag is so broad that it is useless for Danbooru's purposes, so please use a more specific tag'. The class is split across siblings, not expressible as a conjunction: school_uniform 1041926, military_uniform 114994, police_uniform 15112, maid 207886, nurse 22294. employee_uniform is the occupational-workwear branch only, so it is close and covers less than the value. Left extra_tags empty deliberately, since emitting several uniform types at once would describe no real garment."
+  }
+ }
+}

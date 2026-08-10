@@ -1,0 +1,83 @@
+{
+  "atlas_category": "expression-gaze",
+  "display_name": "Expression & gaze",
+  "layer": "context",
+  "version": "1.0.0",
+  "catalog_version": "2.0.0-draft",
+  "license": "CC-BY-4.0",
+  "description": "Where a participant is looking and what their face is doing. Included because gaze direction is one of the highest-frequency descriptors in the folksonomies that open adult models were trained on, and because it is the axis with the largest effect on how a still reads while costing the least to control. Per-participant, not per-pose. Adults only.",
+
+  "design_notes": {
+    "why_gaze_is_separate_from_affect": "Gaze target and facial affect vary independently: eye contact with a neutral face and eye contact with an open-mouthed expression are different images. Folksonomy tags bundle them; separating them makes both controllable.",
+    "consent_signalling": "Gaze and affect together carry most of the consent signal a viewer reads from an image. Values that read as distress are enumerated and flagged rather than omitted, so that a consumer can exclude them by rule instead of by absence."
+  },
+
+  "dimensions": [
+    {
+      "id": "gaze_target",
+      "display_name": "Gaze target",
+      "type": "categorical",
+      "scale": "gaze_target_qualitative",
+      "scale_citation": "Direction-of-look descriptor; the highest-frequency single descriptor across booru-style adult folksonomies.",
+      "description": "Where the participant is looking.",
+      "values": [
+        {"id": "at_viewer", "display_name": "At viewer", "definition": "Direct eye contact with the lens.", "mechanical_gloss": "looking directly into the camera lens"},
+        {"id": "at_partner", "display_name": "At partner", "definition": "Looking at another participant."},
+        {"id": "away", "display_name": "Away", "definition": "Looking off-frame, no specific target."},
+        {"id": "upward", "display_name": "Upward", "definition": "Eyes raised."},
+        {"id": "downward", "display_name": "Downward", "definition": "Eyes lowered."},
+        {"id": "over_shoulder", "display_name": "Over shoulder", "definition": "Head turned back toward the lens or partner behind. Characteristic of from-behind arrangements.", "mechanical_gloss": "head turned back over the shoulder, looking behind"},
+        {"id": "eyes_closed", "display_name": "Eyes closed", "definition": "Eyes shut."},
+        {"id": "obscured", "display_name": "Obscured", "definition": "Face not visible or covered."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "face"}
+    },
+    {
+      "id": "facial_affect",
+      "display_name": "Facial affect",
+      "type": "categorical",
+      "scale": "facial_affect_qualitative",
+      "scale_citation": "Expression descriptors as used in performance direction, restricted to states readable from a single frame.",
+      "description": "The emotional register the face is playing.",
+      "values": [
+        {"id": "neutral", "display_name": "Neutral"},
+        {"id": "smiling", "display_name": "Smiling"},
+        {"id": "playful", "display_name": "Playful / teasing"},
+        {"id": "sultry", "display_name": "Sultry", "definition": "Half-lidded, composed, deliberate."},
+        {"id": "focused", "display_name": "Focused", "definition": "Concentrated, absorbed in the act."},
+        {"id": "pleasure_restrained", "display_name": "Pleasure (restrained)", "definition": "Contained reaction; brow and mouth engaged, composure held."},
+        {"id": "pleasure_overwhelmed", "display_name": "Pleasure (overwhelmed)", "definition": "Loss of composure; brow raised, mouth open, eyes rolled or shut. Corresponds to the folksonomy term rendered as 'ahegao' in anime-domain tagging.", "intensity_floor": "suggestive"},
+        {"id": "surprised", "display_name": "Surprised"},
+        {"id": "distressed", "display_name": "Distressed", "definition": "Reads as discomfort or unwillingness.", "policy_flag": "restricted", "policy_note": "Nonconsent-coded when combined with an explicit act. Enumerated so it can be excluded by rule; consumers operating a consent-forward posture should reject this value in combination with any explicit primary_act."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "face"}
+    },
+    {
+      "id": "mouth_state",
+      "display_name": "Mouth state",
+      "type": "categorical",
+      "scale": "mouth_state_qualitative",
+      "scale_citation": "Discrete mouth configurations readable from a single frame.",
+      "description": "The configuration of the mouth, recorded separately from affect because it is independently controllable and frequently mis-rendered.",
+      "values": [
+        {"id": "closed", "display_name": "Closed"},
+        {"id": "parted", "display_name": "Parted"},
+        {"id": "open", "display_name": "Open"},
+        {"id": "tongue_out", "display_name": "Tongue out"},
+        {"id": "biting_lip", "display_name": "Biting lip"},
+        {"id": "occupied", "display_name": "Occupied", "definition": "Mouth engaged in the act.", "intensity_floor": "explicit"}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "face"}
+    }
+  ],
+
+  "aggregation_notes": {
+    "categorical_dimensions_roll_up_as": "frequency distribution",
+    "note": "Recorded per participant. A two-participant record carries two expression sets."
+  },
+
+  "references": [
+    "Danbooru tag group: face tags and expression folksonomy, consulted for coverage of readable expression states; wording original.",
+    "Gaze/affect/mouth three-way split is original to this vocabulary; consulted folksonomies bundle these into single tags."
+  ]
+}

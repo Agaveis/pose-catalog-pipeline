@@ -1,0 +1,1541 @@
+{
+ "atlas_category": "positions-index",
+ "display_name": "Position index",
+ "layer": "position",
+ "version": "1.0.0",
+ "catalog_version": "2.0.0-draft",
+ "license": "CC-BY-4.0",
+ "description": "Compact index of every named position: slug, name, aliases, participant count and composition, plus a one-sentence structural gloss composed from the typed axes rather than from editorial prose. Generated from poses.seed.json, the canonical source. Exists so that surfaces which only need names and structure can run without a database round trip.",
+ "positions": [
+  {
+   "slug": "missionary",
+   "name": "Missionary",
+   "aliases": [
+    "man on top",
+    "matrimonial position"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "penetrating_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, penetrating partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "cowgirl",
+   "name": "Cowgirl (woman on top)",
+   "aliases": [
+    "woman on top",
+    "girl on top",
+    "riding"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, receiving partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "reverse-cowgirl",
+   "name": "Reverse cowgirl",
+   "aliases": [
+    "reverse woman on top",
+    "reverse riding"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, receiving partner on top, front to back, on a flat surface."
+  },
+  {
+   "slug": "doggy-style",
+   "name": "Doggy style",
+   "aliases": [
+    "rear entry",
+    "from behind",
+    "doggie style"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "spooning",
+   "name": "Spooning",
+   "aliases": [
+    "spoons",
+    "side-by-side rear entry",
+    "lateral"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "side_lying",
+   "intensity": "explicit",
+   "gloss": "2 participants, side-lying, front to back, on a flat surface."
+  },
+  {
+   "slug": "sixty-nine",
+   "name": "Sixty-nine (69)",
+   "aliases": [
+    "69",
+    "soixante-neuf",
+    "mutual oral"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "head_to_toe",
+   "intensity": "explicit",
+   "gloss": "2 participants, head-to-toe (mutual), head to toe, on a flat surface."
+  },
+  {
+   "slug": "prone-bone",
+   "name": "Prone bone",
+   "aliases": [
+    "flat doggy",
+    "prone rear entry",
+    "flatiron",
+    "speed bump",
+    "lazy doggy"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "lotus",
+   "name": "Lotus",
+   "aliases": [
+    "lotus coition",
+    "yab-yum",
+    "om position",
+    "seated face-to-face"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "seated",
+   "intensity": "explicit",
+   "gloss": "2 participants, seated, face to face, seated on furniture."
+  },
+  {
+   "slug": "facesitting",
+   "name": "Facesitting",
+   "aliases": [
+    "face sitting",
+    "queening",
+    "kinging",
+    "oral from above"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "over_face",
+   "intensity": "explicit",
+   "gloss": "2 participants, over the face, on a flat surface."
+  },
+  {
+   "slug": "piledriver",
+   "name": "Piledriver",
+   "aliases": [
+    "the piledriver",
+    "inverted rear entry"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "inverted",
+   "intensity": "explicit",
+   "gloss": "2 participants, inverted, supported by a partner."
+  },
+  {
+   "slug": "fellatio-kneeling",
+   "name": "Fellatio (kneeling)",
+   "aliases": [
+    "oral sex",
+    "blowjob",
+    "kneeling oral"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "2 participants, kneeling, face to face, standing unsupported."
+  },
+  {
+   "slug": "spit-roast",
+   "name": "Spit roast",
+   "aliases": [
+    "spitroast",
+    "double team",
+    "ends"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "mixed",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "3 participants, from behind, on a flat surface."
+  },
+  {
+   "slug": "solo-display-arch",
+   "name": "Solo display (arched)",
+   "aliases": [
+    "glamour arch",
+    "boudoir arch",
+    "solo presentation"
+   ],
+   "figures": 1,
+   "composition": "solo_f",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "suggestive",
+   "gloss": "A single participant, solo display, on a flat surface."
+  },
+  {
+   "slug": "solo-standing-display",
+   "name": "Solo display (standing)",
+   "aliases": [
+    "standing pose",
+    "pin-up standing",
+    "full-length display"
+   ],
+   "figures": 1,
+   "composition": "solo_f",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "suggestive",
+   "gloss": "A single participant, solo display, standing unsupported."
+  },
+  {
+   "slug": "solo-kneeling-display",
+   "name": "Solo display (kneeling)",
+   "aliases": [
+    "kneeling pose",
+    "pin-up kneel",
+    "upright kneel"
+   ],
+   "figures": 1,
+   "composition": "solo_f",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "suggestive",
+   "gloss": "A single participant, solo display, on a flat surface."
+  },
+  {
+   "slug": "solo-all-fours-lookback",
+   "name": "Solo all-fours (look back)",
+   "aliases": [
+    "all fours",
+    "looking back",
+    "on hands and knees"
+   ],
+   "figures": 1,
+   "composition": "solo_f",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "suggestive",
+   "gloss": "A single participant, solo display, on a flat surface."
+  },
+  {
+   "slug": "solo-spread-legs",
+   "name": "Legs spread (supine)",
+   "aliases": [
+    "m legs",
+    "spread legs",
+    "knees up spread"
+   ],
+   "figures": 1,
+   "composition": "solo_f",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "explicit",
+   "gloss": "A single participant, solo display, on a flat surface."
+  },
+  {
+   "slug": "solo-legs-up",
+   "name": "Legs raised (supine)",
+   "aliases": [
+    "legs up",
+    "legs raised",
+    "legs in the air"
+   ],
+   "figures": 1,
+   "composition": "solo_f",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "suggestive",
+   "gloss": "A single participant, solo display, on a flat surface."
+  },
+  {
+   "slug": "solo-prone-arch",
+   "name": "Face down, hips up (solo)",
+   "aliases": [
+    "face down ass up",
+    "FDAU",
+    "ass up",
+    "prone arch"
+   ],
+   "figures": 1,
+   "composition": "solo_f",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "suggestive",
+   "gloss": "A single participant, solo display, on a flat surface."
+  },
+  {
+   "slug": "solo-squat-display",
+   "name": "Solo display (squat)",
+   "aliases": [
+    "squatting",
+    "full squat",
+    "squat pose"
+   ],
+   "figures": 1,
+   "composition": "solo_f",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "suggestive",
+   "gloss": "A single participant, solo display, standing unsupported."
+  },
+  {
+   "slug": "solo-masturbation-supine",
+   "name": "Masturbation (supine)",
+   "aliases": [
+    "fingering",
+    "solo touch",
+    "playing with herself"
+   ],
+   "figures": 1,
+   "composition": "solo_f",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "explicit",
+   "gloss": "A single participant, solo display, on a flat surface."
+  },
+  {
+   "slug": "solo-masturbation-seated",
+   "name": "Masturbation (seated)",
+   "aliases": [
+    "stroking",
+    "jerking off",
+    "seated solo"
+   ],
+   "figures": 1,
+   "composition": "solo_m",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "explicit",
+   "gloss": "A single participant, solo display, seated on furniture."
+  },
+  {
+   "slug": "legs-on-shoulders",
+   "name": "Legs on shoulders",
+   "aliases": [
+    "deckchair",
+    "deep missionary",
+    "legs over shoulders"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "penetrating_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, penetrating partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "mating-press",
+   "name": "Mating press",
+   "aliases": [
+    "breeding press",
+    "fold press",
+    "legs pinned back"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "penetrating_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, penetrating partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "coital-alignment-technique",
+   "name": "Coital alignment technique",
+   "aliases": [
+    "CAT",
+    "grinding the corn",
+    "riding high missionary"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "penetrating_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, penetrating partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "butterfly",
+   "name": "Butterfly (edge of bed)",
+   "aliases": [
+    "edge-of-bed missionary",
+    "legs up at the edge"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "penetrating_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, penetrating partner on top, face to face, at the edge of a surface."
+  },
+  {
+   "slug": "viennese-oyster",
+   "name": "Viennese oyster",
+   "aliases": [
+    "ankles behind the head",
+    "full fold"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "penetrating_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, penetrating partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "anvil",
+   "name": "Anvil",
+   "aliases": [
+    "legs over kneeling shoulders",
+    "knee-lift fold"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "2 participants, kneeling, face to face, on a flat surface."
+  },
+  {
+   "slug": "missionary-legs-wrapped",
+   "name": "Missionary, legs wrapped",
+   "aliases": [
+    "legs around waist",
+    "wrapped missionary"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "penetrating_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, penetrating partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "standing-doggy",
+   "name": "Standing rear entry (bent over)",
+   "aliases": [
+    "standing doggy",
+    "bent over standing",
+    "bend over"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, standing unsupported."
+  },
+  {
+   "slug": "leapfrog",
+   "name": "Leapfrog",
+   "aliases": [
+    "head down ass up",
+    "chest-down doggy",
+    "flat-shoulder doggy"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "bulldog",
+   "name": "Bulldog",
+   "aliases": [
+    "squatting doggy",
+    "frog mount"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "bent-over-furniture",
+   "name": "Bent over furniture",
+   "aliases": [
+    "over the desk",
+    "over the table",
+    "over the couch arm"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, at the edge of a surface."
+  },
+  {
+   "slug": "turtle",
+   "name": "Turtle",
+   "aliases": [
+    "compact fold rear entry",
+    "tucked doggy"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "wheelbarrow",
+   "name": "Wheelbarrow",
+   "aliases": [
+    "standing wheelbarrow",
+    "wheelbarrow position"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, supported by a partner."
+  },
+  {
+   "slug": "pearly-gates",
+   "name": "Pearly gates",
+   "aliases": [
+    "reverse missionary from behind",
+    "face-up stack"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "squatting-cowgirl",
+   "name": "Squatting cowgirl",
+   "aliases": [
+    "asian cowgirl",
+    "squat riding",
+    "frog squat rider"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, receiving partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "reverse-squat",
+   "name": "Reverse squatting cowgirl",
+   "aliases": [
+    "reverse squat riding",
+    "backwards squat"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, receiving partner on top, front to back, on a flat surface."
+  },
+  {
+   "slug": "prone-cowgirl",
+   "name": "Prone cowgirl",
+   "aliases": [
+    "lying rider",
+    "flat cowgirl",
+    "sloth ride"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, receiving partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "leaning-back-cowgirl",
+   "name": "Cowgirl, leaning back",
+   "aliases": [
+    "reclining rider",
+    "leanback ride"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, receiving partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "cowgirl-leaning-forward",
+   "name": "Cowgirl, leaning forward",
+   "aliases": [
+    "forward-lean ride",
+    "chest-brace cowgirl"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, receiving partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "seated-rear-entry",
+   "name": "Seated rear entry (lap ride)",
+   "aliases": [
+    "reverse lap dance",
+    "lap riding",
+    "reverse lotus"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "seated",
+   "intensity": "explicit",
+   "gloss": "2 participants, seated, front to back, seated on furniture."
+  },
+  {
+   "slug": "face-off",
+   "name": "Face-off (chair straddle)",
+   "aliases": [
+    "lap dance position",
+    "chair lotus",
+    "straddle seat"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "seated",
+   "intensity": "explicit",
+   "gloss": "2 participants, seated, face to face, seated on furniture."
+  },
+  {
+   "slug": "lateral-coital",
+   "name": "Lateral coital (side face-to-face)",
+   "aliases": [
+    "side-by-side face-to-face",
+    "facing spoons",
+    "side embrace"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "side_lying",
+   "intensity": "explicit",
+   "gloss": "2 participants, side-lying, face to face, on a flat surface."
+  },
+  {
+   "slug": "t-square",
+   "name": "T-square",
+   "aliases": [
+    "the T",
+    "perpendicular side entry"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "side_lying",
+   "intensity": "explicit",
+   "gloss": "2 participants, side-lying, on a flat surface."
+  },
+  {
+   "slug": "kneeling-embrace",
+   "name": "Kneeling embrace",
+   "aliases": [
+    "kneeling face-to-face",
+    "upright kneel together"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "2 participants, kneeling, face to face, on a flat surface."
+  },
+  {
+   "slug": "kneeling-rear-embrace",
+   "name": "Kneeling rear embrace",
+   "aliases": [
+    "upright doggy",
+    "kneeling from behind",
+    "torso-up rear"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "scissoring",
+   "name": "Scissoring (tribadism)",
+   "aliases": [
+    "tribbing",
+    "scissor position",
+    "leg-lock grind"
+   ],
+   "figures": 2,
+   "composition": "FF",
+   "primary_act": "non_penetrative",
+   "arrangement": "side_lying",
+   "intensity": "explicit",
+   "gloss": "2 participants, side-lying, head to toe, on a flat surface."
+  },
+  {
+   "slug": "suspended-congress",
+   "name": "Suspended congress (standing carry)",
+   "aliases": [
+    "carryfucking",
+    "tower stand",
+    "daishuki hold",
+    "standing carry"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "standing",
+   "intensity": "explicit",
+   "gloss": "2 participants, standing, face to face, supported by a partner."
+  },
+  {
+   "slug": "ekiben",
+   "name": "Ekiben (facing-away carry)",
+   "aliases": [
+    "reverse standing carry",
+    "lunchbox carry",
+    "held spread carry"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "standing",
+   "intensity": "explicit",
+   "gloss": "2 participants, standing, front to back, supported by a partner."
+  },
+  {
+   "slug": "standing-face-to-face",
+   "name": "Standing face-to-face (leg raised)",
+   "aliases": [
+    "standing embrace",
+    "one leg up",
+    "flamingo"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "standing",
+   "intensity": "explicit",
+   "gloss": "2 participants, standing, face to face, standing unsupported."
+  },
+  {
+   "slug": "standing-rear-press",
+   "name": "Standing rear press (against wall)",
+   "aliases": [
+    "wall press",
+    "standing from behind",
+    "up against the wall"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, braced against a wall."
+  },
+  {
+   "slug": "ballet-dancer",
+   "name": "Ballet dancer (leg on shoulder, standing)",
+   "aliases": [
+    "standing split",
+    "leg up high",
+    "dancer's pose"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "standing",
+   "intensity": "explicit",
+   "gloss": "2 participants, standing, face to face, standing unsupported."
+  },
+  {
+   "slug": "standing-69",
+   "name": "Standing 69 (inverted carry)",
+   "aliases": [
+    "upside-down 69",
+    "carried 69"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "inverted",
+   "intensity": "explicit",
+   "gloss": "2 participants, inverted, head to toe, supported by a partner."
+  },
+  {
+   "slug": "cunnilingus-lying",
+   "name": "Cunnilingus (lying)",
+   "aliases": [
+    "eating out",
+    "going down",
+    "oral on her back"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "penetrating_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, penetrating partner on top, head to toe, on a flat surface."
+  },
+  {
+   "slug": "cunnilingus-standing",
+   "name": "Cunnilingus (standing receiver)",
+   "aliases": [
+    "kneeling oral on her",
+    "standing queening"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "2 participants, kneeling, face to face, standing unsupported."
+  },
+  {
+   "slug": "cunnilingus-legs-up",
+   "name": "Cunnilingus (legs raised)",
+   "aliases": [
+    "legs-up oral",
+    "folded oral"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "2 participants, kneeling, head to toe, on a flat surface."
+  },
+  {
+   "slug": "sideways-69",
+   "name": "Sideways 69",
+   "aliases": [
+    "side-lying 69",
+    "lazy 69"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "head_to_toe",
+   "intensity": "explicit",
+   "gloss": "2 participants, head-to-toe (mutual), head to toe, on a flat surface."
+  },
+  {
+   "slug": "fellatio-head-back",
+   "name": "Fellatio, head back (edge of bed)",
+   "aliases": [
+    "head off the edge",
+    "throat angle oral"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "standing",
+   "intensity": "explicit",
+   "gloss": "2 participants, standing, head to toe, at the edge of a surface."
+  },
+  {
+   "slug": "fellatio-lying-recipient-seated",
+   "name": "Fellatio (recipient reclined)",
+   "aliases": [
+    "couch oral",
+    "lying between the legs"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "seated",
+   "intensity": "explicit",
+   "gloss": "2 participants, seated, head to toe, seated on furniture."
+  },
+  {
+   "slug": "fellatio-seated",
+   "name": "Fellatio (seated recipient)",
+   "aliases": [
+    "blowjob on the couch",
+    "seated oral",
+    "kneeling between the knees"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "2 participants, kneeling, face to face, seated on furniture."
+  },
+  {
+   "slug": "facesitting-reverse",
+   "name": "Facesitting (reverse)",
+   "aliases": [
+    "reverse queening",
+    "69-facing facesit"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "over_face",
+   "intensity": "explicit",
+   "gloss": "2 participants, over the face, head to toe, on a flat surface."
+  },
+  {
+   "slug": "rusty-trombone",
+   "name": "Rusty trombone",
+   "aliases": [
+    "standing rimjob with reach-around"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, standing unsupported."
+  },
+  {
+   "slug": "anilingus-kneeling",
+   "name": "Anilingus (from behind)",
+   "aliases": [
+    "rimming",
+    "rimjob",
+    "eating ass"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "handjob-lying",
+   "name": "Handjob (partner lying)",
+   "aliases": [
+    "hand job",
+    "stroking him",
+    "manual (kneeling beside)"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "manual",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "2 participants, kneeling, on a flat surface."
+  },
+  {
+   "slug": "fingering-lying",
+   "name": "Fingering (partner lying)",
+   "aliases": [
+    "manual penetration",
+    "fingering her"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "manual",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "2 participants, kneeling, on a flat surface."
+  },
+  {
+   "slug": "mutual-masturbation",
+   "name": "Mutual masturbation (side by side)",
+   "aliases": [
+    "side-by-side solo",
+    "mutual touching"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "manual",
+   "arrangement": "side_lying",
+   "intensity": "explicit",
+   "gloss": "2 participants, side-lying, side by side, on a flat surface."
+  },
+  {
+   "slug": "titjob",
+   "name": "Titjob (astride the chest)",
+   "aliases": [
+    "paizuri",
+    "titty fuck",
+    "tit wank",
+    "mammary intercourse"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "non_penetrative",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, receiving partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "intergluteal",
+   "name": "Intergluteal (hotdogging)",
+   "aliases": [
+    "hotdogging",
+    "assjob",
+    "buttjob",
+    "outercourse from behind"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "non_penetrative",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "intercrural-standing",
+   "name": "Intercrural (standing)",
+   "aliases": [
+    "thigh sex",
+    "thighjob",
+    "between the thighs"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "non_penetrative",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, standing unsupported."
+  },
+  {
+   "slug": "frottage-face-to-face",
+   "name": "Frottage (face-to-face grinding)",
+   "aliases": [
+    "dry humping",
+    "grinding",
+    "outercourse missionary"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "non_penetrative",
+   "arrangement": "penetrating_on_top",
+   "intensity": "suggestive",
+   "gloss": "2 participants, penetrating partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "double-penetration",
+   "name": "Double penetration (DP)",
+   "aliases": [
+    "DP",
+    "sandwich DP",
+    "anal-vaginal penetration"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "mixed",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "3 participants, receiving partner on top, on a flat surface."
+  },
+  {
+   "slug": "double-vaginal",
+   "name": "Double vaginal penetration",
+   "aliases": [
+    "DVP",
+    "double vaginal",
+    "double pussy penetration"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "3 participants, receiving partner on top, on a flat surface."
+  },
+  {
+   "slug": "double-anal",
+   "name": "Double anal penetration",
+   "aliases": [
+    "DAP",
+    "double anal"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "anal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "3 participants, receiving partner on top, on a flat surface."
+  },
+  {
+   "slug": "eiffel-tower",
+   "name": "Eiffel Tower",
+   "aliases": [
+    "high five spitroast",
+    "the arch"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "mixed",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "3 participants, from behind, on a flat surface."
+  },
+  {
+   "slug": "standing-sandwich",
+   "name": "Standing sandwich (DP carry)",
+   "aliases": [
+    "sandwich",
+    "standing DP",
+    "carry sandwich"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "mixed",
+   "arrangement": "standing",
+   "intensity": "explicit",
+   "gloss": "3 participants, standing, supported by a partner."
+  },
+  {
+   "slug": "triple-penetration",
+   "name": "Triple penetration (airtight)",
+   "aliases": [
+    "airtight",
+    "TP",
+    "all three"
+   ],
+   "figures": 4,
+   "composition": "group_mixed",
+   "primary_act": "mixed",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "4 participants, receiving partner on top, on a flat surface."
+  },
+  {
+   "slug": "ffm-ride-and-sit",
+   "name": "FFM ride and sit",
+   "aliases": [
+    "two on one",
+    "queen and rider",
+    "face-sit plus cowgirl"
+   ],
+   "figures": 3,
+   "composition": "FFM",
+   "primary_act": "mixed",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "3 participants, receiving partner on top, on a flat surface."
+  },
+  {
+   "slug": "gangbang-center",
+   "name": "Gangbang (kneeling center)",
+   "aliases": [
+    "center kneel",
+    "surrounded",
+    "blowbang core"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "oral",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "3 participants, kneeling, on a flat surface."
+  },
+  {
+   "slug": "train",
+   "name": "Train (rear-entry chain)",
+   "aliases": [
+    "running a train",
+    "chain rear entry"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "mixed",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "3 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "daisy-chain",
+   "name": "Daisy chain (oral circle)",
+   "aliases": [
+    "oral chain",
+    "circle 69"
+   ],
+   "figures": 3,
+   "composition": "group_mixed",
+   "primary_act": "oral",
+   "arrangement": "head_to_toe",
+   "intensity": "explicit",
+   "gloss": "3 participants, head-to-toe (mutual), head to toe, on a flat surface."
+  },
+  {
+   "slug": "amazon",
+   "name": "Amazon",
+   "aliases": [
+    "amazon position",
+    "role-reverse squat"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, receiving partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "splitting-bamboo",
+   "name": "Splitting the bamboo",
+   "aliases": [
+    "one leg up missionary",
+    "bamboo split"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "penetrating_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, penetrating partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "yawning",
+   "name": "Yawning position",
+   "aliases": [
+    "wide-spread missionary",
+    "open V"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "penetrating_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, penetrating partner on top, face to face, on a flat surface."
+  },
+  {
+   "slug": "full-nelson",
+   "name": "Full nelson",
+   "aliases": [
+    "nelson hold",
+    "locked legs-back carry"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, supported by a partner."
+  },
+  {
+   "slug": "pretzel",
+   "name": "Pretzel (pretzel dip)",
+   "aliases": [
+    "pretzel dip",
+    "side straddle",
+    "camel ride"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "side_lying",
+   "intensity": "explicit",
+   "gloss": "2 participants, side-lying, face to face, on a flat surface."
+  },
+  {
+   "slug": "butter-churner",
+   "name": "Butter churner",
+   "aliases": [
+    "churner",
+    "squat piledriver",
+    "legs-over fold"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "inverted",
+   "intensity": "explicit",
+   "gloss": "2 participants, inverted, on a flat surface."
+  },
+  {
+   "slug": "spider",
+   "name": "Spider (crab)",
+   "aliases": [
+    "crab position",
+    "reclined X",
+    "spider crab"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "seated",
+   "intensity": "explicit",
+   "gloss": "2 participants, seated, face to face, on a flat surface."
+  },
+  {
+   "slug": "sixty-eight",
+   "name": "Sixty-eight (68)",
+   "aliases": [
+    "68",
+    "one-way 69",
+    "overhead oral"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "head_to_toe",
+   "intensity": "explicit",
+   "gloss": "2 participants, head-to-toe (mutual), head to toe, on a flat surface."
+  },
+  {
+   "slug": "facefuck-kneeling",
+   "name": "Facefuck (kneeling, irrumatio)",
+   "aliases": [
+    "irrumatio",
+    "face fucking",
+    "throat fuck",
+    "skull fuck"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "oral",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "2 participants, kneeling, face to face, standing unsupported."
+  },
+  {
+   "slug": "footjob",
+   "name": "Footjob (seated facing)",
+   "aliases": [
+    "foot job",
+    "FJ",
+    "foot play"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "manual",
+   "arrangement": "seated",
+   "intensity": "explicit",
+   "gloss": "2 participants, seated, face to face, seated on furniture."
+  },
+  {
+   "slug": "lap-dance",
+   "name": "Lap dance (grinding tease)",
+   "aliases": [
+    "lap grind",
+    "stripper grind",
+    "clothed lap ride"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "non_penetrative",
+   "arrangement": "seated",
+   "intensity": "suggestive",
+   "gloss": "2 participants, seated, front to back, seated on furniture."
+  },
+  {
+   "slug": "jockey",
+   "name": "Jockey",
+   "aliases": [
+    "jockey position",
+    "seated prone ride"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "2 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "bridge",
+   "name": "Bridge (arched receiver)",
+   "aliases": [
+    "arch position",
+    "bridge pose"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "2 participants, kneeling, face to face, on a flat surface."
+  },
+  {
+   "slug": "sidesaddle",
+   "name": "Sidesaddle cowgirl",
+   "aliases": [
+    "side ride",
+    "sideways cowgirl",
+    "side straddle ride"
+   ],
+   "figures": 2,
+   "composition": "MF",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "2 participants, receiving partner on top, on a flat surface."
+  },
+  {
+   "slug": "solo-toy-ride",
+   "name": "Toy riding (solo)",
+   "aliases": [
+    "dildo riding",
+    "riding a toy",
+    "suction dildo ride"
+   ],
+   "figures": 1,
+   "composition": "solo_f",
+   "primary_act": "display_solo",
+   "arrangement": "solo_arrangement",
+   "intensity": "explicit",
+   "gloss": "A single participant, solo display, on a flat surface."
+  },
+  {
+   "slug": "reverse-gangbang",
+   "name": "Reverse gangbang",
+   "aliases": [
+    "FFFM",
+    "one guy multiple girls",
+    "reverse GB"
+   ],
+   "figures": 4,
+   "composition": "group_mixed",
+   "primary_act": "mixed",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "4 participants, receiving partner on top, on a flat surface."
+  },
+  {
+   "slug": "bukkake-circle",
+   "name": "Bukkake circle",
+   "aliases": [
+    "bukkake",
+    "facial circle",
+    "center kneel finish"
+   ],
+   "figures": 4,
+   "composition": "group_mixed",
+   "primary_act": "mixed",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "4 participants, kneeling, on a flat surface."
+  },
+  {
+   "slug": "double-blowjob",
+   "name": "Double blowjob",
+   "aliases": [
+    "double BJ",
+    "two girls one guy oral",
+    "shared oral"
+   ],
+   "figures": 3,
+   "composition": "FFM",
+   "primary_act": "oral",
+   "arrangement": "kneeling",
+   "intensity": "explicit",
+   "gloss": "3 participants, kneeling, face to face, standing unsupported."
+  },
+  {
+   "slug": "side-by-side-doggy",
+   "name": "Side-by-side doggy",
+   "aliases": [
+    "double doggy",
+    "two-up rear entry",
+    "line-up"
+   ],
+   "figures": 3,
+   "composition": "FFM",
+   "primary_act": "vaginal_penetration",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "3 participants, from behind, front to back, on a flat surface."
+  },
+  {
+   "slug": "doggy-over-69",
+   "name": "Doggy over 69",
+   "aliases": [
+    "threeway 69",
+    "69 with rear entry",
+    "eat-and-take"
+   ],
+   "figures": 3,
+   "composition": "FFM",
+   "primary_act": "mixed",
+   "arrangement": "from_behind",
+   "intensity": "explicit",
+   "gloss": "3 participants, from behind, on a flat surface."
+  },
+  {
+   "slug": "spoon-dp",
+   "name": "Spoon DP (side-lying sandwich)",
+   "aliases": [
+    "side DP",
+    "lying sandwich",
+    "spooning double"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "mixed",
+   "arrangement": "side_lying",
+   "intensity": "explicit",
+   "gloss": "3 participants, side-lying, on a flat surface."
+  },
+  {
+   "slug": "dp-reverse",
+   "name": "Reverse DP (leaning back)",
+   "aliases": [
+    "reverse double penetration",
+    "leanback DP"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "mixed",
+   "arrangement": "receiving_on_top",
+   "intensity": "explicit",
+   "gloss": "3 participants, receiving partner on top, on a flat surface."
+  },
+  {
+   "slug": "spitroast-lying",
+   "name": "Lying spit roast",
+   "aliases": [
+    "side spit roast",
+    "lying ends"
+   ],
+   "figures": 3,
+   "composition": "MMF",
+   "primary_act": "mixed",
+   "arrangement": "side_lying",
+   "intensity": "explicit",
+   "gloss": "3 participants, side-lying, on a flat surface."
+  }
+ ]
+}

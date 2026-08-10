@@ -1,0 +1,88 @@
+{
+  "atlas_category": "wardrobe-state",
+  "display_name": "Wardrobe state",
+  "layer": "context",
+  "version": "1.0.0",
+  "catalog_version": "2.0.0-draft",
+  "license": "CC-BY-4.0",
+  "description": "What the participants are wearing and how it sits on the body. Included because coverage state is the single most prominent control in commercial adult generators (it is typically the first menu a user touches), yet it is absent from every structured position taxonomy. Coverage and disarray are separated deliberately: 'topless' describes how much is covered, 'pulled aside' describes how a garment has been displaced, and the two combine freely. Per-participant, not per-pose. Adults only.",
+
+  "design_notes": {
+    "per_participant": "Wardrobe is recorded per participant, not per position. A single pose commonly pairs one fully clothed and one unclothed participant, and collapsing that into one pose-level value loses the distinction generators most often want.",
+    "why_split_coverage_and_disarray": "Coverage answers 'how much skin is visible'; disarray answers 'what happened to the garment'. Booru folksonomies conflate them (`clothed_sex` covers both an intact dress and a torn one), which makes the tag unusable as a control."
+  },
+
+  "dimensions": [
+    {
+      "id": "coverage_state",
+      "display_name": "Coverage state",
+      "type": "ordinal",
+      "scale": "coverage_state_ordinal",
+      "scale_citation": "Ordered by extent of body coverage, from fully unclothed to fully clothed.",
+      "description": "How much of the participant's body is covered.",
+      "values": [
+        {"id": "nude", "display_name": "Nude", "definition": "No garments.", "intensity_floor": "explicit"},
+        {"id": "accessories_only", "display_name": "Accessories only", "definition": "Jewellery, footwear, or hosiery only; no torso or hip coverage.", "intensity_floor": "explicit"},
+        {"id": "topless", "display_name": "Topless", "definition": "Chest uncovered, hips covered.", "intensity_floor": "explicit"},
+        {"id": "bottomless", "display_name": "Bottomless", "definition": "Hips uncovered, torso covered.", "intensity_floor": "explicit"},
+        {"id": "sheer", "display_name": "Sheer", "definition": "Covered by transparent or semi-transparent fabric.", "intensity_floor": "suggestive"},
+        {"id": "lingerie", "display_name": "Lingerie / swimwear", "definition": "Minimal opaque coverage of chest and hips.", "intensity_floor": "suggestive"},
+        {"id": "partially_clothed", "display_name": "Partially clothed", "definition": "Some outer garments removed; underwear or a partial outfit remains.", "intensity_floor": "suggestive"},
+        {"id": "clothed", "display_name": "Clothed", "definition": "Fully dressed in ordinary clothing.", "intensity_floor": "illustrative"}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    },
+    {
+      "id": "disarray_mode",
+      "display_name": "Disarray mode",
+      "type": "categorical",
+      "scale": "disarray_mode_qualitative",
+      "scale_citation": "Descriptor of how a garment departs from its worn position. Independent of coverage_state.",
+      "description": "How the garments have been displaced from their normal worn state.",
+      "values": [
+        {"id": "intact", "display_name": "Intact", "definition": "Garments worn normally."},
+        {"id": "pulled_aside", "display_name": "Pulled aside", "definition": "A garment is displaced sideways without removal."},
+        {"id": "pushed_up", "display_name": "Pushed up", "definition": "A garment is raised above its normal position."},
+        {"id": "pulled_down", "display_name": "Pulled down", "definition": "A garment is lowered below its normal position."},
+        {"id": "unfastened", "display_name": "Unfastened / open", "definition": "Closures released; the garment hangs open."},
+        {"id": "half_removed", "display_name": "Half removed", "definition": "Partly off the body, still attached at a limb."},
+        {"id": "disordered", "display_name": "Disordered", "definition": "Rumpled and out of place without a specific displacement."},
+        {"id": "torn", "display_name": "Torn", "definition": "Fabric damaged.", "policy_flag": "review_context", "policy_note": "Frequently co-occurs with nonconsent-coded framing. Platforms should evaluate in combination with the scene and expression axes rather than blocking on this value alone."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "partial_body"}
+    },
+    {
+      "id": "garment_class",
+      "display_name": "Garment class",
+      "type": "categorical",
+      "scale": "garment_class_qualitative",
+      "scale_citation": "Descriptive enumeration of the garment families that appear as selectable options in commercial adult generators.",
+      "description": "The kind of clothing worn, where any is worn. Multi-valued.",
+      "values": [
+        {"id": "none", "display_name": "None"},
+        {"id": "lingerie_set", "display_name": "Lingerie set"},
+        {"id": "hosiery", "display_name": "Stockings / hosiery"},
+        {"id": "swimwear", "display_name": "Swimwear"},
+        {"id": "casual", "display_name": "Casual wear"},
+        {"id": "formal", "display_name": "Formal wear"},
+        {"id": "uniform", "display_name": "Uniform / occupational", "policy_flag": "review_context", "policy_note": "School-coded uniforms are a common vector for age-ambiguous output. Consumers enforcing an adults-only posture should pair this value with an explicit adult-appearance requirement."},
+        {"id": "fetish_gear", "display_name": "Fetish gear", "intensity_floor": "suggestive"},
+        {"id": "costume", "display_name": "Costume / character"},
+        {"id": "footwear_only", "display_name": "Footwear only"},
+        {"id": "jewellery_only", "display_name": "Jewellery only"}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "partial_body"}
+    }
+  ],
+
+  "aggregation_notes": {
+    "categorical_dimensions_roll_up_as": "frequency distribution",
+    "note": "`intensity_floor` is advisory: it states the lowest presentation intensity_tier at which a value can honestly be depicted. A consumer filtering to `suggestive` must exclude any value whose floor is `explicit`."
+  },
+
+  "references": [
+    "Danbooru tag group: attire, garment folksonomy, consulted for garment-family coverage; wording original.",
+    "Coverage/disarray split is original to this vocabulary; no consulted source separates the two axes.",
+    "Internal: pose-vocabularies/presentation.json `intensity_tier`, the gating contract that `intensity_floor` references."
+  ]
+}

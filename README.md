@@ -4,8 +4,10 @@
 
 Reproducibility code for the **Erotic Pose Catalog** — a public, machine-readable dataset of **104 named erotic positions** (solo and multi-person) with structured attributes, historical/cultural provenance, an index of museum-attested erotic artworks, and an **idealised COCO-17 keypoint template per participant**.
 
+**v2 adds the layers that make it executable rather than only descriptive:** a motion layer (action beats, tempo, camera moves), three context axes (wardrobe, scene, expression), and an **interoperability crosswalk** mapping every position into the folksonomy that open adult checkpoints were trained on, into structured knowledge bases, and onto attested historical names.
+
 - **Dataset (CC BY 4.0):** https://huggingface.co/datasets/EthnicErotic/pose-catalog
-- **Methodology paper:** [`paper/methodology-v1.pdf`](paper/methodology-v1.pdf) · [Markdown source](paper/methodology-v1.md)
+- **Methodology paper:** [`paper/methodology-v1.pdf`](paper/methodology-v1.pdf) · [Markdown source](paper/methodology-v1.md) — documents the **v1** position and keypoint methodology. The v2 layers (action, context, crosswalk, bindings) are specified in the vocabulary files themselves and summarised in the dataset card; they are not yet written up in the paper.
 - **Archived release (DOI):** https://doi.org/10.5281/zenodo.21439174
 - **Live source catalog:** https://ethnicerotic.com/poses
 - **How the catalog was built:** https://ethnicerotic.com/poses/methodology
@@ -13,7 +15,7 @@ Reproducibility code for the **Erotic Pose Catalog** — a public, machine-reada
 
 > **Adults only (18+).** This repository and the dataset it builds document adult sexual positions for research, content-tagging, and creative-tooling use. They contain **no images and no personal data** — only text metadata and schematic keypoint coordinates. The dataset is tagged `not-for-all-audiences`.
 
-The pipeline runs end-to-end from a set of hand-authored JSON vocabularies to a HuggingFace-ready dataset (CSV + JSONL across six configurations). It needs **no database and no API keys** — the source of truth is version-controlled JSON, and every stage is deterministic and re-runnable.
+The pipeline runs end-to-end from a set of hand-authored JSON vocabularies to a HuggingFace-ready dataset (CSV + JSONL across ten configurations). It needs **no database and no API keys** — the source of truth is version-controlled JSON, and every stage is deterministic and re-runnable.
 
 ## Why this exists
 
@@ -24,6 +26,17 @@ Named-position knowledge and pose *geometry* have never lived in the same place:
 - **Adult ML datasets** (NPDI, LSPD) are **binary or anatomy-level**, with no position labels.
 
 This catalog is the bridge: a clean **named-position → structured-attributes → COCO-17 keypoint template** mapping, decoupled from any single tag folksonomy, plus a documented cross-cultural provenance layer tying modern positions back to the historical sources (Kama Sutra, Su Nü Jing, Perfumed Garden, shunga, Moche ceramics, …) that first recorded them.
+
+### And, as of v2, the join table
+
+There is no shared identifier for a named sexual position. The image-board folksonomy that open adult checkpoints learned from organises by act and by body part, so its coverage of named positions is uneven and full of sense collisions (`lotus_position` is cross-legged meditation; `piledriver_(wrestling)` sits beside `piledriver_(sex)`). Structured knowledge bases cover only a minority. Commercial generators each ship a private dropdown with no exported identifiers.
+
+The `crosswalk` config is the mapping, and it is deliberately honest about its own limits:
+
+- **85 of 104** folksonomy mappings are `broader` than the position they map. Each carries a concrete statement of the feature it discards and a count of sibling positions sharing the same tag.
+- **61 of 104** positions have no exact or close identifier in any machine-readable external vocabulary. For those, this catalog is the only precise record.
+- Every tag was checked against the live tag API for existence, category and deprecation. Deprecated tags are excluded even when they carry six-figure post counts.
+- Wiki sense-checks are documented for **46 of 104** rows, not all of them, so this is not verified end to end and does not claim to be.
 
 ## What's in this repo
 
@@ -38,6 +51,17 @@ This catalog is the bridge: a clean **named-position → structured-attributes �
 | `pose-vocabularies/historical-sources.json` | Registry of 22 historical sources (7 sex manuals + 15 erotic-art traditions), each with culture/era/language/region |
 | `pose-vocabularies/historical-works.json` | Text-only index of 87 museum-attested erotic artworks across 13 traditions, with verification confidence grades |
 | `pose-vocabularies/wikidata-positions.json` | CC0 Wikidata QID/label/alias anchor list (regenerable, see below) |
+| `pose-vocabularies/action-dynamics.json` | **v2** The motion layer: 22 action beats, 6 tempi, 14 camera moves, loop types, contact continuity. Beats and camera moves carry a clinical mechanical gloss for video prompting |
+| `pose-vocabularies/wardrobe-state.json` | **v2** Coverage, disarray and garment class, kept as separate axes so they recombine |
+| `pose-vocabularies/scene-setting.json` | **v2** Location, lighting, production mode and time of day |
+| `pose-vocabularies/expression-gaze.json` | **v2** Gaze target, facial affect and mouth state as three independent axes |
+| `pose-vocabularies/interop-crosswalk.json` | **v2** Namespace registry and record schema for the crosswalk |
+| `pose-vocabularies/crosswalk-rows.json` | **v2** The populated crosswalk: 194 mappings across three namespaces, with the loss written down |
+| `pose-vocabularies/action-beat-join.json` | **v2** Which action beats each position physically admits, and which is characteristic |
+| `pose-vocabularies/context-tag-bindings.json` | **v2** Folksonomy tags for the context axes: 79 of 88 values bind, 9 honestly have none |
+| `pose-vocabularies/render-bindings.json` | **v2** Model-family prompt-language schema, control-map contract, and the multi-figure conditioning contract |
+| `pose-vocabularies/render-bindings-solo.json` | **v2** Prompt bindings for the 11 solo positions across three families. The other 93 are deliberately unbound |
+| `pose-vocabularies/positions-index.json` | **v2** Compact name and structure index, generated from the seed, for consumers that do not need the full record |
 | `scripts/fetch-wikidata-positions.mjs` | Fetch CC0 *sex position* (Q8394) items from Wikidata SPARQL as a naming/QID anchor |
 | `scripts/build-keypoints.mjs` | Compose per-participant COCO-17 keypoints from base posture + placement transform; run directly to verify all poses |
 | `scripts/pose-row.mjs` | Shared mapping from a seed entry to a flat serving row (single source of truth for row shape) |

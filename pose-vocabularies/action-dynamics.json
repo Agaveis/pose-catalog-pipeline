@@ -1,0 +1,135 @@
+{
+  "atlas_category": "action-dynamics",
+  "display_name": "Action & dynamics",
+  "layer": "action",
+  "version": "1.0.0",
+  "catalog_version": "2.0.0-draft",
+  "license": "CC-BY-4.0",
+  "description": "The motion layer. A named position fixes who is where; this vocabulary describes what changes over time, the action beat being performed, its tempo, the camera's own movement, how the clip loops, and whether body contact is maintained through the motion. Introduced because generative adult media moved from still images to image-to-video between 2025 and 2026: in an image-to-video pipeline the position is already fixed by the conditioning frame, so the only selectable vocabulary left is beat plus camera. The pose-structure 'dynamics' axis (five values, still-image oriented) is superseded by this file and retained there for backward compatibility. Reference-grade descriptors intended for video prompt conditioning, clip tagging, and motion-adapter naming. Adults only.",
+
+  "design_notes": {
+    "why_mechanical_wording": "Image-to-video models respond better to clinical, mechanical descriptions of motion (what moves, in which direction, at what frequency) than to literary or euphemistic prose. Every value below therefore carries a `mechanical_gloss` written as a physical description rather than an erotic one, intended to be pasted directly into a video prompt.",
+    "orthogonality": "action_beat, camera_motion, and loop_type are independent. Any beat can be shot with any camera motion. Consumers must not collapse them into a single preset string.",
+    "policy_flags": "Values that some platforms restrict carry a `policy_flag`. The vocabulary takes no position on whether a flagged value should be permitted; it exposes the flag so each consumer can filter to its own posture. This is a deliberate point of difference from booru folksonomies, which carry no policy metadata."
+  },
+
+  "dimensions": [
+    {
+      "id": "action_beat",
+      "display_name": "Action beat",
+      "type": "categorical",
+      "scale": "action_beat_qualitative",
+      "scale_citation": "Segmentation of a scene into discrete short-duration beats, matching the 3-8 second generation window typical of current image-to-video models.",
+      "description": "The discrete unit of action performed within one short clip. A beat is what a single generation covers; a scene is a chain of beats.",
+      "values": [
+        {"id": "idle_micro", "display_name": "Idle / micro-motion", "definition": "The pose is held; only breathing, hair, and fabric move.", "mechanical_gloss": "subject holds position, chest rises and falls slowly, hair and fabric settle", "phase": "hold"},
+        {"id": "pose_settle", "display_name": "Pose settle", "definition": "Small adjustment into the held position, weight shifts, a limb repositions.", "mechanical_gloss": "subject shifts weight, adjusts limb placement, then holds still", "phase": "hold"},
+        {"id": "approach", "display_name": "Approach", "definition": "One participant closes distance toward another before contact.", "mechanical_gloss": "one figure moves toward the other, closing the gap between them", "phase": "pre_contact"},
+        {"id": "disrobe", "display_name": "Disrobe", "definition": "A garment is removed or displaced.", "mechanical_gloss": "fabric is pulled away from the body and falls", "phase": "pre_contact"},
+        {"id": "caress", "display_name": "Caress", "definition": "A hand moves across the partner's or own body without stimulation intent.", "mechanical_gloss": "hand travels slowly across skin, fingers maintaining surface contact", "phase": "contact"},
+        {"id": "kiss", "display_name": "Kiss", "definition": "Mouth-to-mouth or mouth-to-body contact.", "mechanical_gloss": "two faces meet, lips make contact, heads tilt slightly", "phase": "contact"},
+        {"id": "entry", "display_name": "Entry", "definition": "The transition into a penetrative position.", "mechanical_gloss": "the figures close the remaining gap and settle into contact", "phase": "transition", "policy_flag": "explicit_only"},
+        {"id": "thrust_shallow", "display_name": "Thrust (shallow)", "definition": "Short-amplitude reciprocating penetrative motion.", "mechanical_gloss": "short-range reciprocating motion along the body axis, small amplitude, hips leading", "phase": "sustained", "policy_flag": "explicit_only"},
+        {"id": "thrust_deep", "display_name": "Thrust (deep)", "definition": "Long-amplitude reciprocating penetrative motion.", "mechanical_gloss": "long-range reciprocating motion along the body axis, full amplitude, torso following the hips", "phase": "sustained", "policy_flag": "explicit_only"},
+        {"id": "thrust_hold", "display_name": "Thrust and hold", "definition": "Motion pauses at maximum extension.", "mechanical_gloss": "motion travels to full extension and stops, bodies pressed together and motionless", "phase": "sustained", "policy_flag": "explicit_only"},
+        {"id": "grind_circular", "display_name": "Grind (circular)", "definition": "Circular contact motion in the transverse plane, no separation.", "mechanical_gloss": "hips trace a circular path in the horizontal plane, contact never breaking", "phase": "sustained", "policy_flag": "explicit_only"},
+        {"id": "grind_rocking", "display_name": "Grind (rocking)", "definition": "Forward-and-back rocking contact motion, no separation.", "mechanical_gloss": "pelvis rocks forward and back through a short arc, contact never breaking", "phase": "sustained", "policy_flag": "explicit_only"},
+        {"id": "ride_bounce", "display_name": "Ride (bounce)", "definition": "Receiving partner drives vertical motion from above.", "mechanical_gloss": "upper figure rises and drops vertically, thighs driving, torso upright", "phase": "sustained", "policy_flag": "explicit_only"},
+        {"id": "ride_grind", "display_name": "Ride (grind)", "definition": "Receiving partner drives horizontal motion from above without lifting.", "mechanical_gloss": "upper figure stays seated and moves forward and back, no vertical travel", "phase": "sustained", "policy_flag": "explicit_only"},
+        {"id": "oral_bob", "display_name": "Oral (bobbing)", "definition": "Rhythmic head motion along the body axis.", "mechanical_gloss": "head moves up and down along a fixed axis, neck flexing, shoulders steady", "phase": "sustained", "policy_flag": "explicit_only"},
+        {"id": "oral_lateral", "display_name": "Oral (lateral / lick)", "definition": "Side-to-side or sweeping tongue motion.", "mechanical_gloss": "head moves side to side in a short sweeping arc, tongue extended", "phase": "sustained", "policy_flag": "explicit_only"},
+        {"id": "manual_stroke", "display_name": "Manual stroke", "definition": "Reciprocating hand motion.", "mechanical_gloss": "hand travels back and forth along a short fixed path, wrist articulating, forearm steady", "phase": "sustained", "policy_flag": "explicit_only"},
+        {"id": "reposition", "display_name": "Reposition", "definition": "A transition from one named position to another within the clip.", "mechanical_gloss": "figures separate, rotate, and settle into a new arrangement", "phase": "transition"},
+        {"id": "climax_reaction", "display_name": "Climax reaction", "definition": "Whole-body reaction: muscle tension, arching, grip.", "mechanical_gloss": "back arches, muscles tense across the torso, hands grip, motion becomes irregular then stops", "phase": "resolution", "policy_flag": "explicit_only"},
+        {"id": "aftermath", "display_name": "Aftermath", "definition": "Post-act rest; breathing settles, bodies relax.", "mechanical_gloss": "bodies go slack, breathing is heavy and slowing, no directed motion", "phase": "resolution"},
+        {"id": "display_turn", "display_name": "Display turn", "definition": "Solo rotation or presentation toward the camera.", "mechanical_gloss": "subject rotates on the spot to face the camera, weight transferring between feet", "phase": "hold"},
+        {"id": "walk_toward", "display_name": "Walk toward camera", "definition": "Solo locomotion toward the lens.", "mechanical_gloss": "subject walks forward toward the lens, full gait cycle, hips counter-rotating", "phase": "pre_contact"}
+      ],
+      "observability": {"from_photograph": "not_assessable", "from_video": "high", "requires_unclothed": false, "minimum_visible_extent": "full_body", "notes": "Not assessable from a single still by definition; this axis exists for moving-image sources."}
+    },
+    {
+      "id": "motion_tempo",
+      "display_name": "Motion tempo",
+      "type": "ordinal",
+      "scale": "motion_tempo_ordinal",
+      "scale_citation": "Qualitative tempo bands with an approximate cycle-frequency hint, provided because image-to-video models condition better on an explicit frequency than on an adverb.",
+      "description": "Rate of the repeating motion in the action beat. The frequency hint is an authoring aid, not a measurement.",
+      "values": [
+        {"id": "still", "display_name": "Still", "definition": "No repeating motion.", "cadence_hz_hint": 0},
+        {"id": "slow", "display_name": "Slow", "definition": "Deliberate, unhurried repetition.", "cadence_hz_hint": 0.5},
+        {"id": "moderate", "display_name": "Moderate", "definition": "Steady, sustainable repetition.", "cadence_hz_hint": 1.5},
+        {"id": "fast", "display_name": "Fast", "definition": "Rapid repetition.", "cadence_hz_hint": 3.0},
+        {"id": "frantic", "display_name": "Frantic", "definition": "Maximum-rate repetition, often with irregular timing.", "cadence_hz_hint": 5.0},
+        {"id": "variable", "display_name": "Variable", "definition": "Tempo changes within the beat (building or slowing)."}
+      ],
+      "observability": {"from_photograph": "not_assessable", "from_video": "high", "requires_unclothed": false, "minimum_visible_extent": "partial_body"}
+    },
+    {
+      "id": "camera_motion",
+      "display_name": "Camera motion",
+      "type": "categorical",
+      "scale": "camera_motion_qualitative",
+      "scale_citation": "Cinematographic camera-move descriptors. The value set is aligned with the move names that community image-to-video motion adapters have converged on (push-in, pull-out, orbit, arc, crane, bullet-time), so that catalogue values map onto existing adapters without translation.",
+      "description": "Movement of the camera itself, independent of what the subjects are doing. Distinct from the pose-structure `camera_framing` axis, which describes a static viewpoint.",
+      "values": [
+        {"id": "static_locked", "display_name": "Locked off", "definition": "Tripod-static; the frame does not move.", "mechanical_gloss": "camera is locked on a tripod and does not move"},
+        {"id": "handheld_drift", "display_name": "Handheld drift", "definition": "Small unmotivated movement from a hand-held rig.", "mechanical_gloss": "camera drifts slightly, small unsteady handheld movement"},
+        {"id": "push_in", "display_name": "Push in", "definition": "Camera advances toward the subject.", "mechanical_gloss": "camera moves steadily toward the subject, framing tightening"},
+        {"id": "pull_out", "display_name": "Pull out", "definition": "Camera retreats from the subject.", "mechanical_gloss": "camera moves steadily away from the subject, framing widening"},
+        {"id": "orbit_full", "display_name": "Orbit (360)", "definition": "Camera circles the subject through a full revolution.", "mechanical_gloss": "camera circles all the way around the subject at a constant radius"},
+        {"id": "arc_partial", "display_name": "Arc (partial)", "definition": "Camera travels along part of a circular path around the subject.", "mechanical_gloss": "camera travels sideways along a curved path around the subject"},
+        {"id": "crane_up", "display_name": "Crane up", "definition": "Camera rises vertically.", "mechanical_gloss": "camera rises vertically while staying pointed at the subject"},
+        {"id": "crane_down", "display_name": "Crane down", "definition": "Camera descends vertically.", "mechanical_gloss": "camera lowers vertically while staying pointed at the subject"},
+        {"id": "overhead_descend", "display_name": "Overhead descend", "definition": "Camera lowers from a top-down position.", "mechanical_gloss": "camera looks straight down and descends toward the subject"},
+        {"id": "pan_follow", "display_name": "Pan / follow", "definition": "Camera rotates to keep a moving subject framed.", "mechanical_gloss": "camera rotates horizontally to keep the subject centred"},
+        {"id": "tilt_reveal", "display_name": "Tilt reveal", "definition": "Camera rotates vertically to reveal the subject progressively.", "mechanical_gloss": "camera tilts upward, revealing the body from the feet to the head"},
+        {"id": "pov_handheld", "display_name": "POV (head-mounted)", "definition": "Camera occupies a participant's viewpoint and moves with their body.", "mechanical_gloss": "camera is at eye level of one participant and moves with their body, first person view"},
+        {"id": "rack_focus", "display_name": "Rack focus", "definition": "Focal plane shifts between subjects; camera body static.", "mechanical_gloss": "camera stays still, focus shifts from the foreground to the background"},
+        {"id": "freeze_orbit", "display_name": "Freeze orbit (bullet time)", "definition": "Subject motion stops while the camera continues to travel.", "mechanical_gloss": "subject motion freezes in place while the camera continues to move around them"}
+      ],
+      "observability": {"from_photograph": "not_assessable", "from_video": "high", "requires_unclothed": false, "minimum_visible_extent": "any"}
+    },
+    {
+      "id": "loop_type",
+      "display_name": "Loop type",
+      "type": "categorical",
+      "scale": "loop_type_qualitative",
+      "scale_citation": "Delivery-format descriptor for short generated clips, where looping behaviour is a production requirement rather than an aesthetic one.",
+      "description": "How the generated clip is intended to terminate or repeat.",
+      "values": [
+        {"id": "one_shot", "display_name": "One shot", "definition": "Plays once; start and end states differ."},
+        {"id": "seamless_loop", "display_name": "Seamless loop", "definition": "Last frame matches the first; repeats without a visible cut."},
+        {"id": "ping_pong", "display_name": "Ping-pong", "definition": "Plays forward then reverses. Suits symmetric reciprocating beats."},
+        {"id": "beat_chain", "display_name": "Beat chain", "definition": "One segment of a multi-clip sequence; the end state is the next clip's conditioning frame."}
+      ],
+      "observability": {"from_photograph": "not_assessable", "from_video": "high", "requires_unclothed": false, "minimum_visible_extent": "any"}
+    },
+    {
+      "id": "contact_continuity",
+      "display_name": "Contact continuity",
+      "type": "categorical",
+      "scale": "contact_continuity_qualitative",
+      "scale_citation": "Descriptor of whether body-to-body contact persists through the beat. Recorded because loss of contact geometry across frames is the dominant failure mode of current image-to-video models on multi-figure scenes.",
+      "description": "Whether the point of contact between participants is maintained through the motion. A quality-control axis as much as a descriptive one.",
+      "values": [
+        {"id": "not_applicable", "display_name": "Not applicable", "definition": "Solo beat; no inter-participant contact."},
+        {"id": "maintained", "display_name": "Maintained", "definition": "Contact persists for the whole beat. Easiest case for a video model to hold."},
+        {"id": "intermittent", "display_name": "Intermittent", "definition": "Contact breaks and re-forms cyclically. Highest risk of geometry drift."},
+        {"id": "breaking", "display_name": "Breaking", "definition": "Contact is established or lost once during the beat."}
+      ],
+      "observability": {"from_photograph": "not_assessable", "from_video": "medium", "requires_unclothed": false, "minimum_visible_extent": "full_body"}
+    }
+  ],
+
+  "aggregation_notes": {
+    "categorical_dimensions_roll_up_as": "frequency distribution",
+    "note": "A position record may carry several compatible action beats. The pairing of a position slug with an action beat is the addressable unit for video generation; neither alone is sufficient."
+  },
+
+  "references": [
+    "Danbooru tag group: sex_acts, act-centric folksonomy sections (Before sex / Stimulation / Group sex / Penetration and Insertion / Fetishes), consulted for act coverage; wording original.",
+    "Danbooru tag group: posture, body-part-level posture folksonomy, consulted to confirm that no named-position layer exists there; wording original.",
+    "Community image-to-video motion adapters (push-in, pull-out, 360 orbit, arc shot, crane up/down, bullet time), camera-move naming convergence observed across the most-downloaded public adapters, 2025-2026.",
+    "Internal: pose-vocabularies/pose-structure.json `dynamics` dimension, superseded by this file."
+  ]
+}

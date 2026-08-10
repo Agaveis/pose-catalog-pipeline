@@ -1,0 +1,109 @@
+{
+  "atlas_category": "scene-setting",
+  "display_name": "Scene & setting",
+  "layer": "context",
+  "version": "1.0.0",
+  "catalog_version": "2.0.0-draft",
+  "license": "CC-BY-4.0",
+  "description": "Where the depiction takes place and how it is lit and shot. Included because a location control and a production-look control appear in effectively every commercial adult generator's interface, and because production mode materially changes the prompt: the same position rendered as 'studio professional' and as 'phone selfie' needs different lighting, lens, and grain language. Adults only.",
+
+  "design_notes": {
+    "production_mode_is_not_style": "Production mode describes the apparent capture apparatus and its consequences (lens, lighting, grain, framing discipline). It is not an art style. Art style (photoreal, anime, 3D render, painterly) is a separate concern and deliberately out of scope for this vocabulary, since it is model-specific and changes faster than a standard can track."
+  },
+
+  "dimensions": [
+    {
+      "id": "location_class",
+      "display_name": "Location class",
+      "type": "categorical",
+      "scale": "location_class_qualitative",
+      "scale_citation": "Descriptive enumeration of the location families offered as presets across commercial adult generators.",
+      "description": "The kind of place depicted.",
+      "values": [
+        {"id": "studio_seamless", "display_name": "Studio (seamless)", "definition": "Plain backdrop, no environmental detail. The default for reference and catalogue imagery."},
+        {"id": "bedroom", "display_name": "Bedroom"},
+        {"id": "bathroom", "display_name": "Bathroom / shower"},
+        {"id": "living_space", "display_name": "Living room / kitchen"},
+        {"id": "hotel", "display_name": "Hotel room"},
+        {"id": "office", "display_name": "Office"},
+        {"id": "casting_room", "display_name": "Casting / audition room", "definition": "Sparse room with a couch and a visible camera rig; a recognised adult-media set convention."},
+        {"id": "gym", "display_name": "Gym / locker room"},
+        {"id": "pool", "display_name": "Pool / spa"},
+        {"id": "vehicle", "display_name": "Vehicle interior"},
+        {"id": "outdoor_natural", "display_name": "Outdoor (natural)", "definition": "Beach, forest, field."},
+        {"id": "outdoor_urban", "display_name": "Outdoor (urban)", "definition": "Street, rooftop, alley.", "policy_flag": "review_context", "policy_note": "Public-setting explicit depiction is restricted on many platforms independent of its content."},
+        {"id": "club_stage", "display_name": "Club / stage"},
+        {"id": "industrial", "display_name": "Industrial / warehouse"},
+        {"id": "fantasy_set", "display_name": "Fantasy / constructed set", "definition": "Non-naturalistic environment built for the depiction."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "any"}
+    },
+    {
+      "id": "lighting_setup",
+      "display_name": "Lighting setup",
+      "type": "categorical",
+      "scale": "lighting_setup_qualitative",
+      "scale_citation": "Standard photographic lighting descriptors as applied to adult media production.",
+      "description": "The dominant light source and its quality.",
+      "values": [
+        {"id": "soft_key", "display_name": "Soft key", "definition": "Large diffuse source; gentle shadow edges.", "mechanical_gloss": "large softbox key light, soft shadow edges, even skin rendering"},
+        {"id": "hard_key", "display_name": "Hard key", "definition": "Small undiffused source; crisp shadow edges.", "mechanical_gloss": "small hard light source, sharp shadow edges, strong contrast"},
+        {"id": "window_natural", "display_name": "Natural window", "definition": "Daylight through a window; directional and soft.", "mechanical_gloss": "daylight from a window to one side, soft directional falloff"},
+        {"id": "low_key_rim", "display_name": "Low key / rim", "definition": "Dark field with an edge-defining backlight.", "mechanical_gloss": "dark background, rim light outlining the body, deep shadows"},
+        {"id": "practical_ambient", "display_name": "Practical / ambient", "definition": "Lit by lamps visible in the scene.", "mechanical_gloss": "lit by lamps within the room, warm uneven ambient light"},
+        {"id": "neon_colour", "display_name": "Neon / coloured", "definition": "Saturated coloured sources.", "mechanical_gloss": "saturated coloured light from two directions, strong colour cast on skin"},
+        {"id": "on_camera_flash", "display_name": "On-camera flash", "definition": "Direct frontal flash; flat subject, hard background shadow.", "mechanical_gloss": "direct on-camera flash, flat frontal exposure, hard shadow on the wall behind"},
+        {"id": "candle_firelight", "display_name": "Candle / firelight", "definition": "Low warm flickering source.", "mechanical_gloss": "low warm flickering light from below, deep falloff"},
+        {"id": "overcast_flat", "display_name": "Overcast / flat", "definition": "Even shadowless illumination.", "mechanical_gloss": "flat even overcast light, minimal shadows"}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "any"}
+    },
+    {
+      "id": "production_mode",
+      "display_name": "Production mode",
+      "type": "categorical",
+      "scale": "production_mode_qualitative",
+      "scale_citation": "Descriptor of the apparent capture apparatus and its photographic consequences.",
+      "description": "What the imagery appears to have been shot on and by whom. Drives lens, grain, framing discipline, and colour.",
+      "values": [
+        {"id": "studio_professional", "display_name": "Studio professional", "definition": "Crewed shoot; controlled light, clean framing, full-frame lens character.", "mechanical_gloss": "professional camera, controlled studio lighting, sharp focus, clean composition"},
+        {"id": "amateur_handheld", "display_name": "Amateur handheld", "definition": "Consumer camera, available light, imperfect framing.", "mechanical_gloss": "consumer camera, available light, slightly imperfect framing, mild noise"},
+        {"id": "phone_selfie", "display_name": "Phone selfie", "definition": "Front-facing phone camera held at arm's length; wide lens distortion.", "mechanical_gloss": "front-facing phone camera at arm's length, wide-angle lens distortion, arm visible in frame"},
+        {"id": "mirror_selfie", "display_name": "Mirror selfie", "definition": "Phone photographed in a mirror; the device is visible.", "mechanical_gloss": "photographed in a mirror, phone visible in hand, bathroom or bedroom mirror framing"},
+        {"id": "webcam_stream", "display_name": "Webcam / stream", "definition": "Fixed low-mounted webcam, compressed, front-lit by a screen.", "mechanical_gloss": "fixed webcam at desk height, compressed image, lit by screen glow"},
+        {"id": "film_vintage", "display_name": "Film / vintage", "definition": "Analogue grain, period colour, softer resolution.", "mechanical_gloss": "35mm film grain, faded period colour, soft resolution"},
+        {"id": "editorial_glamour", "display_name": "Editorial glamour", "definition": "Magazine production values; retouched, styled, deliberate.", "mechanical_gloss": "magazine editorial lighting, styled and retouched, deliberate posing"},
+        {"id": "surveillance_look", "display_name": "Surveillance look", "definition": "High-mounted fixed wide camera, low frame rate, monochrome or desaturated.", "mechanical_gloss": "high fixed wide-angle camera, desaturated, low frame rate", "policy_flag": "restricted", "policy_note": "This look is strongly nonconsent-coded (hidden or covert recording). Platforms operating a consent-forward posture should exclude it. Enumerated so that it can be excluded explicitly rather than left unnamed."}
+      ],
+      "observability": {"from_photograph": "high", "requires_unclothed": false, "minimum_visible_extent": "any"}
+    },
+    {
+      "id": "time_of_day",
+      "display_name": "Time of day",
+      "type": "categorical",
+      "scale": "time_of_day_qualitative",
+      "scale_citation": "Standard temporal descriptors, recorded because they drive colour temperature and light direction.",
+      "description": "Apparent time of day.",
+      "values": [
+        {"id": "unspecified", "display_name": "Unspecified"},
+        {"id": "morning", "display_name": "Morning"},
+        {"id": "midday", "display_name": "Midday"},
+        {"id": "golden_hour", "display_name": "Golden hour"},
+        {"id": "dusk", "display_name": "Dusk"},
+        {"id": "night", "display_name": "Night"}
+      ],
+      "observability": {"from_photograph": "medium", "requires_unclothed": false, "minimum_visible_extent": "any"}
+    }
+  ],
+
+  "aggregation_notes": {
+    "categorical_dimensions_roll_up_as": "frequency distribution",
+    "note": "Scene axes are orthogonal to position and action. The same position slug may be published against any number of scene combinations."
+  },
+
+  "references": [
+    "Photographic lighting terminology (key quality, rim, practical, flat) as applied in production practice.",
+    "Location and production-mode value sets derive from the preset menus commonly exposed by commercial adult generators; wording original and no vendor menu is reproduced verbatim.",
+    "Internal: pose-vocabularies/presentation.json `camera_framing`, static viewpoint, distinct from these axes."
+  ]
+}

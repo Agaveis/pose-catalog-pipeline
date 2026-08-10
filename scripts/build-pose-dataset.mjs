@@ -29,7 +29,9 @@ const ROOT = resolve(__dirname, '..')
 const VOCAB_DIR = resolve(ROOT, 'pose-vocabularies')
 const OUT_ROOT = resolve(ROOT, 'huggingface-pose-dataset')
 const OUT_DIR = resolve(OUT_ROOT, 'data')
-const SCHEMA_VERSION = 1
+// v2 adds the action layer, the three context axes, and the binding files
+// (crosswalk, context tag bindings, solo render bindings).
+const SCHEMA_VERSION = 2
 
 const readJson = (name) => JSON.parse(readFileSync(resolve(VOCAB_DIR, name), 'utf8'))
 
@@ -69,7 +71,17 @@ function main() {
   const skeletons = loadBaseSkeletons()
   const seed = readJson('poses.seed.json')
 
-  const VOCAB_FILES = ['pose-structure.json', 'participant-composition.json', 'presentation.json', 'keypoint-schema.json']
+  const VOCAB_FILES = [
+    'pose-structure.json',
+    'participant-composition.json',
+    'presentation.json',
+    'keypoint-schema.json',
+    // v2 layers
+    'action-dynamics.json',
+    'wardrobe-state.json',
+    'scene-setting.json',
+    'expression-gaze.json',
+  ]
   const vocabs = VOCAB_FILES.map(readJson)
   const historicalRegistry = readJson('historical-sources.json')
   const sourcesById = Object.fromEntries(historicalRegistry.sources.map((s) => [s.id, s]))
@@ -242,6 +254,89 @@ function main() {
   writeJsonl(resolve(OUT_DIR, 'base_skeletons.jsonl'), baseRows)
   writeJsonl(resolve(OUT_DIR, 'vocabularies.jsonl'), vocabs)
 
+  // ─── v2: interoperability crosswalk ───────────────────────────────
+  // Identifier mappings into the folksonomy that open adult checkpoints were
+  // trained on, plus knowledge-base entities and attested historical names.
+  // Lossy mappings carry a written statement of what they discard.
+  const crosswalkFile = readJson('crosswalk-rows.json')
+  const xwRows = crosswalkFile.rows.map((r) => ({
+    epc_id: r.epc_id,
+    pose_slug: r.epc_id.replace(/^epc:/, ''),
+    namespace: r.namespace,
+    foreign_id: r.foreign_id || '',
+    relation: r.relation,
+    loss: r.loss || '',
+    sibling_count: r.sibling_count ?? '',
+    support_tags: pipe(r.support_tags),
+    confidence: r.confidence || '',
+    undocumented_tag: r.undocumented_tag ? 'true' : 'false',
+    note: r.note || '',
+    retrieved: r.retrieved,
+    verified_by: r.verified_by,
+  }))
+  const XW_COLS = ['epc_id', 'pose_slug', 'namespace', 'foreign_id', 'relation', 'loss', 'sibling_count', 'support_tags', 'confidence', 'undocumented_tag', 'note', 'retrieved', 'verified_by']
+  writeCsv(resolve(OUT_DIR, 'crosswalk.csv'), xwRows, XW_COLS)
+  writeJsonl(resolve(OUT_DIR, 'crosswalk.jsonl'), xwRows)
+
+  // ─── v2: position × action-beat compatibility ─────────────────────
+  const joinFile = readJson('action-beat-join.json')
+  const beatRows = joinFile.rows.map((r) => ({
+    epc_id: r.epc_id,
+    pose_slug: r.epc_id.replace(/^epc:/, ''),
+    primary_beat: r.primary_beat,
+    compatible_beats: pipe(r.compatible_beats),
+    compatible_beat_count: (r.compatible_beats || []).length,
+    contact_continuity: r.contact_continuity || '',
+    suggested_camera: pipe(r.suggested_camera),
+  }))
+  const BEAT_COLS = ['epc_id', 'pose_slug', 'primary_beat', 'compatible_beats', 'compatible_beat_count', 'contact_continuity', 'suggested_camera']
+  writeCsv(resolve(OUT_DIR, 'action_beat_join.csv'), beatRows, BEAT_COLS)
+  writeJsonl(resolve(OUT_DIR, 'action_beat_join.jsonl'), beatRows)
+
+  // ─── v2: context-axis tag bindings ────────────────────────────────
+  const ctxFile = readJson('context-tag-bindings.json')
+  const ctxRows = Object.entries(ctxFile.bindings).map(([key, b]) => {
+    const [vocab, dimension, ...rest] = key.split('.')
+    return {
+      key,
+      vocabulary: vocab,
+      dimension,
+      value_id: rest.join('.'),
+      tag: b.tag || '',
+      extra_tags: pipe(b.extra_tags),
+      relation: b.relation,
+      post_count: b.post_count ?? '',
+      note: b.note || '',
+    }
+  })
+  const CTX_COLS = ['key', 'vocabulary', 'dimension', 'value_id', 'tag', 'extra_tags', 'relation', 'post_count', 'note']
+  writeCsv(resolve(OUT_DIR, 'context_tag_bindings.csv'), ctxRows, CTX_COLS)
+  writeJsonl(resolve(OUT_DIR, 'context_tag_bindings.jsonl'), ctxRows)
+
+  // ─── v2: solo render bindings ─────────────────────────────────────
+  // Solo is the only participant count that currently renders reliably, so it is
+  // the only one with prompt bindings. The 93 multi-participant positions are
+  // deliberately unbound rather than shipped as guesses.
+  const bindFile = readJson('render-bindings-solo.json')
+  const bindRows = bindFile.bindings.map((b) => ({
+    epc_id: b.epc_id,
+    pose_slug: String(b.epc_id).replace(/^epc:/, ''),
+    family: b.family,
+    positive: b.positive,
+    negative_hints: pipe(b.negative_hints),
+    figure_count: b.figure_count,
+    known_failure: b.known_failure || '',
+  }))
+  const BIND_COLS = ['epc_id', 'pose_slug', 'family', 'positive', 'negative_hints', 'figure_count', 'known_failure']
+  writeCsv(resolve(OUT_DIR, 'render_bindings_solo.csv'), bindRows, BIND_COLS)
+  writeJsonl(resolve(OUT_DIR, 'render_bindings_solo.jsonl'), bindRows)
+
+  // Schemas and registries that are documents rather than tables.
+  writeJsonl(resolve(OUT_DIR, 'binding_schemas.jsonl'), [
+    readJson('interop-crosswalk.json'),
+    readJson('render-bindings.json'),
+  ])
+
   // ─── manifest ─────────────────────────────────────────────────────
   const manifest = {
     generated_at: new Date().toISOString(),
@@ -258,6 +353,20 @@ function main() {
       provenance_links: provRowsCsv.length,
       historical_sources: historicalRegistry.sources.length,
       historical_works: workRows.length,
+      // v2
+      crosswalk_rows: xwRows.length,
+      crosswalk_by_namespace: xwRows.reduce((a, r) => ((a[r.namespace] = (a[r.namespace] || 0) + 1), a), {}),
+      action_beat_joins: beatRows.length,
+      context_tag_bindings: ctxRows.length,
+      context_values_with_tag: ctxRows.filter((r) => r.tag).length,
+      render_bindings_solo: bindRows.length,
+    },
+    v2_notes: {
+      layers: 'position (structure), action (motion), context (wardrobe, scene, expression), binding (crosswalk and prompts)',
+      lossy_by_design:
+        'Most folksonomy mappings are broader than the position they map. Each carries a written statement of what it discards and a count of sibling positions sharing the same tag. A crosswalk that overstates precision is worse than none.',
+      unbound_by_design:
+        'Only the 11 solo positions carry render bindings. Global pose conditioning does not hold figure count on multi-participant positions, so the other 93 are left unbound rather than shipped as guesses.',
     },
   }
   writeFileSync(resolve(OUT_ROOT, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n', 'utf8')
