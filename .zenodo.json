@@ -1,10 +1,12 @@
 {
   "title": "pose-catalog-pipeline: named erotic positions with structured attributes and COCO-17 keypoint templates",
-  "description": "Reproducibility code for the Erotic Pose Catalog dataset: a public, machine-readable catalog of 104 named erotic positions (solo and multi-person) unifying a controlled-vocabulary attribute layer, an idealised COCO-17 keypoint template per participant, and a cross-cultural provenance layer that maps modern positions to the historical sex manuals and erotic-art traditions that first recorded them. The pipeline is deterministic and needs no database and no API keys. Includes the canonical vocabularies, the keypoint compositor, the HuggingFace dataset export, and a methodology paper. Data is released under CC BY 4.0; Wikidata anchors are CC0.",
+  "description": "Reproducibility code for the Erotic Pose Catalog dataset: a public, machine-readable catalog of 104 named erotic positions (solo and multi-person) unifying a controlled-vocabulary attribute layer, an idealised COCO-17 keypoint template per participant, and a cross-cultural provenance layer that maps modern positions to the historical sex manuals and erotic-art traditions that first recorded them. Version 2.0 adds three further layers: an action layer (22 action beats, tempo, 14 camera moves, loop types and contact continuity, each carrying clinical mechanical wording for image-to-video prompting); three context axes (wardrobe, scene and expression); and a binding layer whose centrepiece is an interoperability crosswalk of 194 mappings from catalog positions into the image-board folksonomy that open adult checkpoints were trained on, into structured knowledge bases, and onto attested historical names. The crosswalk is deliberately honest about its limits: 85 of 104 folksonomy mappings are broader than the position they map and each states in writing what it discards, and 61 of 104 positions have no exact or close identifier in any machine-readable external vocabulary. The pipeline is deterministic and needs no database and no API keys. Data is released under CC BY 4.0; Wikidata anchors are CC0.",
   "upload_type": "software",
   "access_right": "open",
   "creators": [
-    { "name": "Ethnic Erotic" }
+    {
+      "name": "Ethnic Erotic"
+    }
   ],
   "keywords": [
     "pose estimation",
@@ -16,10 +18,40 @@
     "taxonomy",
     "sex positions",
     "dataset",
-    "reproducibility"
+    "reproducibility",
+    "action recognition",
+    "image-to-video",
+    "interoperability",
+    "crosswalk",
+    "SKOS",
+    "prompt engineering"
   ],
   "related_identifiers": [
-    { "relation": "references", "identifier": "https://huggingface.co/datasets/EthnicErotic/pose-catalog", "scheme": "url" },
-    { "relation": "references", "identifier": "https://ethnicerotic.com/poses", "scheme": "url" }
-  ]
+    {
+      "relation": "references",
+      "identifier": "https://huggingface.co/datasets/EthnicErotic/pose-catalog",
+      "scheme": "url"
+    },
+    {
+      "relation": "references",
+      "identifier": "https://ethnicerotic.com/poses",
+      "scheme": "url"
+    },
+    {
+      "relation": "references",
+      "identifier": "https://ethnicerotic.com/poses/crosswalk",
+      "scheme": "url"
+    },
+    {
+      "relation": "references",
+      "identifier": "https://ethnicerotic.com/poses/actions",
+      "scheme": "url"
+    },
+    {
+      "relation": "references",
+      "identifier": "https://ethnicerotic.com/poses/builder",
+      "scheme": "url"
+    }
+  ],
+  "version": "2.0.0"
 }
