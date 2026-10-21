@@ -20,7 +20,7 @@ The build is a short, deterministic, database-free chain:
 2. **Author the catalog.** Positions, attributes, aliases, historical-source mappings, and participant placements are hand-authored in `pose-vocabularies/poses.seed.json` against the four controlled-vocabulary facets. All prose is original.
 3. **Compose keypoints.** `build-keypoints.mjs` turns each participant's `{ base_posture, placement }` into scene-space COCO-17 keypoints (a flat `[x, y, v] × 17` array), applying `flip_x → scale → rotate → translate` about the skeleton centroid, plus optional per-joint scene-space overrides for articulation the rigid transform can't express.
 4. **Verify visually.** `render-pose-contact-sheet.mjs` renders every composed skeleton to an HTML contact sheet so placements can be eyeballed before release.
-5. **Export.** `build-pose-dataset.mjs` reads the vocabularies and writes six dataset configurations (CSV + JSONL) plus a `manifest.json` with row counts and provenance, under `huggingface-pose-dataset/`.
+5. **Export.** `build-pose-dataset.mjs` reads the vocabularies and writes ten dataset configurations (CSV + JSONL) plus a `manifest.json` with row counts and provenance, under `huggingface-pose-dataset/`.
 6. **Upload.** `hf upload EthnicErotic/pose-catalog ./huggingface-pose-dataset --repo-type=dataset --exclude="UPLOAD.md"`.
 
 The same JSON vocabularies seed the live catalog's serving database (via idempotent boot DDL, not shown here) and this dataset export, so the two never diverge.

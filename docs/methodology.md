@@ -1,5 +1,7 @@
 # A Structured Catalog of Named Erotic Positions with COCO-17 Keypoint Templates and Cross-Cultural Provenance: Construction, Schema, and Release
 
+> This paper describes the v1.0 methodology. Its dataset figures were updated to the current dataset on 2026-10-21.
+
 > This page is the methodology paper, converted from [`paper/methodology-v1.md`](https://github.com/Agaveis/pose-catalog-pipeline/blob/main/paper/methodology-v1.md). It documents the **v1** position and keypoint methodology. The v2 layers (action, context, crosswalk, bindings) are specified in the vocabulary files themselves and summarized in the [dataset card](https://huggingface.co/datasets/EthnicErotic/pose-catalog); they are not yet written up in the paper. How the catalog was built is on the [live catalog](https://ethnicerotic.com/poses/methodology). Archived releases have a [concept DOI](https://doi.org/10.5281/zenodo.21439174), which always resolves to the latest version.
 
 **Ethnic Erotic**
@@ -16,7 +18,7 @@ admin@ethnicerotic.com
 
 ## Abstract
 
-We release the **Erotic Pose Catalog**, a public, machine-readable dataset of **104 named erotic positions** (solo and multi-person) that unifies three layers of information that have historically lived apart: a **structured attribute vocabulary** (position family, arrangement, penetration type, facing, dynamics, support surface, apparent participant composition, and on-camera presentation), an **idealised COCO-17 keypoint template per participant**, and a **cross-cultural provenance layer** that maps modern positions back to the historical sources and erotic-art traditions that first recorded them. The dataset contains **no images and no personal data** (only text metadata and schematic keypoint coordinates) and is released under CC BY 4.0. Positions are anchored to Wikidata items (CC0) for stable identifiers, but all descriptions and mappings are original editorial. Keypoints are composed deterministically from 17 canonical base-posture skeletons via a documented placement grammar; they are schematic templates intended as pose-conditioning priors, not observations. The provenance layer records 59 attested (position × source) links across 22 historical sources, and a companion index catalogs 87 museum-attested erotic artworks with per-work verification-confidence grades. We document the construction pipeline, schema, coverage statistics, and limitations, and release the full pipeline as open code. Intended uses include content tagging and search for adult media, taxonomy and cross-vocabulary synonym research, culturally-grounded curation, and pose conditioning for controllable image generation. The dataset documents adults only and must not be used to identify individuals or for any non-consensual application.
+We release the **Erotic Pose Catalog**, a public, machine-readable dataset of **219 named erotic positions** (solo and multi-person) that unifies three layers of information that have historically lived apart: a **structured attribute vocabulary** (position family, arrangement, penetration type, facing, dynamics, support surface, apparent participant composition, and on-camera presentation), an **idealised COCO-17 keypoint template per participant**, and a **cross-cultural provenance layer** that maps modern positions back to the historical sources and erotic-art traditions that first recorded them. The dataset contains **no images and no personal data** (only text metadata and schematic keypoint coordinates) and is released under CC BY 4.0. Positions are anchored to Wikidata items (CC0) for stable identifiers, but all descriptions and mappings are original editorial. Keypoints are composed deterministically from 17 canonical base-posture skeletons via a documented placement grammar; they are schematic templates intended as pose-conditioning priors, not observations. The provenance layer records 88 attested (position × source) links across 22 historical sources, and a companion index catalogs 87 museum-attested erotic artworks with per-work verification-confidence grades. We document the construction pipeline, schema, coverage statistics, and limitations, and release the full pipeline as open code. Intended uses include content tagging and search for adult media, taxonomy and cross-vocabulary synonym research, culturally-grounded curation, and pose conditioning for controllable image generation. The dataset documents adults only and must not be used to identify individuals or for any non-consensual application.
 
 ---
 
@@ -34,7 +36,7 @@ Unlike vision-LLM or crowd-annotated datasets, this catalog has **no inference c
 
 ### Contributions
 
-1. A publicly-released, machine-readable catalog of 104 named erotic positions unifying structured attributes, COCO-17 keypoint geometry, and cross-cultural provenance under one schema.
+1. A publicly-released, machine-readable catalog of 219 named erotic positions unifying structured attributes, COCO-17 keypoint geometry, and cross-cultural provenance under one schema.
 2. A documented, deterministic keypoint-composition grammar (base posture + rigid placement transform + scene-space overrides) that produces valid COCO-17 templates for arbitrary multi-participant arrangements.
 3. A conservative, adversarially-verified provenance and historical-artwork layer that connects the modern vocabulary to its documented antecedents across seven sex manuals and fifteen erotic-art traditions, released as open data and open code.
 
@@ -101,11 +103,11 @@ The release contains six configurations, each a separate `config_name` under Hug
 
 | Config | Rows | Description |
 |---|---|---|
-| `poses` | 104 | One row per named position |
-| `keypoints` | 219 | One row per (position × participant) |
-| `pose_dimensions` | 17 | Flat controlled vocabulary (111 values) |
+| `poses` | 219 | One row per named position |
+| `keypoints` | 493 | One row per (position × participant) |
+| `pose_dimensions` | 32 | Flat controlled vocabulary (249 values) |
 | `base_skeletons` | 17 | Canonical base-posture COCO-17 skeletons |
-| `provenance` | 59 | One row per (position × historical source) |
+| `provenance` | 88 | One row per (position × historical source) |
 | `works` | 87 | One row per attested historical artwork |
 
 **`poses` columns:** `id, slug, name, aliases, wikidata_qid, kama_sutra_name, position_family, primary_act, arrangement, penetration_type, facing, dynamics, support_surface, participant_count, composition_code, n_participants, source_medium, camera_framing, difficulty, prevalence, intensity_tier, historical_sources, description, wiki_url, canonical_url`.
@@ -124,17 +126,17 @@ Full column definitions are in the dataset card.
 
 | Metric | Value |
 |---|---|
-| Named positions | 104 |
-| Participant keypoint templates | 219 |
-| Controlled-vocabulary dimensions | 17 (111 defined values) |
+| Named positions | 219 |
+| Participant keypoint templates | 493 |
+| Controlled-vocabulary dimensions | 32 (249 defined values) |
 | Base-posture skeletons | 17 |
 | Historical sources (manuals + art traditions) | 22 (7 + 15) |
-| Provenance links (position × source) | 59, across 26 positions and 6 world regions |
+| Provenance links (position × source) | 88, across 26 positions and 6 world regions |
 | Museum-attested artworks indexed | 87 across 13 traditions |
 | Artwork verification grades (high / medium / low) | 49 / 32 / 6 |
 | Verified work → position links | 14 |
 
-The 104 positions span the solo-display, missionary, rear-entry, on-top, side-lying, seated, standing/carry, oral, manual/non-penetrative, and multi-partner families. Coverage is deliberately weighted toward positions that are both commonly named in adult media and structurally distinct; near-duplicate variants that differ only in a minor limb placement are folded into a parent entry's description rather than given separate rows.
+The 219 positions span the solo-display, missionary, rear-entry, on-top, side-lying, seated, standing/carry, oral, manual/non-penetrative, and multi-partner families. Coverage is deliberately weighted toward positions that are both commonly named in adult media and structurally distinct; near-duplicate variants that differ only in a minor limb placement are folded into a parent entry's description rather than given separate rows.
 
 ---
 
@@ -218,7 +220,7 @@ The export is deterministic: identical `pose-vocabularies/` inputs produce byte-
 
 ## 10. Future Work
 
-**Scale.** The 104-position v1 is a curated core, not an exhaustive enumeration. The vocabulary and composition grammar support arbitrary extension; adding a position is an edit to `poses.seed.json` and a regeneration.
+**Scale.** The 219-position v1 is a curated core, not an exhaustive enumeration. The vocabulary and composition grammar support arbitrary extension; adding a position is an edit to `poses.seed.json` and a regeneration.
 
 **Keypoint fidelity.** The schematic templates could be refined toward observation by aligning them to consenting-adult reference imagery or motion capture, which would upgrade them from priors to annotations for pose-estimation use.
 
