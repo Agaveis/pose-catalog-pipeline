@@ -1,0 +1,18 @@
+site_name: pose-catalog-pipeline
+repo_url: https://github.com/Agaveis/pose-catalog-pipeline
+edit_uri: blob/main/docs/
+theme:
+  name: mkdocs
+nav:
+  - Home: index.md
+  - Methodology: methodology.md
+  - Data: data.md
+  - Reproduce: reproduce.md
+  - Links: links.md
+exclude_docs: |
+  requirements.txt
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
