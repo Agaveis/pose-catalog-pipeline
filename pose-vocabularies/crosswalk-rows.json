@@ -9,7 +9,8 @@
  "verification": {
   "tag_existence_and_deprecation": "All emitted tags, primary and support, were checked against the live tag API. None is absent from the permitted vocabulary and none is deprecated.",
   "wiki_sense_checks_documented": "46 of 104 rows carry a recorded wiki check with a verbatim quote. The remainder were mapped without a documented wiki read. This crosswalk should not be described as wiki-verified end to end.",
-  "method": "Mappings were produced in batches, adversarially verified by an independent reviewer per batch, then swept for completeness. Rows flagged by the sweep were re-settled against tag wiki text and independently adjudicated."
+  "method": "Mappings were produced in batches, adversarially verified by an independent reviewer per batch, then swept for completeness. Rows flagged by the sweep were re-settled against tag wiki text and independently adjudicated.",
+  "additions": "The statements above describe the 104 positions mapped on 2026-08-09. The 115 positions added on 2026-10-12 were mapped the same way, in batches of about ten: every tag, primary and support, was checked against the live tag API (present, used on at least one post, not deprecated); each primary tag's wiki page was read and the sentence relied on was recorded verbatim in the drafting notes, except for tags whose wiki page is empty, which are listed under undocumented tags; and an independent reviewer per batch re-fetched every tag and tried to refute each row. Rows the reviewer rejected were dropped. The 2026-08-09 tag pool and its counts were not used for these rows. No row uses a tag that refers to age, youth or a childlike body."
  },
  "conventions": {
   "support_tags": "Support tags reconstruct structure that the primary tag discards. They are not a restatement of the act and are not quality or style tokens.",
@@ -23,130 +24,187 @@
    "upright_69",
    "pelvic_thrust",
    "hands_on_bed",
-   "grabbing_another's_hand"
+   "grabbing_another's_hand",
+   "reverse_piledriver_(sex)"
   ]
  },
  "statistics": {
   "generated": "2026-08-09",
-  "positions": 104,
-  "crosswalk_rows_total": 194,
+  "positions": 219,
+  "crosswalk_rows_total": 339,
   "by_namespace": {
-   "danbooru": 104,
-   "ks": 59,
-   "wd": 31
+   "danbooru": 219,
+   "ks": 85,
+   "wd": 35
   },
   "danbooru_relation_distribution": {
-   "exact": 17,
-   "broader": 85,
-   "none": 1,
-   "close": 1
+   "exact": 18,
+   "broader": 189,
+   "none": 5,
+   "close": 7
   },
-  "positions_with_precise_external_id": 18,
-  "positions_with_wikidata_qid": 31,
-  "positions_with_no_precise_external_identifier": 61,
+  "positions_with_precise_external_id": 25,
+  "positions_with_wikidata_qid": 35,
+  "positions_with_no_precise_external_identifier": 168,
   "tag_pool_size": 2574,
   "deprecated_tags_excluded": 25,
   "largest_collapses": [
    {
     "tag": "missionary",
-    "positions": 6,
+    "positions": 27,
     "ids": [
      "missionary",
+     "legs-on-shoulders",
      "coital-alignment-technique",
      "butterfly",
-     "legs-on-shoulders",
      "splitting-bamboo",
-     "yawning"
-    ]
-   },
-   {
-    "tag": "doggystyle",
-    "positions": 5,
-    "ids": [
-     "leapfrog",
-     "bulldog",
-     "doggy-style",
-     "turtle",
-     "side-by-side-doggy"
-    ]
-   },
-   {
-    "tag": "fellatio",
-    "positions": 4,
-    "ids": [
-     "fellatio-seated",
-     "fellatio-kneeling",
-     "fellatio-head-back",
-     "fellatio-lying-recipient-seated"
+     "yawning",
+     "widely-opened",
+     "pressing-position",
+     "half-pressed",
+     "crab-embrace",
+     "rising-position",
+     "fixing-a-nail",
+     "reclining-lotus",
+     "the-frog",
+     "stopperage",
+     "rams-thrust",
+     "the-seducer",
+     "dragon-turns",
+     "monkeys-attack",
+     "turtle-rises",
+     "phoenix-soars",
+     "deck-chair",
+     "the-waterfall",
+     "the-gap",
+     "lifted-missionary",
+     "tabletop",
+     "the-pump"
     ]
    },
    {
     "tag": "double_penetration",
-    "positions": 4,
+    "positions": 13,
     "ids": [
-     "dp-reverse",
-     "standing-sandwich",
      "double-penetration",
-     "spoon-dp"
-    ]
-   },
-   {
-    "tag": "cowgirl_position",
-    "positions": 4,
-    "ids": [
-     "cowgirl",
-     "prone-cowgirl",
-     "leaning-back-cowgirl",
-     "cowgirl-leaning-forward"
-    ]
-   },
-   {
-    "tag": "cunnilingus",
-    "positions": 3,
-    "ids": [
-     "cunnilingus-lying",
-     "cunnilingus-legs-up",
-     "sixty-eight"
-    ]
-   },
-   {
-    "tag": "group_sex",
-    "positions": 3,
-    "ids": [
-     "gangbang-center",
-     "reverse-gangbang",
-     "doggy-over-69"
-    ]
-   },
-   {
-    "tag": "sitting_on_face",
-    "positions": 3,
-    "ids": [
-     "facesitting-reverse",
-     "facesitting",
-     "ffm-ride-and-sit"
-    ]
-   },
-   {
-    "tag": "spitroast",
-    "positions": 3,
-    "ids": [
-     "spitroast-lying",
-     "eiffel-tower",
-     "spit-roast"
+     "standing-sandwich",
+     "spoon-dp",
+     "dp-reverse",
+     "sandwich-dp",
+     "cross-dp",
+     "dp-piledriver",
+     "dp-seated",
+     "dp-prone",
+     "dp-wheelbarrow",
+     "dp-suspended",
+     "dp-legs-up",
+     "dp-bridge"
     ]
    },
    {
     "tag": "sex_from_behind",
-    "positions": 3,
+    "positions": 9,
     "ids": [
-     "standing-rear-press",
+     "pearly-gates",
      "kneeling-rear-embrace",
-     "pearly-gates"
+     "standing-rear-press",
+     "the-hinge",
+     "magic-mountain",
+     "sofa-brace",
+     "froggy-style",
+     "praying-mantis",
+     "over-the-edge"
+    ]
+   },
+   {
+    "tag": "cowgirl_position",
+    "positions": 7,
+    "ids": [
+     "cowgirl",
+     "prone-cowgirl",
+     "leaning-back-cowgirl",
+     "cowgirl-leaning-forward",
+     "swing-position",
+     "mares-position",
+     "fishes-interlock"
+    ]
+   },
+   {
+    "tag": "doggystyle",
+    "positions": 7,
+    "ids": [
+     "doggy-style",
+     "leapfrog",
+     "bulldog",
+     "turtle",
+     "side-by-side-doggy",
+     "tigers-tread",
+     "fire-hydrant"
+    ]
+   },
+   {
+    "tag": "spitroast",
+    "positions": 7,
+    "ids": [
+     "spit-roast",
+     "eiffel-tower",
+     "spitroast-lying",
+     "standing-spitroast",
+     "kneeling-spitroast",
+     "spitroast-seated",
+     "double-spitroast"
+    ]
+   },
+   {
+    "tag": "cunnilingus",
+    "positions": 6,
+    "ids": [
+     "cunnilingus-lying",
+     "cunnilingus-legs-up",
+     "sixty-eight",
+     "cunnilingus-from-behind",
+     "cunnilingus-seated",
+     "shoulder-ride"
+    ]
+   },
+   {
+    "tag": "on_side",
+    "positions": 6,
+    "ids": [
+     "lateral-coital",
+     "pretzel",
+     "twining-position",
+     "the-fitter-in",
+     "reverse-spoon",
+     "the-corkscrew"
+    ]
+   },
+   {
+    "tag": "sitting_on_face",
+    "positions": 6,
+    "ids": [
+     "facesitting",
+     "facesitting-reverse",
+     "ffm-ride-and-sit",
+     "double-cowgirl",
+     "double-facesitting",
+     "facesitting-circle"
+    ]
+   },
+   {
+    "tag": "upright_straddle",
+    "positions": 6,
+    "ids": [
+     "lotus",
+     "face-off",
+     "pounding-on-the-spot",
+     "entwined-cranes",
+     "rocking-horse",
+     "the-stairway"
     ]
    }
   ],
-  "beat_joins": 104,
+  "beat_joins": 219,
   "solo_bindings": 33
  },
  "rows": [
@@ -177,7 +235,7 @@
    "foreign_id": "anilingus",
    "relation": "broader",
    "loss": "anilingus names the act alone. It drops the arrangement that this record is about, receiver on all fours with hips raised setting the working height, giver kneeling behind and bowing into it, and the permitted vocabulary's standing_anilingus sibling proves the tag spans other arrangements.",
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "all_fours",
     "kneeling",
@@ -188,6 +246,25 @@
    "undocumented_tag": false,
    "note": null,
    "retrieved": "2026-08-09",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:anilingus-prone",
+   "namespace": "danbooru",
+   "foreign_id": "anilingus",
+   "relation": "broader",
+   "loss": "anilingus names the act alone, oral contact at the anus, at any arrangement; it is the tag the catalog's anilingus-kneeling entry already carries, and its narrower standing_anilingus tag shows it spans standing receivers too. It discards the arrangement this entry is about: both partners lying prone and offset lengthwise, the receiver flat with the hips level or slightly propped and the giver lying behind and below with the head at the hips, so neither partner holds a position.",
+   "sibling_count": 1,
+   "support_tags": [
+    "on_stomach",
+    "lying",
+    "behind_another",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
    "verified_by": "manual"
   },
   {
@@ -241,6 +318,35 @@
    "source_display": "Raised-leg maithuna"
   },
   {
+   "epc_id": "epc:belly-to-belly",
+   "namespace": "danbooru",
+   "foreign_id": "standing_missionary",
+   "relation": "broader",
+   "loss": "standing_missionary fixes only that both partners stand on both feet facing each other; it is silent on any brace, so the wall-supported standing pair the catalog files as supported-congress takes the same tag. It discards the full frontal press, chest to chest with the pelvises aligned, that names this entry, and the absence of any support but each other. Containment is imperfect the other way as well: the record's variation with one knee lifted to the hip falls outside the tag, whose wiki requires both feet down.",
+   "sibling_count": 1,
+   "support_tags": [
+    "belly-to-belly",
+    "hug",
+    "standing",
+    "face-to-face"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:belly-to-belly",
+   "namespace": "ks",
+   "foreign_id": "perfumed-garden/belly-to-belly",
+   "relation": "close",
+   "loss": "Attested source name. Both partners upright and pressed together.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Belly to belly"
+  },
+  {
    "epc_id": "epc:bent-over-furniture",
    "namespace": "danbooru",
    "foreign_id": "bent_over_furniture",
@@ -280,6 +386,27 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:bucking-bronco",
+   "namespace": "danbooru",
+   "foreign_id": "reverse_cowgirl_position",
+   "relation": "broader",
+   "loss": "reverse_cowgirl_position fixes only that the receiving partner straddles a lying partner while facing away, and it is the tag the catalog's reverse-cowgirl entry owns, so it covers the upright and leaning-back rides as readily as this one. It discards the extreme forward hinge with the hands gripping the partner's shins or ankles, which is the whole identity of this entry and steepens the angle past anything an upright ride produces; leaning_forward restores only a slight lean by its own wiki, and hands_on_another's_legs restores the grip. Containment is also imperfect, because the wiki routes the squatting drive that this entry lists as a variation to reverse_squatting_cowgirl_position.",
+   "sibling_count": 1,
+   "support_tags": [
+    "girl_on_top",
+    "straddling",
+    "leaning_forward",
+    "hands_on_another's_legs",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:bukkake-circle",
    "namespace": "danbooru",
    "foreign_id": "bukkake",
@@ -304,7 +431,7 @@
    "foreign_id": "doggystyle",
    "relation": "broader",
    "loss": "doggystyle covers all rear entry onto a partner on all fours, and is the tag the catalog's own doggy-style entry owns; it discards the defining detail that the penetrating partner is in a deep squat with feet planted outside the receiver's legs rather than kneeling, and with it the steep downward stroke angle.",
-   "sibling_count": 4,
+   "sibling_count": 6,
    "support_tags": [
     "squatting",
     "all_fours",
@@ -319,12 +446,32 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:bunk-beds",
+   "namespace": "danbooru",
+   "foreign_id": "human_stacking",
+   "relation": "broader",
+   "loss": "human_stacking records only that several people lie stacked on top of one another, and its wiki says the stack often presents the bodies to the viewer, so it covers display stacks in which no partner is engaged at all. It discards the pairing into two couples, the intercourse inside each tier, and the load path that defines this entry, the upper pair carried on the lower pair's raised knees and hands so that the stack holds two separate levels.",
+   "sibling_count": 0,
+   "support_tags": [
+    "missionary",
+    "legs_up",
+    "on_back",
+    "lying_on_person",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:butter-churner",
    "namespace": "danbooru",
    "foreign_id": "piledriver_(sex)",
    "relation": "broader",
    "loss": "The tag already carries the squat and the shoulders-down vertical fold, so the single feature this entry adds is manner: the vertical dipping in and out that names the churn. The tag is additionally silent on which orifice is penetrated and on the support surface, and it subsumes the catalog's own static piledriver entry, in which the penetrating partner may stand rather than squat and enters downward without the churning motion.",
-   "sibling_count": 1,
+   "sibling_count": 4,
    "support_tags": [
     "pelvic_thrust",
     "vaginal",
@@ -343,7 +490,7 @@
    "foreign_id": "missionary",
    "relation": "broader",
    "loss": "missionary records only that the receiver lies on their back and the partners face each other. It discards the edge-of-surface geometry that defines this entry, hips at the very edge of a bed or table so the pelvis clears the mattress, and the resulting height offset that lets the penetrating partner work standing rather than kneeling. the permitted vocabulary has no edge-of-bed, bed-edge or furniture-edge tag (verified absent; on_table is present but denotes being on a table, not at its edge), so support can only assert that one partner stands while the other is on a bed, never that the two meet at its edge.",
-   "sibling_count": 5,
+   "sibling_count": 26,
    "support_tags": [
     "on_back",
     "legs_up",
@@ -359,12 +506,42 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:cicada-clings",
+   "namespace": "danbooru",
+   "foreign_id": "prone_bone",
+   "relation": "broader",
+   "loss": "prone_bone constrains only the receiving body, flat on the stomach and entered from behind, and is the tag the catalog's own prone-bone entry already uses. It discards the legs held together, the upper partner lying full length along the back, and the clinging stillness the record emphasizes. legs_together and lying_on_person restore the first two; the stillness is a matter of motion, which no still-image tag carries.",
+   "sibling_count": 3,
+   "support_tags": [
+    "on_stomach",
+    "lying_on_person",
+    "legs_together",
+    "sex_from_behind",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:cicada-clings",
+   "namespace": "ks",
+   "foreign_id": "sunujing/clinging-cicada",
+   "relation": "close",
+   "loss": "Attested source name. Fourth of the Nine Ways: the receiving partner prone with the body stretched straight and the partner lying behind. The text then calls for deep entry with a slight lift of the hips and a counted set of strokes, so the stillness and grinding this record emphasizes are not in the source.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Cicada Clings"
+  },
+  {
    "epc_id": "epc:coital-alignment-technique",
    "namespace": "danbooru",
    "foreign_id": "missionary",
    "relation": "broader",
    "loss": "missionary covers the entire face-to-face penetrating-on-top family and discards everything that defines CAT: the penetrating partner riding high up the torso, the two pelvises stacked in direct contact, and the small rocking grind that replaces withdrawal-and-return thrusting.",
-   "sibling_count": 5,
+   "sibling_count": 26,
    "support_tags": [
     "on_back",
     "lying_on_person",
@@ -392,7 +569,7 @@
    "foreign_id": "cowgirl_position",
    "relation": "broader",
    "loss": "cowgirl_position denotes the whole facing-forward rider family: the wiki fixes only that the penetrating partner is lying down and the receiver straddles them face-on, saying nothing about the rider's torso angle. It therefore does not separate this upright kneeling-astride default from the catalog's own prone-cowgirl, cowgirl-leaning-forward and leaning-back-cowgirl entries, all of which fall inside it. Torso angle is the discarded feature and the permitted vocabulary cannot restore it: upright_straddle is the only candidate and its wiki requires the straddled person to be \"sitting upright\", not lying down, so no pool tag pins an upright rider over a supine partner. Containment is also imperfect in the other direction: riding while squatting on planted feet is routed out of the tag to squatting_cowgirl_position, so that listed variation of the entry sits outside the tag rather than beneath it.",
-   "sibling_count": 3,
+   "sibling_count": 6,
    "support_tags": [
     "girl_on_top",
     "on_back",
@@ -480,7 +657,7 @@
    "foreign_id": "cowgirl_position",
    "relation": "broader",
    "loss": "cowgirl_position fixes only that the receiving partner straddles a supine partner while facing them. It spans the rider's torso angles from bolt upright through leaning back, and it discards the forward-folded torso with the hands braced on the partner's chest or on the bed beside their head, which is what defines this variant.",
-   "sibling_count": 3,
+   "sibling_count": 6,
    "support_tags": [
     "girl_on_top",
     "straddling",
@@ -495,12 +672,128 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:crab-embrace",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary fixes only that the receiver lies on the back facing the partner, with a folded body named as one option among several, so it holds equally for flat, leg-locked and folded forms. It discards the defining fold, both legs contracted tight against the stomach with the pelvis rotated up, and the partner kneeling into the gap rather than lying over.",
+   "sibling_count": 26,
+   "support_tags": [
+    "knees_to_chest",
+    "folded",
+    "on_back",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:crab-embrace",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/karkata-the-crab-s-position",
+   "relation": "close",
+   "loss": "Attested source name. Both legs contracted and held against the stomach. Burton fixes only the legs, so the kneeling partner is the catalog's staging.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Karkata (the crab's position)"
+  },
+  {
+   "epc_id": "epc:criss-cross",
+   "namespace": "danbooru",
+   "foreign_id": null,
+   "relation": "none",
+   "loss": null,
+   "sibling_count": null,
+   "support_tags": [
+    "on_back",
+    "on_side",
+    "interlocked_legs",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": "Relation is none, so there is no mapping and therefore nothing for a loss statement to measure. The blank is deliberate rather than an omission: no live tag denotes two bodies crossed at the hips in an X, and the support tags rebuild the supine and side-lying pair and the interleaved legs but not the crossing angle that names the entry.",
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:cross-dp",
+   "namespace": "danbooru",
+   "foreign_id": "double_penetration",
+   "relation": "broader",
+   "loss": "double_penetration records only that two penetrations happen at once and says nothing about where the partners are placed, so it covers this entry and the catalog's in-line stack alike. It discards the crossed geometry that defines this entry: the receiver astride a supine partner but turned off that partner's axis, and the second partner kneeling well off to the side at a clear angle to both, which is what frees the two partners to move independently. No live tag names an off-axis placement, so the crossing angle is carried by this statement alone.",
+   "sibling_count": 12,
+   "support_tags": [
+    "straddling",
+    "on_back",
+    "kneeling",
+    "leaning_to_the_side",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:cross-position",
+   "namespace": "danbooru",
+   "foreign_id": null,
+   "relation": "none",
+   "loss": null,
+   "sibling_count": null,
+   "support_tags": [
+    "on_back",
+    "legs_up",
+    "on_side",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": "Relation is none, so there is no mapping and therefore nothing for a loss statement to measure. The blank is deliberate rather than an omission: no live tag denotes a supine partner and a side-lying partner meeting at the hips at a right angle, and the support tags rebuild the two postures and the raised legs but not the crossing angle that names the entry.",
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:cross-position",
+   "namespace": "wd",
+   "foreign_id": "Q11634425",
+   "relation": "broader",
+   "loss": "The English label matches this entry, but every defining text on the item describes the whole crossed-legs family: the Japanese description and the four linked articles cover any position in which two women, or a man and a woman, cross the legs and join the genitals between each other's legs, the Japanese article names matsuba-kuzushi as the best-known form, and the item's image is a file named Wiki-tribadism.png. The Cantonese article also gives T-square position as another name, so the item covers the arrangements of the catalog's t-square and scissoring entries as well as this one. It discards the right angle between the supine receiving partner with raised legs and the side-lying penetrating partner that defines this record.",
+   "retrieved": "2026-10-12",
+   "verified_by": "automated"
+  },
+  {
+   "epc_id": "epc:cunnilingus-from-behind",
+   "namespace": "danbooru",
+   "foreign_id": "cunnilingus",
+   "relation": "broader",
+   "loss": "cunnilingus names the act alone, oral stimulation of the vulva at any arrangement, and is the tag the catalog's cunnilingus-lying, cunnilingus-legs-up and sixty-eight entries already carry. It discards the rear approach that the record calls the only thing distinguishing this entry from the supine variants: the receiver on all fours with the giver low behind at hip height, lying or crouched. No rear-approach form turned up on Danbooru: the staged forms found, standing_cunnilingus and tachihanabishi, fix a standing receiver and a receiver propped stomach up in a crab-walk posture, so that arrangement rests on the support set.",
+   "sibling_count": 5,
+   "support_tags": [
+    "all_fours",
+    "behind_another",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:cunnilingus-legs-up",
    "namespace": "danbooru",
    "foreign_id": "cunnilingus",
    "relation": "broader",
    "loss": "cunnilingus names only the act, oral stimulation of the vulva at any arrangement (seated, standing, from behind, inside 69), and discards the entire postural content of this entry: the supine receiver with knees folded toward the chest and pelvis tilted up, and the giver kneeling over that fold face-down to the lifted pelvis.",
-   "sibling_count": 2,
+   "sibling_count": 5,
    "support_tags": [
     "knees_to_chest",
     "legs_up",
@@ -521,7 +814,7 @@
    "foreign_id": "cunnilingus",
    "relation": "broader",
    "loss": "cunnilingus names the act alone and discards the arrangement: it does not record that the receiver is supine with knees raised and thighs parted while the giver lies prone between them with the mattress carrying both bodies, so it equally covers standing, facesitting and head-to-toe arrangements that the catalog holds as separate records (cunnilingus-standing, cunnilingus-legs-up, facesitting).",
-   "sibling_count": 2,
+   "sibling_count": 5,
    "support_tags": [
     "on_back",
     "spread_legs",
@@ -533,6 +826,27 @@
    "undocumented_tag": false,
    "note": null,
    "retrieved": "2026-08-09",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:cunnilingus-seated",
+   "namespace": "danbooru",
+   "foreign_id": "cunnilingus",
+   "relation": "broader",
+   "loss": "cunnilingus names the act alone at any arrangement and is the tag the catalog's lying, legs-up and sixty-eight cunnilingus entries already carry; the staged forms found, standing_cunnilingus and tachihanabishi, fix a standing receiver and a receiver propped stomach up in a crab-walk posture, and no seated form turned up. It discards the seat that sets the working height and makes this the most comfortable oral position to hold: the receiver on a chair or seat edge with the hips forward and the legs open, and the giver kneeling on the floor between the knees.",
+   "sibling_count": 5,
+   "support_tags": [
+    "sitting",
+    "on_chair",
+    "spread_legs",
+    "kneeling",
+    "head_between_thighs",
+    "on_floor"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
    "verified_by": "manual"
   },
   {
@@ -560,7 +874,7 @@
    "foreign_id": "daisy_chain_(sex)",
    "relation": "exact",
    "loss": null,
-   "sibling_count": 0,
+   "sibling_count": 2,
    "support_tags": [
     "cunnilingus",
     "fellatio",
@@ -574,12 +888,61 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:deck-chair",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary fixes only that the receiver lies on their back facing the partner, and its wiki admits leg-locked, folded and legs-held forms alike. It discards the half recline that identifies this entry, the receiver propped at roughly forty-five degrees on the elbows or straight arms with knees bent and feet flat while the penetrating partner kneels between them, a torso angle the tag's lying-on-the-back wording contains only loosely. Only sitting, leaning_back and arm_support carry the recline; the reclining wiki prescribes sitting plus leaning_back when the lower back is unsupported, as it is here with the weight on the arms.",
+   "sibling_count": 26,
+   "support_tags": [
+    "sitting",
+    "leaning_back",
+    "arm_support",
+    "knees_up",
+    "kneeling",
+    "spread_legs",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:deep-throat",
+   "namespace": "danbooru",
+   "foreign_id": "deepthroat",
+   "relation": "broader",
+   "loss": "deepthroat names the depth alone, the whole penis taken down the throat, and its wiki extends it to dildos and other objects, so it holds with no partner present and in any staging; the existing facefuck-kneeling and fellatio-head-back rows already carry it as a support tag. It discards the kneeling giver below a standing partner and the extended neck that lines up mouth and throat on one axis, which the record names as the identifying feature.",
+   "sibling_count": 0,
+   "support_tags": [
+    "kneeling",
+    "standing",
+    "head_back"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:deep-throat",
+   "namespace": "wd",
+   "foreign_id": "Q8401",
+   "relation": "broader",
+   "loss": "Q8401 is fellatio in general, labeled 'fellatio' and described as 'oral sex by sucking on the penis'. It names the act this entry is a form of, not the full-depth technique or the kneeling, neck-extended staging that defines it; Wikidata holds the technique as its own item, Q9720, a subclass of Q8401. The catalog's fellatio-kneeling, fellatio-seated, fellatio-head-back and fellatio-lying-recipient-seated entries carry the same item.",
+   "retrieved": "2026-10-12",
+   "verified_by": "automated"
+  },
+  {
    "epc_id": "epc:doggy-over-69",
    "namespace": "danbooru",
    "foreign_id": "group_sex",
    "relation": "broader",
    "loss": "group_sex records only that three or more participants are involved and discards the entire stack that defines this entry - a supine partner beneath a second crouched in head-to-toe 69 alignment, with a third entering that crouched partner from behind.",
-   "sibling_count": 2,
+   "sibling_count": 4,
    "support_tags": [
     "69",
     "doggystyle",
@@ -600,7 +963,7 @@
    "foreign_id": "doggystyle",
    "relation": "broader",
    "loss": "doggystyle is the family tag for kneeling rear entry, carried by the compressed turtle fold and by multi-receiver line-ups alike, and the permitted vocabulary's standing_doggystyle child implies it; the tag therefore drops the one-on-one pairing and the receiver propped up on hands and knees at full working height that define this archetype.",
-   "sibling_count": 4,
+   "sibling_count": 6,
    "support_tags": [
     "all_fours",
     "kneeling",
@@ -680,7 +1043,7 @@
    "foreign_id": "double_anal",
    "relation": "broader",
    "loss": "double_anal names only the act, two penises or penis-like objects in one anus. It carries none of this entry's three-body arrangement: the receiver riding one supine partner while the second enters from behind, the MMF composition, or the concentration of all contact on one orifice that separates it from a spit-roast or a two-orifice stack. The tag also admits solo and object cases with no second partner at all.",
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "group_sex",
     "girl_on_top",
@@ -709,7 +1072,7 @@
    "foreign_id": "cooperative_fellatio",
    "relation": "broader",
    "loss": "cooperative_fellatio covers any number of givers sharing one penis in any arrangement, including three or more givers and seated or lying receivers; it does not fix the two side-by-side kneeling givers or the standing receiver that define this entry.",
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "kneeling",
     "group_sex",
@@ -723,12 +1086,92 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:double-cowgirl",
+   "namespace": "danbooru",
+   "foreign_id": "sitting_on_face",
+   "relation": "broader",
+   "loss": "sitting_on_face fixes only that one partner sits, straddles or squats on another's face, and its wiki says nothing of which way the sitter faces or of any second rider; it is the tag the catalog's facesitting, facesitting-reverse and ffm-ride-and-sit entries already carry. It discards the double mount that names this entry, a second partner riding the supine partner's hips at the same time, and the default with both riders facing the same way and the face rider kneeling, which is what separates it from ffm-ride-and-sit, where the riders usually face each other.",
+   "sibling_count": 5,
+   "support_tags": [
+    "cowgirl_position",
+    "straddling",
+    "kneeling",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:double-facesitting",
+   "namespace": "danbooru",
+   "foreign_id": "sitting_on_face",
+   "relation": "broader",
+   "loss": "sitting_on_face fixes only that one person sits, straddles or squats on another's face, so it covers the catalog's two-person facesitting and facesitting-reverse entries and the face-mounted half of ffm-ride-and-sit with the same string. It discards the second partner straddling the supine partner's hips at the same time, the two seats spaced along one supine body that make this the facesitting arrangement extended to three.",
+   "sibling_count": 5,
+   "support_tags": [
+    "on_back",
+    "straddling",
+    "kneeling",
+    "sitting_on_person",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:double-lap-ride",
+   "namespace": "danbooru",
+   "foreign_id": "sitting_on_lap",
+   "relation": "broader",
+   "loss": "sitting_on_lap records only that one person sits in another's lap and is not a sex tag, so it covers clothed and non-sexual lap sitting and says nothing of the vaginal union. Its own examples run front-to-back, face-to-face and sideways, which matches every facing this entry lets the riders take, including the sideways seat of riders turned toward each other that neither the catalog's face-off nor its seated-rear-entry has. It holds only one pair, so it discards the second lap ride alongside on the same couch, which is what makes this a four-person entry.",
+   "sibling_count": 1,
+   "support_tags": [
+    "straddling",
+    "sitting",
+    "side-by-side",
+    "couch",
+    "on_couch"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:double-manual",
+   "namespace": "danbooru",
+   "foreign_id": "cooperative_handjob",
+   "relation": "broader",
+   "loss": "cooperative_handjob fixes only the act, two or more people performing a handjob on the same penis, and says nothing about staging, so it equally covers standing, seated and three-giver arrangements. It discards the receiving partner lying or reclining between two partners kneeling on either side, and it assumes a penis as the target, which this record's FFM composition suggests but does not state.",
+   "sibling_count": 0,
+   "support_tags": [
+    "on_back",
+    "lying",
+    "seiza",
+    "sandwiched",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:double-penetration",
    "namespace": "danbooru",
    "foreign_id": "double_penetration",
    "relation": "broader",
    "loss": "The tag records only that two penetrations occur simultaneously. It also covers the catalog's double-vaginal, double-anal, standing-sandwich, spoon-dp and dp-reverse entries, and it does not encode the canonical stack of a rider leaning forward over a supine partner with the second partner kneeling behind.",
-   "sibling_count": 3,
+   "sibling_count": 12,
    "support_tags": [
     "group_sex",
     "girl_on_top",
@@ -750,6 +1193,28 @@
    "loss": null,
    "retrieved": "2026-08-09",
    "verified_by": "automated"
+  },
+  {
+   "epc_id": "epc:double-spitroast",
+   "namespace": "danbooru",
+   "foreign_id": "spitroast",
+   "relation": "broader",
+   "loss": "spitroast describes a single front-and-back double team, one person in between performing oral sex or paizuri at one end while penetrated from behind at the other, and it is the tag the catalog's spit-roast, spitroast-lying and eiffel-tower entries already carry. It discards the second team working alongside on the same surface and the matched alignment of the two triangles, mirrored or running the same way, which is the entire proposition of this entry. side-by-side and shared_bed in the support set restore only that the bodies are next to each other in one bed, not that they form two matched groups.",
+   "sibling_count": 6,
+   "support_tags": [
+    "all_fours",
+    "doggystyle",
+    "kneeling",
+    "standing",
+    "side-by-side",
+    "shared_bed",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
   },
   {
    "epc_id": "epc:double-vaginal",
@@ -781,12 +1246,97 @@
    "verified_by": "automated"
   },
   {
+   "epc_id": "epc:dp-bridge",
+   "namespace": "danbooru",
+   "foreign_id": "double_penetration",
+   "relation": "broader",
+   "loss": "double_penetration records only that two penetrations happen at once, in two of one person's orifices or two in the same one, by partners or by objects, and its wiki counts the mouth among the orifices, so it spans spitroast, toy, double-vaginal and double-anal cases as well as every stacked arrangement, including the catalog's double-penetration, dp-reverse, spoon-dp and standing-sandwich entries. It discards the bridge that defines this entry: the receiver arched over the supine partner on the feet and shoulders with the pelvis lifted clear as the high point of the body, the working gap the arch opens between that pelvis and the base partner's body, and the third partner kneeling at the open end.",
+   "sibling_count": 12,
+   "support_tags": [
+    "arched_back",
+    "on_back",
+    "girl_on_top",
+    "kneeling",
+    "sandwiched",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:dp-legs-up",
+   "namespace": "danbooru",
+   "foreign_id": "double_penetration",
+   "relation": "broader",
+   "loss": "double_penetration records only that two penetrations happen at once, in two of one person's orifices or two in the same one, by partners or by objects, and its wiki counts the mouth among the orifices, so it spans spitroast, toy, double-vaginal and double-anal cases as well as every stacked arrangement, including the catalog's double-penetration, dp-reverse, spoon-dp and standing-sandwich entries. It discards everything this entry adds: the receiver lying back face up along the supine partner's body, both knees drawn up and held wide in the fold that opens both entry points at once, and the third partner kneeling at the open end.",
+   "sibling_count": 12,
+   "support_tags": [
+    "lying_on_person",
+    "on_back",
+    "legs_up",
+    "m_legs",
+    "kneeling",
+    "sandwiched",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:dp-piledriver",
+   "namespace": "danbooru",
+   "foreign_id": "double_penetration",
+   "relation": "broader",
+   "loss": "double_penetration records only that two penetrations happen at once and carries no posture, so it covers lying, seated and carried doubles as readily as this one. It discards the inversion that defines this entry: the receiver up on the shoulders with the hips raised and the legs folded back, one partner squatting above and entering downward while the second works from the side. piledriver_(sex) in the support set restores the inverted core of the two-person form but not the second partner.",
+   "sibling_count": 12,
+   "support_tags": [
+    "piledriver_(sex)",
+    "folded",
+    "squatting",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:dp-prone",
+   "namespace": "danbooru",
+   "foreign_id": "double_penetration",
+   "relation": "broader",
+   "loss": "double_penetration records only the two simultaneous penetrations and carries no posture, so it covers this entry and the catalog's sandwich-dp, which the seed builds from the same three base postures, on identical terms. It discards the flat prone build that the record names: the receiver face down along a supine partner with the third partner above and behind, all three spines roughly parallel. prone_bone in the support set restores the face-down rear entry, but no live tag separates this record from sandwich-dp.",
+   "sibling_count": 12,
+   "support_tags": [
+    "prone_bone",
+    "on_stomach",
+    "human_stacking",
+    "sandwiched",
+    "lying_on_person",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:dp-reverse",
    "namespace": "danbooru",
    "foreign_id": "double_penetration",
    "relation": "broader",
    "loss": "double_penetration records only that two partners occupy two orifices and discards the arrangement that names this position: the receiving body reclined back against the supine partner and opened frontally, rather than folded forward onto the partner beneath as in conventional DP.",
-   "sibling_count": 3,
+   "sibling_count": 12,
    "support_tags": [
     "reverse_cowgirl_position",
     "girl_on_top",
@@ -802,12 +1352,153 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:dp-seated",
+   "namespace": "danbooru",
+   "foreign_id": "double_penetration",
+   "relation": "broader",
+   "loss": "double_penetration records only the two simultaneous penetrations and fixes no posture or surface, so it covers the catalog's lying, carried and inverted doubles alike. It discards the seated build that defines this entry: one partner sitting on furniture with the receiver lowered into the lap facing away, and the second partner kneeling in front, with the seat carrying the weight.",
+   "sibling_count": 12,
+   "support_tags": [
+    "reverse_upright_straddle",
+    "sitting_on_lap",
+    "front-to-back",
+    "sitting",
+    "kneeling",
+    "on_chair"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:dp-suspended",
+   "namespace": "danbooru",
+   "foreign_id": "double_penetration",
+   "relation": "broader",
+   "loss": "double_penetration records only the two simultaneous penetrations and carries no posture, and it is the tag the catalog's standing-sandwich already holds for this same carried build. It discards the airborne arrangement that defines this entry: the receiver held clear of the ground between two standing partners, one carrying under the thighs from the front and one taking the weight from behind. The support set restores the front carry and the between-two placement, but not the rear partner's share of the load.",
+   "sibling_count": 12,
+   "support_tags": [
+    "suspended_congress",
+    "sandwiched",
+    "standing",
+    "hands_on_another's_thighs",
+    "front-to-back"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:dp-wheelbarrow",
+   "namespace": "danbooru",
+   "foreign_id": "double_penetration",
+   "relation": "broader",
+   "loss": "double_penetration records only the two simultaneous penetrations and carries no posture, so it covers the catalog's lying, seated and carried doubles alike. It discards the barrow hold that defines this entry: the receiver held horizontal on the hands with the legs carried by a standing partner behind, and the third partner working from beneath at the front. wheelbarrow_pose in the support set restores the hold but not the partner beneath.",
+   "sibling_count": 12,
+   "support_tags": [
+    "wheelbarrow_pose",
+    "hands_on_ground",
+    "holding_another's_legs",
+    "standing",
+    "sex_from_behind",
+    "on_back"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:dragon-turns",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary is the tag for the whole supine face-to-face family and is exact for the catalog's own missionary entry, which this record matches in any still frame. The one feature it discards is temporal: the counted alternation of shallow and deep strokes that the record treats as the definition of the way, and no still-image tag can carry a stroke count.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_back",
+    "knees_up",
+    "spread_legs",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:dragon-turns",
+   "namespace": "ks",
+   "foreign_id": "sunujing/dragon-turns",
+   "relation": "close",
+   "loss": "Attested source name. First of the Nine Ways: the receiving partner face up and raising the pelvis beneath the partner lying over them, with slow strokes counted eight shallow to two deep. The record raises the knees rather than the pelvis and admits other counts, such as an even alternation, where the text fixes eight to two.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Dragon Turns"
+  },
+  {
+   "epc_id": "epc:driving-the-peg",
+   "namespace": "danbooru",
+   "foreign_id": "suspended_congress",
+   "relation": "broader",
+   "loss": "suspended_congress fixes only that the receiver is lifted and carried in midair facing the partner and says nothing about a wall, so free-standing carries take it on the same footing; it is the tag the catalog's own suspended-congress entry owns, where a wall brace is only a variation. It discards the wall as the load-bearing plane, which this record makes its defining feature: the receiver pinned flat between the partner's body and the wall, with the wall rather than the arms carrying most of the weight. against_wall restores the wall but cannot say that it carries the load.",
+   "sibling_count": 1,
+   "support_tags": [
+    "against_wall",
+    "standing_leg_lock",
+    "standing",
+    "grabbing_another's_thighs",
+    "belly-to-belly"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:driving-the-peg",
+   "namespace": "ks",
+   "foreign_id": "perfumed-garden/driving-the-peg-home",
+   "relation": "close",
+   "loss": "Attested source name. The receiving partner supported between the partner and a wall.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Driving the peg home"
+  },
+  {
+   "epc_id": "epc:drunken-boat",
+   "namespace": "danbooru",
+   "foreign_id": "sitting",
+   "relation": "broader",
+   "loss": "sitting records only that the butt rests on a surface and is not a sex tag at all, and it is already the tag of the catalog's spider entry, the same mutual recline. It discards every identifying feature of this entry: the partners facing each other with the legs interlocked, both leaning back onto their hands at matched angles, the shared rocking of the joined hips that neither partner leads, and the penetration itself; face-to-face, leaning_back, arm_support and interlocked_legs restore only the posture.",
+   "sibling_count": 1,
+   "support_tags": [
+    "face-to-face",
+    "leaning_back",
+    "arm_support",
+    "interlocked_legs",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:eiffel-tower",
    "namespace": "danbooru",
    "foreign_id": "spitroast",
    "relation": "broader",
    "loss": "spitroast covers any front-and-rear double team. It drops the raised inside arms and the clasped hands above the receiver back, the single gesture that names the Eiffel Tower and closes the composition into its arch silhouette. That gesture is carried only by the support tag grabbing_another's_hand, which is itself undocumented.",
-   "sibling_count": 2,
+   "sibling_count": 6,
    "support_tags": [
     "group_sex",
     "fellatio",
@@ -837,7 +1528,7 @@
    "foreign_id": "reverse_suspended_congress",
    "relation": "exact",
    "loss": null,
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "carrying",
     "standing",
@@ -871,12 +1562,71 @@
    "verified_by": "automated"
   },
   {
+   "epc_id": "epc:elephant-posture",
+   "namespace": "danbooru",
+   "foreign_id": "prone_bone",
+   "relation": "broader",
+   "loss": "prone_bone constrains only the receiving body, flat on the stomach and penetrated from behind, and says nothing about the penetrating partner. It discards the low, heavy line that names this entry, the partner stretched full length along the receiver's back with the two bodies pressed together, and it is the same tag the catalog's prone-bone, jockey and cicada-clings entries carry, so the four cannot be told apart through it.",
+   "sibling_count": 3,
+   "support_tags": [
+    "on_stomach",
+    "lying_on_person",
+    "sex_from_behind",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:elephant-posture",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/aibhika-the-elephant-posture",
+   "relation": "related",
+   "loss": "Attested source name. Burton names the pressing of an elephant only in a list of animal variants of the congress of a cow, made on hands and feet, and gives it no posture of its own, so the face-down arrangement here is the catalog's reading rather than the text's.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Aibhika (the elephant posture)"
+  },
+  {
+   "epc_id": "epc:entwined-cranes",
+   "namespace": "danbooru",
+   "foreign_id": "upright_straddle",
+   "relation": "broader",
+   "loss": "upright_straddle covers every face-to-face straddle of a seated partner, and the catalog already files the cross-legged form under it as lotus and the chair form as face-off. It discards the embrace the classical name points at: the receiving partner's arms around the partner's neck with the two heads held level and close. arms_around_neck and face-to-face restore the embrace and indian_style the cross-legged base.",
+   "sibling_count": 5,
+   "support_tags": [
+    "indian_style",
+    "sitting_on_lap",
+    "arms_around_neck",
+    "face-to-face",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:entwined-cranes",
+   "namespace": "ks",
+   "foreign_id": "sunujing/cranes-with-necks-entwined",
+   "relation": "close",
+   "loss": "Attested source name. Ninth of the Nine Ways: the partner seated with the legs stretched out and apart, the receiving partner astride the thighs with the hands around the partner's neck, and the partner's hands at the hips helping the receiving partner sway and lift. The text's seat has the legs spread forward, not the crossed legs this record specifies.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Cranes Entwine Necks"
+  },
+  {
    "epc_id": "epc:face-off",
    "namespace": "danbooru",
    "foreign_id": "upright_straddle",
    "relation": "broader",
    "loss": "upright_straddle covers every face-to-face upright straddle including the floor-seated lotus; it does not record that the penetrating partner is seated on a chair or couch edge with the receiver's feet able to reach the floor for leverage.",
-   "sibling_count": 1,
+   "sibling_count": 5,
    "support_tags": [
     "on_chair",
     "sitting_on_lap",
@@ -933,7 +1683,7 @@
    "foreign_id": "sitting_on_face",
    "relation": "broader",
    "loss": "sitting_on_face is also applied to clothed, purely smothering or dominance instances where no oral contact occurs, and it does not record whether the sitter faces the partner's head (queening) or their feet.",
-   "sibling_count": 2,
+   "sibling_count": 5,
    "support_tags": [
     "cunnilingus",
     "on_back",
@@ -958,12 +1708,32 @@
    "verified_by": "automated"
   },
   {
+   "epc_id": "epc:facesitting-circle",
+   "namespace": "danbooru",
+   "foreign_id": "sitting_on_face",
+   "relation": "broader",
+   "loss": "sitting_on_face fixes only that one person sits, straddles or squats on another's face, and it is the tag the catalog's facesitting, facesitting-reverse and ffm-ride-and-sit entries already carry, so it reads as a single two-person mount. It discards the ring that defines this entry, several partners lying with their heads toward a common center while the one astride moves from face to face around it, which makes every place in the circle equivalent. circle_formation in the support set restores the radial layout, but nothing in the crosswalk records the movement around it.",
+   "sibling_count": 5,
+   "support_tags": [
+    "circle_formation",
+    "on_back",
+    "lying",
+    "straddling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:facesitting-reverse",
    "namespace": "danbooru",
    "foreign_id": "sitting_on_face",
    "relation": "broader",
    "loss": "sitting_on_face fixes only that someone is astride another's face; it covers both orientations of the straddle and smothering with no oral contact at all, and it is the tag the catalog's plain facesitting entry already owns. What it discards is the head-to-toe orientation, the sitter pitched down the length of the body, sight line along the torso toward the feet, which is the sole discriminator against ordinary facesitting. danbooru has no reverse-facesitting tag and no participant-orientation vocabulary at all (face-to-face and facing_away are both absent from the permitted vocabulary), so this is recovered only obliquely: ass_focus marks the rear-forward presentation at the level of image composition rather than of participant orientation, and kneeling separates this entry from the squatting variant the plain facesitting row carries.",
-   "sibling_count": 2,
+   "sibling_count": 5,
    "support_tags": [
     "cunnilingus",
     "on_back",
@@ -1119,12 +1889,33 @@
    "verified_by": "automated"
   },
   {
+   "epc_id": "epc:fff-tribbing-chain",
+   "namespace": "danbooru",
+   "foreign_id": "tribadism",
+   "relation": "broader",
+   "loss": "tribadism names the act alone, vulva-to-vulva contact and motion between partners, and its wiki names the scissored position as its most recognized form; it is the tag the catalog's scissoring entry already carries. It discards the third partner and the chain itself: three partners crossed at the hip in sequence, the middle one engaged on both sides, run end to end rather than closed into a ring.",
+   "sibling_count": 4,
+   "support_tags": [
+    "interlocked_legs",
+    "leg_between_thighs",
+    "on_back",
+    "spread_legs",
+    "lying",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:ffm-ride-and-sit",
    "namespace": "danbooru",
    "foreign_id": "sitting_on_face",
    "relation": "broader",
    "loss": "sitting_on_face names only the face-mounted half of the double mount: it covers the catalog's ordinary two-person facesitting and facesitting-reverse entries with no penetration at all, and does not encode the second partner riding the supine partner's hips at the same time.",
-   "sibling_count": 2,
+   "sibling_count": 5,
    "support_tags": [
     "cowgirl_position",
     "girl_on_top",
@@ -1159,6 +1950,104 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:fire-hydrant",
+   "namespace": "danbooru",
+   "foreign_id": "doggystyle",
+   "relation": "broader",
+   "loss": "doggystyle covers the whole all-fours rear-entry family and is the tag the catalog's doggy-style entry carries, and that entry's own description lists one leg raised among its variations. It discards the single knee lifted out to the side with the hip opened to about ninety degrees and the pelvis tipped with it, the asymmetry that names this entry, although the tag still holds because all_fours needs at least one hand and one leg on the floor. leg_lift in the support set carries the leg lifted away from the planted one.",
+   "sibling_count": 6,
+   "support_tags": [
+    "all_fours",
+    "leg_lift",
+    "sex_from_behind",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:fishes-interlock",
+   "namespace": "danbooru",
+   "foreign_id": "cowgirl_position",
+   "relation": "broader",
+   "loss": "cowgirl_position covers the facing ride over a supine partner at any torso angle and asks only that the receiving partner straddle the partner below. It discards the interlock this record treats as defining, the receiving partner's legs alternating with the partner's instead of sitting outside them, which keeps the pelvises tighter than a plain straddle. interlocked_legs carries the weave, but it is a thin posture tag with no sexual sense.",
+   "sibling_count": 6,
+   "support_tags": [
+    "interlocked_legs",
+    "sitting_on_person",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:fishes-interlock",
+   "namespace": "ks",
+   "foreign_id": "sunujing/fish-linking-scales",
+   "relation": "close",
+   "loss": "Attested source name. Eighth of the Nine Ways, not the seventh as the seed note says: the partner supine, the receiving partner astride with the thighs forward, a slow shallow entry, and the receiving partner alone moving. The text describes a plain straddle and no leg interlock, so the weave this record treats as defining is not attested.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Fishes Interlock"
+  },
+  {
+   "epc_id": "epc:five-point",
+   "namespace": "danbooru",
+   "foreign_id": "daisy_chain_(sex)",
+   "relation": "close",
+   "loss": "daisy_chain_(sex) names a closed figure of the same kind, three or more people in a circle with each both performing and receiving at once, and it is the tag the catalog's daisy-chain entry carries as exact. It fixes neither the count, five by default, nor the even angular spacing with consistent handedness that turns the ring into a star, and no support tag carries that geometry. Its wiki also makes every contact oral, while this record is coded for mixed acts with multiple penetration.",
+   "sibling_count": 2,
+   "support_tags": [
+    "on_side",
+    "lying",
+    "head_between_thighs",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:fixing-a-nail",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary records only that the receiver lies on their back facing the partner, and its wiki's list of leg options (a leg lock, a folded body, or the legs held) never singles out one leg, so it spans the whole supine face-to-face family. It discards the asymmetric split that is the entire content of this entry: one leg carried up toward the head while the other stays stretched flat along the surface, with the pelvis rotating to follow the raised leg. leg_lift and split restore that shape as a posture only.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_back",
+    "leg_lift",
+    "split",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:fixing-a-nail",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/fixing-of-a-nail",
+   "relation": "close",
+   "loss": "Attested source name. One leg raised toward the head, the other stretched out.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Fixing of a nail"
+  },
+  {
    "epc_id": "epc:footjob",
    "namespace": "danbooru",
    "foreign_id": "footjob",
@@ -1174,6 +2063,25 @@
    "undocumented_tag": false,
    "note": null,
    "retrieved": "2026-08-09",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:froggy-style",
+   "namespace": "danbooru",
+   "foreign_id": "sex_from_behind",
+   "relation": "broader",
+   "loss": "sex_from_behind encodes rear entry and nothing about posture: its wiki names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl and closes on any other position from behind. It discards the receiver crouched forward on the feet with the hands down and the knees wide outside the elbows, the raised hip line that follows, and the partner kneeling behind, and squatting and spread_legs in the support set carry the crouch. doggystyle was passed over because its wiki confines it to a receiver on all fours or close to it and all_fours routes both knees off the ground to bear_position, while this entry carries its weight on the feet, and the name-matched froggy_style was passed over because it has no wiki page and its posts are also tagged all_fours, doggystyle and reverse_cowgirl_position, so its sense cannot be sourced.",
+   "sibling_count": 8,
+   "support_tags": [
+    "squatting",
+    "spread_legs",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
    "verified_by": "manual"
   },
   {
@@ -1220,7 +2128,7 @@
    "foreign_id": "group_sex",
    "relation": "broader",
    "loss": "group_sex records only that more than two participants share a sex act at the same time, so it covers orgies of multiple distinct couples, love trains, foursomes and any threesome of any shape. It discards every feature that individuates this entry: the many-onto-one polarity in which one receiver serves several partners rather than couples pairing off, the hub geometry in which the kneeling central figure is the fixed point while the partners stand in a surround, and the sequential oral service. Routing disclosure: the gangbang tag was rejected because its own page sets the floor at four or more people while this entry has three, but danbooru is internally inconsistent here, since its threesome page states the floor as three or more. The tag was rejected on the stricter of the two readings. The threesome tag is absent from the permitted vocabulary, so the cardinality distinction cannot be carried at all and is lost at group_sex.",
-   "sibling_count": 2,
+   "sibling_count": 4,
    "support_tags": [
     "kneeling",
     "fellatio",
@@ -1231,6 +2139,57 @@
    "note": null,
    "retrieved": "2026-08-09",
    "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:gangbang-line",
+   "namespace": "danbooru",
+   "foreign_id": "gangbang",
+   "relation": "broader",
+   "loss": "gangbang fixes only the polarity and the count, three or more people having sex with a single person, and says nothing of staging or sequence, so it covers ring and hub stagings and scenes with several contacts live at once as readily as a line. It discards the queue that defines this entry, the waiting partners lined up single file behind the receiver and cycling through one rear slot so that only one contact is live at a time, along with the receiver's all-fours base; queue, all_fours and doggystyle in the support set restore these only as separate facts.",
+   "sibling_count": 0,
+   "support_tags": [
+    "all_fours",
+    "doggystyle",
+    "queue",
+    "kneeling",
+    "standing",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:half-pressed",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary fixes only that the receiver lies on the back facing the partner and holds for any leg arrangement, from flat to folded. It discards the deliberate asymmetry that defines this entry, one leg extended along the bed while the other is drawn up to the chest, with the twist it puts through the hips, and the partner kneeling rather than lying over; knee_up and outstretched_leg restore the two legs only as separate postures.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_back",
+    "knee_up",
+    "outstretched_leg",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:half-pressed",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/ardha-piditaka-the-half-pressed-position",
+   "relation": "close",
+   "loss": "Attested source name. One leg extended, the other drawn up. Burton gives it as the half form of the pressed position, the other leg contracted and held at the partner's chest, while this entry's description derives it from the pressing position.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Ardha-piditaka (the half pressed position)"
   },
   {
    "epc_id": "epc:handjob-lying",
@@ -1302,7 +2261,7 @@
    "foreign_id": "prone_bone",
    "relation": "broader",
    "loss": "prone_bone fixes only that the receiver lies flat on the stomach and is penetrated from behind; its wiki says nothing whatever about the penetrating partner. What is discarded is the high upright seat of the rider, which is the entire distinction of the jockey from a top lying down along the receiver's back, and the receiver's legs-together closure, for which the permitted vocabulary has no tag at all (no legs_together, closed_legs, knees_together or feet_together entry, verified by grep). The support set recovers only that the top sits astride the partner, via sitting_on_person plus straddling; no tag in the permitted vocabulary separates an upright seated top from one prone along the receiver's back.",
-   "sibling_count": 1,
+   "sibling_count": 3,
    "support_tags": [
     "on_stomach",
     "straddling",
@@ -1323,7 +2282,7 @@
    "foreign_id": "kneeling",
    "relation": "broader",
    "loss": "kneeling is a bare posture tag covering solo and non-sexual kneeling; it does not encode that both partners kneel upright, that they face each other chest-to-chest in a full-length embrace, or that penetration is occurring, and it says nothing about the grinding rather than thrusting motion.",
-   "sibling_count": 1,
+   "sibling_count": 2,
    "support_tags": [
     "hug",
     "mutual_hug",
@@ -1343,7 +2302,7 @@
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind covers all rear entry including bent-over, on-all-fours, prone and standing variants, and discards the specific feature here: both partners kneeling upright with both torsos vertical and the receiver's back flush against the penetrating partner's chest.",
-   "sibling_count": 2,
+   "sibling_count": 8,
    "support_tags": [
     "kneeling",
     "hug_from_behind",
@@ -1356,6 +2315,65 @@
    "undocumented_tag": false,
    "note": null,
    "retrieved": "2026-08-09",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:kneeling-spitroast",
+   "namespace": "danbooru",
+   "foreign_id": "spitroast",
+   "relation": "broader",
+   "loss": "spitroast fixes only the two-ended structure, the person in between performing oral on one partner while penetrated from behind by another, and its wiki admits seiza and all fours as readily as standing, so it covers the catalog's all-fours spit-roast and its standing, seated and side-lying variants alike. It discards the upright kneel that defines this entry, the receiving partner held vertical between two kneeling partners instead of down on all fours, and no live tag restores it, since kneeling fixes only that the knees are down and the buttocks are off the ground, which admits any torso angle.",
+   "sibling_count": 6,
+   "support_tags": [
+    "kneeling",
+    "seiza",
+    "front-to-back",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": "The record does not say which partner gives oral at the front. The tag, like the catalog's parent spit-roast entry, has the middle partner giving oral to the front partner, but with the middle partner held upright, the listed variation of the front partner sitting back on the heels 'to lower the oral height' fits only the front partner's mouth meeting the receiver. If that reading is the intended one, spitroast stops applying and the row needs a new primary.",
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:kneeling-wheelbarrow",
+   "namespace": "danbooru",
+   "foreign_id": "wheelbarrow_pose",
+   "relation": "broader",
+   "loss": "wheelbarrow_pose fixes only the two-body geometry, one participant's hands on the ground while the other holds their legs up like handles, and roots the tag in the non-sexual wheelbarrow race. It asserts neither rear-entry penetration nor the holder's posture, so it covers the catalog's standing wheelbarrow entry and this kneeling form alike and discards the kneeling partner, which lowers the held hips to kneeling height and cuts the strain on the receiver's shoulders. kneeling and sex_from_behind in the support set restore the partner's posture and the entry, and grabbing_another's_thighs restores the grip.",
+   "sibling_count": 1,
+   "support_tags": [
+    "kneeling",
+    "sex_from_behind",
+    "grabbing_another's_thighs",
+    "arm_support",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:lap-and-kneel",
+   "namespace": "danbooru",
+   "foreign_id": "sitting_on_lap",
+   "relation": "broader",
+   "loss": "sitting_on_lap records only that one person sits in another's lap and is not a sex tag, so it covers clothed and non-sexual lap sitting as readily as a lap ride and says nothing of the vaginal union. Its own examples run front-to-back, face-to-face and sideways, so it holds both facings this entry allows the rider, but it discards the third partner kneeling on the floor beside the chair and working the seated partner by mouth or hand, which is what turns the catalog's face-off or seated-rear-entry into this three-person arrangement.",
+   "sibling_count": 1,
+   "support_tags": [
+    "straddling",
+    "sitting",
+    "kneeling",
+    "on_chair",
+    "on_floor"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
    "verified_by": "manual"
   },
   {
@@ -1383,7 +2401,7 @@
    "foreign_id": "on_side",
    "relation": "broader",
    "loss": "on_side is a bare posture tag shared with spooning, solo lying and wholly non-sexual scenes; it records neither the face-to-face orientation, nor the interleaved legs, nor that penetration is occurring at all.",
-   "sibling_count": 1,
+   "sibling_count": 5,
    "support_tags": [
     "on_bed",
     "leg_lock",
@@ -1431,7 +2449,7 @@
    "foreign_id": "cowgirl_position",
    "relation": "broader",
    "loss": "cowgirl_position covers the entire face-to-face ride, upright, folded forward onto the partner's chest, and this backward-reclined variant alike; it discards the reclined torso and the hands braced behind on the partner's thighs, and with them the altered penetration angle and the fully opened front of the rider.",
-   "sibling_count": 3,
+   "sibling_count": 6,
    "support_tags": [
     "girl_on_top",
     "straddling",
@@ -1452,7 +2470,7 @@
    "foreign_id": "doggystyle",
    "relation": "broader",
    "loss": "doggystyle covers the whole rear-entry-on-knees family and does not distinguish this chest-and-forearms-down, hips-high variant from the base hands-and-knees posture, discarding the steeper entry angle produced by the shoulder-low-to-pelvis-high spinal slope.",
-   "sibling_count": 4,
+   "sibling_count": 6,
    "support_tags": [
     "top-down_bottom-up",
     "sex_from_behind",
@@ -1472,7 +2490,7 @@
    "foreign_id": "missionary",
    "relation": "broader",
    "loss": "missionary fixes only that the receiver lies on their back and that the partners face each other; it does not itself fix which partner is above (that is carried by the boy_on_top support). It discards the shoulders as the support point for the raised calves, the pelvic tilt and added depth that are the entire reason for the variation, and the deckchair form with the legs draped over the elbows. No replacement exists: there is no legs_on_shoulders tag, and the permitted vocabulary's only shoulder tags are carrying_over_shoulder, sitting_on_shoulder, grabbed_breast_over_shoulder, butterfly_on_shoulder, standing_on_shoulder, licking_shoulder, standing_on_another's_shoulder and standing_on_another's_shoulders, none of which is legs resting on a partner's shoulders. The support point is therefore unreconstructible from the crosswalk.",
-   "sibling_count": 5,
+   "sibling_count": 26,
    "support_tags": [
     "on_back",
     "legs_up",
@@ -1517,12 +2535,33 @@
    "source_display": "The second manner"
   },
   {
+   "epc_id": "epc:lifted-missionary",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary fixes only that the receiver lies on their back facing the partner, and its wiki admits leg-locked, folded and legs-held forms, so it covers the catalog's missionary, widely-opened and the-gap entries as readily as this one. It discards the defining support: the pelvis carried clear of the surface in the kneeling partner's two hands with nothing else under it, so the angle can change through a take, which hips_in_air and hands_on_another's_hips restore only as raised hips and a grip. anvil_position was passed over although its wiki sets an upturned pelvis apart from missionary, because the same wiki makes it a milder form of the piledriver, whose legs fold back, while this entry is a hand-held lift with the lower back arched.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_back",
+    "hips_in_air",
+    "hands_on_another's_hips",
+    "arched_back",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:lotus",
    "namespace": "danbooru",
    "foreign_id": "upright_straddle",
    "relation": "broader",
    "loss": "upright_straddle covers any face-to-face lap straddle, including the chair straddle the catalog files separately as face-off and kneeling-upright variants; it does not record the cross-legged seated base, the legs-wrapped mutual embrace, or the close grind rather than thrusting that define lotus.",
-   "sibling_count": 1,
+   "sibling_count": 5,
    "support_tags": [
     "straddling",
     "sitting",
@@ -1574,6 +2613,55 @@
    "loss": null,
    "retrieved": "2026-08-09",
    "verified_by": "automated"
+  },
+  {
+   "epc_id": "epc:magic-mountain",
+   "namespace": "danbooru",
+   "foreign_id": "sex_from_behind",
+   "relation": "broader",
+   "loss": "sex_from_behind covers every rear-entry arrangement, and its wiki names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl inside it. It discards the cushion bank built into a slope that carries the receiver's chest, the receiver kneeling forward onto that slope, and the penetrating partner kneeling behind and settled back onto the heels, so that both bodies are supported for a long hold. doggystyle was passed over because its wiki rules it out unless the receiver is on all fours or close to it, and here the chest rests on the bank rather than on the hands.",
+   "sibling_count": 8,
+   "support_tags": [
+    "kneeling",
+    "legs_folded",
+    "leaning_forward",
+    "leaning_on_object",
+    "cushion"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:mares-position",
+   "namespace": "danbooru",
+   "foreign_id": "cowgirl_position",
+   "relation": "broader",
+   "loss": "cowgirl_position fixes only that the receiver straddles a supine partner while facing them, and holds equally for bouncing, grinding and leaning rides. It discards the entire content of this entry, the rider holding still while the pelvic floor does the work, which no documented tag carries: pussy_grip names a grip only by the visible pull on withdrawal, the opposite of a still hold. The support set can assert only a settled seat.",
+   "sibling_count": 6,
+   "support_tags": [
+    "straddling",
+    "sitting_on_person",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:mares-position",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/vadavaka-the-mare-s-position",
+   "relation": "close",
+   "loss": "Attested source name. Named for the internal grip rather than the outward shape. Burton lists it among the ways of lying down, beside the clasping position, and gives a matching grip made from on top its own name, the pair of tongs, so the astride seat here is the catalog's staging.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Vadavaka (the mare's position)"
   },
   {
    "epc_id": "epc:mating-press",
@@ -1635,12 +2723,32 @@
    "verified_by": "automated"
   },
   {
+   "epc_id": "epc:mfm-alternating",
+   "namespace": "danbooru",
+   "foreign_id": "group_sex",
+   "relation": "broader",
+   "loss": "group_sex records only that more than two participants share a sex act at the same time, and it is the tag the catalog's gangbang-center, reverse-gangbang and doggy-over-69 entries already carry. It discards the rotation that defines this entry, two partners taking turns with one receiving partner on a rhythm while the waiting one stays in contact by hand or mouth, along with the MFM composition. At any instant the live half is an ordinary two-person position, by default a ride on the supine partner, and no live tag was found for the swap itself.",
+   "sibling_count": 4,
+   "support_tags": [
+    "cowgirl_position",
+    "straddling",
+    "on_back",
+    "seiza",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:missionary",
    "namespace": "danbooru",
    "foreign_id": "missionary",
    "relation": "exact",
    "loss": null,
-   "sibling_count": 5,
+   "sibling_count": 26,
    "support_tags": [
     "on_back",
     "spread_legs",
@@ -1689,7 +2797,7 @@
    "foreign_id": "leg_lock",
    "relation": "broader",
    "loss": "leg_lock covers legs wrapped around a partner in any configuration - standing sex, suspended congress, cowgirl, and around the head as well as the waist - and discards the supine face-to-face missionary stack on a flat surface that this entry builds the wrap onto.",
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "missionary",
     "on_back",
@@ -1714,6 +2822,77 @@
    "source_display": "Silkworm Spinning a Cocoon"
   },
   {
+   "epc_id": "epc:mmm-double-team",
+   "namespace": "danbooru",
+   "foreign_id": "double_anal",
+   "relation": "broader",
+   "loss": "double_anal names only the act, two penises or penis-like objects in one anus, and it is the tag the catalog's double-anal entry already carries. It discards the all-male cast and the three-layer stack that define this entry: the middle partner lying prone along a supine base partner while the third works from above and behind in a plank. Because its wiki admits penis-like objects, it also holds for toy cases with no second partner at all.",
+   "sibling_count": 1,
+   "support_tags": [
+    "human_stacking",
+    "lying_on_person",
+    "on_back",
+    "sex_from_behind",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:mmm-spitroast",
+   "namespace": "danbooru",
+   "foreign_id": "male_spitroast",
+   "relation": "broader",
+   "loss": "male_spitroast fixes only that the partner in the middle is male, performing oral at the front while penetrated anally from behind. Its wiki admits partners who do not present as male, such as one using a strap-on, among those penetrating him, and it leaves the partner at the front unspecified, so it does not fix the all-male cast that is this entry's only difference from the catalog's spit-roast. Like its parent spitroast, it also leaves the middle partner's posture open (the parent's wiki lists standing, seiza and all fours among others) and so discards the hands-and-knees default.",
+   "sibling_count": 0,
+   "support_tags": [
+    "all_fours",
+    "kneeling",
+    "standing",
+    "sex_from_behind",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:monkeys-attack",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary spans the supine face-to-face family and admits a folded body without requiring one. It discards both of the receiving partner's legs carried up onto the kneeling partner's shoulders and the fold deep enough to lift the hips clear of the surface. legs_on_another's_shoulders, folded and hips_in_air restore the leg placement, the fold and the lift in support.",
+   "sibling_count": 26,
+   "support_tags": [
+    "legs_on_another's_shoulders",
+    "folded",
+    "hips_in_air",
+    "kneeling",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:monkeys-attack",
+   "namespace": "ks",
+   "foreign_id": "sunujing/monkey-s-attack",
+   "relation": "close",
+   "loss": "Attested source name. Third of the Nine Ways: the receiving partner supine with the thighs carried on the partner's shoulders, the knees pressed back past the chest, and the buttocks and back lifted, the partner pressing deep. The text rests the thighs rather than the lower legs on the shoulders and leaves the partner's stance unstated, so the kneeling carry this record renders is the catalog's staging.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Monkey's Attack"
+  },
+  {
    "epc_id": "epc:mutual-masturbation",
    "namespace": "danbooru",
    "foreign_id": "masturbating_together",
@@ -1733,12 +2912,101 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:oral-relay",
+   "namespace": "danbooru",
+   "foreign_id": "cooperative_fellatio",
+   "relation": "broader",
+   "loss": "cooperative_fellatio records only that two or more people perform fellatio on the same partner, so it covers simultaneous sharing, larger groups of givers and any staging alike, and it is the tag the catalog's double-blowjob entry already carries. It discards the relay that defines this entry: the two kneeling partners trading the contact back and forth on a rhythm, one working by mouth while the other works by hand, so neither waits idle. No live tag names turn-taking, so the swap cannot be recovered from the crosswalk, and cheek-to-cheek in the support set carries only the shared staging of the two heads.",
+   "sibling_count": 1,
+   "support_tags": [
+    "kneeling",
+    "standing",
+    "side-by-side",
+    "cheek-to-cheek",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": "The record does not name the act. Fellatio is read from the FFM composition, with the two kneeling givers as its two women, and from the staging it shares with the catalog's double-blowjob entry, one standing receiving partner with two kneeling partners side by side, whose record places the pair at his hips. If the receiver were the female partner, the row would move to cooperative_cunnilingus (17 posts).",
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:ostrich-tail",
+   "namespace": "danbooru",
+   "foreign_id": "piledriver_(sex)",
+   "relation": "close",
+   "loss": "piledriver_(sex) carries the inversion, the receiver on the shoulders with the hips lifted vertically, but it fixes a partner who squats and enters from above with the receiver's legs folded back. This entry differs on both counts: the penetrating partner kneels and carries the legs up in the fanned shape the name describes, which is why the record places it between an ordinary raised-hip position and a full piledriver. kneeling and holding_another's_legs in the support set carry that difference.",
+   "sibling_count": 4,
+   "support_tags": [
+    "legs_up",
+    "kneeling",
+    "holding_another's_legs",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:ostrich-tail",
+   "namespace": "ks",
+   "foreign_id": "perfumed-garden/the-tail-of-the-ostrich",
+   "relation": "close",
+   "loss": "Attested source name. The receiving partner's legs raised until only the head and shoulders rest on the ground.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "The tail of the ostrich"
+  },
+  {
+   "epc_id": "epc:over-the-edge",
+   "namespace": "danbooru",
+   "foreign_id": "sex_from_behind",
+   "relation": "broader",
+   "loss": "sex_from_behind encodes only rear entry, and its wiki names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl inside it and closes with any other position from behind, so it covers every rear arrangement on or off a surface. It discards the edge geometry that defines this entry: the receiver lying face down with the torso on the bed and the hips out past the edge, legs descending toward the floor, and the partner standing behind at that height. bedside restores only nearness to the edge of the bed, and no live prone tag places the hips beyond it, since prone_bone and on_stomach both want the crotch down flat on the surface, while bent_over_furniture fits only the feet-on-the-floor variation, where the receiver stands bent over the bed.",
+   "sibling_count": 8,
+   "support_tags": [
+    "lying",
+    "standing",
+    "bedside",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:paired-side-by-side",
+   "namespace": "danbooru",
+   "foreign_id": "orgy",
+   "relation": "broader",
+   "loss": "orgy records multiple couples or distinct groups having sex alongside one another, which is this entry's structure, but it admits any number of couples and groups of any size in any position, so it does not fix the two pairs, the four bodies or the single shared surface. This entry leaves each pair's position open, so the support set pins only the record's default staging of one missionary pair beside a side-lying pair, and no arrangement tag restores the count.",
+   "sibling_count": 0,
+   "support_tags": [
+    "side-by-side",
+    "shared_bed",
+    "missionary",
+    "on_back",
+    "on_side",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:pearly-gates",
    "namespace": "danbooru",
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind encodes only rear entry and nothing about posture, so it covers doggystyle, standing doggystyle, prone bone, spooning, reverse cowgirl and, by its own closing clause, any other rear position. It discards the entire geometry of this entry: the penetrating partner supine underneath, the receiver reclined flat along their chest spine-to-chest with both faces to the ceiling, and the thrust arriving from below rather than from behind an upright back. The face-up stack survives only in the `lying_on_person` support tag, and the receiver-on-top polarity only in `girl_on_top`.",
-   "sibling_count": 2,
+   "sibling_count": 8,
    "support_tags": [
     "lying_on_person",
     "girl_on_top",
@@ -1753,12 +3021,41 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:phoenix-soars",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary spans the supine face-to-face family and says nothing about the upper partner's stance. It discards the penetrating partner squatting on the balls of the feet instead of kneeling or lying, and the clear vertical gap between the two torsos that the record treats as identifying. squatting restores the stance; nothing records the gap.",
+   "sibling_count": 26,
+   "support_tags": [
+    "squatting",
+    "on_back",
+    "knees_up",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:phoenix-soars",
+   "namespace": "ks",
+   "foreign_id": "sunujing/phoenix-soaring",
+   "relation": "close",
+   "loss": "Attested source name. Sixth of the Nine Ways: the receiving partner supine holding the legs up, the partner kneeling between the thighs with both hands on the mat. The text has the partner kneeling, so the squat on the balls of the feet that this record treats as identifying is not attested.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Phoenix Soars"
+  },
+  {
    "epc_id": "epc:piledriver",
    "namespace": "danbooru",
    "foreign_id": "piledriver_(sex)",
    "relation": "exact",
    "loss": null,
-   "sibling_count": 1,
+   "sibling_count": 4,
    "support_tags": [
     "folded",
     "legs_over_head",
@@ -1781,12 +3078,111 @@
    "verified_by": "automated"
   },
   {
+   "epc_id": "epc:pinball-wizard",
+   "namespace": "danbooru",
+   "foreign_id": "piledriver_(sex)",
+   "relation": "close",
+   "loss": "piledriver_(sex) carries the inversion, the receiver on the shoulders with the hips lifted vertically, but its wiki mentions no brace, folds the legs back, and has the partner squatting above. It discards the wall or couch front that braces the receiver's back and carries the hold, which the record names as the one thing separating this entry from a piledriver. It also does not match the kneeling partner, and where the wiki folds the legs back, the record names no fold, only legs spread, held together or hooked over the partner's shoulders.",
+   "sibling_count": 4,
+   "support_tags": [
+    "against_wall",
+    "legs_up",
+    "kneeling",
+    "on_floor"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:pounding-on-the-spot",
+   "namespace": "danbooru",
+   "foreign_id": "upright_straddle",
+   "relation": "broader",
+   "loss": "upright_straddle covers every face-to-face straddle of a seated partner, the catalog's chair-based face-off and cross-legged lotus included, and its wiki lists a leg lock only as optional. It discards the clasp that defines this entry, both partners seated and wrapped together with the torsos in full contact, and the record's motion, rocking pressure with no withdrawal, which no still-image tag can carry.",
+   "sibling_count": 5,
+   "support_tags": [
+    "sitting",
+    "leg_lock",
+    "mutual_hug",
+    "belly-to-belly",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:pounding-on-the-spot",
+   "namespace": "ks",
+   "foreign_id": "perfumed-garden/pounding-on-the-spot",
+   "relation": "close",
+   "loss": "Attested source name. al-Nafzawi's 15th manner, Dok el arz: the partner seated with the legs stretched out, the receiving partner astride the thighs with the legs crossed behind the partner's back and the arms around the neck, and the partner helping the receiving partner rise and descend. Burton calls the chapter's sixth movement, a firm pressing motion with no withdrawal, particularly well adapted to this manner; the record keeps only that movement and drops the rise and descent the manner itself describes.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Pounding on the spot"
+  },
+  {
+   "epc_id": "epc:praying-mantis",
+   "namespace": "danbooru",
+   "foreign_id": "sex_from_behind",
+   "relation": "broader",
+   "loss": "sex_from_behind encodes only rear entry, and its wiki names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl inside it and closes with any other position from behind, so it already carries the catalog's kneeling-rear-embrace entry, the same two upright kneeling bodies without the raised arms. It discards that both partners kneel with both spines vertical and, above all, the receiving partner's arms raised overhead or folded high, the tall narrow silhouette that names the position. kneeling and front-to-back restore the upright stacked kneel only as separate postures, and arms_up restores only the overhead form of the arms, not the arms folded high across the chest.",
+   "sibling_count": 8,
+   "support_tags": [
+    "kneeling",
+    "arms_up",
+    "front-to-back",
+    "behind_another",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:pressing-position",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary fixes only that the receiver lies on the back facing the partner, and its wiki admits a leg lock, a folded body or held legs alike, so the same tag already carries the catalog's yawning, legs-on-shoulders and splitting-bamboo entries. It discards the shape that defines this entry: both thighs drawn up closed against the chest and held there while the partner works over them, trading depth for pressure. knees_to_chest restores the fold and legs_together the closed thighs, each only as posture.",
+   "sibling_count": 26,
+   "support_tags": [
+    "knees_to_chest",
+    "legs_together",
+    "on_back",
+    "boy_on_top",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:pressing-position",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/piditaka-the-pressing-position",
+   "relation": "related",
+   "loss": "Attested source name. In Burton the pressing position begins in the clasping position, legs stretched straight out over each other, and adds the receiving partner pressing the other with the thighs; contracted legs held at the chest, as this entry describes them, are his separate pressed position. The entry shares the name and the thigh pressure, not the shape.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Piditaka (the pressing position)"
+  },
+  {
    "epc_id": "epc:pretzel",
    "namespace": "danbooru",
    "foreign_id": "on_side",
    "relation": "broader",
    "loss": "on_side records only that a character lies on one flank. Its wiki body is one sentence of general posture and its see-also list runs to curled up, fetal position and spooning, so the tag covers non-sexual side-lying and rear-entry spooning equally. It carries none of this entry's geometry: the penetrating partner kneeling astride the receiver's lower thigh, the upper leg lifted against them, or the face-to-face contact that separates the pretzel dip from spooning. the permitted vocabulary contains no face-to-face tag, so that axis is genuinely unreconstructible rather than merely omitted.",
-   "sibling_count": 1,
+   "sibling_count": 5,
    "support_tags": [
     "straddling",
     "holding_another's_leg",
@@ -1817,7 +3213,7 @@
    "foreign_id": "prone_bone",
    "relation": "broader",
    "loss": "prone_bone constrains only the receiving body, flat on the stomach, penetrated from behind, and says nothing about the penetrating partner, so it discards the plank-above contact that defines this entry: the top partner lowered full-length onto the receiver with weight settling through the receiving pelvis. The tag equally covers the jockey arrangement, where the top partner sits astride the receiver's thighs with no body-length contact, and it does not record whether the receiver's hips stay against the surface or are lifted.",
-   "sibling_count": 1,
+   "sibling_count": 3,
    "support_tags": [
     "on_stomach",
     "sex_from_behind",
@@ -1866,7 +3262,7 @@
    "foreign_id": "cowgirl_position",
    "relation": "broader",
    "loss": "cowgirl_position fixes only that the receiving partner straddles a supine partner while facing them. It does not constrain the receiver torso angle, so it covers the upright ride and this flat variant equally, discarding the defining chest-to-chest full-length contact and the small in-place grind that replaces vertical hip travel.",
-   "sibling_count": 3,
+   "sibling_count": 6,
    "support_tags": [
     "girl_on_top",
     "lying_on_person",
@@ -1892,12 +3288,131 @@
    "source_display": "Fish Linking Scales"
   },
   {
+   "epc_id": "epc:quad-69",
+   "namespace": "danbooru",
+   "foreign_id": "69",
+   "relation": "broader",
+   "loss": "69 names one mutually inverted pair giving oral to each other at once, and it is the tag the catalog's sixty-nine and sideways-69 entries already carry, so it holds each half of this arrangement but not the whole. It discards the second pair working alongside on the same surface, which is the only thing that makes this a four-person entry, and because nobody crosses between pairs no ring tag such as daisy_chain_(sex) applies either. side-by-side and shared_bed in the support set restore only that the pairs lie next to each other on one bed.",
+   "sibling_count": 3,
+   "support_tags": [
+    "lying",
+    "on_back",
+    "side-by-side",
+    "shared_bed",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:quad-daisy-chain",
+   "namespace": "danbooru",
+   "foreign_id": "daisy_chain_(sex)",
+   "relation": "broader",
+   "loss": "daisy_chain_(sex) is the tag the catalog's daisy-chain entry carries as exact, and its wiki admits any ring of three or more people each giving and receiving oral at once, so it does not fix the four or more bodies this entry says are needed to close the loop. It also says nothing of the layout, a square with right-angle turns or a rough circle with each body rotated about ninety degrees from its neighbor, so the count and the geometry are lost while the act and the closed ring survive.",
+   "sibling_count": 2,
+   "support_tags": [
+    "on_side",
+    "lying",
+    "head_between_thighs",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:rainbow-arch",
+   "namespace": "danbooru",
+   "foreign_id": null,
+   "relation": "none",
+   "loss": null,
+   "sibling_count": null,
+   "support_tags": [
+    "on_side",
+    "arched_back",
+    "lying",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": "Relation is none, so there is no mapping and nothing for a loss statement to measure. No tag names this opposed, head-to-toe side-lying union: a tag-name search for head-to-toe in any spelling finds nothing, 69 requires the genitals at each other's faces, and on_side was not taken as a broader primary because the head-to-toe orientation, which the record calls its identifying fact, has no tag at all. The support tags reconstruct only the shared posture and the arch.",
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:rams-thrust",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary records only that the receiver lies on their back facing the partner, and its wiki lists the penetrating partner holding the partner's legs as one option beside a leg lock or a folded body, so it does not single out this entry's grip. It discards the identifying detail: both of the receiver's legs gathered under the arms of a partner kneeling upright and driving forward from the hips. holding_another's_legs and kneeling restore the grip and the posture separately, but no tag places the legs under the arms.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_back",
+    "kneeling",
+    "legs_up",
+    "holding_another's_legs",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:reclining-lotus",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary records only that the receiver lies on their back facing the partner, so it spans the whole supine face-to-face family and discards the folded lotus shape that defines this entry: the ankles crossed with the knees dropped wide in external rotation, the seated lotus laid down. crossed_ankles and knees_apart_feet_together restore that shape as a leg posture; lotus_position and indian_style cannot carry it, since both wikis define a sitting position.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_back",
+    "crossed_ankles",
+    "knees_apart_feet_together",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:reverse-amazon",
+   "namespace": "danbooru",
+   "foreign_id": "reverse_amazon_position",
+   "relation": "exact",
+   "loss": null,
+   "sibling_count": 0,
+   "support_tags": [
+    "girl_on_top",
+    "squatting",
+    "knees_to_chest",
+    "legs_up",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:reverse-cowgirl",
    "namespace": "danbooru",
    "foreign_id": "reverse_cowgirl_position",
    "relation": "exact",
    "loss": null,
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "girl_on_top",
     "vaginal",
@@ -1945,7 +3460,7 @@
    "foreign_id": "group_sex",
    "relation": "broader",
    "loss": "group_sex records only that three or more participants are engaged and carries none of the defining polarity: a single largely static supine partner outnumbered by three or more who direct all attention inward, which is the entire point of the composition.",
-   "sibling_count": 2,
+   "sibling_count": 4,
    "support_tags": [
     "girl_on_top",
     "sitting_on_face",
@@ -1956,6 +3471,67 @@
    "undocumented_tag": false,
    "note": null,
    "retrieved": "2026-08-09",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:reverse-piledriver",
+   "namespace": "danbooru",
+   "foreign_id": "reverse_piledriver_(sex)",
+   "relation": "close",
+   "loss": "The tag's name matches this entry, but it has no wiki page and only two posts, so nothing about which body is reversed or which way the receiver faces can be sourced from it, and no claim is made about what else its extension admits. The reversal that defines this entry, the inverted receiver turned away from the partner so the face is down and the squatting partner enters from behind, is carried not by the tag but by the top-down_bottom-up and sex_from_behind support tags, while the documented parent piledriver_(sex) anchors the shoulder stand, hips lifted vertically and partner squatting above, though its legs-folded-back clause is narrower than this entry's legs spread or held together above. With two posts the tag gives a booru-trained model almost no signal, so the parent and the posture tags in the support set do the practical prompting work.",
+   "sibling_count": 0,
+   "support_tags": [
+    "piledriver_(sex)",
+    "sex_from_behind",
+    "top-down_bottom-up",
+    "legs_up",
+    "squatting",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": true,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:reverse-spitroast",
+   "namespace": "danbooru",
+   "foreign_id": "group_sex",
+   "relation": "broader",
+   "loss": "group_sex records only that more than two participants share a sex act at the same time, so it covers threesomes, gangbangs and orgies of any shape, and it is the tag the catalog's gangbang-center, reverse-gangbang and doggy-over-69 entries carry. It discards everything that individuates this entry: one kneeling partner flanked by two standing partners, oral service running from the middle outward, the turn from one partner to the other that drives the scene, and the exact count of three.",
+   "sibling_count": 4,
+   "support_tags": [
+    "seiza",
+    "standing",
+    "sandwiched",
+    "turning_head",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:reverse-spoon",
+   "namespace": "danbooru",
+   "foreign_id": "on_side",
+   "relation": "broader",
+   "loss": "on_side records only that a character lies on one flank, so it covers rear-entry spooning and non-sexual side-lying alike, and it already carries the catalog's lateral-coital and pretzel entries. It discards the face-to-face orientation that is the whole reason for this entry, the single upper leg draped over the partner's hip, and the fact that penetration occurs at all. face-to-face restores the orientation only as a general posture, and leg_on_another's_leg puts the draped leg over the partner's leg rather than the hip.",
+   "sibling_count": 5,
+   "support_tags": [
+    "face-to-face",
+    "leg_on_another's_leg",
+    "lying",
+    "hug",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
    "verified_by": "manual"
   },
   {
@@ -1976,6 +3552,56 @@
    "undocumented_tag": false,
    "note": null,
    "retrieved": "2026-08-09",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:rising-position",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary fixes only that the receiver lies on the back facing the partner and holds for every leg arrangement, including the catalog's yawning entry with the legs spread in a V. It discards both legs raised straight to the vertical with the knees extended and the ankles together, and the partner kneeling close against them. legs_up, outstretched_legs and legs_together restore the raised, straight, closed legs only as posture, and kneeling says that the partner kneels but not that the kneel is close against the raised legs.",
+   "sibling_count": 26,
+   "support_tags": [
+    "legs_up",
+    "outstretched_legs",
+    "legs_together",
+    "on_back",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:rising-position",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/bhugnaka-the-rising-position",
+   "relation": "close",
+   "loss": "Attested source name. Both legs raised straight. Burton's wording raises the thighs straight up and says nothing about the knees or ankles, so the extended knees and closed ankles here are the catalog's reading.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Bhugnaka (the rising position)"
+  },
+  {
+   "epc_id": "epc:rocking-horse",
+   "namespace": "danbooru",
+   "foreign_id": "upright_straddle",
+   "relation": "broader",
+   "loss": "upright_straddle covers any face-to-face straddle of a partner who sits upright, whether on the floor as in the catalog's lotus entry or on a chair as in its face-off entry. It does not record the chair as the load-bearing seat, the receiver's feet planted on the floor, or the forward and back rocking against the chair back that names this entry, so it cannot separate this record from face-off.",
+   "sibling_count": 5,
+   "support_tags": [
+    "on_chair",
+    "sitting",
+    "sitting_on_lap",
+    "straddling"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
    "verified_by": "manual"
   },
   {
@@ -2008,12 +3634,42 @@
    "verified_by": "automated"
   },
   {
+   "epc_id": "epc:sandwich-dp",
+   "namespace": "danbooru",
+   "foreign_id": "double_penetration",
+   "relation": "broader",
+   "loss": "double_penetration records only that two orifices are penetrated at once, or one orifice by two, and its wiki gives \"sandwich\" as a general nickname for every such case. It discards the lying three-layer stack that defines this entry: the receiving partner face down along a supine partner, the third partner above and behind in a plank or kneeling astride, and nobody carrying weight. The tag already covers the catalog's double-penetration, dp-reverse, standing-sandwich and spoon-dp entries in the same way.",
+   "sibling_count": 12,
+   "support_tags": [
+    "sandwiched",
+    "human_stacking",
+    "lying_on_person",
+    "on_back",
+    "sex_from_behind",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:sandwich-dp",
+   "namespace": "wd",
+   "foreign_id": "Q134998018",
+   "relation": "broader",
+   "loss": "Wikidata's sandwich carries only the label \"sandwich\" and the description \"sex position\", and its two sitelinked articles make it wider than this record: the Dutch article has one of three partners lying between the other two, allows other gender mixes and, between men, a middle partner who penetrates while being penetrated, and the Estonian article lets the three stand or lie and gives as its best-known form a receiver astride a supine partner with the back turned toward that partner. It therefore covers the catalog's standing-sandwich and dp-reverse builds as well. It discards what defines this record: the receiver face down along the supine base, the third partner above and behind, and the double penetration.",
+   "retrieved": "2026-10-12",
+   "verified_by": "automated"
+  },
+  {
    "epc_id": "epc:scissoring",
    "namespace": "danbooru",
    "foreign_id": "tribadism",
    "relation": "broader",
    "loss": "tribadism covers all vulva-to-vulva grinding, including the stacked form with one partner lying on top of the other; it throws away the defining scissored leg interlock with the two heads at opposite ends.",
-   "sibling_count": 0,
+   "sibling_count": 4,
    "support_tags": [
     "lying",
     "on_back",
@@ -2032,7 +3688,7 @@
    "foreign_id": "reverse_upright_straddle",
    "relation": "exact",
    "loss": null,
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "sitting_on_lap",
     "on_chair",
@@ -2058,12 +3714,53 @@
    "source_display": "Haimen-zai (rear-facing seat)"
   },
   {
+   "epc_id": "epc:seated-scissoring",
+   "namespace": "danbooru",
+   "foreign_id": "tribadism",
+   "relation": "broader",
+   "loss": "tribadism is a pure act tag for female-to-female genital contact and motion, and it is the tag the catalog's supine scissoring entry already owns, so it covers lying, stacked and seated forms alike. It discards the seated arrangement that defines this entry: both partners sitting up and leaning back onto their hands with the legs scissored, so that the hips stay in contact and both faces share one frame; sitting, leaning_back, arm_support and interlocked_legs restore that only as separate postures.",
+   "sibling_count": 4,
+   "support_tags": [
+    "sitting",
+    "leaning_back",
+    "arm_support",
+    "face-to-face",
+    "interlocked_legs",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:shoulder-ride",
+   "namespace": "danbooru",
+   "foreign_id": "cunnilingus",
+   "relation": "broader",
+   "loss": "cunnilingus names the act alone, oral stimulation of the vulva in any arrangement, so it covers lying, seated, standing and facesitting oral as readily as this one. It discards the carry that defines this entry: the receiver seated across the standing partner's shoulders with the thighs either side of the head and the legs held, carried clear of the ground. The record names only oral contact between an MF pair and does not say which partner is carried, so the mapping assumes the carried receiver is the female partner.",
+   "sibling_count": 5,
+   "support_tags": [
+    "head_between_thighs",
+    "sitting_on_person",
+    "straddling",
+    "standing",
+    "holding_another's_legs"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:side-by-side-doggy",
    "namespace": "danbooru",
    "foreign_id": "doggystyle",
    "relation": "broader",
    "loss": "doggystyle reads as a one-on-one pairing; it discards the second receiving partner on all fours alongside the first and the single penetrating partner working down the line between them, which is the entire formation this record names.",
-   "sibling_count": 4,
+   "sibling_count": 6,
    "support_tags": [
     "group_sex",
     "all_fours",
@@ -2101,7 +3798,7 @@
    "foreign_id": "69",
    "relation": "broader",
    "loss": "69 covers every mutual-oral arrangement, one partner stacked on top of the other, kneeling, and the upright variant the permitted vocabulary tags separately, and discards the side-lying lateral arrangement in which neither body carries the other's weight, which is what makes this the sustainable member of the family.",
-   "sibling_count": 1,
+   "sibling_count": 3,
    "support_tags": [
     "on_side",
     "lying",
@@ -2125,12 +3822,31 @@
    "verified_by": "automated"
   },
   {
+   "epc_id": "epc:sidewinder",
+   "namespace": "danbooru",
+   "foreign_id": "twisted_torso",
+   "relation": "broader",
+   "loss": "twisted_torso is a bare posture tag for a torso turned to a high degree, which its wiki says artists use to show the front and the back of one figure at once, and it carries no partner, surface or penetration. It discards the direction of the twist that defines this entry, the shoulders flat to the surface while the hips roll onto one side, and the penetrating partner kneeling into that twist. on_back and on_side are emitted together in support to carry the shoulder and hip orientations separately.",
+   "sibling_count": 1,
+   "support_tags": [
+    "on_back",
+    "on_side",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:sixty-eight",
    "namespace": "danbooru",
    "foreign_id": "cunnilingus",
    "relation": "broader",
    "loss": "cunnilingus names only the oral act and nothing about arrangement. It discards the whole identifying geometry of this entry: two supine bodies stacked head-to-toe with the receiving partner lying face-up along the giver's body, the stack running back-to-front rather than front-to-front, and the one-way direction that names the position against the mutual 69.",
-   "sibling_count": 2,
+   "sibling_count": 5,
    "support_tags": [
     "lying_on_person",
     "girl_on_top",
@@ -2149,7 +3865,7 @@
    "foreign_id": "69",
    "relation": "broader",
    "loss": "The tag covers mutual oral in every orientation: side-lying (catalog sideways-69), the upright carried form (which the permitted vocabulary holds under the separate tag upright_69, itself undocumented), and the doggy-over-69 stack. It does not encode this entry stacked prone-over-supine geometry on a flat surface, nor which partner is underneath.",
-   "sibling_count": 1,
+   "sibling_count": 3,
    "support_tags": [
     "lying",
     "on_back",
@@ -2191,6 +3907,44 @@
    "loss": null,
    "retrieved": "2026-08-09",
    "verified_by": "automated"
+  },
+  {
+   "epc_id": "epc:snow-angel",
+   "namespace": "danbooru",
+   "foreign_id": null,
+   "relation": "none",
+   "loss": null,
+   "sibling_count": null,
+   "support_tags": [
+    "lying_on_person",
+    "on_back",
+    "on_stomach",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": "Relation is none, so there is no mapping and nothing for a loss statement to measure. No live tag names this end-for-end stack, the penetrating partner lying face down on the supine receiver with the head toward the receiver's feet: missionary requires the partners to face each other, reverse_missionary has no posts, and 69 is mutual oral with the genitals at each other's faces; its wiki extends it more loosely to other acts in the same position, but its examples keep a mouth or the chest on the partner's body, while here the pelvises meet. The support tags rebuild the stack and the supine and face-down pairing but not the reversal that names the entry.",
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:sofa-brace",
+   "namespace": "danbooru",
+   "foreign_id": "sex_from_behind",
+   "relation": "broader",
+   "loss": "sex_from_behind covers every rear-entry arrangement and fixes no posture or furniture. It discards the receiver kneeling on a sofa seat and folded forward over the back or the arm with the chest supported, which is the whole content of this entry. bent_over_furniture was passed over because its wiki routes through bent_over, which requires standing, so it fits only the feet-on-the-floor variation and not the kneeling default.",
+   "sibling_count": 8,
+   "support_tags": [
+    "kneeling",
+    "standing",
+    "leaning_on_object",
+    "couch"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
   },
   {
    "epc_id": "epc:solo-all-fours-lookback",
@@ -2238,7 +3992,7 @@
    "foreign_id": "kneeling",
    "relation": "broader",
    "loss": "kneeling covers every kneeling posture in any context, including kneeling during partnered sex and kneeling fully clothed. It records neither the tall upright torso held over vertical thighs, the wiki fixes only that the knees are down and the buttocks are off the heels, which admits any torso angle from upright to folded forward, and the permitted vocabulary holds no upright-kneel tag, nor the pin-up display intent, nor the single-figure framing, since the permitted vocabulary contains no solo or participant-count tag (verified absent).",
-   "sibling_count": 1,
+   "sibling_count": 2,
    "support_tags": [
     "nude",
     "nude_modeling",
@@ -2414,7 +4168,7 @@
    "foreign_id": "sitting",
    "relation": "broader",
    "loss": "sitting records only that the butt rests on a surface and is not a sex tag at all. It discards every identifying feature of this entry: the mutual backward recline onto both partners' hands, the legs interleaved past each other's torsos, the hips pressed together into the X silhouette, the face-to-face orientation, the rocking rather than thrusting drive, and the vaginal penetration itself.",
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "sex",
     "vaginal",
@@ -2443,7 +4197,7 @@
    "foreign_id": "spitroast",
    "relation": "broader",
    "loss": "spitroast records only the front-and-back double team: it is applied identically when the centre partner is side-lying (catalog spitroast-lying), standing, or bent over a surface, and it also covers the Eiffel Tower variant where the two outer partners clasp hands overhead. It does not encode this entry's centre partner on hands and knees.",
-   "sibling_count": 2,
+   "sibling_count": 6,
    "support_tags": [
     "group_sex",
     "all_fours",
@@ -2472,7 +4226,7 @@
    "foreign_id": "spitroast",
    "relation": "broader",
    "loss": "spitroast fixes only the two-ended arrangement of rear penetration plus oral to a partner in front, and is the tag the catalog's plain spit-roast entry owns; it discards the side-lying staging of the central partner, which is the single feature separating this entry from the standard all-fours spit roast.",
-   "sibling_count": 2,
+   "sibling_count": 6,
    "support_tags": [
     "on_side",
     "fellatio",
@@ -2487,12 +4241,32 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:spitroast-seated",
+   "namespace": "danbooru",
+   "foreign_id": "spitroast",
+   "relation": "broader",
+   "loss": "spitroast fixes only the two-ended structure, the person in between performing oral on one partner while penetrated from behind by another, and its wiki leaves the posture open, so it covers the catalog's all-fours spit-roast and its kneeling, standing and side-lying variants alike. It discards the seated base that defines this entry: the receiver sitting back into one partner's lap facing away and hinging forward to the standing partner, with the seated partner and the furniture beneath carrying the receiver's weight.",
+   "sibling_count": 6,
+   "support_tags": [
+    "reverse_upright_straddle",
+    "sitting_on_lap",
+    "leaning_forward",
+    "on_chair",
+    "standing"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:splitting-bamboo",
    "namespace": "danbooru",
    "foreign_id": "missionary",
    "relation": "broader",
    "loss": "missionary spans the whole supine face-to-face family with any leg configuration, flat, leg-locked, folded, both legs held, and discards two things. The asymmetric shape (one leg raised to the penetrating partner's shoulder while the other stays extended along the bed) is only partly recovered by the singular holding_another's_leg; the permitted vocabulary's symmetric leg tags cannot help, since legs_up requires \"both legs... thrust upward into the air\". And the periodic alternation of which leg is raised, the motion that names Venudaritaka, has no tag at all: danbooru's leg vocabulary is entirely static-posture, so nothing in the permitted vocabulary encodes a repeating swap between two mirrored postures.",
-   "sibling_count": 5,
+   "sibling_count": 26,
    "support_tags": [
     "on_back",
     "holding_another's_leg",
@@ -2521,7 +4295,7 @@
    "foreign_id": "double_penetration",
    "relation": "broader",
    "loss": "The tag captures the two simultaneous penetrations but none of the geometry: it does not encode that all three participants are lying on their sides, with one partner spooning from behind and one facing from the front.",
-   "sibling_count": 3,
+   "sibling_count": 12,
    "support_tags": [
     "spooning",
     "on_side",
@@ -2542,7 +4316,7 @@
    "foreign_id": "spooning",
    "relation": "broader",
    "loss": "The tag defines a nested side-lying arrangement and adds only that it also refers to the sex position, so it covers fully clothed non-sexual cuddling and sleeping on the same footing. It therefore discards the fact that rear-entry vaginal penetration is occurring at all.",
-   "sibling_count": 0,
+   "sibling_count": 2,
    "support_tags": [
     "on_side",
     "sex_from_behind",
@@ -2586,12 +4360,62 @@
    "verified_by": "automated"
   },
   {
+   "epc_id": "epc:spread-eagle",
+   "namespace": "danbooru",
+   "foreign_id": "spread_eagle_position",
+   "relation": "broader",
+   "loss": "spread_eagle_position is a posture tag, listed in Tag group:Posture, and its wiki fixes only that a person lies with arms and legs outstretched and spread apart, so it covers solo, clothed and non-sexual sprawls as readily as this entry. It discards the entire pairing, the penetrating partner working above the receiver face to face, which only the missionary and face-to-face support tags restore.",
+   "sibling_count": 0,
+   "support_tags": [
+    "missionary",
+    "on_back",
+    "spread_arms",
+    "spread_legs",
+    "face-to-face",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:spread-eagle",
+   "namespace": "wd",
+   "foreign_id": "Q12654072",
+   "relation": "close",
+   "loss": "Beyond its label 'eagle position', the same name in Lithuanian, Serbian and Esperanto, and the description 'sex position', the item has no aliases, no sitelinks and no statement except instance of sex position (Q8394), so the match rests on the shared name alone. It drops the spread qualifier and fixes neither the four limbs stretched wide nor the partner working above that define this entry.",
+   "retrieved": "2026-10-12",
+   "verified_by": "automated"
+  },
+  {
+   "epc_id": "epc:squat-thrust",
+   "namespace": "danbooru",
+   "foreign_id": "squatting_cowgirl_position",
+   "relation": "close",
+   "loss": "squatting_cowgirl_position names the same arrangement, the receiver squatting on the feet over a lying partner and facing them, and it is the tag the catalog's squatting-cowgirl entry already owns exactly. What it does not record is this entry's stress on the full vertical rise and fall driven from the feet, so the tag cannot separate this record from squatting-cowgirl.",
+   "sibling_count": 1,
+   "support_tags": [
+    "squatting",
+    "straddling",
+    "spread_legs",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:squatting-cowgirl",
    "namespace": "danbooru",
    "foreign_id": "squatting_cowgirl_position",
    "relation": "exact",
    "loss": null,
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "girl_on_top",
     "squatting",
@@ -2602,6 +4426,45 @@
    "undocumented_tag": false,
    "note": null,
    "retrieved": "2026-08-09",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:stacked-oral",
+   "namespace": "danbooru",
+   "foreign_id": "69",
+   "relation": "broader",
+   "loss": "69 fixes two people mutually inverted with their genitals at each other's faces, so it covers the catalog's sixty-nine and sideways-69 entries and, here, only the lower pair of the stack. It discards the third partner layered above in the alternating head-to-toe orientation, and with it the three-tier chain that makes this a sixty-nine extended by one layer, with oral contact running through all three partners.",
+   "sibling_count": 3,
+   "support_tags": [
+    "on_back",
+    "lying_on_person",
+    "human_stacking",
+    "sandwiched",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": "The record gives two accounts of the chain that disagree: each partner 'gives oral to the one below and receives from the one above', which leaves the bottom partner giving to no one, and 'Every partner is doing and receiving at once', which no linear stack allows for the top partner. The mapping follows the record's 'sixty-nine extended by one layer' and the seed keypoints, which turn the middle partner head-to-toe over the bottom one, so the lower pair is a 69 by position, which the tag's wiki accepts, more loosely, even where other acts are performed in that position.",
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:stand-and-deliver",
+   "namespace": "danbooru",
+   "foreign_id": "standing_doggystyle",
+   "relation": "broader",
+   "loss": "standing_doggystyle fixes standing rear entry with the receiver bent over, and its wiki names the usual cases as bent over furniture, braced against a wall, or with an arm held back. It discards the self-bracing that defines this entry, the receiver's hands on their own knees or thighs with nothing in the room carrying any load, and it is the tag the catalog's standing-doggy entry already owns exactly. hands_on_own_knees in support carries the bracing.",
+   "sibling_count": 4,
+   "support_tags": [
+    "hands_on_own_knees",
+    "bent_over",
+    "standing",
+    "sex_from_behind"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
    "verified_by": "manual"
   },
   {
@@ -2625,12 +4488,31 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:standing-carry-rear",
+   "namespace": "danbooru",
+   "foreign_id": "reverse_suspended_congress",
+   "relation": "broader",
+   "loss": "reverse_suspended_congress records only that a partner is held in midair and entered from behind, and its wiki adds that a full nelson, with the receiver held by the back of the neck, often goes with it. It is the tag the catalog's ekiben entry holds at exact for the carry with the knees hooked over the carrier's arms, so it covers that hold and the full nelson as readily as this one. It discards the hold that defines this entry: the receiver carried under both thighs with the back against the carrier's chest and no neck grip, which is what forces the carrier's deep counter-lean.",
+   "sibling_count": 1,
+   "support_tags": [
+    "standing",
+    "front-to-back",
+    "hands_on_another's_thighs",
+    "sex_from_behind"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:standing-doggy",
    "namespace": "danbooru",
    "foreign_id": "standing_doggystyle",
    "relation": "exact",
    "loss": null,
-   "sibling_count": 0,
+   "sibling_count": 4,
    "support_tags": [
     "standing",
     "bent_over",
@@ -2734,12 +4616,31 @@
    "source_display": "Standing maithuna"
   },
   {
+   "epc_id": "epc:standing-line-up",
+   "namespace": "danbooru",
+   "foreign_id": "standing_doggystyle",
+   "relation": "broader",
+   "loss": "standing_doggystyle fixes one receiving partner standing and bent over while penetrated from behind, and it is the tag the catalog's standing-doggy entry owns, so it reads as a one-on-one pairing. It discards the second receiving partner bent over alongside the first at matched height and the single penetrating partner moving between them, which is the entire formation this record names.",
+   "sibling_count": 4,
+   "support_tags": [
+    "side-by-side",
+    "bent_over",
+    "standing",
+    "behind_another"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:standing-rear-press",
    "namespace": "danbooru",
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind covers every rear-entry arrangement, with doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl all named inside it by its own wiki, and most of those are on the ground. It drops that both partners are standing and nearly upright, the wall as the bracing plane, and the receiver's hands planted flat against it, which together supply both the support and the profile framing plane this shot is built on.",
-   "sibling_count": 2,
+   "sibling_count": 8,
    "support_tags": [
     "standing_sex",
     "against_wall",
@@ -2758,7 +4659,7 @@
    "foreign_id": "double_penetration",
    "relation": "broader",
    "loss": "double_penetration encodes only that two orifices are penetrated at once and says nothing whatever about posture, so it equally covers lying, seated, kneeling, spitroast and toy-based DP, and by its own text it even covers one orifice taking two objects. It discards the defining architecture of this entry: two standing load-bearing columns with the receiver lifted clear of the ground and held airborne between them (support_surface partner_supported), the front partner carrying face-to-face while the rear partner presses in from behind. That architecture is recoverable only by reading `carrying`, `suspended_congress` and `standing` together, and no single emitted tag states it.",
-   "sibling_count": 3,
+   "sibling_count": 12,
    "support_tags": [
     "carrying",
     "suspended_congress",
@@ -2774,12 +4675,89 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:standing-spitroast",
+   "namespace": "danbooru",
+   "foreign_id": "spitroast",
+   "relation": "broader",
+   "loss": "spitroast fixes only the two-ended structure, the person in between performing oral on one partner while penetrated from behind by another, and its wiki leaves the posture open, so it is applied identically to the catalog's all-fours spit-roast, the side-lying spitroast-lying and the Eiffel Tower variant. It discards that all three partners stand, with the receiver hinged forward at the hips to meet the front partner, which is the single feature separating this entry from the ordinary spit roast where the middle partner kneels.",
+   "sibling_count": 6,
+   "support_tags": [
+    "standing",
+    "bent_over",
+    "standing_doggystyle",
+    "standing_sex"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:stopperage",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary records only that the receiver lies on their back facing the partner, and the record itself says that without the wedge the figure is just a missionary. It discards the cushion under the hips that tilts the pelvis up while the shoulders stay flat, and the knees drawn up, which together shorten the working depth on purpose. No tag places a pillow under the hips (verified absent), so pillow in the support set asserts only that one is in frame, not where it sits.",
+   "sibling_count": 26,
+   "support_tags": [
+    "pillow",
+    "on_back",
+    "knees_up",
+    "spread_legs",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:stopperage",
+   "namespace": "ks",
+   "foreign_id": "perfumed-garden/el-asemeud-the-stopperage",
+   "relation": "close",
+   "loss": "Attested source name. A cushion placed under the hips to shorten the passage.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Stopperage"
+  },
+  {
+   "epc_id": "epc:supported-congress",
+   "namespace": "danbooru",
+   "foreign_id": "standing_missionary",
+   "relation": "broader",
+   "loss": "standing_missionary fixes the face-to-face orientation with both partners standing on both feet and says nothing about support, so it covers free-standing face-to-face sex on the same footing. It discards the wall or post that takes the shared weight, which this entry treats as its defining element. Its both-feet condition also routes the raised-leg variation out of the tag, to standing_sex.",
+   "sibling_count": 1,
+   "support_tags": [
+    "against_wall",
+    "leaning",
+    "standing"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:supported-congress",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/supported-congress",
+   "relation": "close",
+   "loss": "Attested source name. Both partners standing, leaning on a wall or pillar. Burton also admits partners propped only on each other's bodies with no wall, which this entry's against-wall surface leaves out.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Supported congress"
+  },
+  {
    "epc_id": "epc:suspended-congress",
    "namespace": "danbooru",
    "foreign_id": "suspended_congress",
    "relation": "exact",
    "loss": null,
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "leg_lock",
     "vaginal",
@@ -2841,6 +4819,35 @@
    "verified_by": "automated"
   },
   {
+   "epc_id": "epc:swing-position",
+   "namespace": "danbooru",
+   "foreign_id": "cowgirl_position",
+   "relation": "broader",
+   "loss": "cowgirl_position fixes only that the receiver straddles a supine partner while facing them, and it is the tag the catalog's cowgirl, prone-cowgirl and leaning-back-cowgirl entries already share. It discards what names the swing, the front-to-back rocking in place of a vertical rise and fall, which no documented tag carries, and the slight backward tilt of the torso, which leaning_back only approximates.",
+   "sibling_count": 6,
+   "support_tags": [
+    "straddling",
+    "leaning_back",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:swing-position",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/the-swing",
+   "relation": "related",
+   "loss": "Attested source name. Grouped with the positions where the receiving partner takes the active role. In Burton the swing is the man lifting the middle of his body while the woman turns hers round, a turning of the hips rather than the front-to-back rocking this entry describes.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "The swing"
+  },
+  {
    "epc_id": "epc:t-square",
    "namespace": "danbooru",
    "foreign_id": null,
@@ -2869,6 +4876,511 @@
    "loss": null,
    "retrieved": "2026-08-09",
    "verified_by": "automated"
+  },
+  {
+   "epc_id": "epc:tabletop",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary records only that a person lies on their back with the partners facing each other, and it is the same tag the catalog's butterfly entry carries for its edge-of-surface geometry. It discards the waist-height table or counter that sets the receiving pelvis at the standing partner's hip, along with the partner standing at its edge, and because the tag requires lying on the back, the form propped up on the elbows is only partly inside it. The support tags on_table and standing carry the surface and the standing partner, but no live tag marks the edge of a table.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_table",
+    "on_back",
+    "legs_up",
+    "spread_legs",
+    "standing"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-anchor",
+   "namespace": "danbooru",
+   "foreign_id": "standing_doggystyle",
+   "relation": "broader",
+   "loss": "standing_doggystyle fixes only that the receiver stands bent over and is entered from behind, and its wiki lists bending over furniture, bracing against a wall or an arm held back as the usual forms, so it covers the catalog's standing-doggy, bent-over-furniture, stand-and-deliver and the-ladder entries alike. It discards the low fixed brace that names this entry: both hands taking the receiver's weight on a chair back or a bed frame below shoulder height, holding the torso at a shallow angle rather than folded, which only arm_support partly restores. The floor brace the entry also lists sits outside the tag's bent-over wording, since the bent_over wiki routes hands and feet on the ground to bear_position.",
+   "sibling_count": 4,
+   "support_tags": [
+    "standing",
+    "bent_over",
+    "arm_support",
+    "sex_from_behind"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-chairman",
+   "namespace": "danbooru",
+   "foreign_id": "reverse_upright_straddle",
+   "relation": "broader",
+   "loss": "reverse_upright_straddle fixes only that the receiving partner sits on the penetrating partner's lap facing away and is entered from behind, and it is the tag the catalog's seated-rear-entry entry owns, so it covers couch and floor seats as readily as a chair. It discards the upright chair that carries the seated partner completely and the receiver's feet planted on the floor either side, which together put all of the movement in the receiver's legs; on_chair and straddling restore those only as separate postures.",
+   "sibling_count": 1,
+   "support_tags": [
+    "sitting_on_lap",
+    "straddling",
+    "sitting",
+    "on_chair"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-corkscrew",
+   "namespace": "danbooru",
+   "foreign_id": "on_side",
+   "relation": "broader",
+   "loss": "on_side records only that a character lies on one flank, so it covers spooning and non-sexual side-lying alike, and it already carries the catalog's lateral-coital and pretzel entries. It discards the edge staging and the closed legs that define this entry: the receiver at the edge of the bed with both legs together and extended over it, rotated to one side, and the penetrating partner standing alongside, and it does not record that penetration occurs at all. legs_together, outstretched_legs, bedside and standing restore those features only as separate postures.",
+   "sibling_count": 5,
+   "support_tags": [
+    "legs_together",
+    "outstretched_legs",
+    "standing",
+    "bedside",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-drill",
+   "namespace": "danbooru",
+   "foreign_id": "leg_lock",
+   "relation": "broader",
+   "loss": "leg_lock fixes only that one partner's legs wrap another's torso; its wiki says the hold is frequently done during missionary sex, and its own examples add an upright straddle and a standing leg lock, so it covers the catalog's missionary-legs-wrapped entry as readily as this one. It discards the ankles crossed behind the penetrating partner's back on a supine face-to-face stack and the clamp that shortens the stroke to almost nothing, the mechanism that defines this entry. The wiki names pulling the partner closer only as a common purpose of the hold, not as a clamp that caps the stroke, and crossed_ankles restores the crossing but not where it sits.",
+   "sibling_count": 1,
+   "support_tags": [
+    "missionary",
+    "crossed_ankles",
+    "on_back",
+    "face-to-face",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-fitter-in",
+   "namespace": "danbooru",
+   "foreign_id": "on_side",
+   "relation": "broader",
+   "loss": "on_side records only that a character lies on one flank, and its wiki's see-also list runs to curled up, fetal position and spooning, so it covers non-sexual side-lying and rear-entry spooning alike; it is already the tag of the catalog's lateral-coital and pretzel entries. It discards the face-to-face orientation and the full alternating weave, each thigh between the other's, that holds the pelvises together without either partner bracing and separates this entry from the simpler crossed-thigh positions. interlocked_legs and leg_between_thighs restore the weave as a leg posture, and face-to-face the orientation.",
+   "sibling_count": 5,
+   "support_tags": [
+    "interlocked_legs",
+    "leg_between_thighs",
+    "face-to-face",
+    "lying",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-frog",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary records only that the receiver lies on their back facing the partner; its wiki names a leg lock, a folded body or held legs only as options and fixes no leg shape for either partner, so it spans the whole supine face-to-face family. It discards the two features this entry pairs: the receiver's heels drawn in to the buttocks with the knees falling wide, and the penetrating partner squatting into the space rather than kneeling or lying over. m_legs restores the first closely and squatting the second, but no tag joins them into one arrangement.",
+   "sibling_count": 26,
+   "support_tags": [
+    "m_legs",
+    "on_back",
+    "squatting",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-frog",
+   "namespace": "ks",
+   "foreign_id": "perfumed-garden/el-modefeda-frog-fashion",
+   "relation": "close",
+   "loss": "Attested source name. The receiving partner on the back with heels drawn to the buttocks.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "The frog position"
+  },
+  {
+   "epc_id": "epc:the-gap",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary fixes only that the receiver lies on their back facing the partner, and its wiki admits leg-locked, folded and legs-held forms, so it covers the catalog's missionary, stopperage and lifted-missionary entries as readily as this one. It discards the cushion wedged under the sacrum with the shoulders kept flat, the visible gap under the lower back that names the position, which hips_in_air and pillow restore only as raised hips and a pillow, not as the gap itself. anvil_position was passed over although its wiki sets an upturned pelvis apart from missionary, because the same wiki makes it a milder form of the piledriver, whose legs fold back, and this entry keeps its shape with the legs lying flat.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_back",
+    "hips_in_air",
+    "pillow",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-hinge",
+   "namespace": "danbooru",
+   "foreign_id": "sex_from_behind",
+   "relation": "broader",
+   "loss": "sex_from_behind encodes only rear entry, and its wiki names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl inside it, so it also covers the catalog's upright kneeling-rear-embrace. It discards that both partners kneel and that the front partner leans back about thirty degrees onto locked arms with the torso opened away from the body behind, the hinge that gives the position its working angle; leaning_back and arm_support carry the lean, though leaning_back's wiki names standing or sitting figures rather than kneeling ones.",
+   "sibling_count": 8,
+   "support_tags": [
+    "kneeling",
+    "leaning_back",
+    "arm_support",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-ladder",
+   "namespace": "danbooru",
+   "foreign_id": "standing_doggystyle",
+   "relation": "broader",
+   "loss": "standing_doggystyle fixes only that the receiver stands bent over and is entered from behind, on any footing, so it covers the catalog's standing-doggy, the-anchor and bent-over-furniture entries alike. It discards the staircase that defines this entry: the receiver's hands two or three risers up and the penetrating partner a step lower, the stepped geometry that stands in for a height difference, which on_stairs and stairs restore only as a location.",
+   "sibling_count": 4,
+   "support_tags": [
+    "standing",
+    "bent_over",
+    "arm_support",
+    "sex_from_behind",
+    "on_stairs",
+    "stairs"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-peg",
+   "namespace": "danbooru",
+   "foreign_id": "leg_lift",
+   "relation": "broader",
+   "loss": "leg_lift is a bare posture tag for one leg lifted up and away from the other, which rests, and it fixes no body orientation, partner or penetration, so it covers solo, clothed, standing and lying poses alike. It keeps the raised upper leg spread wide from the resting lower leg, but not the near-vertical angle that makes the peg this entry is named for, and it discards the side-lying receiver, the penetrating partner kneeling astride the lower thigh, and the partner holding the raised leg upright, which only the support tags carry.",
+   "sibling_count": 0,
+   "support_tags": [
+    "on_side",
+    "kneeling",
+    "straddling",
+    "holding_another's_leg",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-plow",
+   "namespace": "danbooru",
+   "foreign_id": "piledriver_(sex)",
+   "relation": "close",
+   "loss": "piledriver_(sex) has this entry's inversion, the receiver on the shoulders with the legs folded back and the hips lifted vertically, but its wiki has the partner squatting over the fold, while this entry has the partner standing or kneeling. It also does not record that the legs are carried all the way past the head and held together, the deepest fold in the catalog, and it is the tag the catalog's own piledriver entry already holds as exact.",
+   "sibling_count": 4,
+   "support_tags": [
+    "legs_over_head",
+    "folded",
+    "legs_together",
+    "standing",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-pump",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary fixes only that a person lies on their back facing the partner, and it is the tag the catalog's butterfly entry already carries for the same hips-at-the-edge geometry, so this entry and butterfly cannot be told apart at the primary tag. It discards the hips placed right at the mattress edge and the penetrating partner standing on the floor at a lower plane, which is the whole source of the leg drive, and standing_sex cannot carry that partner because its wiki rules out a receiver lying on their back while the partner stands. standing, bedside and on_bed restore that one partner stands near the edge of a bed while the other lies on it, though bedside, whose wiki reads near the edge of a bed, does not place the hips at the mattress edge, and holding_another's_legs, which the missionary wiki names, pins the most common working form.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_back",
+    "legs_up",
+    "spread_legs",
+    "standing",
+    "holding_another's_legs",
+    "bedside",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-scoop",
+   "namespace": "danbooru",
+   "foreign_id": "spooning",
+   "relation": "broader",
+   "loss": "spooning defines two partners lying on their sides front to back, and its wiki applies it to cuddling as readily as to the sex position. It discards the receiver's forward curl into a tight C with the penetrating partner nested into that curve, the feature that opens the angle from behind and separates this entry from the catalog's own spooning entry, which owns the same tag.",
+   "sibling_count": 2,
+   "support_tags": [
+    "on_side",
+    "curled_up",
+    "sex_from_behind",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-seducer",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary covers every supine face-to-face union, and its wiki names holding the partner's legs only as something the position may involve. It discards the hold that defines this entry: the kneeling partner's hands at the receiving partner's knees, keeping the thighs apart so the receiving partner stays relaxed instead of holding the position open. hands_on_another's_knees restores the hand placement, but no tag records that the hold carries the load.",
+   "sibling_count": 26,
+   "support_tags": [
+    "hands_on_another's_knees",
+    "spread_legs",
+    "kneeling",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-seducer",
+   "namespace": "ks",
+   "foreign_id": "perfumed-garden/the-seducer",
+   "relation": "close",
+   "loss": "Attested source name. al-Nafzawi's 29th manner, El moheundi, in which the kneeling partner sits back on the heels, raises and separates the thighs, and carries the legs under the arms or over the shoulders, the hands at the waist or shoulders. The hands-at-the-knees hold this record treats as defining is not in Burton's text.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "The seducer"
+  },
+  {
+   "epc_id": "epc:the-stairway",
+   "namespace": "danbooru",
+   "foreign_id": "upright_straddle",
+   "relation": "broader",
+   "loss": "upright_straddle covers any face-to-face straddle of a partner sitting upright, on a chair, a couch edge or the floor alike. It discards the staircase that makes this entry, the penetrating partner seated on a step with the feet two risers down and the receiver's feet lower still, which supplies the height offset a flat floor cannot. The stair survives only in the sitting_on_stairs, on_stairs and stairs support tags.",
+   "sibling_count": 5,
+   "support_tags": [
+    "sitting_on_stairs",
+    "on_stairs",
+    "stairs",
+    "sitting_on_lap",
+    "straddling"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-teaspoon",
+   "namespace": "danbooru",
+   "foreign_id": "spooning",
+   "relation": "broader",
+   "loss": "spooning fixes a nested side-lying pair with one front against the other's back and adds only that it also refers to the sex position, and its wiki gives cuddling as an example, so it holds equally for clothed, non-sexual pairs. It discards the receiver's upper leg lifted high and held well past horizontal, the single feature separating this entry from the catalog's spooning entry, whose own description lists raising the top leg as a variation. leg_lift in the support set carries the raised leg, and sex_from_behind carries the rear entry that the primary tag does not assert.",
+   "sibling_count": 2,
+   "support_tags": [
+    "on_side",
+    "sex_from_behind",
+    "leg_lift",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-tree",
+   "namespace": "danbooru",
+   "foreign_id": "kneeling",
+   "relation": "broader",
+   "loss": "kneeling is a bare posture tag, knees on the ground and butt off it, that applies to solo, clothed and non-sexual kneeling at any torso angle, so it records neither the second partner nor that penetration is occurring. It discards the two upright torsos facing each other with heads level, the interlocked thighs with one partner's knees inside the other's, and the small hip movement that drives the position, and it is the same tag the catalog's kneeling-embrace entry carries. interlocked_legs, hug and face-to-face in the support set restore the leg weave, the embrace and the facing, but no live tag fixes an upright kneel as opposed to a forward lean.",
+   "sibling_count": 2,
+   "support_tags": [
+    "interlocked_legs",
+    "hug",
+    "face-to-face",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-twister",
+   "namespace": "danbooru",
+   "foreign_id": "twisted_torso",
+   "relation": "broader",
+   "loss": "twisted_torso is a bare posture tag for a torso turned to a high degree, which its wiki says artists use to show the front and the back of one figure at once, and it carries no partner, surface or penetration. It discards which way the wring runs, the pelvis on its side while the upper body rotates back toward the ceiling so the twist sits in the lower spine, together with the leg carried across the midline and the partner kneeling into the opening, so the tag cannot tell this entry from its mirror, the catalog's sidewinder. on_side and on_back in the support set carry the pelvis and the shoulders separately, crossed_legs the crossed leg and kneeling the partner.",
+   "sibling_count": 1,
+   "support_tags": [
+    "on_side",
+    "on_back",
+    "crossed_legs",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-waterfall",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary fixes only that the receiver lies on their back facing the partner, with any leg arrangement. It discards the head and shoulders hanging over the edge of the bed with the neck extended backward, the inversion that is the whole point of this entry. No live tag names a head hanging past a bed edge, so bedside restores only the edge and head_back only the tilt of the head.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_back",
+    "head_back",
+    "kneeling",
+    "spread_legs",
+    "bedside",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-wraparound",
+   "namespace": "danbooru",
+   "foreign_id": "standing_leg_lock",
+   "relation": "broader",
+   "loss": "standing_leg_lock fixes only that the legs are wrapped around a partner who is standing, and its wiki lists a hug carry among its examples, so it covers carried forms with the receiver lifted clear of the ground, such as the catalog's suspended-congress, as readily as this one. It discards the feature that defines this entry, the receiver seated upright on the edge of a table or counter that carries all the weight, which is the difference between this position and a carry.",
+   "sibling_count": 0,
+   "support_tags": [
+    "sitting_on_table",
+    "sitting",
+    "standing",
+    "face-to-face"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:the-x",
+   "namespace": "danbooru",
+   "foreign_id": "on_back",
+   "relation": "broader",
+   "loss": "on_back is a bare posture tag, lying on one's own back, that carries no partner and no sex act, so it holds for any supine figure in any context. It discards the whole X: two supine partners with heads at opposite corners, legs scissored at the hips, and neither body supporting the other. The scissor tag cannot stand in, because scissoring is an active alias of tribadism, whose wiki limits it to female-to-female genital sex while this entry is MF, so only interlocked_legs and leg_between_thighs in the support set carry the leg weave.",
+   "sibling_count": 0,
+   "support_tags": [
+    "interlocked_legs",
+    "leg_between_thighs",
+    "spread_legs",
+    "lying",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:thigh-riding",
+   "namespace": "danbooru",
+   "foreign_id": "thigh_straddling",
+   "relation": "broader",
+   "loss": "thigh_straddling names the arrangement this entry turns on, one partner straddling a single thigh of the other, but its wiki calls it often, not always, a form of frottage, so it holds equally for plain sitting astride a thigh, and it does not fix the straddled partner's posture. It discards the seated partner on furniture and the grinding against that thigh, which the record reads as build-up that is non-penetrative and usually stays clothed.",
+   "sibling_count": 0,
+   "support_tags": [
+    "straddling",
+    "sitting",
+    "on_chair",
+    "face-to-face",
+    "leg_between_thighs"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:tigers-tread",
+   "namespace": "danbooru",
+   "foreign_id": "doggystyle",
+   "relation": "broader",
+   "loss": "doggystyle covers the whole kneeling rear-entry family with the receiving partner on hands and knees, and its wiki admits postures only close to all fours. It discards the deep crouch that defines this entry: the receiving partner lowered onto the elbows with the chest dropped below raised hips, so the spine slopes steeply down to the shoulders. top-down_bottom-up restores that wedge, but no tag separates this record from the catalog's leapfrog, which has the same chest-down, hips-high shape.",
+   "sibling_count": 6,
+   "support_tags": [
+    "top-down_bottom-up",
+    "sex_from_behind",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:tigers-tread",
+   "namespace": "ks",
+   "foreign_id": "sunujing/tiger-s-tread",
+   "relation": "close",
+   "loss": "Attested source name. Second of the Nine Ways: the receiving partner bowed face down with the hips raised and the head low, the partner kneeling behind with the arms around the receiving partner's belly and entering deep for a count of five eights. The record sets the receiving partner on the elbows, a support the text does not name, and leaves the hold at the belly and the count open.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Tiger's Tread"
   },
   {
    "epc_id": "epc:titjob",
@@ -2912,6 +5424,47 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:tribbing-face-to-face",
+   "namespace": "danbooru",
+   "foreign_id": "tribadism",
+   "relation": "broader",
+   "loss": "tribadism names the act alone, vulva-to-vulva contact and motion between two women, and its wiki names the scissored form as the most recognized position; the catalog's scissoring entry already carries it. It discards what separates this entry from scissoring: the stacked, aligned arrangement, one partner supine and the other lying full length on top chest to chest with both long axes pointing the same way, which trades sight of the contact for full-body and eye contact.",
+   "sibling_count": 4,
+   "support_tags": [
+    "lying_on_person",
+    "on_back",
+    "face-to-face",
+    "belly-to-belly",
+    "breast_press",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:tribbing-with-oral",
+   "namespace": "danbooru",
+   "foreign_id": "tribadism",
+   "relation": "broader",
+   "loss": "tribadism names only the act, female-to-female genital contact with the partners' vulvas moving against each other, and it is the tag the catalog's scissoring entry already carries; its wiki mentions the scissored legs only as the most recognized position, not as a requirement. It discards the third partner entirely, and with it the oral contact delivered from the open side of the crossed legs, which is the only thing that separates this entry from plain scissoring. on_stomach in the support set places a prone third body, but nothing in the crosswalk records which partner it is working on.",
+   "sibling_count": 4,
+   "support_tags": [
+    "interlocked_legs",
+    "on_back",
+    "spread_legs",
+    "on_stomach",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
    "epc_id": "epc:triple-penetration",
    "namespace": "danbooru",
    "foreign_id": "triple_penetration",
@@ -2947,7 +5500,7 @@
    "foreign_id": "doggystyle",
    "relation": "broader",
    "loss": "doggystyle covers the whole kneeling rear-entry family with the receiver propped on all fours at working height. It discards the collapse that defines the turtle: the seat sinking back toward the heels with the calves folded against the thighs and the chest coming down onto them, so the receiving body sits low and compact instead of arm-supported at hip height, and the thrust line drops accordingly.",
-   "sibling_count": 4,
+   "sibling_count": 6,
    "support_tags": [
     "kneeling",
     "legs_folded",
@@ -2960,6 +5513,65 @@
    "note": null,
    "retrieved": "2026-08-09",
    "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:turtle-rises",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary spans the supine face-to-face family and admits a folded body without requiring one. It discards the compact fold that defines this entry, the knees pushed against the chest with the lower body drawn in tight, and the fact that the kneeling partner's weight rather than the receiving partner's arms holds it shut. knees_to_chest and folded restore the fold but not which body holds it.",
+   "sibling_count": 26,
+   "support_tags": [
+    "knees_to_chest",
+    "folded",
+    "kneeling",
+    "on_back",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:turtle-rises",
+   "namespace": "ks",
+   "foreign_id": "sunujing/mounting-tortoise",
+   "relation": "close",
+   "loss": "Attested source name. Fifth of the Nine Ways: the receiving partner face up with both knees bent, pushed back by the partner until the feet reach the chest, with deep entry and deep and shallow strokes kept in measure. The text calls for deep entry and gives no warning about depth, so the caution this record attributes to it is not in the source.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Turtle Rises"
+  },
+  {
+   "epc_id": "epc:twining-position",
+   "namespace": "danbooru",
+   "foreign_id": "on_side",
+   "relation": "broader",
+   "loss": "on_side records only that a character lies on one flank, so it covers non-sexual side-lying and spooning alike and already carries the catalog's lateral-coital and pretzel entries. It discards the face-to-face pairing, the receiver's thigh laid across the partner's hip that is the whole mechanism of this entry, and the fact that penetration occurs at all. face-to-face in the support set restores the facing, and leg_on_another's_leg restores the crossed thigh only as a general posture.",
+   "sibling_count": 5,
+   "support_tags": [
+    "leg_on_another's_leg",
+    "lying",
+    "face-to-face",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:twining-position",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/veshtitaka-the-twining-position",
+   "relation": "close",
+   "loss": "Attested source name. The receiving partner's thigh laid across the penetrating partner's. Burton fixes only the crossed thigh, so the side-lying, face-to-face staging with the thigh carried up to the hip is the catalog's reading.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Veshtitaka (the twining position)"
   },
   {
    "epc_id": "epc:viennese-oyster",
@@ -3007,7 +5619,7 @@
    "foreign_id": "wheelbarrow_pose",
    "relation": "broader",
    "loss": "wheelbarrow_pose fixes only the two-body geometry (one participant's hands on the ground, the other holding their legs up like handles) and roots the tag in the non-sexual wheelbarrow race. It asserts neither the rear vaginal penetration nor that the lifting partner is upright at hip height, so it subsumes the SFW race instance alongside this one.",
-   "sibling_count": 0,
+   "sibling_count": 1,
    "support_tags": [
     "sex_from_behind",
     "vaginal",
@@ -3021,12 +5633,41 @@
    "verified_by": "manual"
   },
   {
+   "epc_id": "epc:widely-opened",
+   "namespace": "danbooru",
+   "foreign_id": "missionary",
+   "relation": "broader",
+   "loss": "missionary fixes only that the receiver lies on the back facing the partner, so it carries the catalog's whole supine family, legs-on-shoulders and yawning among them, on the same footing. It discards the tilt that defines this entry, the head and shoulders lowered and the hips raised toward the partner above, which arched_back restores only as a bend of the spine. anvil_position names the tilt but cannot stand in: its wiki also asks for the legs spread wide on the floor, and the tag is already exact for the catalog's anvil entry, where a kneeling partner lifts the hips.",
+   "sibling_count": 26,
+   "support_tags": [
+    "on_back",
+    "arched_back",
+    "boy_on_top",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-10-12",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:widely-opened",
+   "namespace": "ks",
+   "foreign_id": "kamasutra/utphallaka-the-widely-opened-position",
+   "relation": "close",
+   "loss": "Attested source name. Burton renders it as the receiving partner lowering the head and raising the hips. He gives it as one of the Deer-woman's ways of lying down and leaves the partner's posture open, so the partner lying over is the catalog's staging.",
+   "retrieved": "2026-10-12",
+   "verified_by": "source_attested",
+   "source_display": "Utphallaka (the widely opened position)"
+  },
+  {
    "epc_id": "epc:yawning",
    "namespace": "danbooru",
    "foreign_id": "missionary",
    "relation": "broader",
    "loss": "missionary covers the whole face-to-face supine-receiver family, including the chest-to-chest, coital-alignment and folded mating-press forms; it does not encode the wide V of raised, spread legs or the penetrating partner kneeling upright between them rather than lying over the receiver.",
-   "sibling_count": 5,
+   "sibling_count": 26,
    "support_tags": [
     "wide_spread_legs",
     "legs_up",

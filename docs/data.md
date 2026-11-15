@@ -8,14 +8,14 @@ The dataset (CC BY 4.0) is published at [EthnicErotic/pose-catalog](https://hugg
 
 | Config | Rows | Description |
 |---|---|---|
-| `poses` | 219 | One row per named position: structure, composition, presentation, aliases, Wikidata anchor, historical sources, description, canonical URL |
-| `keypoints` | 493 | One row per (pose × participant): base posture, placement transform, and the composed COCO-17 keypoints |
+| `poses` | 220 | One row per named position: structure, composition, presentation, aliases, Wikidata anchor, historical sources, description, canonical URL |
+| `keypoints` | 495 | One row per (pose × participant): base posture, placement transform, and the composed COCO-17 keypoints |
 | `pose_dimensions` | 32 | Flat controlled vocabulary: every dimension across 8 facets (249 defined values), with citations |
 | `base_skeletons` | 17 | The canonical base-posture skeletons the keypoints are composed from (`data/base_skeletons.jsonl`) |
 | `provenance` | 88 | One row per (position × historical source): historical name, source title/author, culture, era, language, region; 22 sources (7 manuals + 15 art traditions) |
 | `works` | 87 | One row per attested historical artwork: title, date, holding + accession, medium, description, significance, verification confidence, correction notes, and `depicts` links to catalog positions |
 | `crosswalk` | 339 | One row per (position × namespace): foreign identifier, SKOS relation, what the mapping discards, sibling count, structural support tags |
-| `action_beat_join` | 219 | One row per position: characteristic beat, all physically possible beats, contact continuity, suited camera moves |
+| `action_beat_join` | 219 | One row per position except side doggy, which has none yet: characteristic beat, all physically possible beats, contact continuity, suited camera moves |
 | `context_tag_bindings` | 88 | One row per context value: the folksonomy tag that denotes it, or an explicit none |
 | `render_bindings_solo` | 33 | 11 solo positions × 3 model families: positive prompt, negative hints, expected figure count |
 
@@ -43,7 +43,7 @@ See the [dataset card](https://huggingface.co/datasets/EthnicErotic/pose-catalog
 | `pose-vocabularies/action-beat-join.json` | **v2** Which action beats each position physically admits, and which is characteristic |
 | `pose-vocabularies/context-tag-bindings.json` | **v2** Folksonomy tags for the context axes: 79 of 88 values bind, 9 honestly have none |
 | `pose-vocabularies/render-bindings.json` | **v2** Model-family prompt-language schema, control-map contract, and the multi-figure conditioning contract |
-| `pose-vocabularies/render-bindings-solo.json` | **v2** Prompt bindings for the 11 solo positions across three families. The other 208 are deliberately unbound |
+| `pose-vocabularies/render-bindings-solo.json` | **v2** Prompt bindings for the 11 solo positions across three families. The other 209 are deliberately unbound |
 | `pose-vocabularies/positions-index.json` | **v2** Compact name and structure index, generated from the seed, for consumers that do not need the full record |
 
 ## Why this exists
@@ -63,7 +63,8 @@ There is no shared identifier for a named sexual position. The image-board folks
 The `crosswalk` config is the mapping, and it is deliberately honest about its own limits:
 
 - **189 of 219** folksonomy mappings are `broader` than the position they map. Each carries a concrete statement of the feature it discards and a count of sibling positions sharing the same tag.
-- **165 of 219** positions have no exact or close identifier in any machine-readable external vocabulary. For those, this catalog is the only precise record.
+- **168 of 219** positions have no exact or close identifier in any machine-readable external vocabulary (3 of them have only a broader Wikidata item). For those, this catalog is the only precise record.
+- The crosswalk covers **219 of the 220** positions: side doggy, added 2026-11-03, has no crosswalk row yet, and no row in `action-beat-join.json` either.
 - Every tag was checked against the live tag API for existence, category and deprecation. Deprecated tags are excluded even when they carry six-figure post counts.
 - Wiki sense-checks are documented for **46 of 104** rows, not all of them, so this is not verified end to end and does not claim to be.
 
