@@ -15,7 +15,7 @@ The dataset (CC BY 4.0) is published at [EthnicErotic/pose-catalog](https://hugg
 | `provenance` | 88 | One row per (position × historical source): historical name, source title/author, culture, era, language, region; 22 sources (7 manuals + 15 art traditions) |
 | `works` | 87 | One row per attested historical artwork: title, date, holding + accession, medium, description, significance, verification confidence, correction notes, and `depicts` links to catalog positions |
 | `crosswalk` | 339 | One row per (position × namespace): foreign identifier, SKOS relation, what the mapping discards, sibling count, structural support tags |
-| `action_beat_join` | 219 | One row per position except side doggy, which has none yet: characteristic beat, all physically possible beats, contact continuity, suited camera moves |
+| `action_beat_join` | 220 | One row per position: characteristic beat, all physically possible beats, contact continuity, suited camera moves |
 | `context_tag_bindings` | 88 | One row per context value: the folksonomy tag that denotes it, or an explicit none |
 | `render_bindings_solo` | 33 | 11 solo positions × 3 model families: positive prompt, negative hints, expected figure count |
 
@@ -64,7 +64,7 @@ The `crosswalk` config is the mapping, and it is deliberately honest about its o
 
 - **189 of 219** folksonomy mappings are `broader` than the position they map. Each carries a concrete statement of the feature it discards and a count of sibling positions sharing the same tag.
 - **168 of 219** positions have no exact or close identifier in any machine-readable external vocabulary (3 of them have only a broader Wikidata item). For those, this catalog is the only precise record.
-- The crosswalk covers **219 of the 220** positions: side doggy, added 2026-11-03, has no crosswalk row yet, and no row in `action-beat-join.json` either.
+- The crosswalk covers **219 of the 220** positions: side doggy, added 2026-11-03, has no crosswalk row yet. Its `action-beat-join.json` row was added 2026-11-16, so that file covers all 220.
 - Every tag was checked against the live tag API for existence, category and deprecation. Deprecated tags are excluded even when they carry six-figure post counts.
 - Wiki sense-checks are documented for **46 of 104** rows, not all of them, so this is not verified end to end and does not claim to be.
 

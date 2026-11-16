@@ -5860,6 +5860,33 @@
     "pull_out"
    ],
    "rationale": "As in the catalog's daisy-chain, the closed head-to-toe ring is held rather than driven, so the sweeping oral beat, which needs only head motion, leads and contact is maintained. Every figure lies on its side with nobody above another, so neither ride_* beat applies and any penetrative junction is limited to short amplitude, which rules out thrust_deep. The star reads only from directly above, so every camera move either looks straight down or rises to that view."
+  },
+  {
+   "epc_id": "epc:side-doggy",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_circular",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "static_locked",
+    "push_in",
+    "pov_handheld"
+   ],
+   "rationale": "An upright kneeling penetrator behind a side-lying receiver with both knees drawn forward keeps the doggy-style stroke: the kneeling hips have full leverage, so thrust_deep is the characteristic beat. No kiss: the kneeling torso stays upright, out of reach of the lying partner's face. No ride_* beats: nobody is above."
   }
  ]
 }
