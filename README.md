@@ -2,7 +2,7 @@
 
 # pose-catalog-pipeline
 
-Reproducibility code for the **Erotic Pose Catalog** — a public, machine-readable dataset of **220 named erotic positions** (solo and multi-person) with structured attributes, historical/cultural provenance, an index of museum-attested erotic artworks, and an **idealised COCO-17 keypoint template per participant**.
+Reproducibility code for the **Erotic Pose Catalog** — a public, machine-readable dataset of **226 named erotic positions** (solo and multi-person) with structured attributes, historical/cultural provenance, an index of museum-attested erotic artworks, and an **idealised COCO-17 keypoint template per participant**.
 
 **v2 adds the layers that make it executable rather than only descriptive:** a motion layer (action beats, tempo, camera moves), three context axes (wardrobe, scene, expression), and an **interoperability crosswalk** mapping every position into the folksonomy that open adult checkpoints were trained on, into structured knowledge bases, and onto attested historical names.
 
@@ -33,9 +33,9 @@ There is no shared identifier for a named sexual position. The image-board folks
 
 The `crosswalk` config is the mapping, and it is deliberately honest about its own limits:
 
-- **189 of 219** folksonomy mappings are `broader` than the position they map. Each carries a concrete statement of the feature it discards and a count of sibling positions sharing the same tag.
-- **168 of 219** positions have no exact or close identifier in any machine-readable external vocabulary (3 of them have only a broader Wikidata item). For those, this catalog is the only precise record.
-- The crosswalk covers **219 of the 220** positions: side doggy, added 2026-11-03, has no crosswalk row yet. Its `action-beat-join.json` row was added 2026-11-16, so that file covers all 220.
+- **196 of 226** folksonomy mappings are `broader` than the position they map. Each carries a concrete statement of the feature it discards and a count of sibling positions sharing the same tag.
+- **170 of 226** positions have no exact or close identifier in any machine-readable external vocabulary (3 of them have only a broader Wikidata item). For those, this catalog is the only precise record.
+- The crosswalk covers all **226** positions: side doggy's rows and those of the six positions added on 2026-11-16 (469, axillary intercourse, fisting, circle jerk, frot and docking) were mapped that day, and `action-beat-join.json` covers all 226 too.
 - Every tag was checked against the live tag API for existence, category and deprecation. Deprecated tags are excluded even when they carry six-figure post counts.
 - Wiki sense-checks are documented for **46 of 104** rows, not all of them, so this is not verified end to end and does not claim to be.
 
@@ -57,7 +57,7 @@ The `crosswalk` config is the mapping, and it is deliberately honest about its o
 | `pose-vocabularies/scene-setting.json` | **v2** Location, lighting, production mode and time of day |
 | `pose-vocabularies/expression-gaze.json` | **v2** Gaze target, facial affect and mouth state as three independent axes |
 | `pose-vocabularies/interop-crosswalk.json` | **v2** Namespace registry and record schema for the crosswalk |
-| `pose-vocabularies/crosswalk-rows.json` | **v2** The populated crosswalk: 339 mappings across three namespaces, with the loss written down |
+| `pose-vocabularies/crosswalk-rows.json` | **v2** The populated crosswalk: 351 mappings across three namespaces, with the loss written down |
 | `pose-vocabularies/action-beat-join.json` | **v2** Which action beats each position physically admits, and which is characteristic |
 | `pose-vocabularies/context-tag-bindings.json` | **v2** Folksonomy tags for the context axes: 79 of 88 values bind, 9 honestly have none |
 | `pose-vocabularies/render-bindings.json` | **v2** Model-family prompt-language schema, control-map contract, and the multi-figure conditioning contract |
@@ -139,14 +139,14 @@ Total: seconds of wall time, $0, end-to-end.
 
 | Config | Rows | Description |
 |---|---|---|
-| `poses` | 220 | One row per named position: structure, composition, presentation, aliases, Wikidata anchor, historical sources, description, canonical URL |
-| `keypoints` | 495 | One row per (pose × participant): base posture, placement transform, and the composed COCO-17 keypoints |
+| `poses` | 226 | One row per named position: structure, composition, presentation, aliases, Wikidata anchor, historical sources, description, canonical URL |
+| `keypoints` | 510 | One row per (pose × participant): base posture, placement transform, and the composed COCO-17 keypoints |
 | `pose_dimensions` | 32 | Flat controlled vocabulary: every dimension across 8 facets (249 defined values), with citations |
 | `base_skeletons` | 17 | The canonical base-posture skeletons the keypoints are composed from (`data/base_skeletons.jsonl`) |
 | `provenance` | 88 | One row per (position × historical source): historical name, source title/author, culture, era, language, region; 22 sources (7 manuals + 15 art traditions) |
 | `works` | 87 | One row per attested historical artwork: title, date, holding + accession, medium, description, significance, verification confidence, correction notes, and `depicts` links to catalog positions |
-| `crosswalk` | 339 | One row per (position × namespace): foreign identifier, SKOS relation, what the mapping discards, sibling count, structural support tags |
-| `action_beat_join` | 220 | One row per position: characteristic beat, all physically possible beats, contact continuity, suited camera moves |
+| `crosswalk` | 351 | One row per (position × namespace): foreign identifier, SKOS relation, what the mapping discards, sibling count, structural support tags |
+| `action_beat_join` | 226 | One row per position: characteristic beat, all physically possible beats, contact continuity, suited camera moves |
 | `context_tag_bindings` | 88 | One row per context value: the folksonomy tag that denotes it, or an explicit none |
 | `render_bindings_solo` | 33 | 11 solo positions × 3 model families: positive prompt, negative hints, expected figure count |
 

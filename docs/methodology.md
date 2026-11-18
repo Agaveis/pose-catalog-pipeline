@@ -1,6 +1,6 @@
 # A Structured Catalog of Named Erotic Positions with COCO-17 Keypoint Templates and Cross-Cultural Provenance: Construction, Schema, and Release
 
-> This is the v1.0 paper as published. The dataset has since grown to 219 positions, and the current figures are on the [data page](data.md).
+> This is the v1.0 paper as published. The dataset has since grown to 226 positions, and the current figures are on the [data page](data.md).
 
 > This page is the methodology paper, converted from [`paper/methodology-v1.md`](https://github.com/Agaveis/pose-catalog-pipeline/blob/main/paper/methodology-v1.md). It documents the **v1** position and keypoint methodology. The v2 layers (action, context, crosswalk, bindings) are specified in the vocabulary files themselves and summarized in the [dataset card](https://huggingface.co/datasets/EthnicErotic/pose-catalog); they are not yet written up in the paper. How the catalog was built is on the [live catalog](https://ethnicerotic.com/poses/methodology). Archived releases have a [concept DOI](https://doi.org/10.5281/zenodo.21439174), which always resolves to the latest version.
 

@@ -29,23 +29,23 @@
   ]
  },
  "statistics": {
-  "generated": "2026-08-09",
-  "positions": 219,
-  "crosswalk_rows_total": 339,
+  "generated": "2026-11-16",
+  "positions": 226,
+  "crosswalk_rows_total": 351,
   "by_namespace": {
-   "danbooru": 219,
+   "danbooru": 226,
    "ks": 85,
-   "wd": 35
+   "wd": 40
   },
   "danbooru_relation_distribution": {
    "exact": 18,
-   "broader": 189,
+   "broader": 196,
    "none": 5,
    "close": 7
   },
   "positions_with_precise_external_id": 25,
-  "positions_with_wikidata_qid": 35,
-  "positions_with_no_precise_external_identifier": 168,
+  "positions_with_wikidata_qid": 40,
+  "positions_with_no_precise_external_identifier": 170,
   "tag_pool_size": 2574,
   "deprecated_tags_excluded": 25,
   "largest_collapses": [
@@ -103,7 +103,7 @@
    },
    {
     "tag": "sex_from_behind",
-    "positions": 9,
+    "positions": 10,
     "ids": [
      "pearly-gates",
      "kneeling-rear-embrace",
@@ -113,7 +113,8 @@
      "sofa-brace",
      "froggy-style",
      "praying-mantis",
-     "over-the-edge"
+     "over-the-edge",
+     "side-doggy"
     ]
    },
    {
@@ -2071,7 +2072,7 @@
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind encodes rear entry and nothing about posture: its wiki names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl and closes on any other position from behind. It discards the receiver crouched forward on the feet with the hands down and the knees wide outside the elbows, the raised hip line that follows, and the partner kneeling behind, and squatting and spread_legs in the support set carry the crouch. doggystyle was passed over because its wiki confines it to a receiver on all fours or close to it and all_fours routes both knees off the ground to bear_position, while this entry carries its weight on the feet, and the name-matched froggy_style was passed over because it has no wiki page and its posts are also tagged all_fours, doggystyle and reverse_cowgirl_position, so its sense cannot be sourced.",
-   "sibling_count": 8,
+   "sibling_count": 9,
    "support_tags": [
     "squatting",
     "spread_legs",
@@ -2302,7 +2303,7 @@
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind covers all rear entry including bent-over, on-all-fours, prone and standing variants, and discards the specific feature here: both partners kneeling upright with both torsos vertical and the receiver's back flush against the penetrating partner's chest.",
-   "sibling_count": 8,
+   "sibling_count": 9,
    "support_tags": [
     "kneeling",
     "hug_from_behind",
@@ -2620,7 +2621,7 @@
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind covers every rear-entry arrangement, and its wiki names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl inside it. It discards the cushion bank built into a slope that carries the receiver's chest, the receiver kneeling forward onto that slope, and the penetrating partner kneeling behind and settled back onto the heels, so that both bodies are supported for a long hold. doggystyle was passed over because its wiki rules it out unless the receiver is on all fours or close to it, and here the chest rests on the bank rather than on the hands.",
-   "sibling_count": 8,
+   "sibling_count": 9,
    "support_tags": [
     "kneeling",
     "legs_folded",
@@ -2966,7 +2967,7 @@
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind encodes only rear entry, and its wiki names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl inside it and closes with any other position from behind, so it covers every rear arrangement on or off a surface. It discards the edge geometry that defines this entry: the receiver lying face down with the torso on the bed and the hips out past the edge, legs descending toward the floor, and the partner standing behind at that height. bedside restores only nearness to the edge of the bed, and no live prone tag places the hips beyond it, since prone_bone and on_stomach both want the crotch down flat on the surface, while bent_over_furniture fits only the feet-on-the-floor variation, where the receiver stands bent over the bed.",
-   "sibling_count": 8,
+   "sibling_count": 9,
    "support_tags": [
     "lying",
     "standing",
@@ -3006,7 +3007,7 @@
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind encodes only rear entry and nothing about posture, so it covers doggystyle, standing doggystyle, prone bone, spooning, reverse cowgirl and, by its own closing clause, any other rear position. It discards the entire geometry of this entry: the penetrating partner supine underneath, the receiver reclined flat along their chest spine-to-chest with both faces to the ceiling, and the thrust arriving from below rather than from behind an upright back. The face-up stack survives only in the `lying_on_person` support tag, and the receiver-on-top polarity only in `girl_on_top`.",
-   "sibling_count": 8,
+   "sibling_count": 9,
    "support_tags": [
     "lying_on_person",
     "girl_on_top",
@@ -3132,7 +3133,7 @@
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind encodes only rear entry, and its wiki names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl inside it and closes with any other position from behind, so it already carries the catalog's kneeling-rear-embrace entry, the same two upright kneeling bodies without the raised arms. It discards that both partners kneel with both spines vertical and, above all, the receiving partner's arms raised overhead or folded high, the tall narrow silhouette that names the position. kneeling and front-to-back restore the upright stacked kneel only as separate postures, and arms_up restores only the overhead form of the arms, not the arms folded high across the chest.",
-   "sibling_count": 8,
+   "sibling_count": 9,
    "support_tags": [
     "kneeling",
     "arms_up",
@@ -3933,7 +3934,7 @@
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind covers every rear-entry arrangement and fixes no posture or furniture. It discards the receiver kneeling on a sofa seat and folded forward over the back or the arm with the chest supported, which is the whole content of this entry. bent_over_furniture was passed over because its wiki routes through bent_over, which requires standing, so it fits only the feet-on-the-floor variation and not the kneeling default.",
-   "sibling_count": 8,
+   "sibling_count": 9,
    "support_tags": [
     "kneeling",
     "standing",
@@ -4640,7 +4641,7 @@
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind covers every rear-entry arrangement, with doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl all named inside it by its own wiki, and most of those are on the ground. It drops that both partners are standing and nearly upright, the wall as the bracing plane, and the receiver's hands planted flat against it, which together supply both the support and the profile framing plane this shot is built on.",
-   "sibling_count": 8,
+   "sibling_count": 9,
    "support_tags": [
     "standing_sex",
     "against_wall",
@@ -5050,7 +5051,7 @@
    "foreign_id": "sex_from_behind",
    "relation": "broader",
    "loss": "sex_from_behind encodes only rear entry, and its wiki names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl inside it, so it also covers the catalog's upright kneeling-rear-embrace. It discards that both partners kneel and that the front partner leans back about thirty degrees onto locked arms with the torso opened away from the body behind, the hinge that gives the position its working angle; leaning_back and arm_support carry the lean, though leaning_back's wiki names standing or sitting figures rather than kneeling ones.",
-   "sibling_count": 8,
+   "sibling_count": 9,
    "support_tags": [
     "kneeling",
     "leaning_back",
@@ -5710,6 +5711,187 @@
    "retrieved": "2026-07-16",
    "verified_by": "source_attested",
    "source_display": "The reclined union"
+  },
+  {
+   "epc_id": "epc:side-doggy",
+   "namespace": "danbooru",
+   "foreign_id": "sex_from_behind",
+   "relation": "broader",
+   "loss": "sex_from_behind is the wiki's catch-all for sex from a rear position, and it names doggystyle, standing doggystyle, prone bone, spooning and reverse cowgirl among its members, so it records only that penetration comes from behind. It discards what defines this entry: the receiving partner lying on one side with both knees drawn forward and the penetrating partner kneeling upright behind the hips. doggystyle was not used as the primary because its wiki limits it to a receiver on all fours or close to it and sends the other rear positions on to standing_doggystyle, to prone_bone or, otherwise, to sex_from_behind, and spooning was not used because its wiki has both partners lying on their sides front to back, whereas here the penetrating partner kneels. on_side, knees_to_chest and kneeling in the support set restore the posture.",
+   "sibling_count": 9,
+   "support_tags": [
+    "on_side",
+    "knees_to_chest",
+    "kneeling",
+    "vaginal",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:four-sixty-nine",
+   "namespace": "danbooru",
+   "foreign_id": "foursome",
+   "relation": "broader",
+   "loss": "foursome fixes only the head count, exactly four people having sex at the same time per its wiki, and says nothing about posture or act, so it discards everything that defines this entry: the stacked 69 pair, one partner supine and the other on hands and knees above, head to toe, and the two kneeling partners at either end of the stack, each penetrating the nearer of the pair. It was chosen over 69, which holds only the center pair and is already the primary of four other entries, and over group_sex, which the wiki defines as any act with more than two participants; foursome is the only one of the wiki's participant-count tags that fixes the count at four. 69, spitroast, doggystyle, on_back and kneeling in the support set restore the stacked pair, the upper partner who gives oral sex while penetrated from behind, and the kneeling partners at the ends. The lower partner, penetrated from the front while giving oral sex, has no counterpart in the support set.",
+   "sibling_count": 0,
+   "support_tags": [
+    "69",
+    "spitroast",
+    "doggystyle",
+    "on_back",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:axillary-intercourse",
+   "namespace": "danbooru",
+   "foreign_id": "armpit_sex",
+   "relation": "broader",
+   "loss": "armpit_sex records only that a penis is rubbed on another person's armpit. It discards the posture that frames this entry: the receiving partner supine with the upper arm lowered over the shaft and the penetrating partner kneeling upright at the shoulder. on_back and kneeling restore the posture; nothing in the support set says the arm closes over the shaft.",
+   "sibling_count": 0,
+   "support_tags": [
+    "on_back",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:fisting",
+   "namespace": "danbooru",
+   "foreign_id": "fisting",
+   "relation": "broader",
+   "loss": "fisting records only that an entire hand is inserted into a body orifice. Its wiki names no particular orifice and lists anal_fisting, self_fisting and double_fisting as related tags, so it extends past this entry's two-person vaginal or anal scope. It also discards the posture that frames the entry, the receiving partner supine with knees raised and parted and the partner kneeling at the knees. on_back, knees_up, spread_legs and kneeling in the support set restore the posture; nothing in the support set says which orifice is entered.",
+   "sibling_count": 0,
+   "support_tags": [
+    "on_back",
+    "knees_up",
+    "spread_legs",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:circle-jerk",
+   "namespace": "danbooru",
+   "foreign_id": "group_masturbation",
+   "relation": "broader",
+   "loss": "group_masturbation records that three or more characters masturbate in the same place and time, and nothing more. It discards the ring, everyone turned inward so each can see the rest, which is the arrangement this entry is named for, and the all-male composition, since its wiki names no sex. A circle_jerk tag exists but has no posts, so it was not used. The tag has only 96 posts, so male_masturbation in the support set carries most of the prompting signal and restores that the participants are male, and kneeling and on_bed restore the posture and surface. Nothing in the support set restores the ring: circle_formation was not used because it is an image-composition tag for bodies pointing toward a center, not a pose of upright figures facing inward.",
+   "sibling_count": 0,
+   "support_tags": [
+    "male_masturbation",
+    "kneeling",
+    "on_bed"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:frot",
+   "namespace": "danbooru",
+   "foreign_id": "penises_touching",
+   "relation": "broader",
+   "loss": "penises_touching records that two or more penises are touching or rubbing each other, so it also covers three or more penises, contact without rubbing, and any pairing of partners. It discards the stance that defines this entry, two men standing face to face with the pelvises aligned and the chests close. frottage was not used because its wiki covers rubbing the genitals against another person's body in general and sends direct genital-to-genital contact to penises_touching, and a frot tag exists but has no posts. standing, face-to-face, belly-to-belly and erection in the support set restore the stance and the erect penises; nothing in the support set records that both partners are men.",
+   "sibling_count": 0,
+   "support_tags": [
+    "standing",
+    "face-to-face",
+    "belly-to-belly",
+    "erection"
+   ],
+   "confidence": "high",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:docking",
+   "namespace": "danbooru",
+   "foreign_id": "cock_docking",
+   "relation": "broader",
+   "loss": "cock_docking names the practice, and its wiki defines it as one partner inserting a penis into the other's foreskin or urethra. The urethral form is wider than this entry, which is only one foreskin drawn over both glans, and the tag records neither the two-man pairing nor the side-lying, face-to-face stance. It has only 44 posts, so a booru-trained model gets little signal from it. penises_touching in the support set restores the contact between the two penises, and foreskin_insertion restores that something sits under a foreskin, though its wiki names a finger or tongue as the usual object, not the other glans. The bare tag docking is deprecated and its wiki calls it ambiguous, and symmetrical_docking and asymmetrical_docking name two female characters pressing their breasts together, so none of those three was used.",
+   "sibling_count": 0,
+   "support_tags": [
+    "penises_touching",
+    "foreskin_insertion",
+    "on_side",
+    "face-to-face",
+    "on_bed"
+   ],
+   "confidence": "medium",
+   "undocumented_tag": false,
+   "note": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "manual"
+  },
+  {
+   "epc_id": "epc:axillary-intercourse",
+   "namespace": "wd",
+   "foreign_id": "Q137806339",
+   "relation": "exact",
+   "loss": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "automated"
+  },
+  {
+   "epc_id": "epc:fisting",
+   "namespace": "wd",
+   "foreign_id": "Q235757",
+   "relation": "exact",
+   "loss": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "automated"
+  },
+  {
+   "epc_id": "epc:circle-jerk",
+   "namespace": "wd",
+   "foreign_id": "Q1551045",
+   "relation": "exact",
+   "loss": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "automated"
+  },
+  {
+   "epc_id": "epc:frot",
+   "namespace": "wd",
+   "foreign_id": "Q1098028",
+   "relation": "exact",
+   "loss": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "automated"
+  },
+  {
+   "epc_id": "epc:docking",
+   "namespace": "wd",
+   "foreign_id": "Q12012782",
+   "relation": "exact",
+   "loss": null,
+   "retrieved": "2026-11-16",
+   "verified_by": "automated"
   }
  ]
 }

@@ -5887,6 +5887,153 @@
     "pov_handheld"
    ],
    "rationale": "An upright kneeling penetrator behind a side-lying receiver with both knees drawn forward keeps the doggy-style stroke: the kneeling hips have full leverage, so thrust_deep is the characteristic beat. No kiss: the kneeling torso stays upright, out of reach of the lying partner's face. No ride_* beats: nobody is above."
+  },
+  {
+   "epc_id": "epc:four-sixty-nine",
+   "primary_beat": "thrust_deep",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "entry",
+    "thrust_shallow",
+    "thrust_deep",
+    "thrust_hold",
+    "grind_rocking",
+    "oral_bob",
+    "oral_lateral",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "intermittent",
+   "suggested_camera": [
+    "arc_partial",
+    "overhead_descend",
+    "pull_out"
+   ],
+   "rationale": "Four figures in one line: a supine figure and an all-fours figure stacked head to toe in a 69, with a kneeling partner at each end penetrating the nearer of the two. Both kneeling partners have full hip leverage, so thrust_deep is the characteristic beat, and the pair in the 69 keep their mouths at the genitals beneath them, so oral_bob and oral_lateral hold. Nobody is seated above a partner, so no ride_* beat applies, and every face is turned to a pelvis, so kiss is out."
+  },
+  {
+   "epc_id": "epc:axillary-intercourse",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "grind_rocking",
+    "grind_circular",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "rack_focus",
+    "static_locked"
+   ],
+   "rationale": "Non-penetrative by definition, so entry and every thrust_* beat are ruled out even though the position's dynamics field reads as thrusting; the mechanically correct beat is a short forward-and-back pelvic arc in the closed armpit with contact held. The kneeling partner is upright at the shoulder, out of reach of the supine partner's face, so kiss is out, and nobody is seated above a partner, so no ride_* beat applies. Switching to the mouth would make it a different named position, so the oral beats are out."
+  },
+  {
+   "epc_id": "epc:fisting",
+   "primary_beat": "entry",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "caress",
+    "entry",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "static_locked",
+    "rack_focus"
+   ],
+   "rationale": "Manual insertion of the whole hand, taken slowly, so entry is the characteristic beat and manual_stroke covers the movement once inside; the position's own dynamics field is static_hold, and stillness inside is part of it. No body-driven penetrative motion exists, so every thrust_* and ride_* beat is impossible. The partner kneels at the raised knees, out of reach of the receiving partner's face, so kiss is out."
+  },
+  {
+   "epc_id": "epc:circle-jerk",
+   "primary_beat": "manual_stroke",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "orbit_full",
+    "overhead_descend",
+    "push_in",
+    "rack_focus"
+   ],
+   "rationale": "Penetration type is none and the act is manual, so reciprocating hand motion is the whole position, on one's own penis or a neighbor's. The figures kneel facing the center of the ring rather than one another, so kiss is out, and nobody is joined to or seated above a partner, so no entry, thrust_*, grind_* or ride_* beat applies. An orbit reads the ring in a way no single fixed angle can."
+  },
+  {
+   "epc_id": "epc:frot",
+   "primary_beat": "grind_rocking",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "grind_rocking",
+    "grind_circular",
+    "manual_stroke",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "arc_partial",
+    "rack_focus"
+   ],
+   "rationale": "Non-penetrative by definition, so no entry, thrust_* or ride_* beat qualifies. Standing chest to chest with the shafts pressed together makes the pelvic grind the beat; the faces are level, so kiss holds, and a hand closed around both shafts keeps manual_stroke available."
+  },
+  {
+   "epc_id": "epc:docking",
+   "primary_beat": "manual_stroke",
+   "compatible_beats": [
+    "idle_micro",
+    "pose_settle",
+    "approach",
+    "disrobe",
+    "caress",
+    "kiss",
+    "manual_stroke",
+    "grind_rocking",
+    "reposition",
+    "climax_reaction",
+    "aftermath"
+   ],
+   "contact_continuity": "maintained",
+   "suggested_camera": [
+    "push_in",
+    "rack_focus",
+    "static_locked"
+   ],
+   "rationale": "Nothing enters an orifice, so entry and every thrust_* and ride_* beat are out. One foreskin held over both glans is the whole act, and the position's own dynamics field is static_hold, so the movement comes from a hand working the foreskin, with a small pelvic rock as the alternative. Lying face to face keeps kiss available."
   }
  ]
 }

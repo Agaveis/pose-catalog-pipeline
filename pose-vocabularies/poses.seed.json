@@ -17129,6 +17129,458 @@
           }
         }
       ]
+    },
+    {
+      "slug": "four-sixty-nine",
+      "name": "469",
+      "aliases": [
+        "469 position",
+        "four sixty nine"
+      ],
+      "wikidata_qid": null,
+      "kama_sutra_name": null,
+      "historical_sources": [],
+      "position_family": "group",
+      "primary_act": "mixed",
+      "arrangement": "head_to_toe",
+      "penetration_type": "multiple",
+      "facing": "variable",
+      "dynamics": "thrusting",
+      "support_surface": "bed_flat",
+      "participant_count": "four_plus",
+      "composition_code": "group_mixed",
+      "source_medium": "video",
+      "camera_framing": [
+        "side_profile",
+        "wide_full_body",
+        "overhead"
+      ],
+      "difficulty": "moderate",
+      "prevalence": "niche",
+      "intensity_tier": "explicit",
+      "description": "<section><p><strong>Description:</strong> A 69 with a partner at each end. Two partners hold a stacked 69, one lying on the back and the other on hands and knees above, head to toe; a third kneels behind the upper partner's raised hips and enters from the rear, and a fourth kneels between the lower partner's parted knees at the other end and enters from the front. Both partners in the 69 are penetrated while their mouths stay at the genitals beneath them, so the oral pair becomes the hinge of a four-body line.</p><p><strong>Variations:</strong> Any composition of the four; either outer partner may switch to oral at the free mouth instead of penetrating. Dropping the fourth partner leaves the three-person 69 with rear entry.</p><p><strong>On camera:</strong> Only a profile wide enough for both kneeling partners reads the whole line; overhead framing shows the 69 at its center.</p><p><strong>AI design considerations:</strong> A supine figure and an all-fours figure stacked head to toe, with one upright kneeling figure at each end of the stack, facing inward. Keep the two kneeling figures at the two ends of the stack rather than side by side, or the image reads as a threesome with an onlooker.</p></section>",
+      "participants": [
+        {
+          "role": "receiving",
+          "base_posture": "supine_legs_up",
+          "placement": {
+            "translate": [
+              0.06,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          }
+        },
+        {
+          "role": "receiving",
+          "base_posture": "all_fours",
+          "placement": {
+            "translate": [
+              -0.16,
+              -0.02
+            ],
+            "scale": [
+              0.9,
+              0.95
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          }
+        },
+        {
+          "role": "penetrating",
+          "base_posture": "kneeling",
+          "placement": {
+            "translate": [
+              -0.36,
+              -0.045
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          }
+        },
+        {
+          "role": "penetrating",
+          "base_posture": "kneeling",
+          "placement": {
+            "translate": [
+              0.14,
+              -0.045
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": true
+          }
+        }
+      ]
+    },
+    {
+      "slug": "axillary-intercourse",
+      "name": "Axillary intercourse (bagpiping)",
+      "aliases": [
+        "bagpiping",
+        "armpit intercourse"
+      ],
+      "wikidata_qid": "Q137806339",
+      "kama_sutra_name": null,
+      "historical_sources": [],
+      "position_family": "one_on_one",
+      "primary_act": "non_penetrative",
+      "arrangement": "kneeling",
+      "penetration_type": "none",
+      "facing": "variable",
+      "dynamics": "thrusting",
+      "support_surface": "bed_flat",
+      "participant_count": "two",
+      "composition_code": "MF",
+      "source_medium": "illustrative",
+      "camera_framing": [
+        "side_profile",
+        "close_up"
+      ],
+      "difficulty": "low",
+      "prevalence": "niche",
+      "intensity_tier": "explicit",
+      "description": "<section><p><strong>Description:</strong> An outercourse act in which the penis moves in the armpit of a partner who holds the upper arm down against it. The receiving partner lies on the back with one arm raised and then lowered over the shaft; the penetrating partner kneels upright beside the shoulder and thrusts into the closed armpit. Nothing is penetrated, and the friction depends on how firmly the arm is held.</p><p><strong>Variations:</strong> The receiving partner lying on one side with the upper arm closed instead of on the back; the penetrating partner straddling the chest crosswise; a lubricant in place of the dry friction of the plain form.</p><p><strong>On camera:</strong> A side profile at shoulder height carries it, since the contact sits at the upper body and a wide shot loses it; a close-up holds the arm and the shaft.</p><p><strong>AI design considerations:</strong> A supine figure with one arm bent close to the torso and an upright kneeling figure at its shoulder, pelvis level with the armpit. The registration at the shoulder, not the hips or the chest, is what separates it from the riding positions and from the chest act.</p></section>",
+      "participants": [
+        {
+          "role": "receiving",
+          "base_posture": "supine",
+          "placement": {
+            "translate": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          }
+        },
+        {
+          "role": "penetrating",
+          "base_posture": "kneeling",
+          "placement": {
+            "translate": [
+              -0.29,
+              -0.02
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          }
+        }
+      ]
+    },
+    {
+      "slug": "fisting",
+      "name": "Fisting",
+      "aliases": [
+        "fist fucking",
+        "handballing"
+      ],
+      "wikidata_qid": "Q235757",
+      "kama_sutra_name": null,
+      "historical_sources": [],
+      "position_family": "one_on_one",
+      "primary_act": "manual",
+      "arrangement": "kneeling",
+      "penetration_type": "manual_insertion",
+      "facing": "face_to_face",
+      "dynamics": "static_hold",
+      "support_surface": "bed_flat",
+      "participant_count": "two",
+      "composition_code": "MF",
+      "source_medium": "video",
+      "camera_framing": [
+        "close_up",
+        "side_profile",
+        "low_angle"
+      ],
+      "difficulty": "high",
+      "prevalence": "niche",
+      "intensity_tier": "explicit",
+      "description": "<section><p><strong>Description:</strong> Manual penetration taken past the fingers: the whole hand enters the vagina or the rectum, fingers together and the thumb folded into the palm, and may close into a fist once inside. The receiving partner usually lies on the back with the knees raised and parted and the hips propped, and the partner kneels at the raised knees. It is slow by nature, with a lot of lubricant, and the receiving partner sets the pace; once inside, stillness is as much a part of it as movement.</p><p><strong>Variations:</strong> The receiving partner on hands and knees instead of on the back; vaginal or anal; any pairing. Double fisting uses both hands.</p><p><strong>On camera:</strong> Close framing between the thighs carries the act; a side profile shows the kneeling partner's reach and the receiving partner's posture at once.</p><p><strong>AI design considerations:</strong> A supine figure with knees raised and parted and a kneeling figure at the knees, one forearm angled down to the pelvis. The forearm's angle and the hand's position at the pelvis define the act; a hand resting on a thigh reads as foreplay.</p></section>",
+      "participants": [
+        {
+          "role": "receiving",
+          "base_posture": "supine_legs_up",
+          "placement": {
+            "translate": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          }
+        },
+        {
+          "role": "penetrating",
+          "base_posture": "kneeling_sit",
+          "placement": {
+            "translate": [
+              0.16,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": true
+          },
+          "joint_overrides": {
+            "left_wrist": [
+              0.47,
+              0.76,
+              2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "circle-jerk",
+      "name": "Circle jerk",
+      "aliases": [
+        "circlejerk",
+        "group masturbation"
+      ],
+      "wikidata_qid": "Q1551045",
+      "kama_sutra_name": null,
+      "historical_sources": [],
+      "position_family": "group",
+      "primary_act": "manual",
+      "arrangement": "kneeling",
+      "penetration_type": "none",
+      "facing": "variable",
+      "dynamics": "static_hold",
+      "support_surface": "bed_flat",
+      "participant_count": "three",
+      "composition_code": "MMM",
+      "source_medium": "video",
+      "camera_framing": [
+        "overhead",
+        "wide_full_body",
+        "close_up"
+      ],
+      "difficulty": "low",
+      "prevalence": "occasional",
+      "intensity_tier": "explicit",
+      "description": "<section><p><strong>Description:</strong> Three or more adult men in a ring, facing inward, each masturbating, himself or the man beside him. The ring is the arrangement: everyone can see everyone, and watching is as much a part of it as touching. It is often loosely competitive, a race to finish first or last.</p><p><strong>Variations:</strong> Kneeling, standing or seated; hands on one's own penis or on a neighbor's; a larger ring, which keeps the same geometry with more points around it.</p><p><strong>On camera:</strong> Overhead framing shows the ring itself; a wide shot from outside it holds the faces across the circle, and close-ups cut between the hands.</p><p><strong>AI design considerations:</strong> Three upright kneeling figures spaced evenly around a center and turned toward it, each with a wrist at a pelvis. From a single side view the ring flattens into a row, so keep the far figure clearly between the near two and facing the camera.</p></section>",
+      "participants": [
+        {
+          "role": "solo",
+          "base_posture": "kneeling",
+          "placement": {
+            "translate": [
+              -0.2,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          },
+          "joint_overrides": {
+            "left_wrist": [
+              0.5,
+              0.56,
+              2
+            ]
+          }
+        },
+        {
+          "role": "solo",
+          "base_posture": "kneeling",
+          "placement": {
+            "translate": [
+              0.2,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": true
+          },
+          "joint_overrides": {
+            "left_wrist": [
+              0.5,
+              0.56,
+              2
+            ]
+          }
+        },
+        {
+          "role": "solo",
+          "base_posture": "kneeling",
+          "placement": {
+            "translate": [
+              0,
+              -0.06
+            ],
+            "scale": [
+              0.9,
+              0.9
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          }
+        }
+      ]
+    },
+    {
+      "slug": "frot",
+      "name": "Frot",
+      "aliases": [
+        "frotting",
+        "sword fighting",
+        "penis to penis"
+      ],
+      "wikidata_qid": "Q1098028",
+      "kama_sutra_name": null,
+      "historical_sources": [],
+      "position_family": "one_on_one",
+      "primary_act": "non_penetrative",
+      "arrangement": "standing",
+      "penetration_type": "none",
+      "facing": "face_to_face",
+      "dynamics": "grinding",
+      "support_surface": "standing_unsupported",
+      "participant_count": "two",
+      "composition_code": "MM",
+      "source_medium": "both",
+      "camera_framing": [
+        "side_profile",
+        "close_up",
+        "wide_full_body"
+      ],
+      "difficulty": "low",
+      "prevalence": "occasional",
+      "intensity_tier": "explicit",
+      "description": "<section><p><strong>Description:</strong> Two men face to face rubbing their erect penises together, shaft against shaft, so both are stimulated at once and in the same motion. Nothing is penetrated; the pressure falls on the undersides and the frenulum, and the hips set the rhythm. Standing chest to chest with the pelvises pressed together is the plainest form.</p><p><strong>Variations:</strong> Lying, one partner on top of the other, in a full-body grind; one hand wrapped around both shafts to hold them together; docking, in which one foreskin covers both glans, is a close relative.</p><p><strong>On camera:</strong> A side profile at hip height shows the contact and both bodies; a close-up between the pelvises holds the shafts.</p><p><strong>AI design considerations:</strong> Two standing figures facing each other with the pelvises aligned and touching and the chests close. Matching the two figures' hip height is what makes the contact read; a step apart reads as two men standing together.</p></section>",
+      "participants": [
+        {
+          "role": "receiving",
+          "base_posture": "standing",
+          "placement": {
+            "translate": [
+              -0.07,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          }
+        },
+        {
+          "role": "receiving",
+          "base_posture": "standing",
+          "placement": {
+            "translate": [
+              0.07,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": true
+          }
+        }
+      ]
+    },
+    {
+      "slug": "docking",
+      "name": "Docking",
+      "aliases": [
+        "cock docking",
+        "foreskin play"
+      ],
+      "wikidata_qid": "Q12012782",
+      "kama_sutra_name": null,
+      "historical_sources": [],
+      "position_family": "one_on_one",
+      "primary_act": "non_penetrative",
+      "arrangement": "side_lying",
+      "penetration_type": "none",
+      "facing": "face_to_face",
+      "dynamics": "static_hold",
+      "support_surface": "bed_flat",
+      "participant_count": "two",
+      "composition_code": "MM",
+      "source_medium": "both",
+      "camera_framing": [
+        "close_up",
+        "side_profile"
+      ],
+      "difficulty": "low",
+      "prevalence": "niche",
+      "intensity_tier": "explicit",
+      "description": "<section><p><strong>Description:</strong> A practice between two penises in which one foreskin is drawn over the other man's glans, so both heads sit under one foreskin. At least one partner must be uncircumcised. The partners lie face to face on their sides with their pelvises together, or stand, and the stimulation comes from moving the foreskin or pressing the two heads together.</p><p><strong>Variations:</strong> Full docking, with both partners uncircumcised, and half docking, with one; a hand holding the two together; standing face to face in the frot stance.</p><p><strong>On camera:</strong> Close-up is the whole of it, since the defining contact is small; a side profile establishes the two bodies around it.</p><p><strong>AI design considerations:</strong> Two side-lying figures facing each other with the pelvises touching. The contact point is too small for a figure to show, so the act lives in the tagging and the close-up, not in the body geometry, which matches frot's.</p></section>",
+      "participants": [
+        {
+          "role": "receiving",
+          "base_posture": "side_lying",
+          "placement": {
+            "translate": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          }
+        },
+        {
+          "role": "receiving",
+          "base_posture": "side_lying",
+          "placement": {
+            "translate": [
+              0.04,
+              0.1
+            ],
+            "scale": [
+              1,
+              1
+            ],
+            "rotate_deg": 0,
+            "flip_x": false
+          }
+        }
+      ]
     }
   ]
 }
